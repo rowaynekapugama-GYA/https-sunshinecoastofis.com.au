@@ -1348,7 +1348,8 @@ form.f{display:grid;gap:.9rem}
   <div class="wrap two narrow-r">
     <div class="formcard">
       <p style="margin:0 0 1.2rem"><a class="btn btn-outline" href="files/SCOFIS-Referral-Form.pdf" id="referralPdf" target="_blank" rel="noopener" download="SCOFIS-Referral-Form.pdf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12m0 0 4-4m-4 4-4-4M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/></svg>Click to download Referral Form (PDF)</a></p>
-      <form class="f" id="referralForm" onsubmit="return fakeSubmit(event)" enctype="multipart/form-data">
+      <form class="f" id="referralForm" onsubmit="return fakeSubmit(event)" enctype="multipart/form-data" data-endpoint="/api/submit">
+        <input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;opacity:0;height:0;width:0">
         <h3>Referral Patient Details</h3>
         <fieldset class="fs"><legend>Patient Name *</legend>
           <div class="row">
@@ -1440,7 +1441,8 @@ form.f{display:grid;gap:.9rem}
   </div>
   <div class="wrap two narrow-r">
     <div class="formcard">
-      <form class="f" id="contactForm" onsubmit="return fakeSubmit(event)">
+      <form class="f" id="contactForm" onsubmit="return fakeSubmit(event)" enctype="multipart/form-data" data-endpoint="/api/submit">
+        <input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;opacity:0;height:0;width:0">
         <div class="row">
           <label>First name<input type="text" name="first" required autocomplete="given-name"></label>
           <label>Last name<input type="text" name="last" required autocomplete="family-name"></label>
@@ -1627,11 +1629,14 @@ function fakeSubmit(e){
   });
   summary.form=f.id; summary.page=location.href; summary.submitted_at=new Date().toISOString();
   var done=function(){ f.classList.add('sent'); f.scrollIntoView({block:'center'}); };
-  var endpoint=f.getAttribute('data-endpoint'); // TODO GYA: set data-endpoint on the form to the SmileOx / email endpoint
-  if(endpoint){
-    fd.append('page',location.href);
-    fetch(endpoint,{method:'POST',body:fd}).then(function(r){ if(!r.ok) throw new Error(r.status); done(); })
-      .catch(function(err){ console.error('Form submission failed',err); alert('Sorry, the form could not be sent. Please call (07) 5406 0586.'); });
+  var endpoint=f.getAttribute('data-endpoint');
+  if(endpoint&&location.protocol!=='file:'){
+    fd.append('form',f.id); fd.append('page',location.href);
+    var btn=f.querySelector('button[type=submit]'); var label=btn.textContent; btn.disabled=true; btn.textContent='Sending...';
+    var msg=f.querySelector('.senderr'); if(!msg){msg=document.createElement('p');msg.className='fine senderr';msg.style.color='#B42318';btn.insertAdjacentElement('afterend',msg)}
+    msg.textContent='';
+    fetch(endpoint,{method:'POST',body:fd}).then(function(r){ return r.json().catch(function(){return {}}).then(function(j){ if(!r.ok||!j.ok) throw new Error(j.error||('HTTP '+r.status)); done(); }); })
+      .catch(function(err){ console.error('Form submission failed',err); btn.disabled=false; btn.textContent=label; msg.textContent='Sorry, your message could not be sent ('+err.message+'). Please call (07) 5406 0586.'; });
   }else{
     console.log('Form submission (no endpoint configured yet): '+JSON.stringify(summary));
     done();
