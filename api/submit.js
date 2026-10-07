@@ -5,12 +5,15 @@
 //   SMTP2GO_API_KEY   required. API key from SMTP2GO > Settings > API Keys.
 //   FORM_TO           optional. Comma-separated recipients. Default: rowayne@gyaclients.com, va@generateyouraudience.com
 //   FORM_FROM         optional. Sender. Must be on a domain verified in SMTP2GO.
-//                     Default: noreply@sunshinecoastofis.com.au
+//                     Default (temporary): noreply@dentalspecialists.com.au
 //
 // Forms post here with fetch(FormData). Files arrive as attachments on the email.
 
 const DEFAULT_TO = 'rowayne@gyaclients.com, va@generateyouraudience.com';
-const DEFAULT_FROM = 'Sunshine Coast OFIS Website <noreply@sunshinecoastofis.com.au>';
+// TEMPORARY: sending from a domain already verified in the SMTP2GO account, for testing.
+// Once sunshinecoastofis.com.au is verified in SMTP2GO, change this back to
+// 'Sunshine Coast OFIS Website <noreply@sunshinecoastofis.com.au>' (or set FORM_FROM in Vercel).
+const DEFAULT_FROM = 'Sunshine Coast OFIS Website <noreply@dentalspecialists.com.au>';
 const MAX_BODY = 4 * 1024 * 1024; // Vercel's request limit is 4.5 MB
 
 const FORMS = {
