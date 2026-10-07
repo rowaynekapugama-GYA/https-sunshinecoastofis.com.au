@@ -3,13 +3,13 @@
 //
 // Environment variables (Vercel > Project > Settings > Environment Variables):
 //   SMTP2GO_API_KEY   required. API key from SMTP2GO > Settings > API Keys.
-//   FORM_TO           optional. Comma-separated recipients. Default: rowayne@gyaclients.com
+//   FORM_TO           optional. Comma-separated recipients. Default: rowayne@gyaclients.com, va@generateyouraudience.com
 //   FORM_FROM         optional. Sender. Must be on a domain verified in SMTP2GO.
 //                     Default: noreply@sunshinecoastofis.com.au
 //
 // Forms post here with fetch(FormData). Files arrive as attachments on the email.
 
-const DEFAULT_TO = 'rowayne@gyaclients.com';
+const DEFAULT_TO = 'rowayne@gyaclients.com, va@generateyouraudience.com';
 const DEFAULT_FROM = 'Sunshine Coast OFIS Website <noreply@sunshinecoastofis.com.au>';
 const MAX_BODY = 4 * 1024 * 1024; // Vercel's request limit is 4.5 MB
 
@@ -46,6 +46,7 @@ const FORMS = {
 };
 
 module.exports = async (req, res) => {
+  if (req.method === 'GET') return res.status(200).json(await status());
   if (req.method !== 'POST') return res.status(405).json({ ok: false, error: 'POST only' });
   if (!process.env.SMTP2GO_API_KEY) return res.status(500).json({ ok: false, error: 'SMTP2GO_API_KEY is not set' });
 
@@ -79,13 +80,51 @@ module.exports = async (req, res) => {
   });
   const out = await r.json().catch(() => ({}));
   if (!r.ok || (out.data && out.data.failed > 0) || (out.data && out.data.error)) {
-    console.error('SMTP2GO error', out);
-    return res.status(502).json({ ok: false, error: 'Email could not be sent' });
+    console.error('SMTP2GO error', r.status, JSON.stringify(out));
+    const d = out.data || {};
+    const why = d.error || (d.failures && d.failures.join('; ')) || ('SMTP2GO HTTP ' + r.status);
+    return res.status(502).json({ ok: false, error: 'Email could not be sent: ' + why + (d.error_code ? ' [' + d.error_code + ']' : '') });
   }
+  console.log('Sent', fields.form, 'to', to.join(', '), 'id', out.data && out.data.email_id);
   return res.status(200).json({ ok: true });
 };
 
 module.exports.config = { api: { bodyParser: false } };
+
+// ---------- status check: GET /api/submit ----------
+// Reports config and whether SMTP2GO accepts the key and the sender domain. Sends nothing.
+async function status() {
+  const key = process.env.SMTP2GO_API_KEY || '';
+  const from = process.env.FORM_FROM || DEFAULT_FROM;
+  const fromDomain = (from.match(/@([^>\s]+)/) || [])[1] || '';
+  const to = (process.env.FORM_TO || DEFAULT_TO).split(',').map((x) => x.trim()).filter(Boolean);
+  const out = {
+    ok: true,
+    api_key_set: !!key,
+    api_key_hint: key ? key.slice(0, 4) + '...' + key.slice(-3) : null,
+    form_to_override: !!process.env.FORM_TO,
+    recipients: to.map((e) => e.replace(/^(.).*?(@.*)$/, '$1***$2')),
+    sender: from,
+  };
+  if (!key) return out;
+  try {
+    const r = await fetch('https://api.smtp2go.com/v3/domain/view', {
+      method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ api_key: key }),
+    });
+    const j = await r.json().catch(() => ({}));
+    out.smtp2go_key_accepted = r.ok;
+    if (!r.ok) { out.smtp2go_message = (j.data && (j.data.error || j.data.error_code)) || ('HTTP ' + r.status); return out; }
+    const list = (j.data && (j.data.domains || j.data)) || [];
+    out.sender_domains = (Array.isArray(list) ? list : []).map((d) => {
+      const dom = d.domain || d;
+      const name = (dom && (dom.fulldomain || dom.domain || dom.name)) || '';
+      const v = {}; for (const k of Object.keys(dom || {})) if (/verif/i.test(k)) v[k] = dom[k];
+      return { domain: name, ...v };
+    });
+    out.sender_domain_registered = out.sender_domains.some((d) => d.domain && fromDomain && d.domain.toLowerCase().endsWith(fromDomain.toLowerCase()));
+  } catch (e) { out.smtp2go_message = 'Could not reach SMTP2GO: ' + e.message; }
+  return out;
+}
 
 // ---------- helpers ----------
 function readBody(req) {

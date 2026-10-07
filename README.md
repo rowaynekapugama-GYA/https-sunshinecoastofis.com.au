@@ -11,7 +11,7 @@ Set these in Vercel > Project > Settings > Environment Variables, then redeploy:
 | Variable | Required | Value |
 |---|---|---|
 | `SMTP2GO_API_KEY` | yes | API key from SMTP2GO > Settings > API Keys |
-| `FORM_TO` | no | Recipients, comma separated. Default `rowayne@gyaclients.com` |
+| `FORM_TO` | no | Recipients, comma separated. Default `rowayne@gyaclients.com, va@generateyouraudience.com` |
 | `FORM_FROM` | no | Sender. Default `noreply@sunshinecoastofis.com.au` (the domain must be verified in SMTP2GO) |
 
 Until `SMTP2GO_API_KEY` is set, the form shows an error to the visitor and nothing is sent.
@@ -19,3 +19,7 @@ Until `SMTP2GO_API_KEY` is set, the form shows an error to the visitor and nothi
 Attachments are capped at about 4 MB per submission (Vercel request limit). A hidden `website` field acts as a honeypot; submissions that fill it are silently dropped.
 
 Google reCAPTCHA: add `data-recaptcha-sitekey="..."` to `<div id="referralCaptcha">` in `index.html` to swap the "I'm not a robot" tick box for the real widget.
+
+### Troubleshooting
+
+Open `/api/submit` in a browser. It sends nothing and reports whether the API key is set, whether SMTP2GO accepts it, and which sender domains are registered. If a form fails, the red message under the submit button shows SMTP2GO's own error text. Full logs are in Vercel > Project > Logs (filter `/api/submit`).
