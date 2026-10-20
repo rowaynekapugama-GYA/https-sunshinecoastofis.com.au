@@ -471,6 +471,20 @@ form.f{display:grid;gap:.9rem}
   .f .row{grid-template-columns:1fr}
   .mcta{display:flex}
   .proof b{font-size:1.6rem}
+  /* Mobile fixes (Oct 2026): stop grids widening past the screen on small phones, larger tap targets */
+  .rating,.two,.two.narrow-r{grid-template-columns:minmax(0,1fr)}
+  .rating-box .btn,.prose .btn,.side .btn{white-space:normal;text-align:center}
+  a.map,.rating-box>a:not(.btn){display:inline-block;padding:.5rem 0}
+  .burger{flex:0 0 44px}
+  .bio summary{padding:.45rem 0}
+  .crumb a{display:inline-block;padding:.45rem 0}
+  footer ul{gap:0}
+  footer ul a,footer .bottom a{display:inline-block;padding:.45rem 0}
+}
+@media (max-width:360px){
+  /* Very small phones: keep the logo readable; "Make an enquiry" stays in the sticky bottom bar */
+  .nav-cta .btn-primary{display:none}
+  .logo img{height:42px}
 }
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
 </style>
