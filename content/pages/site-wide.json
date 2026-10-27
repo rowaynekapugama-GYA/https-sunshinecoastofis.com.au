@@ -1,0 +1,412 @@
+{
+  "slug": "site-wide",
+  "route": "",
+  "pageId": "",
+  "title": "Header, menu and footer",
+  "kind": "site",
+  "seo": {},
+  "sections": [
+    {
+      "id": "topbar",
+      "template": "site/topbar",
+      "fields": {
+        "f1": {
+          "value": "Specialist oral and maxillofacial surgeons, Buderim. Consulting rooms in Buderim, surgery across five private hospitals."
+        },
+        "f2": {
+          "value": "Call <a href=\"tel:{{phoneTel}}\">{{phone}}</a>"
+        }
+      }
+    },
+    {
+      "id": "header",
+      "template": "site/header",
+      "fields": {
+        "f1": {
+          "href": "/"
+        },
+        "f2": {
+          "src": "/images/logo.png",
+          "alt": "Sunshine Coast Oral, Facial & Implant Specialists"
+        },
+        "f3": {
+          "value": "Home",
+          "href": "/"
+        },
+        "f4": {
+          "value": "Our practice",
+          "href": "/about/"
+        },
+        "f5": {
+          "value": "Services"
+        },
+        "f6": {
+          "href": "/services/wisdom-teeth-removal/"
+        },
+        "f7": {
+          "src": "/images/wisdom-teeth-hero-square.jpg",
+          "alt": ""
+        },
+        "f8": {
+          "value": "Wisdom teeth removal"
+        },
+        "f9": {
+          "value": "All four in one visit, asleep or sedated"
+        },
+        "f10": {
+          "href": "/services/dental-implants/"
+        },
+        "f11": {
+          "src": "/images/dental-implants-hero.jpg",
+          "alt": ""
+        },
+        "f12": {
+          "value": "Dental implants"
+        },
+        "f13": {
+          "value": "Single and multiple teeth, 3D planned"
+        },
+        "f14": {
+          "href": "/services/zygomatic-implants/"
+        },
+        "f15": {
+          "src": "/images/zygomatic-implants-hero-square.jpg",
+          "alt": ""
+        },
+        "f16": {
+          "value": "Zygomatic implants"
+        },
+        "f17": {
+          "value": "Fixed teeth without bone grafting"
+        },
+        "f18": {
+          "href": "/services/jaw-bone-grafting/"
+        },
+        "f19": {
+          "src": "/images/jaw-bone-grafting-hero-square.jpg",
+          "alt": ""
+        },
+        "f20": {
+          "value": "Jaw bone grafting"
+        },
+        "f21": {
+          "value": "Sinus lifts, socket and ridge grafts"
+        },
+        "f22": {
+          "href": "/services/orthognathic-corrective-jaw-surgery/"
+        },
+        "f23": {
+          "src": "/images/corrective-jaw-surgery-hero-square.jpg",
+          "alt": ""
+        },
+        "f24": {
+          "value": "Corrective jaw surgery"
+        },
+        "f25": {
+          "value": "Orthognathic surgery with your orthodontist"
+        },
+        "f26": {
+          "href": "/services/facial-trauma/"
+        },
+        "f27": {
+          "src": "/images/facial-trauma-hero-square.jpg",
+          "alt": ""
+        },
+        "f28": {
+          "value": "Facial trauma"
+        },
+        "f29": {
+          "value": "Jaw, cheekbone and orbital fractures"
+        },
+        "f30": {
+          "href": "/patient-information/#consult"
+        },
+        "f31": {
+          "src": "/images/first-consultation-hero-v2.jpg",
+          "alt": ""
+        },
+        "f32": {
+          "value": "Your first consultation"
+        },
+        "f33": {
+          "value": "What happens and what to bring"
+        },
+        "f34": {
+          "href": "/online-doctor-referral/"
+        },
+        "f35": {
+          "src": "/images/refer-a-patient-hero-square.jpg",
+          "alt": ""
+        },
+        "f36": {
+          "value": "Refer a patient"
+        },
+        "f37": {
+          "value": "Online referral for dentists and doctors"
+        },
+        "f38": {
+          "href": "/services/all-on-4-dental-implants/"
+        },
+        "f39": {
+          "src": "/images/lounge.jpg",
+          "alt": ""
+        },
+        "f40": {
+          "value": "All-on-4 full arch implants"
+        },
+        "f41": {
+          "value": "Fixed teeth in a single day. Payment plans and early release of super for eligible patients."
+        },
+        "f42": {
+          "value": "Learn more"
+        },
+        "f43": {
+          "value": "Not sure which treatment you need? Call {{phone}}"
+        },
+        "f44": {
+          "value": "View all services",
+          "href": "/services/"
+        },
+        "f45": {
+          "value": "Patients"
+        },
+        "f46": {
+          "href": "/patient-information/#consult"
+        },
+        "f47": {
+          "value": "Your first consultation"
+        },
+        "f48": {
+          "href": "/patient-information/#payment"
+        },
+        "f49": {
+          "value": "Fees and payment"
+        },
+        "f50": {
+          "href": "/patient-information/#surgery"
+        },
+        "f51": {
+          "value": "Before and after surgery"
+        },
+        "f52": {
+          "href": "/patient-information/#forms"
+        },
+        "f53": {
+          "value": "Patient forms"
+        },
+        "f54": {
+          "href": "/locations/"
+        },
+        "f55": {
+          "value": "Locations and hospitals"
+        },
+        "f56": {
+          "value": "Locations",
+          "href": "/locations/"
+        },
+        "f57": {
+          "value": "Contact",
+          "href": "/contact-us/"
+        },
+        "f58": {
+          "value": "Refer a patient",
+          "href": "/online-doctor-referral/"
+        },
+        "f59": {
+          "value": "Make an enquiry",
+          "href": "/contact-us/"
+        }
+      }
+    },
+    {
+      "id": "drawer",
+      "template": "site/drawer",
+      "fields": {
+        "f1": {
+          "src": "/images/logo.png",
+          "alt": ""
+        },
+        "f2": {
+          "value": "Home",
+          "href": "/"
+        },
+        "f3": {
+          "value": "Our practice",
+          "href": "/about/"
+        },
+        "f4": {
+          "value": "Services"
+        },
+        "f5": {
+          "value": "All services",
+          "href": "/services/"
+        },
+        "f6": {
+          "value": "Wisdom teeth removal",
+          "href": "/services/wisdom-teeth-removal/"
+        },
+        "f7": {
+          "value": "Dental implants",
+          "href": "/services/dental-implants/"
+        },
+        "f8": {
+          "value": "All-on-4 full arch implants",
+          "href": "/services/all-on-4-dental-implants/"
+        },
+        "f9": {
+          "value": "Zygomatic implants",
+          "href": "/services/zygomatic-implants/"
+        },
+        "f10": {
+          "value": "Jaw bone grafting",
+          "href": "/services/jaw-bone-grafting/"
+        },
+        "f11": {
+          "value": "Corrective jaw surgery",
+          "href": "/services/orthognathic-corrective-jaw-surgery/"
+        },
+        "f12": {
+          "value": "Facial trauma",
+          "href": "/services/facial-trauma/"
+        },
+        "f13": {
+          "value": "Patient information",
+          "href": "/patient-information/"
+        },
+        "f14": {
+          "value": "Locations",
+          "href": "/locations/"
+        },
+        "f15": {
+          "value": "Refer a patient",
+          "href": "/online-doctor-referral/"
+        },
+        "f16": {
+          "value": "Contact",
+          "href": "/contact-us/"
+        },
+        "f17": {
+          "value": "Call {{phone}}"
+        },
+        "f18": {
+          "value": "Make an enquiry",
+          "href": "/contact-us/"
+        }
+      }
+    },
+    {
+      "id": "footer",
+      "template": "site/footer",
+      "fields": {
+        "f1": {
+          "src": "/images/logo.png",
+          "alt": "Sunshine Coast Oral, Facial & Implant Specialists"
+        },
+        "f2": {
+          "value": "Specialist oral and maxillofacial surgeons serving the Sunshine Coast, Gympie, Hervey Bay and Queensland since 2018. Founded by Dr Trent Lincoln and co-owned with Dr Andrew Higgins since 2020."
+        },
+        "f3": {
+          "value": "Suite 5, Nucleus Medical Suites"
+        },
+        "f4": {
+          "value": "23 Elsa Wilson Drive, Buderim QLD 4556"
+        },
+        "f5": {
+          "value": "Get directions",
+          "href": "https://www.google.com/maps/place/Sunshine+Coast+Oral,+Facial+%26+Implant+Specialists/@-26.6838766,153.0930069,17z/data=!3m1!4b1!4m6!3m5!1s0x6b93771d577bd3e7:0x1a52ca83026f674f!8m2!3d-26.6838766!4d153.0930069!16s%2Fg%2F11f64f2h4n?hl=en&amp;entry=ttu&amp;g_ep=EgoyMDI2MDkyOC4wIKXMDSoASAFQAw%3D%3D"
+        },
+        "f6": {
+          "href": "https://www.facebook.com/sunshinecoastoms"
+        },
+        "f7": {
+          "href": "https://www.instagram.com/scofispecialists/"
+        },
+        "f8": {
+          "value": "Services"
+        },
+        "f9": {
+          "value": "<a href=\"/services/wisdom-teeth-removal/\">Wisdom teeth removal</a>"
+        },
+        "f10": {
+          "value": "<a href=\"/services/dental-implants/\">Dental implants</a>"
+        },
+        "f11": {
+          "value": "<a href=\"/services/all-on-4-dental-implants/\">All-on-4 full arch implants</a>"
+        },
+        "f12": {
+          "value": "<a href=\"/services/zygomatic-implants/\">Zygomatic implants</a>"
+        },
+        "f13": {
+          "value": "<a href=\"/services/jaw-bone-grafting/\">Jaw bone grafting</a>"
+        },
+        "f14": {
+          "value": "<a href=\"/services/orthognathic-corrective-jaw-surgery/\">Corrective jaw surgery</a>"
+        },
+        "f15": {
+          "value": "<a href=\"/services/facial-trauma/\">Facial trauma</a>"
+        },
+        "f16": {
+          "value": "Patients"
+        },
+        "f17": {
+          "value": "<a href=\"/about/\">Our practice</a>"
+        },
+        "f18": {
+          "value": "<a href=\"/patient-information/#consult\">Your first consultation</a>"
+        },
+        "f19": {
+          "value": "<a href=\"/patient-information/#payment\">Fees and payment</a>"
+        },
+        "f20": {
+          "value": "<a href=\"/patient-information/#surgery\">Before and after surgery</a>"
+        },
+        "f21": {
+          "value": "<a href=\"/patient-information/#forms\">Patient forms</a>"
+        },
+        "f22": {
+          "value": "<a href=\"/contact-us/\">Contact us</a>"
+        },
+        "f23": {
+          "value": "Referrers and locations"
+        },
+        "f24": {
+          "value": "<a href=\"/online-doctor-referral/\">Online doctor referral</a>"
+        },
+        "f25": {
+          "value": "<a href=\"/locations/\">Buderim main practice</a>"
+        },
+        "f26": {
+          "value": "<a href=\"/locations/\">Hervey Bay, St Stephen's Private</a>"
+        },
+        "f27": {
+          "value": "<a href=\"/locations/\">Nambour Selangor Private</a>"
+        },
+        "f28": {
+          "value": "<a href=\"/locations/\">Maroochydore hospitals</a>"
+        },
+        "f29": {
+          "value": "Any surgical or invasive procedure carries risks. The information on this website is general in nature and is not a substitute for a consultation with a registered health practitioner. Individual results vary. Before proceeding, you should seek a second opinion from an appropriately qualified health practitioner."
+        },
+        "f30": {
+          "value": "&copy; {{year}} Sunshine Coast Oral, Facial & Implant Specialists. Oral and maxillofacial surgeons, Buderim, Sunshine Coast, Queensland."
+        },
+        "f31": {
+          "value": "<a href=\"/privacy-policy/\">Privacy policy</a> &nbsp;|&nbsp; <a href=\"/disclaimer/\">Disclaimer</a>"
+        }
+      }
+    },
+    {
+      "id": "mcta",
+      "template": "site/mcta",
+      "fields": {
+        "f1": {
+          "value": "Call now"
+        },
+        "f2": {
+          "value": "Make an enquiry",
+          "href": "/contact-us/"
+        }
+      }
+    }
+  ]
+}

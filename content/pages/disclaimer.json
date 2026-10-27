@@ -1,0 +1,80 @@
+{
+  "slug": "disclaimer",
+  "route": "/disclaimer/",
+  "pageId": "disclaimer",
+  "title": "Disclaimer",
+  "kind": "page",
+  "seo": {
+    "metaTitle": "Disclaimer | Sunshine Coast Oral, Facial & Implant Specialists",
+    "metaDescription": "About the general information on the Sunshine Coast Oral, Facial & Implant Specialists website.",
+    "ogTitle": "Disclaimer | Sunshine Coast Oral, Facial, and Implant Specialists",
+    "ogImage": "/images/hall.jpg"
+  },
+  "sections": [
+    {
+      "id": "s1",
+      "template": "disclaimer/1",
+      "fields": {
+        "f1": {
+          "src": "/images/hall.jpg",
+          "alt": ""
+        },
+        "f2": {
+          "value": "<a href=\"/\">Home</a> / Disclaimer"
+        },
+        "f3": {
+          "value": "Disclaimer"
+        },
+        "f4": {
+          "value": "About the information on this website."
+        }
+      }
+    },
+    {
+      "id": "s2",
+      "template": "disclaimer/2",
+      "fields": {
+        "f1": {
+          "value": "General information only"
+        },
+        "f2": {
+          "value": "The information on this website is general in nature and is not a substitute for a consultation with a registered health practitioner. It does not take your individual circumstances into account."
+        },
+        "f3": {
+          "value": "Any surgical or invasive procedure carries risks. Individual results vary. Before proceeding, you should seek a second opinion from an appropriately qualified health practitioner."
+        },
+        "f4": {
+          "value": "Accuracy"
+        },
+        "f5": {
+          "value": "We take care to keep this website accurate and up to date, but information can change. Fees, rebates and availability are confirmed at your consultation."
+        },
+        "f6": {
+          "value": "Links to other websites"
+        },
+        "f7": {
+          "value": "This website links to other websites, such as hospitals and Google Maps. We are not responsible for their content."
+        },
+        "f8": {
+          "value": "Emergencies"
+        },
+        "f9": {
+          "value": "If you have a medical emergency, call 000 or go to your nearest emergency department. For urgent facial trauma or infection, call us on {{phone}}."
+        },
+        "f10": {
+          "value": "Have a question about your treatment?"
+        },
+        "f11": {
+          "value": "The best answers come from a consultation with one of our surgeons."
+        },
+        "f12": {
+          "value": "Call {{phone}}"
+        },
+        "f13": {
+          "value": "Make an enquiry",
+          "href": "/contact-us/"
+        }
+      }
+    }
+  ]
+}

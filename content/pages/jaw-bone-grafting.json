@@ -1,0 +1,182 @@
+{
+  "slug": "jaw-bone-grafting",
+  "route": "/services/jaw-bone-grafting/",
+  "pageId": "services--jaw-bone-grafting",
+  "title": "Jaw bone grafting",
+  "kind": "page",
+  "seo": {
+    "metaTitle": "Jaw Bone Grafting Sunshine Coast | SCOFIS",
+    "metaDescription": "As Specialist Oral & Maxillofacial Surgeons, our surgeons have received specialist training in jaw bone grafting techniques used prior to dental implant placement.",
+    "ogTitle": "Jaw Bone Grafting | SCOFIS",
+    "ogImage": "/images/jaw-bone-grafting-hero-square.jpg"
+  },
+  "sections": [
+    {
+      "id": "s1",
+      "template": "jaw-bone-grafting/1",
+      "fields": {
+        "f1": {
+          "src": "/images/jaw-bone-grafting-hero-square.jpg",
+          "alt": ""
+        },
+        "f2": {
+          "value": "<a href=\"/\">Home</a> / <a href=\"/services/\">Services</a>"
+        },
+        "f3": {
+          "value": "Rebuilding bone so implants have something to hold"
+        },
+        "f4": {
+          "value": "After a tooth is lost the surrounding bone shrinks. Bone grafting restores the height and width of the jaw so implants can be placed in the right position and last. Performed by specialist surgeons in our rooms or in hospital."
+        },
+        "f5": {
+          "value": "Make an enquiry",
+          "href": "/contact-us/"
+        }
+      }
+    },
+    {
+      "id": "s2",
+      "template": "jaw-bone-grafting/2",
+      "fields": {
+        "f1": {
+          "value": "Types of grafting we perform"
+        },
+        "f2": {
+          "value": "Socket preservation"
+        },
+        "f3": {
+          "value": "A graft placed into the socket at the time of extraction to prevent the bone collapsing, keeping the site ready for an implant a few months later."
+        },
+        "f4": {
+          "value": "Sinus lift"
+        },
+        "f5": {
+          "value": "In the upper back jaw the sinus sits close to the teeth. A sinus lift gently raises the sinus membrane and adds bone beneath it so implants can be placed."
+        },
+        "f6": {
+          "value": "Ridge augmentation"
+        },
+        "f7": {
+          "value": "Particulate or block grafts, sometimes with membranes or titanium mesh, to widen or heighten a thin ridge before implant placement."
+        },
+        "f8": {
+          "value": "Soft tissue grafting"
+        },
+        "f9": {
+          "value": "Gum grafting around implants and teeth to improve health, stability and appearance."
+        },
+        "f10": {
+          "value": "Graft materials"
+        },
+        "f11": {
+          "value": "Depending on the site and the volume required, grafts may use your own bone (taken from elsewhere in the jaw), processed donor bone, bovine-derived bone or synthetic materials, often combined with growth factors from your own blood. Your surgeon will explain the options and recommend the material best suited to your case."
+        },
+        "f12": {
+          "value": "Do I actually need a graft?"
+        },
+        "f13": {
+          "value": "Not always. Modern implant techniques, including tilted implants for full arch cases and remote anchorage zygomatic implants, avoid grafting for many patients. The consultation and 3D scan determine whether grafting is genuinely necessary, and if it is, whether it can be done at the same time as implant placement to shorten your treatment."
+        },
+        "f14": {
+          "value": "Book a consultation"
+        },
+        "f15": {
+          "value": "Consulting in Buderim. You're welcome to see us without a referral, and a referral from your general dentist or GP may make you eligible for a Medicare rebate. You receive a written, itemised treatment plan before deciding anything."
+        },
+        "f16": {
+          "value": "Make an enquiry",
+          "href": "/contact-us/"
+        },
+        "f17": {
+          "value": "Call {{phone}}"
+        },
+        "f18": {
+          "value": "Dentists and doctors:"
+        },
+        "f19": {
+          "value": "refer a patient online",
+          "href": "/online-doctor-referral/"
+        },
+        "f20": {
+          "src": "/images/surgery.jpg",
+          "alt": ""
+        }
+      }
+    },
+    {
+      "id": "s3",
+      "template": "jaw-bone-grafting/3",
+      "fields": {
+        "f1": {
+          "value": "What happens, and when"
+        },
+        "f2": {
+          "value": "Your treatment, step by step"
+        },
+        "f3": {
+          "value": "Consultation and 3D scan"
+        },
+        "f4": {
+          "value": "A CBCT scan measures bone height, width and density at the implant site and identifies the sinus and nerves."
+        },
+        "f5": {
+          "value": "Graft planning"
+        },
+        "f6": {
+          "value": "Your surgeon recommends the graft type and material, whether it can be combined with implant placement, and the anaesthetic setting."
+        },
+        "f7": {
+          "value": "Grafting procedure"
+        },
+        "f8": {
+          "value": "Performed under local anaesthetic, IV sedation or general anaesthetic depending on the extent. Most grafts are day procedures."
+        },
+        "f9": {
+          "value": "Healing and implants"
+        },
+        "f10": {
+          "value": "Grafts typically mature over four to nine months, after which implants are placed, unless placed at the same time."
+        }
+      }
+    },
+    {
+      "id": "s4",
+      "template": "jaw-bone-grafting/4",
+      "fields": {
+        "f1": {
+          "value": "Common questions"
+        },
+        "f2": {
+          "value": "What patients ask us"
+        },
+        "f3": {
+          "value": "Is bone grafting painful?"
+        },
+        "f4": {
+          "value": "Grafting is done under local anaesthetic, sedation or general anaesthetic. Afterwards, swelling and discomfort are similar to a tooth extraction and settle within a week or so."
+        },
+        "f5": {
+          "value": "How long before I can have implants?"
+        },
+        "f6": {
+          "value": "Small grafts and socket preservation usually heal in three to four months. Larger sinus lifts and block grafts may take six to nine months."
+        },
+        "f7": {
+          "value": "What are the risks?"
+        },
+        "f8": {
+          "value": "Infection, graft loss and, for sinus lifts, sinus membrane perforation are the main risks. Both are uncommon in the hands of specialist surgeons and are discussed in detail before you consent."
+        },
+        "f9": {
+          "value": "Can grafting be avoided?"
+        },
+        "f10": {
+          "value": "Often, yes. Tilted implants, short implants and zygomatic implants are alternatives your surgeon will consider first."
+        },
+        "f11": {
+          "value": "Any surgical or invasive procedure carries risks. Before proceeding, you should seek a second opinion from an appropriately qualified health practitioner."
+        }
+      }
+    }
+  ]
+}

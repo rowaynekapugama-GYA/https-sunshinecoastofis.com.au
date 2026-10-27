@@ -1,0 +1,182 @@
+{
+  "slug": "facial-trauma",
+  "route": "/services/facial-trauma/",
+  "pageId": "services--facial-trauma",
+  "title": "Facial trauma",
+  "kind": "page",
+  "seo": {
+    "metaTitle": "Facial Trauma Sunshine Coast | Facial Injuries | SCOFIS",
+    "metaDescription": "Facial traumatic injuries can involve injuries to the soft tissues of the face and mouth or the bones of the face.",
+    "ogTitle": "Facial Trauma | Sunshine Coast Oral, Facial & Implant Specialists",
+    "ogImage": "/images/facial-trauma-hero-square.jpg"
+  },
+  "sections": [
+    {
+      "id": "s1",
+      "template": "facial-trauma/1",
+      "fields": {
+        "f1": {
+          "src": "/images/facial-trauma-hero-square.jpg",
+          "alt": ""
+        },
+        "f2": {
+          "value": "<a href=\"/\">Home</a> / <a href=\"/services/\">Services</a>"
+        },
+        "f3": {
+          "value": "Repair and reconstruction of facial injuries"
+        },
+        "f4": {
+          "value": "Fractured jaws, cheekbones, eye sockets and noses, knocked out teeth and facial lacerations from sport, falls, accidents and assaults. Oral and maxillofacial surgeons are the specialists trained to restore both function and appearance after facial trauma."
+        },
+        "f5": {
+          "value": "Make an enquiry",
+          "href": "/contact-us/"
+        }
+      }
+    },
+    {
+      "id": "s2",
+      "template": "facial-trauma/2",
+      "fields": {
+        "f1": {
+          "value": "Injuries we treat"
+        },
+        "f2": {
+          "value": "Fractures of the lower jaw (mandible) and upper jaw (maxilla)"
+        },
+        "f3": {
+          "value": "Cheekbone (zygomatic) and eye socket (orbital) fractures"
+        },
+        "f4": {
+          "value": "Nasal fractures and injuries to the nose and sinuses"
+        },
+        "f5": {
+          "value": "Dentoalveolar trauma: knocked out, displaced or broken teeth and the bone around them"
+        },
+        "f6": {
+          "value": "Facial lacerations and soft tissue injuries"
+        },
+        "f7": {
+          "value": "Delayed or previously treated injuries that have not healed as expected"
+        },
+        "f8": {
+          "value": "Why a maxillofacial surgeon"
+        },
+        "f9": {
+          "value": "The face combines bone, teeth, nerves, eyes, airways and skin in a small space. Restoring the bite, protecting the nerves, preserving vision and achieving a good cosmetic result all at once is the core training of oral and maxillofacial surgery. Dr Lincoln discovered the specialty treating complex facial trauma at the Princess Alexandra Hospital and has published on paediatric orbital fractures and return-to-play protocols after facial injury. Dr Higgins trained in facial trauma across Brisbane's major hospitals and Royal Darwin."
+        },
+        "f10": {
+          "value": "Sports injuries"
+        },
+        "f11": {
+          "value": "Football, rugby, surfing, cycling and other sports account for many of the facial fractures we see on the Coast. Timely assessment matters: fractures are best repaired within the first one to two weeks, and knocked out teeth have the best chance when re-implanted quickly. We provide clear return-to-play advice so you can get back to sport safely."
+        },
+        "f12": {
+          "value": "Treatment"
+        },
+        "f13": {
+          "value": "Minor injuries can be managed in our Buderim rooms. Fractures requiring surgery are repaired under general anaesthetic in a private hospital, usually through incisions inside the mouth or hidden in natural skin creases, with small titanium plates holding the bone while it heals. Most patients are home within a day or two."
+        },
+        "f14": {
+          "value": "Book a consultation"
+        },
+        "f15": {
+          "value": "Consulting in Buderim. You're welcome to see us without a referral, and a referral from your general dentist or GP may make you eligible for a Medicare rebate. You receive a written, itemised treatment plan before deciding anything."
+        },
+        "f16": {
+          "value": "Make an enquiry",
+          "href": "/contact-us/"
+        },
+        "f17": {
+          "value": "Call {{phone}}"
+        },
+        "f18": {
+          "value": "Dentists and doctors:"
+        },
+        "f19": {
+          "value": "refer a patient online",
+          "href": "/online-doctor-referral/"
+        },
+        "f20": {
+          "src": "/images/theatre.jpg",
+          "alt": ""
+        }
+      }
+    },
+    {
+      "id": "s3",
+      "template": "facial-trauma/3",
+      "fields": {
+        "f1": {
+          "value": "What happens, and when"
+        },
+        "f2": {
+          "value": "Your treatment, step by step"
+        },
+        "f3": {
+          "value": "Urgent assessment"
+        },
+        "f4": {
+          "value": "Call us on the day. We assess the injury clinically and with a CBCT scan, and coordinate with your GP, dentist or the emergency department."
+        },
+        "f5": {
+          "value": "Treatment plan"
+        },
+        "f6": {
+          "value": "Your surgeon explains whether the injury can be managed conservatively or needs surgical repair, and the timing."
+        },
+        "f7": {
+          "value": "Repair in hospital"
+        },
+        "f8": {
+          "value": "Fractures are reduced and fixed with small plates and screws under general anaesthetic, usually as a short hospital stay."
+        },
+        "f9": {
+          "value": "Recovery and return to activity"
+        },
+        "f10": {
+          "value": "A soft diet while bone heals, regular reviews, and clear guidance on when it is safe to return to work and sport."
+        }
+      }
+    },
+    {
+      "id": "s4",
+      "template": "facial-trauma/4",
+      "fields": {
+        "f1": {
+          "value": "Common questions"
+        },
+        "f2": {
+          "value": "What patients ask us"
+        },
+        "f3": {
+          "value": "Do I need to go to the emergency department first?"
+        },
+        "f4": {
+          "value": "If you have significant bleeding, difficulty breathing, loss of consciousness, vision change or other injuries, go to the emergency department. For a suspected jaw or facial fracture without those signs, call us directly and we will arrange urgent assessment."
+        },
+        "f5": {
+          "value": "How quickly does a fracture need to be repaired?"
+        },
+        "f6": {
+          "value": "Ideally within one to two weeks of injury, before the bone starts to heal in the wrong position. Delayed injuries can still be treated but are more complex."
+        },
+        "f7": {
+          "value": "Will there be visible scars?"
+        },
+        "f8": {
+          "value": "Wherever possible incisions are made inside the mouth or in natural skin creases, so scarring is minimal."
+        },
+        "f9": {
+          "value": "Is trauma surgery covered?"
+        },
+        "f10": {
+          "value": "Private hospital cover usually applies to hospital and anaesthetic costs and Medicare items apply to fracture repair. If the injury is work or motor vehicle related, WorkCover or CTP may cover treatment. Our accounts team will help you navigate it."
+        },
+        "f11": {
+          "value": "Any surgical or invasive procedure carries risks. Before proceeding, you should seek a second opinion from an appropriately qualified health practitioner."
+        }
+      }
+    }
+  ]
+}

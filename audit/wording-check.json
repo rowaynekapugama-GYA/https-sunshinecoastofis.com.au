@@ -1,0 +1,250 @@
+{
+ "checked": [
+  {
+   "path": "/about/",
+   "status": 200
+  },
+  {
+   "path": "/services/all-on-4-dental-implants/",
+   "status": 200
+  },
+  {
+   "path": "/blog/",
+   "status": 200
+  },
+  {
+   "path": "/contact-us/",
+   "status": 200
+  },
+  {
+   "path": "/services/dental-implants/",
+   "status": 200
+  },
+  {
+   "path": "/disclaimer/",
+   "status": 200
+  },
+  {
+   "path": "/services/facial-trauma/",
+   "status": 200
+  },
+  {
+   "path": "/feedback/",
+   "status": 200
+  },
+  {
+   "path": "/",
+   "status": 200
+  },
+  {
+   "path": "/services/jaw-bone-grafting/",
+   "status": 200
+  },
+  {
+   "path": "/locations/",
+   "status": 200
+  },
+  {
+   "path": "/online-doctor-referral/",
+   "status": 200
+  },
+  {
+   "path": "/services/orthognathic-corrective-jaw-surgery/",
+   "status": 200
+  },
+  {
+   "path": "/patient-information/patient-information-form/",
+   "status": 200
+  },
+  {
+   "path": "/patient-information/",
+   "status": 200
+  },
+  {
+   "path": "/privacy-policy/",
+   "status": 200
+  },
+  {
+   "path": "/services/",
+   "status": 200
+  },
+  {
+   "path": "/services/wisdom-teeth-removal/",
+   "status": 200
+  },
+  {
+   "path": "/services/zygomatic-implants/",
+   "status": 200
+  },
+  {
+   "path": "/teeth-in-a-day/",
+   "status": 200
+  },
+  {
+   "path": "/wisdom-teeth-removal-before-age-25/",
+   "status": 200
+  },
+  {
+   "path": "/this-address-does-not-exist/",
+   "status": 404
+  }
+ ],
+ "fail": [],
+ "flag": [
+  {
+   "path": "/about/",
+   "word": "expert",
+   "context": "A contemporarily trained oral and maxillofacial surgeon committed to expert care delivered in a compassionate, patient-focused way. Full arch imp"
+  },
+  {
+   "path": "/services/all-on-4-dental-implants/",
+   "word": "leading",
+   "context": ", nasal and pterygoid implants in Texas, and has trained further with leading surgeons from France, Brazil and Spain. Dr Higgins has a particular i"
+  },
+  {
+   "path": "/blog/",
+   "word": "expert",
+   "context": "cial & Implant Specialists (SCOFIS) blog is your trusted resource for expert information and compassionate care en_AU website Blog | Sunshine Coas"
+  },
+  {
+   "path": "/blog/",
+   "word": "expert",
+   "context": "cial & Implant Specialists (SCOFIS) blog is your trusted resource for expert information and compassionate care https://sunshinecoastofis.com.au/b"
+  },
+  {
+   "path": "/disclaimer/",
+   "word": "best",
+   "context": "call us on (07) 5406 0586. Have a question about your treatment? The best answers come from a consultation with one of our surgeons. Call (07)"
+  },
+  {
+   "path": "/services/facial-trauma/",
+   "word": "best",
+   "context": "actures we see on the Coast. Timely assessment matters: fractures are best repaired within the first one to two weeks, and knocked out teeth hav"
+  },
+  {
+   "path": "/services/facial-trauma/",
+   "word": "best",
+   "context": "red within the first one to two weeks, and knocked out teeth have the best chance when re-implanted quickly. We provide clear return-to-play adv"
+  },
+  {
+   "path": "/",
+   "word": "best",
+   "context": "all our referral line What to include Patient name, date of birth and best contact number Reason for referral and any relevant history Recent OP"
+  },
+  {
+   "path": "/online-doctor-referral/",
+   "word": "best",
+   "context": "t Details Patient Name * First name Last Name Date of Birth * Patient Best Contact # * E-mail Address Reason For Referral * Implant Brand Prefer"
+  },
+  {
+   "path": "/services/orthognathic-corrective-jaw-surgery/",
+   "word": "permanent",
+   "context": "ned and held with small titanium plates and screws that stay in place permanently. Most patients stay in hospital for one to two nights and return to"
+  },
+  {
+   "path": "/services/orthognathic-corrective-jaw-surgery/",
+   "word": "perfect",
+   "context": "l weeks, regular reviews, then a short final phase of orthodontics to perfect the bite. Common questions What patients ask us Does jaw surgery leav"
+  },
+  {
+   "path": "/patient-information/patient-information-form/",
+   "word": "best",
+   "context": "ancelled. I confirm the information I have provided is correct to the best of my knowledge. I have read and accept the fee policy * Your Full Na"
+  },
+  {
+   "path": "/patient-information/",
+   "word": "top",
+   "context": "sip of water unless your surgeon or anaesthetist has advised you to stop them Arrange for a responsible adult to drive you home and stay with y"
+  },
+  {
+   "path": "/services/wisdom-teeth-removal/",
+   "word": "permanent",
+   "context": "volve the nerves near the roots, which can cause temporary and rarely permanent numbness of the lip, chin or tongue. Your surgeon assesses your nerve"
+  },
+  {
+   "path": "/services/zygomatic-implants/",
+   "word": "leading",
+   "context": "l and pterygoid implants in Texas in 2023, and has since trained with leading surgeons from France, Brazil and Spain. Patients are referred to the"
+  },
+  {
+   "path": "/teeth-in-a-day/",
+   "word": "best",
+   "context": "single visit! Talk to our team Questions about your own treatment are best answered at a consultation with one of our specialist surgeons. Call"
+  },
+  {
+   "path": "/teeth-in-a-day/",
+   "word": "highly experienced",
+   "context": "anced oral surgery clinic. Dr Trent Lincoln and Dr Andrew Higgins are highly experienced and highly qualified Oral and Maxillofacial surgeons, who are used to"
+  },
+  {
+   "path": "/teeth-in-a-day/",
+   "word": "permanent",
+   "context": "comfortable dentures? Imagine waking up and having a brand-new set of permanent teeth in just one day. This dream can now become a reality with the i"
+  },
+  {
+   "path": "/teeth-in-a-day/",
+   "word": "permanent",
+   "context": "ental Implant? A dental implant is a titanium post that is surgically permanently implanted into the jaw bone to serve as a replacement for a missing"
+  },
+  {
+   "path": "/teeth-in-a-day/",
+   "word": "permanent",
+   "context": "r individuals who are missing one or more teeth and are looking for a permanent solution for tooth replacement. Do You have Adequate Bone Density? If"
+  },
+  {
+   "path": "/teeth-in-a-day/",
+   "word": "permanent",
+   "context": "volutionised the field of dentistry, offering a fast, convenient, and permanent solution for tooth replacement. Whether you’re missing one tooth or a"
+  },
+  {
+   "path": "/teeth-in-a-day/",
+   "word": "revolution",
+   "context": "Smile in Just One Day is Possible. The teeth in a day technology has revolutionised the field of dentistry, offering a fast, convenient, and permanen"
+  },
+  {
+   "path": "/teeth-in-a-day/",
+   "word": "cutting-edge",
+   "context": "or as “same-day dental implants” or “immediate dental implants”, is a cutting-edge dental procedure that allows patients to receive a full set of new te"
+  },
+  {
+   "path": "/teeth-in-a-day/",
+   "word": "perfect",
+   "context": "with traditional dental implant procedures, teeth in a day may be the perfect solution for you. Are You Looking for a Convenient Option? For busy i"
+  },
+  {
+   "path": "/teeth-in-a-day/",
+   "word": "royal australian college",
+   "context": "rrals from general dentists. They are both: Specialists Fellow of the Royal Australian College of Dental Surgeons (RACDS) Members of the Australian & New Zealand As"
+  },
+  {
+   "path": "/wisdom-teeth-removal-before-age-25/",
+   "word": "best",
+   "context": "nd its adjacent molar increasing the risk of tooth decay. What is the Best Age to Remove Your Wisdom Teeth? Removing the wisdom teeth, particula"
+  },
+  {
+   "path": "/wisdom-teeth-removal-before-age-25/",
+   "word": "best",
+   "context": "on@sunshinecoastofis.com.au to ask for an appointment and discuss the best course of action for your needs. Talk to our team Questions about you"
+  },
+  {
+   "path": "/wisdom-teeth-removal-before-age-25/",
+   "word": "best",
+   "context": "r your needs. Talk to our team Questions about your own treatment are best answered at a consultation with one of our specialist surgeons. Call"
+  },
+  {
+   "path": "/wisdom-teeth-removal-before-age-25/",
+   "word": "top",
+   "context": "isdom tooth, or cause by an infection. Infection: particularly at the top of the tooth when this is about to erupt. Cyst: this is a sac of fluid"
+  },
+  {
+   "path": "/wisdom-teeth-removal-before-age-25/",
+   "word": "highly experienced",
+   "context": "anced oral surgery clinic. Dr Trent Lincoln and Dr Andrew Higgins are highly experienced and highly qualified Oral and Maxillofacial surgeons, who are used to"
+  },
+  {
+   "path": "/wisdom-teeth-removal-before-age-25/",
+   "word": "royal australian college",
+   "context": "rrals from general dentists. They are both: Specialists Fellow of the Royal Australian College of Dental Surgeons (RACDS) Members of the Australian & New Zealand As"
+  }
+ ]
+}

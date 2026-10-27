@@ -1,0 +1,3707 @@
+{
+ "site/topbar": {
+  "label": "Top strip (above the menu)",
+  "fields": {
+   "f1": {
+    "type": "text",
+    "label": "Text"
+   },
+   "f2": {
+    "type": "rich",
+    "label": "Text 2"
+   }
+  },
+  "html": "<div class=\"topbar\">\n  <div class=\"wrap\">\n    <span class=\"hide-m\">{{f1}}</span>\n    <span>{{f2}}</span>\n  </div>\n</div>",
+  "before_main": true
+ },
+ "site/header": {
+  "label": "Main menu",
+  "fields": {
+   "f1": {
+    "type": "href",
+    "label": "Link address"
+   },
+   "f2": {
+    "type": "image",
+    "label": "Photo"
+   },
+   "f3": {
+    "type": "link",
+    "label": "Link"
+   },
+   "f4": {
+    "type": "link",
+    "label": "Link 2"
+   },
+   "f5": {
+    "type": "text",
+    "label": "Text"
+   },
+   "f6": {
+    "type": "href",
+    "label": "Link address 2"
+   },
+   "f7": {
+    "type": "image",
+    "label": "Photo 2"
+   },
+   "f8": {
+    "type": "text",
+    "label": "Bold text"
+   },
+   "f9": {
+    "type": "text",
+    "label": "Text 2"
+   },
+   "f10": {
+    "type": "href",
+    "label": "Link address 3"
+   },
+   "f11": {
+    "type": "image",
+    "label": "Photo 3"
+   },
+   "f12": {
+    "type": "text",
+    "label": "Bold text 2"
+   },
+   "f13": {
+    "type": "text",
+    "label": "Text 3"
+   },
+   "f14": {
+    "type": "href",
+    "label": "Link address 4"
+   },
+   "f15": {
+    "type": "image",
+    "label": "Photo 4"
+   },
+   "f16": {
+    "type": "text",
+    "label": "Bold text 3"
+   },
+   "f17": {
+    "type": "text",
+    "label": "Text 4"
+   },
+   "f18": {
+    "type": "href",
+    "label": "Link address 5"
+   },
+   "f19": {
+    "type": "image",
+    "label": "Photo 5"
+   },
+   "f20": {
+    "type": "text",
+    "label": "Bold text 4"
+   },
+   "f21": {
+    "type": "text",
+    "label": "Text 5"
+   },
+   "f22": {
+    "type": "href",
+    "label": "Link address 6"
+   },
+   "f23": {
+    "type": "image",
+    "label": "Photo 6"
+   },
+   "f24": {
+    "type": "text",
+    "label": "Bold text 5"
+   },
+   "f25": {
+    "type": "text",
+    "label": "Text 6"
+   },
+   "f26": {
+    "type": "href",
+    "label": "Link address 7"
+   },
+   "f27": {
+    "type": "image",
+    "label": "Photo 7"
+   },
+   "f28": {
+    "type": "text",
+    "label": "Bold text 6"
+   },
+   "f29": {
+    "type": "text",
+    "label": "Text 7"
+   },
+   "f30": {
+    "type": "href",
+    "label": "Link address 8"
+   },
+   "f31": {
+    "type": "image",
+    "label": "Photo 8"
+   },
+   "f32": {
+    "type": "text",
+    "label": "Bold text 7"
+   },
+   "f33": {
+    "type": "text",
+    "label": "Text 8"
+   },
+   "f34": {
+    "type": "href",
+    "label": "Link address 9"
+   },
+   "f35": {
+    "type": "image",
+    "label": "Photo 9"
+   },
+   "f36": {
+    "type": "text",
+    "label": "Bold text 8"
+   },
+   "f37": {
+    "type": "text",
+    "label": "Text 9"
+   },
+   "f38": {
+    "type": "href",
+    "label": "Link address 10"
+   },
+   "f39": {
+    "type": "image",
+    "label": "Photo 10"
+   },
+   "f40": {
+    "type": "text",
+    "label": "Bold text 9"
+   },
+   "f41": {
+    "type": "text",
+    "label": "Text 10"
+   },
+   "f42": {
+    "type": "text",
+    "label": "Text 11"
+   },
+   "f43": {
+    "type": "text",
+    "label": "Text 12"
+   },
+   "f44": {
+    "type": "link",
+    "label": "Link 3"
+   },
+   "f45": {
+    "type": "text",
+    "label": "Text 13"
+   },
+   "f46": {
+    "type": "href",
+    "label": "Link address 11"
+   },
+   "f47": {
+    "type": "text",
+    "label": "Text 14"
+   },
+   "f48": {
+    "type": "href",
+    "label": "Link address 12"
+   },
+   "f49": {
+    "type": "text",
+    "label": "Text 15"
+   },
+   "f50": {
+    "type": "href",
+    "label": "Link address 13"
+   },
+   "f51": {
+    "type": "text",
+    "label": "Text 16"
+   },
+   "f52": {
+    "type": "href",
+    "label": "Link address 14"
+   },
+   "f53": {
+    "type": "text",
+    "label": "Text 17"
+   },
+   "f54": {
+    "type": "href",
+    "label": "Link address 15"
+   },
+   "f55": {
+    "type": "text",
+    "label": "Text 18"
+   },
+   "f56": {
+    "type": "link",
+    "label": "Link 4"
+   },
+   "f57": {
+    "type": "link",
+    "label": "Link 5"
+   },
+   "f58": {
+    "type": "link",
+    "label": "Button"
+   },
+   "f59": {
+    "type": "link",
+    "label": "Button 2"
+   }
+  },
+  "html": "<header class=\"nav\">\n  <div class=\"wrap\">\n    <a class=\"logo\" href=\"{{f1.href}}\" aria-label=\"Sunshine Coast Oral, Facial & Implant Specialists home\"><img src=\"{{f2.src}}\" alt=\"{{f2.alt}}\"></a>\n    <nav class=\"menu\" aria-label=\"Main\">\n      <a href=\"{{f3.href}}\" data-nav=\"home\">{{f3}}</a>\n      <a href=\"{{f4.href}}\" data-nav=\"our-practice\">{{f4}}</a>\n      <details class=\"dd dd-mega\">\n        <summary>{{f5}} <svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"><path d=\"m6 9 6 6 6-6\"/></svg></summary>\n        <div class=\"panel mega\">\n          <div class=\"mcol\">\n            <a class=\"mi\" href=\"{{f6.href}}\"><img src=\"{{f7.src}}\" alt=\"{{f7.alt}}\"><div><b>{{f8}}</b><span>{{f9}}</span></div></a>\n            <a class=\"mi\" href=\"{{f10.href}}\"><img src=\"{{f11.src}}\" alt=\"{{f11.alt}}\"><div><b>{{f12}}</b><span>{{f13}}</span></div></a>\n            <a class=\"mi\" href=\"{{f14.href}}\"><img src=\"{{f15.src}}\" alt=\"{{f15.alt}}\"><div><b>{{f16}}</b><span>{{f17}}</span></div></a>\n            <a class=\"mi\" href=\"{{f18.href}}\"><img src=\"{{f19.src}}\" alt=\"{{f19.alt}}\"><div><b>{{f20}}</b><span>{{f21}}</span></div></a>\n          </div>\n          <div class=\"mcol\">\n            <a class=\"mi\" href=\"{{f22.href}}\"><img src=\"{{f23.src}}\" alt=\"{{f23.alt}}\"><div><b>{{f24}}</b><span>{{f25}}</span></div></a>\n            <a class=\"mi\" href=\"{{f26.href}}\"><img src=\"{{f27.src}}\" alt=\"{{f27.alt}}\"><div><b>{{f28}}</b><span>{{f29}}</span></div></a>\n            <a class=\"mi\" href=\"{{f30.href}}\"><img src=\"{{f31.src}}\" alt=\"{{f31.alt}}\"><div><b>{{f32}}</b><span>{{f33}}</span></div></a>\n            <a class=\"mi\" href=\"{{f34.href}}\"><img src=\"{{f35.src}}\" alt=\"{{f35.alt}}\"><div><b>{{f36}}</b><span>{{f37}}</span></div></a>\n          </div>\n          <a class=\"mfeat\" href=\"{{f38.href}}\"><img src=\"{{f39.src}}\" alt=\"{{f39.alt}}\"><b>{{f40}}</b><span>{{f41}}</span><span class=\"btn btn-primary\">{{f42}}</span></a>\n          <div class=\"mall\"><span>{{f43}}</span><a href=\"{{f44.href}}\">{{f44}}</a></div>\n        </div>\n      </details>\n      <details class=\"dd\">\n        <summary>{{f45}} <svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"><path d=\"m6 9 6 6 6-6\"/></svg></summary>\n        <div class=\"panel icons\">\n          <a href=\"{{f46.href}}\"><i><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><circle cx=\"12\" cy=\"12\" r=\"9\"/><path d=\"M12 7v5l3 2\"/></svg></i><span>{{f47}}</span></a>\n          <a href=\"{{f48.href}}\"><i><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><rect x=\"3\" y=\"6\" width=\"18\" height=\"12\" rx=\"2\"/><path d=\"M3 10h18M7 15h3\"/></svg></i><span>{{f49}}</span></a>\n          <a href=\"{{f50.href}}\"><i><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M12 2 4 6v6c0 5 3.4 9.4 8 10 4.6-.6 8-5 8-10V6z\"/><path d=\"m9 12 2 2 4-4\"/></svg></i><span>{{f51}}</span></a>\n          <a href=\"{{f52.href}}\"><i><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M6 3h9l4 4v14H6z\"/><path d=\"M9 12h6M9 16h6M15 3v4h4\"/></svg></i><span>{{f53}}</span></a>\n          <a href=\"{{f54.href}}\"><i><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M12 21s7-6.2 7-11a7 7 0 0 0-14 0c0 4.8 7 11 7 11z\"/><circle cx=\"12\" cy=\"10\" r=\"2.5\"/></svg></i><span>{{f55}}</span></a>\n        </div>\n      </details>\n      <a href=\"{{f56.href}}\" data-nav=\"locations\">{{f56}}</a>\n      <a href=\"{{f57.href}}\" data-nav=\"contact\">{{f57}}</a>\n    </nav>\n    <div class=\"nav-cta\">\n      <a class=\"btn btn-outline\" href=\"{{f58.href}}\">{{f58}}</a>\n      <a class=\"btn btn-primary\" href=\"{{f59.href}}\">{{f59}}</a>\n      <button class=\"burger\" aria-label=\"Open menu\" id=\"burger\"><span></span></button>\n    </div>\n  </div>\n</header>",
+  "before_main": true
+ },
+ "site/drawer": {
+  "label": "Mobile menu",
+  "fields": {
+   "f1": {
+    "type": "image",
+    "label": "Photo"
+   },
+   "f2": {
+    "type": "link",
+    "label": "Link"
+   },
+   "f3": {
+    "type": "link",
+    "label": "Link 2"
+   },
+   "f4": {
+    "type": "text",
+    "label": "Question"
+   },
+   "f5": {
+    "type": "link",
+    "label": "Link 3"
+   },
+   "f6": {
+    "type": "link",
+    "label": "Link 4"
+   },
+   "f7": {
+    "type": "link",
+    "label": "Link 5"
+   },
+   "f8": {
+    "type": "link",
+    "label": "Link 6"
+   },
+   "f9": {
+    "type": "link",
+    "label": "Link 7"
+   },
+   "f10": {
+    "type": "link",
+    "label": "Link 8"
+   },
+   "f11": {
+    "type": "link",
+    "label": "Link 9"
+   },
+   "f12": {
+    "type": "link",
+    "label": "Link 10"
+   },
+   "f13": {
+    "type": "link",
+    "label": "Link 11"
+   },
+   "f14": {
+    "type": "link",
+    "label": "Link 12"
+   },
+   "f15": {
+    "type": "link",
+    "label": "Link 13"
+   },
+   "f16": {
+    "type": "link",
+    "label": "Link 14"
+   },
+   "f17": {
+    "type": "text",
+    "label": "Text"
+   },
+   "f18": {
+    "type": "link",
+    "label": "Button"
+   }
+  },
+  "html": "<div class=\"drawer\" id=\"drawer\" aria-hidden=\"true\">\n  <div class=\"head\"><img src=\"{{f1.src}}\" alt=\"{{f1.alt}}\"><button class=\"close\" id=\"drawerClose\" aria-label=\"Close menu\">&times;</button></div>\n  <a href=\"{{f2.href}}\">{{f2}}</a>\n  <a href=\"{{f3.href}}\">{{f3}}</a>\n  <details><summary>{{f4}}</summary>\n    <a href=\"{{f5.href}}\">{{f5}}</a>\n    <a href=\"{{f6.href}}\">{{f6}}</a>\n    <a href=\"{{f7.href}}\">{{f7}}</a>\n    <a href=\"{{f8.href}}\">{{f8}}</a>\n    <a href=\"{{f9.href}}\">{{f9}}</a>\n    <a href=\"{{f10.href}}\">{{f10}}</a>\n    <a href=\"{{f11.href}}\">{{f11}}</a>\n    <a href=\"{{f12.href}}\">{{f12}}</a>\n  </details>\n  <a href=\"{{f13.href}}\">{{f13}}</a>\n  <a href=\"{{f14.href}}\">{{f14}}</a>\n  <a href=\"{{f15.href}}\">{{f15}}</a>\n  <a href=\"{{f16.href}}\">{{f16}}</a>\n  <div class=\"d-cta\">\n    <a class=\"btn btn-primary\" href=\"tel:{{phoneTel}}\">{{f17}}</a>\n    <a class=\"btn btn-ghost\" href=\"{{f18.href}}\">{{f18}}</a>\n  </div>\n</div>",
+  "before_main": true
+ },
+ "site/footer": {
+  "label": "Footer",
+  "fields": {
+   "f1": {
+    "type": "image",
+    "label": "Photo"
+   },
+   "f2": {
+    "type": "text",
+    "label": "Paragraph"
+   },
+   "f3": {
+    "type": "text",
+    "label": "Text"
+   },
+   "f4": {
+    "type": "text",
+    "label": "Text 2"
+   },
+   "f5": {
+    "type": "link",
+    "label": "Link"
+   },
+   "f6": {
+    "type": "href",
+    "label": "Link address"
+   },
+   "f7": {
+    "type": "href",
+    "label": "Link address 2"
+   },
+   "f8": {
+    "type": "text",
+    "label": "Small heading"
+   },
+   "f9": {
+    "type": "rich",
+    "label": "List item"
+   },
+   "f10": {
+    "type": "rich",
+    "label": "List item 2"
+   },
+   "f11": {
+    "type": "rich",
+    "label": "List item 3"
+   },
+   "f12": {
+    "type": "rich",
+    "label": "List item 4"
+   },
+   "f13": {
+    "type": "rich",
+    "label": "List item 5"
+   },
+   "f14": {
+    "type": "rich",
+    "label": "List item 6"
+   },
+   "f15": {
+    "type": "rich",
+    "label": "List item 7"
+   },
+   "f16": {
+    "type": "text",
+    "label": "Small heading 2"
+   },
+   "f17": {
+    "type": "rich",
+    "label": "List item 8"
+   },
+   "f18": {
+    "type": "rich",
+    "label": "List item 9"
+   },
+   "f19": {
+    "type": "rich",
+    "label": "List item 10"
+   },
+   "f20": {
+    "type": "rich",
+    "label": "List item 11"
+   },
+   "f21": {
+    "type": "rich",
+    "label": "List item 12"
+   },
+   "f22": {
+    "type": "rich",
+    "label": "List item 13"
+   },
+   "f23": {
+    "type": "text",
+    "label": "Small heading 3"
+   },
+   "f24": {
+    "type": "rich",
+    "label": "List item 14"
+   },
+   "f25": {
+    "type": "rich",
+    "label": "List item 15"
+   },
+   "f26": {
+    "type": "rich",
+    "label": "List item 16"
+   },
+   "f27": {
+    "type": "rich",
+    "label": "List item 17"
+   },
+   "f28": {
+    "type": "rich",
+    "label": "List item 18"
+   },
+   "f29": {
+    "type": "text",
+    "label": "Paragraph 2"
+   },
+   "f30": {
+    "type": "text",
+    "label": "Text 3"
+   },
+   "f31": {
+    "type": "rich",
+    "label": "Text 4"
+   }
+  },
+  "html": "<footer>\n  <div class=\"wrap\">\n    <div class=\"grid\">\n      <div>\n        <img class=\"flogo\" src=\"{{f1.src}}\" alt=\"{{f1.alt}}\">\n        <p style=\"max-width:40ch\">{{f2}}</p>\n        <p style=\"margin-top:.8rem\">{{f3}}<br>{{f4}}<br><a href=\"tel:{{phoneTel}}\" style=\"color:#fff;font-weight:700\">{{phone}}</a><br><a href=\"{{f5.href}}\" target=\"_blank\" rel=\"noopener\" style=\"color:var(--cyan);font-weight:700\">{{f5}}</a></p>\n        <div class=\"social\">\n          <a href=\"{{f6.href}}\" target=\"_blank\" rel=\"noopener\" aria-label=\"Facebook\"><svg viewBox=\"0 0 24 24\" fill=\"currentColor\"><path d=\"M13.5 22v-8h2.7l.4-3.2h-3.1V8.8c0-.9.3-1.6 1.6-1.6h1.7V4.4c-.3 0-1.3-.1-2.5-.1-2.5 0-4.1 1.5-4.1 4.2v2.3H7.4V14h2.8v8z\"/></svg></a>\n          <a href=\"{{f7.href}}\" target=\"_blank\" rel=\"noopener\" aria-label=\"Instagram\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><rect x=\"3\" y=\"3\" width=\"18\" height=\"18\" rx=\"5\"/><circle cx=\"12\" cy=\"12\" r=\"4\"/><circle cx=\"17.5\" cy=\"6.5\" r=\"1\" fill=\"currentColor\"/></svg></a>\n        </div>\n      </div>\n      <div><h4>{{f8}}</h4><ul>\n        <li>{{f9}}</li>\n        <li>{{f10}}</li>\n        <li>{{f11}}</li>\n        <li>{{f12}}</li>\n        <li>{{f13}}</li>\n        <li>{{f14}}</li>\n        <li>{{f15}}</li>\n      </ul></div>\n      <div><h4>{{f16}}</h4><ul>\n        <li>{{f17}}</li>\n        <li>{{f18}}</li>\n        <li>{{f19}}</li>\n        <li>{{f20}}</li>\n        <li>{{f21}}</li>\n        <li>{{f22}}</li>\n      </ul></div>\n      <div><h4>{{f23}}</h4><ul>\n        <li>{{f24}}</li>\n        <li>{{f25}}</li>\n        <li>{{f26}}</li>\n        <li>{{f27}}</li>\n        <li>{{f28}}</li>\n      </ul></div>\n    </div>\n    <p class=\"disc\">{{f29}}</p>\n    <div class=\"bottom\">\n      <span>{{f30}}</span>\n      <span>{{f31}}</span>\n    </div>\n  </div>\n</footer>",
+  "before_main": false
+ },
+ "site/mcta": {
+  "label": "Mobile call bar",
+  "fields": {
+   "f1": {
+    "type": "text",
+    "label": "Text"
+   },
+   "f2": {
+    "type": "link",
+    "label": "Button"
+   }
+  },
+  "html": "<div class=\"mcta\">\n  <a class=\"btn btn-navy\" href=\"tel:{{phoneTel}}\">{{f1}}</a>\n  <a class=\"btn btn-primary\" href=\"{{f2.href}}\">{{f2}}</a>\n</div>",
+  "before_main": false
+ },
+ "home/1": {
+  "label": "Top banner (video, heading and buttons)",
+  "fields": {
+   "f1": {
+    "type": "image",
+    "label": "Photo"
+   },
+   "f2": {
+    "type": "text",
+    "label": "Main heading"
+   },
+   "f3": {
+    "type": "text",
+    "label": "Introduction"
+   },
+   "f4": {
+    "type": "link",
+    "label": "Button"
+   },
+   "f5": {
+    "type": "link",
+    "label": "Button 2"
+   },
+   "f6": {
+    "type": "text",
+    "label": "Text"
+   },
+   "f7": {
+    "type": "text",
+    "label": "Small text"
+   },
+   "f8": {
+    "type": "text",
+    "label": "Bold text"
+   },
+   "f9": {
+    "type": "text",
+    "label": "Small text 2"
+   },
+   "f10": {
+    "type": "text",
+    "label": "Bold text 2"
+   },
+   "f11": {
+    "type": "text",
+    "label": "Small text 3"
+   }
+  },
+  "html": "<section class=\"hero\">\n  <div class=\"media\">\n    <img src=\"{{f1.src}}\" alt=\"{{f1.alt}}\" fetchpriority=\"high\">\n    <div class=\"vid\"><iframe src=\"https://player.vimeo.com/video/1226478707?background=1&autoplay=1&loop=1&muted=1&autopause=0&dnt=1\" title=\"Practice video\" allow=\"autoplay; fullscreen\" loading=\"eager\"></iframe></div>\n    <div class=\"shade\"></div>\n  </div>\n  <div class=\"wrap\">\n    <div>\n      <h1>{{f2}}</h1>\n      <p class=\"sub\">{{f3}}</p>\n      <div class=\"acts\">\n        <a class=\"btn btn-primary\" href=\"{{f4.href}}\">{{f4}}</a>\n        <a class=\"btn btn-ghost\" href=\"{{f5.href}}\">{{f5}}</a>\n        <a class=\"btn btn-ghost\" href=\"tel:{{phoneTel}}\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.9 2z\"/></svg>{{phone}}</a>\n      </div>\n    </div>\n    <div class=\"card\">\n      <div class=\"row\">\n        <svg viewBox=\"0 0 24 24\" fill=\"currentColor\"><path d=\"M12 2 9.2 8.4 2 9.2l5.3 4.9L5.8 21 12 17.4 18.2 21l-1.5-6.9L22 9.2l-7.2-.8z\"/></svg>\n        <div><strong>{{f6}} <span class=\"stars\">&#9733;&#9733;&#9733;&#9733;&#9733;</span></strong><small>{{f7}}</small></div>\n      </div>\n      <div class=\"row\">\n        <svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M12 2 4 6v6c0 5 3.4 9.4 8 10 4.6-.6 8-5 8-10V6z\"/><path d=\"m9 12 2 2 4-4\"/></svg>\n        <div><strong>{{f8}}</strong><small>{{f9}}</small></div>\n      </div>\n      <div class=\"row\">\n        <svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6\"/></svg>\n        <div><strong>{{f10}}</strong><small>{{f11}}</small></div>\n      </div>\n    </div>\n  </div>\n</section>"
+ },
+ "home/2": {
+  "label": "Key figures strip",
+  "fields": {
+   "f1": {
+    "type": "text",
+    "label": "Bold text"
+   },
+   "f2": {
+    "type": "text",
+    "label": "Text"
+   },
+   "f3": {
+    "type": "text",
+    "label": "Bold text 2"
+   },
+   "f4": {
+    "type": "text",
+    "label": "Text 2"
+   },
+   "f5": {
+    "type": "text",
+    "label": "Bold text 3"
+   },
+   "f6": {
+    "type": "text",
+    "label": "Text 3"
+   },
+   "f7": {
+    "type": "text",
+    "label": "Bold text 4"
+   },
+   "f8": {
+    "type": "text",
+    "label": "Text 4"
+   }
+  },
+  "html": "<section class=\"proof\">\n  <div class=\"wrap\">\n    <div><b>{{f1}}</b><span>{{f2}}</span></div>\n    <div><b>{{f3}}</b><span>{{f4}}</span></div>\n    <div><b>{{f5}}</b><span>{{f6}}</span></div>\n    <div><b>{{f7}}</b><span>{{f8}}</span></div>\n  </div>\n</section>"
+ },
+ "home/3": {
+  "label": "Two specialists who take on the cases others refer on",
+  "fields": {
+   "f1": {
+    "type": "text",
+    "label": "Small label above the heading"
+   },
+   "f2": {
+    "type": "text",
+    "label": "Heading"
+   },
+   "f3": {
+    "type": "text",
+    "label": "Introduction"
+   },
+   "f4": {
+    "type": "image",
+    "label": "Photo"
+   },
+   "f5": {
+    "type": "text",
+    "label": "Sub-heading"
+   },
+   "f6": {
+    "type": "text",
+    "label": "Role"
+   },
+   "f7": {
+    "type": "text",
+    "label": "Paragraph"
+   },
+   "f8": {
+    "type": "text",
+    "label": "Tag"
+   },
+   "f9": {
+    "type": "text",
+    "label": "Tag 2"
+   },
+   "f10": {
+    "type": "text",
+    "label": "Tag 3"
+   },
+   "f11": {
+    "type": "text",
+    "label": "Tag 4"
+   },
+   "f12": {
+    "type": "text",
+    "label": "Tag 5"
+   },
+   "f13": {
+    "type": "link",
+    "label": "Button"
+   },
+   "f14": {
+    "type": "image",
+    "label": "Photo 2"
+   },
+   "f15": {
+    "type": "text",
+    "label": "Sub-heading 2"
+   },
+   "f16": {
+    "type": "text",
+    "label": "Role 2"
+   },
+   "f17": {
+    "type": "text",
+    "label": "Paragraph 2"
+   },
+   "f18": {
+    "type": "text",
+    "label": "Tag 6"
+   },
+   "f19": {
+    "type": "text",
+    "label": "Tag 7"
+   },
+   "f20": {
+    "type": "text",
+    "label": "Tag 8"
+   },
+   "f21": {
+    "type": "text",
+    "label": "Tag 9"
+   },
+   "f22": {
+    "type": "text",
+    "label": "Tag 10"
+   },
+   "f23": {
+    "type": "link",
+    "label": "Button 2"
+   }
+  },
+  "html": "<section class=\"block\">\n  <div class=\"wrap\">\n    <span class=\"kicker\">{{f1}}</span>\n    <h2>{{f2}}</h2>\n    <p class=\"lead\" style=\"margin-top:.8rem\">{{f3}}</p>\n    <div class=\"surgeons rv-stagger\">\n      <article class=\"surgeon\">\n        <div class=\"ph\"><img src=\"{{f4.src}}\" alt=\"{{f4.alt}}\"></div>\n        <div>\n          <h3>{{f5}}</h3>\n          <div class=\"role\">{{f6}}</div>\n          <p>{{f7}}</p>\n          <div class=\"tags\"><span>{{f8}}</span><span>{{f9}}</span><span>{{f10}}</span><span>{{f11}}</span><span>{{f12}}</span></div>\n          <p style=\"margin-top:1rem\"><a class=\"btn btn-outline\" href=\"{{f13.href}}\">{{f13}}</a></p>\n        </div>\n      </article>\n      <article class=\"surgeon\">\n        <div class=\"ph\"><img src=\"{{f14.src}}\" alt=\"{{f14.alt}}\"></div>\n        <div>\n          <h3>{{f15}}</h3>\n          <div class=\"role\">{{f16}}</div>\n          <p>{{f17}}</p>\n          <div class=\"tags\"><span>{{f18}}</span><span>{{f19}}</span><span>{{f20}}</span><span>{{f21}}</span><span>{{f22}}</span></div>\n          <p style=\"margin-top:1rem\"><a class=\"btn btn-outline\" href=\"{{f23.href}}\">{{f23}}</a></p>\n        </div>\n      </article>\n    </div>\n  </div>\n</section>"
+ },
+ "home/4": {
+  "label": "What we treat",
+  "fields": {
+   "f1": {
+    "type": "text",
+    "label": "Small label above the heading"
+   },
+   "f2": {
+    "type": "text",
+    "label": "Heading"
+   },
+   "f3": {
+    "type": "href",
+    "label": "Link address"
+   },
+   "f4": {
+    "type": "text",
+    "label": "Sub-heading"
+   },
+   "f5": {
+    "type": "text",
+    "label": "Paragraph"
+   },
+   "f6": {
+    "type": "text",
+    "label": "Link text"
+   },
+   "f7": {
+    "type": "image",
+    "label": "Photo"
+   },
+   "f8": {
+    "type": "href",
+    "label": "Link address 2"
+   },
+   "f9": {
+    "type": "text",
+    "label": "Sub-heading 2"
+   },
+   "f10": {
+    "type": "text",
+    "label": "Paragraph 2"
+   },
+   "f11": {
+    "type": "text",
+    "label": "Link text 2"
+   },
+   "f12": {
+    "type": "href",
+    "label": "Link address 3"
+   },
+   "f13": {
+    "type": "text",
+    "label": "Sub-heading 3"
+   },
+   "f14": {
+    "type": "text",
+    "label": "Paragraph 3"
+   },
+   "f15": {
+    "type": "text",
+    "label": "Link text 3"
+   },
+   "f16": {
+    "type": "href",
+    "label": "Link address 4"
+   },
+   "f17": {
+    "type": "text",
+    "label": "Sub-heading 4"
+   },
+   "f18": {
+    "type": "text",
+    "label": "Paragraph 4"
+   },
+   "f19": {
+    "type": "text",
+    "label": "Link text 4"
+   },
+   "f20": {
+    "type": "href",
+    "label": "Link address 5"
+   },
+   "f21": {
+    "type": "text",
+    "label": "Sub-heading 5"
+   },
+   "f22": {
+    "type": "text",
+    "label": "Paragraph 5"
+   },
+   "f23": {
+    "type": "text",
+    "label": "Link text 5"
+   },
+   "f24": {
+    "type": "href",
+    "label": "Link address 6"
+   },
+   "f25": {
+    "type": "text",
+    "label": "Sub-heading 6"
+   },
+   "f26": {
+    "type": "text",
+    "label": "Paragraph 6"
+   },
+   "f27": {
+    "type": "text",
+    "label": "Link text 6"
+   },
+   "f28": {
+    "type": "href",
+    "label": "Link address 7"
+   },
+   "f29": {
+    "type": "text",
+    "label": "Sub-heading 7"
+   },
+   "f30": {
+    "type": "text",
+    "label": "Paragraph 7"
+   },
+   "f31": {
+    "type": "text",
+    "label": "Link text 7"
+   }
+  },
+  "html": "<section class=\"block\" style=\"padding-top:0\">\n  <div class=\"wrap\">\n    <span class=\"kicker\">{{f1}}</span>\n    <h2>{{f2}}</h2>\n    <div class=\"svc-grid rv-stagger\">\n      <a class=\"svc feature\" href=\"{{f3.href}}\">\n        <div>\n          <div class=\"ic\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\"><path d=\"M4 9c0-3 3.6-5 8-5s8 2 8 5c0 4-2 7-8 7S4 13 4 9z\"/><path d=\"M8 16v4M16 16v4M12 16v4\"/></svg></div>\n          <h3>{{f4}}</h3>\n          <p>{{f5}}</p>\n          <span class=\"more\">{{f6}}</span>\n        </div>\n        <div class=\"img\"><img src=\"{{f7.src}}\" alt=\"{{f7.alt}}\"></div>\n      </a>\n      <a class=\"svc\" href=\"{{f8.href}}\">\n        <div class=\"ic\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\"><path d=\"M7 3c2 0 3 1.5 5 1.5S15 3 17 3c3 0 4 3 4 6 0 5-3 12-5 12-1.5 0-1.5-5-4-5s-2.5 5-4 5C6 21 3 14 3 9c0-3 1-6 4-6z\"/></svg></div>\n        <h3>{{f9}}</h3>\n        <p>{{f10}}</p>\n        <span class=\"more\">{{f11}}</span>\n      </a>\n      <a class=\"svc\" href=\"{{f12.href}}\">\n        <div class=\"ic\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\"><path d=\"M9 3h6l-1 6h-4zM8 9h8M9 13h6M9.5 17h5M10.5 21h3\"/></svg></div>\n        <h3>{{f13}}</h3>\n        <p>{{f14}}</p>\n        <span class=\"more\">{{f15}}</span>\n      </a>\n      <a class=\"svc\" href=\"{{f16.href}}\">\n        <div class=\"ic\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\"><circle cx=\"12\" cy=\"9\" r=\"6\"/><path d=\"M12 15v6M9 21h6M6 9h2M16 9h2\"/></svg></div>\n        <h3>{{f17}}</h3>\n        <p>{{f18}}</p>\n        <span class=\"more\">{{f19}}</span>\n      </a>\n      <a class=\"svc\" href=\"{{f20.href}}\">\n        <div class=\"ic\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\"><path d=\"M4 14c0-4 3-7 8-7s8 3 8 7-3 5-8 5-8-1-8-5z\"/><path d=\"M8 7V4M16 7V4\"/></svg></div>\n        <h3>{{f21}}</h3>\n        <p>{{f22}}</p>\n        <span class=\"more\">{{f23}}</span>\n      </a>\n      <a class=\"svc\" href=\"{{f24.href}}\">\n        <div class=\"ic\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\"><path d=\"M6 4v8a6 6 0 0 0 12 0V4\"/><path d=\"M6 12h12\"/></svg></div>\n        <h3>{{f25}}</h3>\n        <p>{{f26}}</p>\n        <span class=\"more\">{{f27}}</span>\n      </a>\n      <a class=\"svc\" href=\"{{f28.href}}\">\n        <div class=\"ic\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\"><path d=\"M12 3v18M3 12h18\"/><circle cx=\"12\" cy=\"12\" r=\"9\"/></svg></div>\n        <h3>{{f29}}</h3>\n        <p>{{f30}}</p>\n        <span class=\"more\">{{f31}}</span>\n      </a>\n    </div>\n  </div>\n</section>"
+ },
+ "home/5": {
+  "label": "Purpose built rooms in the Buderim rainforest",
+  "fields": {
+   "f1": {
+    "type": "text",
+    "label": "Small label above the heading"
+   },
+   "f2": {
+    "type": "text",
+    "label": "Heading"
+   },
+   "f3": {
+    "type": "text",
+    "label": "Paragraph"
+   },
+   "f4": {
+    "type": "text",
+    "label": "Text"
+   },
+   "f5": {
+    "type": "text",
+    "label": "Text 2"
+   },
+   "f6": {
+    "type": "text",
+    "label": "Text 3"
+   },
+   "f7": {
+    "type": "text",
+    "label": "Text 4"
+   },
+   "f8": {
+    "type": "link",
+    "label": "Button"
+   },
+   "f9": {
+    "type": "image",
+    "label": "Photo"
+   },
+   "f10": {
+    "type": "image",
+    "label": "Photo 2"
+   },
+   "f11": {
+    "type": "image",
+    "label": "Photo 3"
+   },
+   "f12": {
+    "type": "image",
+    "label": "Photo 4"
+   },
+   "f13": {
+    "type": "image",
+    "label": "Photo 5"
+   },
+   "f14": {
+    "type": "image",
+    "label": "Photo 6"
+   }
+  },
+  "html": "<section class=\"block practice\">\n  <div class=\"wrap\">\n    <div>\n      <span class=\"kicker\">{{f1}}</span>\n      <h2>{{f2}}</h2>\n      <p style=\"margin-top:1rem\">{{f3}}</p>\n      <ul class=\"checks\">\n        <li><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.4\"><path d=\"m5 12 5 5 9-10\"/></svg><span>{{f4}}</span></li>\n        <li><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.4\"><path d=\"m5 12 5 5 9-10\"/></svg><span>{{f5}}</span></li>\n        <li><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.4\"><path d=\"m5 12 5 5 9-10\"/></svg><span>{{f6}}</span></li>\n        <li><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.4\"><path d=\"m5 12 5 5 9-10\"/></svg><span>{{f7}}</span></li>\n      </ul>\n      <p style=\"margin-top:1.6rem\"><a class=\"btn btn-navy\" href=\"{{f8.href}}\">{{f8}}</a></p>\n    </div>\n    <div class=\"gal rv-stagger\">\n      <img class=\"tall\" src=\"{{f9.src}}\" alt=\"{{f9.alt}}\">\n      <img src=\"{{f10.src}}\" alt=\"{{f10.alt}}\">\n      <img src=\"{{f11.src}}\" alt=\"{{f11.alt}}\">\n      <img class=\"tall\" src=\"{{f12.src}}\" alt=\"{{f12.alt}}\">\n      <img src=\"{{f13.src}}\" alt=\"{{f13.alt}}\">\n      <img src=\"{{f14.src}}\" alt=\"{{f14.alt}}\">\n    </div>\n  </div>\n</section>"
+ },
+ "home/6": {
+  "label": "Buderim, Nambour, Maroochydore and Hervey Bay",
+  "fields": {
+   "f1": {
+    "type": "text",
+    "label": "Small label above the heading"
+   },
+   "f2": {
+    "type": "text",
+    "label": "Heading"
+   },
+   "f3": {
+    "type": "text",
+    "label": "Introduction"
+   }
+  },
+  "html": "<section class=\"block\">\n  <div class=\"wrap\">\n    <span class=\"kicker\">{{f1}}</span>\n    <h2>{{f2}}</h2>\n    <p class=\"lead\" style=\"margin-top:.8rem\">{{f3}}</p>\n    <div class=\"coast\">\n      <div class=\"coast-map rv\"><svg viewBox=\"0 0 420 640\" xmlns=\"http://www.w3.org/2000/svg\" aria-label=\"Map of consulting and hospital locations from Hervey Bay to the Sunshine Coast\">\n<defs><linearGradient id=\"sea\" x1=\"0\" y1=\"0\" x2=\"1\" y2=\"1\"><stop offset=\"0\" stop-color=\"#D5EEF8\"/><stop offset=\"1\" stop-color=\"#BFE2F3\"/></linearGradient></defs>\n<rect width=\"420\" height=\"640\" fill=\"url(#sea)\" rx=\"18\"/>\n<path transform=\"scale(1.1,1)\" d=\"M0 0H62c14 8 30 12 46 26 18 16 22 30 34 30 18 0 30 20 34 50 6 40 6 70 18 90 14 24 10 60 12 90 2 34 0 70-2 100-2 30 2 60 8 90 4 24 6 40 10 64 6 30 8 60 12 100H0z\" fill=\"#EEF4F7\" stroke=\"#C9D8E3\" stroke-width=\"1.5\"/>\n<path d=\"M150 0h60c20 30 32 70 36 110 4 44-6 80-24 118-12 26-30 30-44 6-12-20-10-56-6-92 4-40 2-84-22-142z\" fill=\"#E4EEF3\" stroke=\"#C9D8E3\" stroke-width=\"1.5\"/>\n<text x=\"196\" y=\"86\" font-family=\"Outfit,sans-serif\" font-size=\"11\" fill=\"#7C8AA5\" text-anchor=\"middle\">K'gari</text>\n<text x=\"320\" y=\"330\" font-family=\"Outfit,sans-serif\" font-size=\"12\" fill=\"#7C8AA5\" text-anchor=\"middle\" letter-spacing=\"2\">PACIFIC OCEAN</text>\n<text x=\"70\" y=\"330\" font-family=\"Outfit,sans-serif\" font-size=\"11\" fill=\"#9AA6BB\" text-anchor=\"middle\">Gympie</text>\n<circle cx=\"70\" cy=\"340\" r=\"3\" fill=\"#C9D3E6\"/>\n<text x=\"90\" y=\"622\" font-family=\"Outfit,sans-serif\" font-size=\"11\" fill=\"#9AA6BB\">Brisbane 100 km south</text>\n<path d=\"M78 606v10M74 612l4 5 4-5\" stroke=\"#9AA6BB\" stroke-width=\"1.5\" fill=\"none\"/>\n<line x1=\"177\" y1=\"558\" x2=\"186\" y2=\"540\" stroke=\"#C9D3E6\" stroke-width=\"1\"/>\n<g class=\"pin\" data-pin=\"1\" tabindex=\"0\" role=\"button\" aria-label=\"Buderim\"><circle class=\"halo\" cx=\"177\" cy=\"558\" r=\"11\"/><circle class=\"dot\" cx=\"177\" cy=\"558\" r=\"6\"/><text x=\"163\" y=\"562\" text-anchor=\"end\">Buderim</text></g><g class=\"pin\" data-pin=\"2\" tabindex=\"0\" role=\"button\" aria-label=\"Maroochydore\"><circle class=\"halo\" cx=\"186\" cy=\"540\" r=\"11\"/><circle class=\"dot\" cx=\"186\" cy=\"540\" r=\"6\"/><text x=\"200\" y=\"538\" text-anchor=\"start\">Maroochydore</text></g><g class=\"pin\" data-pin=\"3\" tabindex=\"0\" role=\"button\" aria-label=\"Nambour\"><circle class=\"halo\" cx=\"134\" cy=\"537\" r=\"11\"/><circle class=\"dot\" cx=\"134\" cy=\"537\" r=\"6\"/><text x=\"122\" y=\"533\" text-anchor=\"end\">Nambour</text></g><g class=\"pin\" data-pin=\"4\" tabindex=\"0\" role=\"button\" aria-label=\"Hervey Bay\"><circle class=\"halo\" cx=\"88\" cy=\"55\" r=\"11\"/><circle class=\"dot\" cx=\"88\" cy=\"55\" r=\"6\"/><text x=\"104\" y=\"59\" text-anchor=\"start\">Hervey Bay</text></g>\n</svg></div>\n      <div class=\"loc-list rv-stagger\">{{@locations}}</div>\n    </div>\n  </div>\n</section>"
+ },
+ "home/7": {
+  "label": "Refer a patient in under two minutes",
+  "fields": {
+   "f1": {
+    "type": "text",
+    "label": "Small label above the heading"
+   },
+   "f2": {
+    "type": "text",
+    "label": "Heading"
+   },
+   "f3": {
+    "type": "text",
+    "label": "Paragraph"
+   },
+   "f4": {
+    "type": "link",
+    "label": "Button"
+   },
+   "f5": {
+    "type": "text",
+    "label": "Text"
+   },
+   "f6": {
+    "type": "text",
+    "label": "Sub-heading"
+   },
+   "f7": {
+    "type": "text",
+    "label": "List item"
+   },
+   "f8": {
+    "type": "text",
+    "label": "List item 2"
+   },
+   "f9": {
+    "type": "text",
+    "label": "List item 3"
+   },
+   "f10": {
+    "type": "text",
+    "label": "List item 4"
+   },
+   "f11": {
+    "type": "text",
+    "label": "Paragraph 2"
+   }
+  },
+  "html": "<section class=\"block refer\">\n  <div class=\"wrap\">\n    <div>\n      <span class=\"kicker\" style=\"color:var(--cyan)\">{{f1}}</span>\n      <h2>{{f2}}</h2>\n      <p style=\"margin-top:1rem\">{{f3}}</p>\n      <div class=\"acts\" style=\"margin-top:1.6rem;display:flex;gap:.7rem;flex-wrap:wrap\">\n        <a class=\"btn btn-primary\" href=\"{{f4.href}}\">{{f4}}</a>\n        <a class=\"btn btn-ghost\" href=\"tel:{{phoneTel}}\">{{f5}}</a>\n      </div>\n    </div>\n    <div class=\"box\">\n      <h3>{{f6}}</h3>\n      <ul>\n        <li>{{f7}}</li>\n        <li>{{f8}}</li>\n        <li>{{f9}}</li>\n        <li>{{f10}}</li>\n      </ul>\n      <p style=\"font-size:.9rem;color:#9FB0D0;margin:0\">{{f11}}</p>\n    </div>\n  </div>\n</section>"
+ },
+ "home/8": {
+  "label": "Rated 5.0 on Google by more than 300 patients",
+  "fields": {
+   "f1": {
+    "type": "text",
+    "label": "Small label above the heading"
+   },
+   "f2": {
+    "type": "text",
+    "label": "Heading"
+   },
+   "f3": {
+    "type": "text",
+    "label": "Paragraph"
+   },
+   "f4": {
+    "type": "text",
+    "label": "Bold text"
+   },
+   "f5": {
+    "type": "text",
+    "label": "Small text"
+   },
+   "f6": {
+    "type": "link",
+    "label": "Button"
+   },
+   "f7": {
+    "type": "link",
+    "label": "Link"
+   }
+  },
+  "html": "<section class=\"block\">\n  <div class=\"wrap\">\n    <div class=\"rating rv\">\n      <div>\n        <span class=\"kicker\">{{f1}}</span>\n        <h2>{{f2}}</h2>\n        <p style=\"margin-top:.8rem;color:var(--muted)\">{{f3}}</p>\n      </div>\n      <div class=\"rating-box\">\n        <b>{{f4}}</b>\n        <span class=\"stars\">&#9733;&#9733;&#9733;&#9733;&#9733;</span>\n        <small>{{f5}}</small>\n        <a class=\"btn btn-navy\" href=\"{{f6.href}}\" target=\"_blank\" rel=\"noopener\">{{f6}}</a>\n        <a href=\"{{f7.href}}\" target=\"_blank\" rel=\"noopener\" style=\"font-weight:700;color:var(--cyan-deep);font-size:.9rem\">{{f7}}</a>\n      </div>\n    </div>\n  </div>\n</section>"
+ },
+ "home/9": {
+  "label": "Before you enquire",
+  "fields": {
+   "f1": {
+    "type": "text",
+    "label": "Small label above the heading"
+   },
+   "f2": {
+    "type": "text",
+    "label": "Heading"
+   },
+   "f3": {
+    "type": "text",
+    "label": "Question"
+   },
+   "f4": {
+    "type": "text",
+    "label": "Answer"
+   },
+   "f5": {
+    "type": "text",
+    "label": "Question 2"
+   },
+   "f6": {
+    "type": "text",
+    "label": "Answer 2"
+   },
+   "f7": {
+    "type": "text",
+    "label": "Question 3"
+   },
+   "f8": {
+    "type": "text",
+    "label": "Answer 3"
+   },
+   "f9": {
+    "type": "text",
+    "label": "Question 4"
+   },
+   "f10": {
+    "type": "text",
+    "label": "Answer 4"
+   },
+   "f11": {
+    "type": "text",
+    "label": "Question 5"
+   },
+   "f12": {
+    "type": "text",
+    "label": "Answer 5"
+   }
+  },
+  "html": "<section class=\"block\" style=\"padding-top:0\">\n  <div class=\"wrap\">\n    <span class=\"kicker\">{{f1}}</span>\n    <h2 style=\"text-align:left\">{{f2}}</h2>\n    <div class=\"faq rv\" style=\"margin-left:0\">\n      <details><summary>{{f3}}</summary><p>{{f4}}</p></details>\n      <details><summary>{{f5}}</summary><p>{{f6}}</p></details>\n      <details><summary>{{f7}}</summary><p>{{f8}}</p></details>\n      <details><summary>{{f9}}</summary><p>{{f10}}</p></details>\n      <details><summary>{{f11}}</summary><p>{{f12}}</p></details>\n    </div>\n  </div>\n</section>"
+ },
+ "about/1": {
+  "label": "Page heading: A specialist practice built around the patient",
+  "fields": {
+   "f1": {
+    "type": "image",
+    "label": "Photo"
+   },
+   "f2": {
+    "type": "rich",
+    "label": "Breadcrumb"
+   },
+   "f3": {
+    "type": "text",
+    "label": "Main heading"
+   },
+   "f4": {
+    "type": "text",
+    "label": "Paragraph"
+   }
+  },
+  "html": "<section class=\"pagehead\">\n  <div class=\"art\"><img src=\"{{f1.src}}\" alt=\"{{f1.alt}}\"></div>\n  <div class=\"wrap\">\n    <div><div class=\"crumb\">{{f2}}</div><h1>{{f3}}</h1><p>{{f4}}</p></div>\n  </div>\n</section>"
+ },
+ "about/2": {
+  "label": "Modern, welcoming and centrally located",
+  "fields": {
+   "f1": {
+    "type": "text",
+    "label": "Heading"
+   },
+   "f2": {
+    "type": "text",
+    "label": "Paragraph"
+   },
+   "f3": {
+    "type": "text",
+    "label": "Paragraph 2"
+   },
+   "f4": {
+    "type": "text",
+    "label": "Paragraph 3"
+   },
+   "f5": {
+    "type": "image",
+    "label": "Photo"
+   },
+   "f6": {
+    "type": "image",
+    "label": "Photo 2"
+   },
+   "f7": {
+    "type": "image",
+    "label": "Photo 3"
+   }
+  },
+  "html": "<section class=\"block\">\n  <div class=\"wrap two\">\n    <div class=\"prose\">\n      <h2 style=\"margin-top:0\">{{f1}}</h2>\n      <p>{{f2}}</p>\n      <p>{{f3}}</p>\n      <p>{{f4}}</p>\n    </div>\n    <div class=\"gal\" style=\"grid-auto-rows:200px\">\n      <img class=\"tall\" src=\"{{f5.src}}\" alt=\"{{f5.alt}}\">\n      <img src=\"{{f6.src}}\" alt=\"{{f6.alt}}\">\n      <img src=\"{{f7.src}}\" alt=\"{{f7.alt}}\">\n    </div>\n  </div>\n</section>"
+ },
+ "about/3": {
+  "label": "Dual qualified, fellowship trained",
+  "fields": {
+   "f1": {
+    "type": "text",
+    "label": "Small label above the heading"
+   },
+   "f2": {
+    "type": "text",
+    "label": "Heading"
+   }
+  },
+  "html": "<section class=\"block\" style=\"background:var(--mist)\">\n  <div class=\"wrap\">\n    <span class=\"kicker\">{{f1}}</span>\n    <h2>{{f2}}</h2>\n    {{@surgeons}}\n  </div>\n</section>"
+ },
+ "about/4": {
+  "label": "The team who will look after you",
+  "fields": {
+   "f1": {
+    "type": "text",
+    "label": "Small label above the heading"
+   },
+   "f2": {
+    "type": "text",
+    "label": "Heading"
+   },
+   "f3": {
+    "type": "text",
+    "label": "Introduction"
+   }
+  },
+  "html": "<section class=\"block\">\n  <div class=\"wrap\">\n    <span class=\"kicker\">{{f1}}</span>\n    <h2>{{f2}}</h2>\n    <p class=\"lead\" style=\"margin-top:.8rem\">{{f3}}</p>\n    <div class=\"team rv-stagger\">{{@staff}}</div>\n  </div>\n</section>"
+ },
+ "services/1": {
+  "label": "Page heading: The full scope of oral and maxillofacial surgery",
+  "fields": {
+   "f1": {
+    "type": "image",
+    "label": "Photo"
+   },
+   "f2": {
+    "type": "rich",
+    "label": "Breadcrumb"
+   },
+   "f3": {
+    "type": "text",
+    "label": "Main heading"
+   },
+   "f4": {
+    "type": "text",
+    "label": "Paragraph"
+   }
+  },
+  "html": "<section class=\"pagehead\">\n  <div class=\"art\"><img src=\"{{f1.src}}\" alt=\"{{f1.alt}}\"></div>\n  <div class=\"wrap\"><div><div class=\"crumb\">{{f2}}</div><h1>{{f3}}</h1><p>{{f4}}</p></div></div>\n</section>"
+ },
+ "services/2": {
+  "label": "Wisdom teeth removal",
+  "fields": {
+   "f1": {
+    "type": "href",
+    "label": "Link address"
+   },
+   "f2": {
+    "type": "text",
+    "label": "Sub-heading"
+   },
+   "f3": {
+    "type": "text",
+    "label": "Paragraph"
+   },
+   "f4": {
+    "type": "text",
+    "label": "Link text"
+   },
+   "f5": {
+    "type": "href",
+    "label": "Link address 2"
+   },
+   "f6": {
+    "type": "text",
+    "label": "Sub-heading 2"
+   },
+   "f7": {
+    "type": "text",
+    "label": "Paragraph 2"
+   },
+   "f8": {
+    "type": "text",
+    "label": "Link text 2"
+   },
+   "f9": {
+    "type": "href",
+    "label": "Link address 3"
+   },
+   "f10": {
+    "type": "text",
+    "label": "Sub-heading 3"
+   },
+   "f11": {
+    "type": "text",
+    "label": "Paragraph 3"
+   },
+   "f12": {
+    "type": "text",
+    "label": "Link text 3"
+   },
+   "f13": {
+    "type": "href",
+    "label": "Link address 4"
+   },
+   "f14": {
+    "type": "text",
+    "label": "Sub-heading 4"
+   },
+   "f15": {
+    "type": "text",
+    "label": "Paragraph 4"
+   },
+   "f16": {
+    "type": "text",
+    "label": "Link text 4"
+   },
+   "f17": {
+    "type": "href",
+    "label": "Link address 5"
+   },
+   "f18": {
+    "type": "text",
+    "label": "Sub-heading 5"
+   },
+   "f19": {
+    "type": "text",
+    "label": "Paragraph 5"
+   },
+   "f20": {
+    "type": "text",
+    "label": "Link text 5"
+   },
+   "f21": {
+    "type": "href",
+    "label": "Link address 6"
+   },
+   "f22": {
+    "type": "text",
+    "label": "Sub-heading 6"
+   },
+   "f23": {
+    "type": "text",
+    "label": "Paragraph 6"
+   },
+   "f24": {
+    "type": "text",
+    "label": "Link text 6"
+   },
+   "f25": {
+    "type": "href",
+    "label": "Link address 7"
+   },
+   "f26": {
+    "type": "text",
+    "label": "Sub-heading 7"
+   },
+   "f27": {
+    "type": "text",
+    "label": "Paragraph 7"
+   },
+   "f28": {
+    "type": "text",
+    "label": "Link text 7"
+   }
+  },
+  "html": "<section class=\"block\">\n  <div class=\"wrap\">\n    <div class=\"svc-list rv-stagger\">\n      <a class=\"svc\" href=\"{{f1.href}}\"><div class=\"ic\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\"><path d=\"M7 3c2 0 3 1.5 5 1.5S15 3 17 3c3 0 4 3 4 6 0 5-3 12-5 12-1.5 0-1.5-5-4-5s-2.5 5-4 5C6 21 3 14 3 9c0-3 1-6 4-6z\"/></svg></div><h3>{{f2}}</h3><p>{{f3}}</p><span class=\"more\">{{f4}}</span></a>\n      <a class=\"svc\" href=\"{{f5.href}}\"><div class=\"ic\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\"><path d=\"M9 3h6l-1 6h-4zM8 9h8M9 13h6M9.5 17h5M10.5 21h3\"/></svg></div><h3>{{f6}}</h3><p>{{f7}}</p><span class=\"more\">{{f8}}</span></a>\n      <a class=\"svc\" href=\"{{f9.href}}\"><div class=\"ic\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\"><path d=\"M4 9c0-3 3.6-5 8-5s8 2 8 5c0 4-2 7-8 7S4 13 4 9z\"/><path d=\"M8 16v4M16 16v4M12 16v4\"/></svg></div><h3>{{f10}}</h3><p>{{f11}}</p><span class=\"more\">{{f12}}</span></a>\n      <a class=\"svc\" href=\"{{f13.href}}\"><div class=\"ic\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\"><circle cx=\"12\" cy=\"9\" r=\"6\"/><path d=\"M12 15v6M9 21h6M6 9h2M16 9h2\"/></svg></div><h3>{{f14}}</h3><p>{{f15}}</p><span class=\"more\">{{f16}}</span></a>\n      <a class=\"svc\" href=\"{{f17.href}}\"><div class=\"ic\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\"><path d=\"M4 14c0-4 3-7 8-7s8 3 8 7-3 5-8 5-8-1-8-5z\"/><path d=\"M8 7V4M16 7V4\"/></svg></div><h3>{{f18}}</h3><p>{{f19}}</p><span class=\"more\">{{f20}}</span></a>\n      <a class=\"svc\" href=\"{{f21.href}}\"><div class=\"ic\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\"><path d=\"M6 4v8a6 6 0 0 0 12 0V4\"/><path d=\"M6 12h12\"/></svg></div><h3>{{f22}}</h3><p>{{f23}}</p><span class=\"more\">{{f24}}</span></a>\n      <a class=\"svc\" href=\"{{f25.href}}\"><div class=\"ic\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\"><path d=\"M12 3v18M3 12h18\"/><circle cx=\"12\" cy=\"12\" r=\"9\"/></svg></div><h3>{{f26}}</h3><p>{{f27}}</p><span class=\"more\">{{f28}}</span></a>\n    </div>\n  </div>\n</section>"
+ },
+ "wisdom-teeth-removal/1": {
+  "label": "Page heading: Wisdom teeth removed while you are completely asleep",
+  "fields": {
+   "f1": {
+    "type": "image",
+    "label": "Photo"
+   },
+   "f2": {
+    "type": "rich",
+    "label": "Breadcrumb"
+   },
+   "f3": {
+    "type": "text",
+    "label": "Main heading"
+   },
+   "f4": {
+    "type": "text",
+    "label": "Paragraph"
+   },
+   "f5": {
+    "type": "link",
+    "label": "Button"
+   }
+  },
+  "html": "<section class=\"pagehead\">\n  <div class=\"art\"><img src=\"{{f1.src}}\" alt=\"{{f1.alt}}\"></div>\n  <div class=\"wrap\"><div><div class=\"crumb\">{{f2}}</div><h1>{{f3}}</h1><p>{{f4}}</p><div style=\"margin-top:1.6rem;display:flex;gap:.7rem;flex-wrap:wrap\"><a class=\"btn btn-primary\" href=\"{{f5.href}}\">{{f5}}</a><a class=\"btn btn-ghost\" href=\"tel:{{phoneTel}}\">{{phone}}</a></div></div></div>\n</section>"
+ },
+ "wisdom-teeth-removal/2": {
+  "label": "Why wisdom teeth cause trouble",
+  "fields": {
+   "f1": {
+    "type": "text",
+    "label": "Heading"
+   },
+   "f2": {
+    "type": "text",
+    "label": "Paragraph"
+   },
+   "f3": {
+    "type": "text",
+    "label": "Paragraph 2"
+   },
+   "f4": {
+    "type": "text",
+    "label": "Heading 2"
+   },
+   "f5": {
+    "type": "text",
+    "label": "Paragraph 3"
+   },
+   "f6": {
+    "type": "rich",
+    "label": "List item"
+   },
+   "f7": {
+    "type": "rich",
+    "label": "List item 2"
+   },
+   "f8": {
+    "type": "rich",
+    "label": "List item 3"
+   },
+   "f9": {
+    "type": "text",
+    "label": "Heading 3"
+   },
+   "f10": {
+    "type": "text",
+    "label": "Sub-heading"
+   },
+   "f11": {
+    "type": "text",
+    "label": "Paragraph 4"
+   },
+   "f12": {
+    "type": "text",
+    "label": "Sub-heading 2"
+   },
+   "f13": {
+    "type": "text",
+    "label": "Paragraph 5"
+   },
+   "f14": {
+    "type": "text",
+    "label": "Sub-heading 3"
+   },
+   "f15": {
+    "type": "text",
+    "label": "Paragraph 6"
+   },
+   "f16": {
+    "type": "text",
+    "label": "Sub-heading 4"
+   },
+   "f17": {
+    "type": "text",
+    "label": "Paragraph 7"
+   },
+   "f18": {
+    "type": "text",
+    "label": "Sub-heading 5"
+   },
+   "f19": {
+    "type": "text",
+    "label": "Paragraph 8"
+   },
+   "f20": {
+    "type": "link",
+    "label": "Button"
+   },
+   "f21": {
+    "type": "text",
+    "label": "Text"
+   },
+   "f22": {
+    "type": "text",
+    "label": "Text 2"
+   },
+   "f23": {
+    "type": "link",
+    "label": "Link"
+   },
+   "f24": {
+    "type": "image",
+    "label": "Photo"
+   }
+  },
+  "html": "<section class=\"block\">\n  <div class=\"wrap two narrow-r\">\n    <div class=\"prose\">\n<h2 style=\"margin-top:0\">{{f1}}</h2>\n<p>{{f2}}</p>\n<p>{{f3}}</p>\n<h2>{{f4}}</h2>\n<p>{{f5}}</p>\n<ul><li>{{f6}}</li><li>{{f7}}</li><li>{{f8}}</li></ul>\n<h2>{{f9}}</h2>\n<div class=\"info-cards\">\n<div class=\"info\"><h3>{{f10}}</h3><p style=\"color:var(--muted);font-size:.95rem\">{{f11}}</p></div>\n<div class=\"info\"><h3>{{f12}}</h3><p style=\"color:var(--muted);font-size:.95rem\">{{f13}}</p></div>\n<div class=\"info\"><h3>{{f14}}</h3><p style=\"color:var(--muted);font-size:.95rem\">{{f15}}</p></div>\n<div class=\"info\"><h3>{{f16}}</h3><p style=\"color:var(--muted);font-size:.95rem\">{{f17}}</p></div>\n</div></div>\n    <aside class=\"side\">\n      <h3>{{f18}}</h3>\n      <p style=\"font-size:.95rem;color:var(--muted)\">{{f19}}</p>\n      <a class=\"btn btn-primary\" href=\"{{f20.href}}\">{{f20}}</a>\n      <a class=\"btn btn-outline\" href=\"tel:{{phoneTel}}\">{{f21}}</a>\n      <small>{{f22}} <a href=\"{{f23.href}}\" style=\"color:var(--cyan-deep);font-weight:700\">{{f23}}</a></small>\n      <div class=\"photo\" style=\"aspect-ratio:4/3;margin-top:.5rem\"><img src=\"{{f24.src}}\" alt=\"{{f24.alt}}\"></div>\n    </aside>\n  </div>\n</section>"
+ },
+ "wisdom-teeth-removal/3": {
+  "label": "Your treatment, step by step",
+  "fields": {
+   "f1": {
+    "type": "text",
+    "label": "Small label above the heading"
+   },
+   "f2": {
+    "type": "text",
+    "label": "Heading"
+   },
+   "f3": {
+    "type": "text",
+    "label": "Sub-heading"
+   },
+   "f4": {
+    "type": "text",
+    "label": "Paragraph"
+   },
+   "f5": {
+    "type": "text",
+    "label": "Sub-heading 2"
+   },
+   "f6": {
+    "type": "text",
+    "label": "Paragraph 2"
+   },
+   "f7": {
+    "type": "text",
+    "label": "Sub-heading 3"
+   },
+   "f8": {
+    "type": "text",
+    "label": "Paragraph 3"
+   },
+   "f9": {
+    "type": "text",
+    "label": "Sub-heading 4"
+   },
+   "f10": {
+    "type": "text",
+    "label": "Paragraph 4"
+   }
+  },
+  "html": "<section class=\"block\" style=\"background:var(--mist)\">\n  <div class=\"wrap\">\n    <span class=\"kicker\">{{f1}}</span>\n    <h2>{{f2}}</h2>\n    <div class=\"steps rv-stagger\"><div class=\"step\"><h3>{{f3}}</h3><p>{{f4}}</p></div><div class=\"step\"><h3>{{f5}}</h3><p>{{f6}}</p></div><div class=\"step\"><h3>{{f7}}</h3><p>{{f8}}</p></div><div class=\"step\"><h3>{{f9}}</h3><p>{{f10}}</p></div></div>\n  </div>\n</section>"
+ },
+ "wisdom-teeth-removal/4": {
+  "label": "What patients ask us",
+  "fields": {
+   "f1": {
+    "type": "text",
+    "label": "Small label above the heading"
+   },
+   "f2": {
+    "type": "text",
+    "label": "Heading"
+   },
+   "f3": {
+    "type": "text",
+    "label": "Question"
+   },
+   "f4": {
+    "type": "text",
+    "label": "Answer"
+   },
+   "f5": {
+    "type": "text",
+    "label": "Question 2"
+   },
+   "f6": {
+    "type": "text",
+    "label": "Answer 2"
+   },
+   "f7": {
+    "type": "text",
+    "label": "Question 3"
+   },
+   "f8": {
+    "type": "text",
+    "label": "Answer 3"
+   },
+   "f9": {
+    "type": "text",
+    "label": "Question 4"
+   },
+   "f10": {
+    "type": "text",
+    "label": "Answer 4"
+   },
+   "f11": {
+    "type": "text",
+    "label": "Text"
+   }
+  },
+  "html": "<section class=\"block\">\n  <div class=\"wrap\">\n    <span class=\"kicker\">{{f1}}</span>\n    <h2>{{f2}}</h2>\n    <div class=\"faq\" style=\"margin-left:0\"><details><summary>{{f3}}</summary><p>{{f4}}</p></details><details><summary>{{f5}}</summary><p>{{f6}}</p></details><details><summary>{{f7}}</summary><p>{{f8}}</p></details><details><summary>{{f9}}</summary><p>{{f10}}</p></details></div>\n    <div class=\"notice\" style=\"margin-top:2rem;max-width:820px\">{{f11}}</div>\n  </div>\n</section>"
+ },
+ "dental-implants/1": {
+  "label": "Page heading: Dental implants placed by specialist surgeons",
+  "fields": {
+   "f1": {
+    "type": "image",
+    "label": "Photo"
+   },
+   "f2": {
+    "type": "rich",
+    "label": "Breadcrumb"
+   },
+   "f3": {
+    "type": "text",
+    "label": "Main heading"
+   },
+   "f4": {
+    "type": "text",
+    "label": "Paragraph"
+   },
+   "f5": {
+    "type": "link",
+    "label": "Button"
+   }
+  },
+  "html": "<section class=\"pagehead\">\n  <div class=\"art\"><img src=\"{{f1.src}}\" alt=\"{{f1.alt}}\"></div>\n  <div class=\"wrap\"><div><div class=\"crumb\">{{f2}}</div><h1>{{f3}}</h1><p>{{f4}}</p><div style=\"margin-top:1.6rem;display:flex;gap:.7rem;flex-wrap:wrap\"><a class=\"btn btn-primary\" href=\"{{f5.href}}\">{{f5}}</a><a class=\"btn btn-ghost\" href=\"tel:{{phoneTel}}\">{{phone}}</a></div></div></div>\n</section>"
+ },
+ "dental-implants/2": {
+  "label": "A fixed, long-term replacement for missing teeth",
+  "fields": {
+   "f1": {
+    "type": "text",
+    "label": "Heading"
+   },
+   "f2": {
+    "type": "text",
+    "label": "Paragraph"
+   },
+   "f3": {
+    "type": "text",
+    "label": "Paragraph 2"
+   },
+   "f4": {
+    "type": "text",
+    "label": "Heading 2"
+   },
+   "f5": {
+    "type": "rich",
+    "label": "List item"
+   },
+   "f6": {
+    "type": "rich",
+    "label": "List item 2"
+   },
+   "f7": {
+    "type": "rich",
+    "label": "List item 3"
+   },
+   "f8": {
+    "type": "rich",
+    "label": "List item 4"
+   },
+   "f9": {
+    "type": "text",
+    "label": "Heading 3"
+   },
+   "f10": {
+    "type": "text",
+    "label": "Text"
+   },
+   "f11": {
+    "type": "link",
+    "label": "Link"
+   },
+   "f12": {
+    "type": "text",
+    "label": "Text 2"
+   },
+   "f13": {
+    "type": "link",
+    "label": "Link 2"
+   },
+   "f14": {
+    "type": "text",
+    "label": "Text 3"
+   },
+   "f15": {
+    "type": "text",
+    "label": "Sub-heading"
+   },
+   "f16": {
+    "type": "text",
+    "label": "Paragraph 3"
+   },
+   "f17": {
+    "type": "link",
+    "label": "Button"
+   },
+   "f18": {
+    "type": "text",
+    "label": "Text 4"
+   },
+   "f19": {
+    "type": "text",
+    "label": "Text 5"
+   },
+   "f20": {
+    "type": "link",
+    "label": "Link 3"
+   },
+   "f21": {
+    "type": "image",
+    "label": "Photo"
+   }
+  },
+  "html": "<section class=\"block\">\n  <div class=\"wrap two narrow-r\">\n    <div class=\"prose\">\n<h2 style=\"margin-top:0\">{{f1}}</h2>\n<p>{{f2}}</p>\n<p>{{f3}}</p>\n<h2>{{f4}}</h2>\n<ul><li>{{f5}}</li><li>{{f6}}</li><li>{{f7}}</li><li>{{f8}}</li></ul>\n<h2>{{f9}}</h2>\n<p>{{f10}} <a href=\"{{f11.href}}\" style=\"color:var(--cyan-deep);font-weight:700\">{{f11}}</a>{{f12}} <a href=\"{{f13.href}}\" style=\"color:var(--cyan-deep);font-weight:700\">{{f13}}</a> {{f14}}</p></div>\n    <aside class=\"side\">\n      <h3>{{f15}}</h3>\n      <p style=\"font-size:.95rem;color:var(--muted)\">{{f16}}</p>\n      <a class=\"btn btn-primary\" href=\"{{f17.href}}\">{{f17}}</a>\n      <a class=\"btn btn-outline\" href=\"tel:{{phoneTel}}\">{{f18}}</a>\n      <small>{{f19}} <a href=\"{{f20.href}}\" style=\"color:var(--cyan-deep);font-weight:700\">{{f20}}</a></small>\n      <div class=\"photo\" style=\"aspect-ratio:4/3;margin-top:.5rem\"><img src=\"{{f21.src}}\" alt=\"{{f21.alt}}\"></div>\n    </aside>\n  </div>\n</section>"
+ },
+ "dental-implants/3": {
+  "label": "Your treatment, step by step",
+  "fields": {
+   "f1": {
+    "type": "text",
+    "label": "Small label above the heading"
+   },
+   "f2": {
+    "type": "text",
+    "label": "Heading"
+   },
+   "f3": {
+    "type": "text",
+    "label": "Sub-heading"
+   },
+   "f4": {
+    "type": "text",
+    "label": "Paragraph"
+   },
+   "f5": {
+    "type": "text",
+    "label": "Sub-heading 2"
+   },
+   "f6": {
+    "type": "text",
+    "label": "Paragraph 2"
+   },
+   "f7": {
+    "type": "text",
+    "label": "Sub-heading 3"
+   },
+   "f8": {
+    "type": "text",
+    "label": "Paragraph 3"
+   },
+   "f9": {
+    "type": "text",
+    "label": "Sub-heading 4"
+   },
+   "f10": {
+    "type": "text",
+    "label": "Paragraph 4"
+   }
+  },
+  "html": "<section class=\"block\" style=\"background:var(--mist)\">\n  <div class=\"wrap\">\n    <span class=\"kicker\">{{f1}}</span>\n    <h2>{{f2}}</h2>\n    <div class=\"steps rv-stagger\"><div class=\"step\"><h3>{{f3}}</h3><p>{{f4}}</p></div><div class=\"step\"><h3>{{f5}}</h3><p>{{f6}}</p></div><div class=\"step\"><h3>{{f7}}</h3><p>{{f8}}</p></div><div class=\"step\"><h3>{{f9}}</h3><p>{{f10}}</p></div></div>\n  </div>\n</section>"
+ },
+ "dental-implants/4": {
+  "label": "What patients ask us",
+  "fields": {
+   "f1": {
+    "type": "text",
+    "label": "Small label above the heading"
+   },
+   "f2": {
+    "type": "text",
+    "label": "Heading"
+   },
+   "f3": {
+    "type": "text",
+    "label": "Question"
+   },
+   "f4": {
+    "type": "text",
+    "label": "Answer"
+   },
+   "f5": {
+    "type": "text",
+    "label": "Question 2"
+   },
+   "f6": {
+    "type": "text",
+    "label": "Answer 2"
+   },
+   "f7": {
+    "type": "text",
+    "label": "Question 3"
+   },
+   "f8": {
+    "type": "text",
+    "label": "Answer 3"
+   },
+   "f9": {
+    "type": "text",
+    "label": "Question 4"
+   },
+   "f10": {
+    "type": "text",
+    "label": "Answer 4"
+   },
+   "f11": {
+    "type": "text",
+    "label": "Text"
+   }
+  },
+  "html": "<section class=\"block\">\n  <div class=\"wrap\">\n    <span class=\"kicker\">{{f1}}</span>\n    <h2>{{f2}}</h2>\n    <div class=\"faq\" style=\"margin-left:0\"><details><summary>{{f3}}</summary><p>{{f4}}</p></details><details><summary>{{f5}}</summary><p>{{f6}}</p></details><details><summary>{{f7}}</summary><p>{{f8}}</p></details><details><summary>{{f9}}</summary><p>{{f10}}</p></details></div>\n    <div class=\"notice\" style=\"margin-top:2rem;max-width:820px\">{{f11}}</div>\n  </div>\n</section>"
+ },
+ "all-on-4-dental-implants/1": {
+  "label": "Page heading: Failing or missing teeth, replaced with a fixed full arch in a single day",
+  "fields": {
+   "f1": {
+    "type": "image",
+    "label": "Photo"
+   },
+   "f2": {
+    "type": "rich",
+    "label": "Breadcrumb"
+   },
+   "f3": {
+    "type": "text",
+    "label": "Main heading"
+   },
+   "f4": {
+    "type": "text",
+    "label": "Paragraph"
+   },
+   "f5": {
+    "type": "link",
+    "label": "Button"
+   }
+  },
+  "html": "<section class=\"pagehead\">\n  <div class=\"art\"><img src=\"{{f1.src}}\" alt=\"{{f1.alt}}\"></div>\n  <div class=\"wrap\"><div><div class=\"crumb\">{{f2}}</div><h1>{{f3}}</h1><p>{{f4}}</p><div style=\"margin-top:1.6rem;display:flex;gap:.7rem;flex-wrap:wrap\"><a class=\"btn btn-primary\" href=\"{{f5.href}}\">{{f5}}</a><a class=\"btn btn-ghost\" href=\"tel:{{phoneTel}}\">{{phone}}</a></div></div></div>\n</section>"
+ },
+ "all-on-4-dental-implants/2": {
+  "label": "Four implants. One fixed arch. No more loose dentures.",
+  "fields": {
+   "f1": {
+    "type": "text",
+    "label": "Heading"
+   },
+   "f2": {
+    "type": "text",
+    "label": "Paragraph"
+   },
+   "f3": {
+    "type": "text",
+    "label": "Paragraph 2"
+   },
+   "f4": {
+    "type": "rich",
+    "label": "List item"
+   },
+   "f5": {
+    "type": "rich",
+    "label": "List item 2"
+   },
+   "f6": {
+    "type": "rich",
+    "label": "List item 3"
+   },
+   "f7": {
+    "type": "rich",
+    "label": "List item 4"
+   },
+   "f8": {
+    "type": "text",
+    "label": "Heading 2"
+   },
+   "f9": {
+    "type": "text",
+    "label": "Text"
+   },
+   "f10": {
+    "type": "link",
+    "label": "Link"
+   },
+   "f11": {
+    "type": "text",
+    "label": "Text 2"
+   },
+   "f12": {
+    "type": "text",
+    "label": "Heading 3"
+   },
+   "f13": {
+    "type": "text",
+    "label": "Sub-heading"
+   },
+   "f14": {
+    "type": "text",
+    "label": "Paragraph 3"
+   },
+   "f15": {
+    "type": "text",
+    "label": "Sub-heading 2"
+   },
+   "f16": {
+    "type": "text",
+    "label": "Paragraph 4"
+   },
+   "f17": {
+    "type": "text",
+    "label": "Paragraph 5"
+   },
+   "f18": {
+    "type": "text",
+    "label": "Sub-heading 3"
+   },
+   "f19": {
+    "type": "text",
+    "label": "Paragraph 6"
+   },
+   "f20": {
+    "type": "link",
+    "label": "Button"
+   },
+   "f21": {
+    "type": "text",
+    "label": "Text 3"
+   },
+   "f22": {
+    "type": "text",
+    "label": "Text 4"
+   },
+   "f23": {
+    "type": "link",
+    "label": "Link 2"
+   },
+   "f24": {
+    "type": "image",
+    "label": "Photo"
+   }
+  },
+  "html": "<section class=\"block\">\n  <div class=\"wrap two narrow-r\">\n    <div class=\"prose\">\n<h2 style=\"margin-top:0\">{{f1}}</h2>\n<p>{{f2}}</p>\n<p>{{f3}}</p>\n<ul><li>{{f4}}</li><li>{{f5}}</li><li>{{f6}}</li><li>{{f7}}</li></ul>\n<h2>{{f8}}</h2>\n<p>{{f9}} <a href=\"{{f10.href}}\" style=\"color:var(--cyan-deep);font-weight:700\">{{f10}}</a>{{f11}}</p>\n<h2>{{f12}}</h2>\n<div class=\"info-cards\">\n<div class=\"info\"><h3>{{f13}}</h3><p style=\"color:var(--muted);font-size:.95rem\">{{f14}}</p></div>\n<div class=\"info\"><h3>{{f15}}</h3><p style=\"color:var(--muted);font-size:.95rem\">{{f16}}</p></div>\n</div>\n<p>{{f17}}</p></div>\n    <aside class=\"side\">\n      <h3>{{f18}}</h3>\n      <p style=\"font-size:.95rem;color:var(--muted)\">{{f19}}</p>\n      <a class=\"btn btn-primary\" href=\"{{f20.href}}\">{{f20}}</a>\n      <a class=\"btn btn-outline\" href=\"tel:{{phoneTel}}\">{{f21}}</a>\n      <small>{{f22}} <a href=\"{{f23.href}}\" style=\"color:var(--cyan-deep);font-weight:700\">{{f23}}</a></small>\n      <div class=\"photo\" style=\"aspect-ratio:4/3;margin-top:.5rem\"><img src=\"{{f24.src}}\" alt=\"{{f24.alt}}\"></div>\n    </aside>\n  </div>\n</section>"
+ },
+ "all-on-4-dental-implants/3": {
+  "label": "Your treatment, step by step",
+  "fields": {
+   "f1": {
+    "type": "text",
+    "label": "Small label above the heading"
+   },
+   "f2": {
+    "type": "text",
+    "label": "Heading"
+   },
+   "f3": {
+    "type": "text",
+    "label": "Sub-heading"
+   },
+   "f4": {
+    "type": "text",
+    "label": "Paragraph"
+   },
+   "f5": {
+    "type": "text",
+    "label": "Sub-heading 2"
+   },
+   "f6": {
+    "type": "text",
+    "label": "Paragraph 2"
+   },
+   "f7": {
+    "type": "text",
+    "label": "Sub-heading 3"
+   },
+   "f8": {
+    "type": "text",
+    "label": "Paragraph 3"
+   },
+   "f9": {
+    "type": "text",
+    "label": "Sub-heading 4"
+   },
+   "f10": {
+    "type": "text",
+    "label": "Paragraph 4"
+   }
+  },
+  "html": "<section class=\"block\" style=\"background:var(--mist)\">\n  <div class=\"wrap\">\n    <span class=\"kicker\">{{f1}}</span>\n    <h2>{{f2}}</h2>\n    <div class=\"steps rv-stagger\"><div class=\"step\"><h3>{{f3}}</h3><p>{{f4}}</p></div><div class=\"step\"><h3>{{f5}}</h3><p>{{f6}}</p></div><div class=\"step\"><h3>{{f7}}</h3><p>{{f8}}</p></div><div class=\"step\"><h3>{{f9}}</h3><p>{{f10}}</p></div></div>\n  </div>\n</section>"
+ },
+ "all-on-4-dental-implants/4": {
+  "label": "What patients ask us",
+  "fields": {
+   "f1": {
+    "type": "text",
+    "label": "Small label above the heading"
+   },
+   "f2": {
+    "type": "text",
+    "label": "Heading"
+   },
+   "f3": {
+    "type": "text",
+    "label": "Question"
+   },
+   "f4": {
+    "type": "text",
+    "label": "Answer"
+   },
+   "f5": {
+    "type": "text",
+    "label": "Question 2"
+   },
+   "f6": {
+    "type": "text",
+    "label": "Answer 2"
+   },
+   "f7": {
+    "type": "text",
+    "label": "Question 3"
+   },
+   "f8": {
+    "type": "text",
+    "label": "Answer 3"
+   },
+   "f9": {
+    "type": "text",
+    "label": "Question 4"
+   },
+   "f10": {
+    "type": "text",
+    "label": "Answer 4"
+   },
+   "f11": {
+    "type": "text",
+    "label": "Question 5"
+   },
+   "f12": {
+    "type": "text",
+    "label": "Answer 5"
+   },
+   "f13": {
+    "type": "text",
+    "label": "Text"
+   }
+  },
+  "html": "<section class=\"block\">\n  <div class=\"wrap\">\n    <span class=\"kicker\">{{f1}}</span>\n    <h2>{{f2}}</h2>\n    <div class=\"faq\" style=\"margin-left:0\"><details><summary>{{f3}}</summary><p>{{f4}}</p></details><details><summary>{{f5}}</summary><p>{{f6}}</p></details><details><summary>{{f7}}</summary><p>{{f8}}</p></details><details><summary>{{f9}}</summary><p>{{f10}}</p></details><details><summary>{{f11}}</summary><p>{{f12}}</p></details></div>\n    <div class=\"notice\" style=\"margin-top:2rem;max-width:820px\">{{f13}}</div>\n  </div>\n</section>"
+ },
+ "zygomatic-implants/1": {
+  "label": "Page heading: Fixed teeth when you have been told there is not enough bone",
+  "fields": {
+   "f1": {
+    "type": "image",
+    "label": "Photo"
+   },
+   "f2": {
+    "type": "rich",
+    "label": "Breadcrumb"
+   },
+   "f3": {
+    "type": "text",
+    "label": "Main heading"
+   },
+   "f4": {
+    "type": "text",
+    "label": "Paragraph"
+   },
+   "f5": {
+    "type": "link",
+    "label": "Button"
+   }
+  },
+  "html": "<section class=\"pagehead\">\n  <div class=\"art\"><img src=\"{{f1.src}}\" alt=\"{{f1.alt}}\"></div>\n  <div class=\"wrap\"><div><div class=\"crumb\">{{f2}}</div><h1>{{f3}}</h1><p>{{f4}}</p><div style=\"margin-top:1.6rem;display:flex;gap:.7rem;flex-wrap:wrap\"><a class=\"btn btn-primary\" href=\"{{f5.href}}\">{{f5}}</a><a class=\"btn btn-ghost\" href=\"tel:{{phoneTel}}\">{{phone}}</a></div></div></div>\n</section>"
+ },
+ "zygomatic-implants/2": {
+  "label": "Remote anchorage for the atrophic upper jaw",
+  "fields": {
+   "f1": {
+    "type": "text",
+    "label": "Heading"
+   },
+   "f2": {
+    "type": "text",
+    "label": "Paragraph"
+   },
+   "f3": {
+    "type": "rich",
+    "label": "List item"
+   },
+   "f4": {
+    "type": "rich",
+    "label": "List item 2"
+   },
+   "f5": {
+    "type": "rich",
+    "label": "List item 3"
+   },
+   "f6": {
+    "type": "text",
+    "label": "Paragraph 2"
+   },
+   "f7": {
+    "type": "text",
+    "label": "Heading 2"
+   },
+   "f8": {
+    "type": "text",
+    "label": "Paragraph 3"
+   },
+   "f9": {
+    "type": "text",
+    "label": "Heading 3"
+   },
+   "f10": {
+    "type": "text",
+    "label": "Paragraph 4"
+   },
+   "f11": {
+    "type": "text",
+    "label": "Sub-heading"
+   },
+   "f12": {
+    "type": "text",
+    "label": "Paragraph 5"
+   },
+   "f13": {
+    "type": "link",
+    "label": "Button"
+   },
+   "f14": {
+    "type": "text",
+    "label": "Text"
+   },
+   "f15": {
+    "type": "text",
+    "label": "Text 2"
+   },
+   "f16": {
+    "type": "link",
+    "label": "Link"
+   },
+   "f17": {
+    "type": "image",
+    "label": "Photo"
+   }
+  },
+  "html": "<section class=\"block\">\n  <div class=\"wrap two narrow-r\">\n    <div class=\"prose\">\n<h2 style=\"margin-top:0\">{{f1}}</h2>\n<p>{{f2}}</p>\n<ul><li>{{f3}}</li><li>{{f4}}</li><li>{{f5}}</li></ul>\n<p>{{f6}}</p>\n<h2>{{f7}}</h2>\n<p>{{f8}}</p>\n<h2>{{f9}}</h2>\n<p>{{f10}}</p></div>\n    <aside class=\"side\">\n      <h3>{{f11}}</h3>\n      <p style=\"font-size:.95rem;color:var(--muted)\">{{f12}}</p>\n      <a class=\"btn btn-primary\" href=\"{{f13.href}}\">{{f13}}</a>\n      <a class=\"btn btn-outline\" href=\"tel:{{phoneTel}}\">{{f14}}</a>\n      <small>{{f15}} <a href=\"{{f16.href}}\" style=\"color:var(--cyan-deep);font-weight:700\">{{f16}}</a></small>\n      <div class=\"photo\" style=\"aspect-ratio:4/3;margin-top:.5rem\"><img src=\"{{f17.src}}\" alt=\"{{f17.alt}}\"></div>\n    </aside>\n  </div>\n</section>"
+ },
+ "zygomatic-implants/3": {
+  "label": "Your treatment, step by step",
+  "fields": {
+   "f1": {
+    "type": "text",
+    "label": "Small label above the heading"
+   },
+   "f2": {
+    "type": "text",
+    "label": "Heading"
+   },
+   "f3": {
+    "type": "text",
+    "label": "Sub-heading"
+   },
+   "f4": {
+    "type": "text",
+    "label": "Paragraph"
+   },
+   "f5": {
+    "type": "text",
+    "label": "Sub-heading 2"
+   },
+   "f6": {
+    "type": "text",
+    "label": "Paragraph 2"
+   },
+   "f7": {
+    "type": "text",
+    "label": "Sub-heading 3"
+   },
+   "f8": {
+    "type": "text",
+    "label": "Paragraph 3"
+   },
+   "f9": {
+    "type": "text",
+    "label": "Sub-heading 4"
+   },
+   "f10": {
+    "type": "text",
+    "label": "Paragraph 4"
+   }
+  },
+  "html": "<section class=\"block\" style=\"background:var(--mist)\">\n  <div class=\"wrap\">\n    <span class=\"kicker\">{{f1}}</span>\n    <h2>{{f2}}</h2>\n    <div class=\"steps rv-stagger\"><div class=\"step\"><h3>{{f3}}</h3><p>{{f4}}</p></div><div class=\"step\"><h3>{{f5}}</h3><p>{{f6}}</p></div><div class=\"step\"><h3>{{f7}}</h3><p>{{f8}}</p></div><div class=\"step\"><h3>{{f9}}</h3><p>{{f10}}</p></div></div>\n  </div>\n</section>"
+ },
+ "zygomatic-implants/4": {
+  "label": "What patients ask us",
+  "fields": {
+   "f1": {
+    "type": "text",
+    "label": "Small label above the heading"
+   },
+   "f2": {
+    "type": "text",
+    "label": "Heading"
+   },
+   "f3": {
+    "type": "text",
+    "label": "Question"
+   },
+   "f4": {
+    "type": "text",
+    "label": "Answer"
+   },
+   "f5": {
+    "type": "text",
+    "label": "Question 2"
+   },
+   "f6": {
+    "type": "text",
+    "label": "Answer 2"
+   },
+   "f7": {
+    "type": "text",
+    "label": "Question 3"
+   },
+   "f8": {
+    "type": "text",
+    "label": "Answer 3"
+   },
+   "f9": {
+    "type": "text",
+    "label": "Question 4"
+   },
+   "f10": {
+    "type": "text",
+    "label": "Answer 4"
+   },
+   "f11": {
+    "type": "text",
+    "label": "Text"
+   }
+  },
+  "html": "<section class=\"block\">\n  <div class=\"wrap\">\n    <span class=\"kicker\">{{f1}}</span>\n    <h2>{{f2}}</h2>\n    <div class=\"faq\" style=\"margin-left:0\"><details><summary>{{f3}}</summary><p>{{f4}}</p></details><details><summary>{{f5}}</summary><p>{{f6}}</p></details><details><summary>{{f7}}</summary><p>{{f8}}</p></details><details><summary>{{f9}}</summary><p>{{f10}}</p></details></div>\n    <div class=\"notice\" style=\"margin-top:2rem;max-width:820px\">{{f11}}</div>\n  </div>\n</section>"
+ },
+ "jaw-bone-grafting/1": {
+  "label": "Page heading: Rebuilding bone so implants have something to hold",
+  "fields": {
+   "f1": {
+    "type": "image",
+    "label": "Photo"
+   },
+   "f2": {
+    "type": "rich",
+    "label": "Breadcrumb"
+   },
+   "f3": {
+    "type": "text",
+    "label": "Main heading"
+   },
+   "f4": {
+    "type": "text",
+    "label": "Paragraph"
+   },
+   "f5": {
+    "type": "link",
+    "label": "Button"
+   }
+  },
+  "html": "<section class=\"pagehead\">\n  <div class=\"art\"><img src=\"{{f1.src}}\" alt=\"{{f1.alt}}\"></div>\n  <div class=\"wrap\"><div><div class=\"crumb\">{{f2}}</div><h1>{{f3}}</h1><p>{{f4}}</p><div style=\"margin-top:1.6rem;display:flex;gap:.7rem;flex-wrap:wrap\"><a class=\"btn btn-primary\" href=\"{{f5.href}}\">{{f5}}</a><a class=\"btn btn-ghost\" href=\"tel:{{phoneTel}}\">{{phone}}</a></div></div></div>\n</section>"
+ },
+ "jaw-bone-grafting/2": {
+  "label": "Types of grafting we perform",
+  "fields": {
+   "f1": {
+    "type": "text",
+    "label": "Heading"
+   },
+   "f2": {
+    "type": "text",
+    "label": "Sub-heading"
+   },
+   "f3": {
+    "type": "text",
+    "label": "Paragraph"
+   },
+   "f4": {
+    "type": "text",
+    "label": "Sub-heading 2"
+   },
+   "f5": {
+    "type": "text",
+    "label": "Paragraph 2"
+   },
+   "f6": {
+    "type": "text",
+    "label": "Sub-heading 3"
+   },
+   "f7": {
+    "type": "text",
+    "label": "Paragraph 3"
+   },
+   "f8": {
+    "type": "text",
+    "label": "Sub-heading 4"
+   },
+   "f9": {
+    "type": "text",
+    "label": "Paragraph 4"
+   },
+   "f10": {
+    "type": "text",
+    "label": "Heading 2"
+   },
+   "f11": {
+    "type": "text",
+    "label": "Paragraph 5"
+   },
+   "f12": {
+    "type": "text",
+    "label": "Heading 3"
+   },
+   "f13": {
+    "type": "text",
+    "label": "Paragraph 6"
+   },
+   "f14": {
+    "type": "text",
+    "label": "Sub-heading 5"
+   },
+   "f15": {
+    "type": "text",
+    "label": "Paragraph 7"
+   },
+   "f16": {
+    "type": "link",
+    "label": "Button"
+   },
+   "f17": {
+    "type": "text",
+    "label": "Text"
+   },
+   "f18": {
+    "type": "text",
+    "label": "Text 2"
+   },
+   "f19": {
+    "type": "link",
+    "label": "Link"
+   },
+   "f20": {
+    "type": "image",
+    "label": "Photo"
+   }
+  },
+  "html": "<section class=\"block\">\n  <div class=\"wrap two narrow-r\">\n    <div class=\"prose\">\n<h2 style=\"margin-top:0\">{{f1}}</h2>\n<div class=\"info-cards\">\n<div class=\"info\"><h3>{{f2}}</h3><p style=\"color:var(--muted);font-size:.95rem\">{{f3}}</p></div>\n<div class=\"info\"><h3>{{f4}}</h3><p style=\"color:var(--muted);font-size:.95rem\">{{f5}}</p></div>\n<div class=\"info\"><h3>{{f6}}</h3><p style=\"color:var(--muted);font-size:.95rem\">{{f7}}</p></div>\n<div class=\"info\"><h3>{{f8}}</h3><p style=\"color:var(--muted);font-size:.95rem\">{{f9}}</p></div>\n</div>\n<h2>{{f10}}</h2>\n<p>{{f11}}</p>\n<h2>{{f12}}</h2>\n<p>{{f13}}</p></div>\n    <aside class=\"side\">\n      <h3>{{f14}}</h3>\n      <p style=\"font-size:.95rem;color:var(--muted)\">{{f15}}</p>\n      <a class=\"btn btn-primary\" href=\"{{f16.href}}\">{{f16}}</a>\n      <a class=\"btn btn-outline\" href=\"tel:{{phoneTel}}\">{{f17}}</a>\n      <small>{{f18}} <a href=\"{{f19.href}}\" style=\"color:var(--cyan-deep);font-weight:700\">{{f19}}</a></small>\n      <div class=\"photo\" style=\"aspect-ratio:4/3;margin-top:.5rem\"><img src=\"{{f20.src}}\" alt=\"{{f20.alt}}\"></div>\n    </aside>\n  </div>\n</section>"
+ },
+ "jaw-bone-grafting/3": {
+  "label": "Your treatment, step by step",
+  "fields": {
+   "f1": {
+    "type": "text",
+    "label": "Small label above the heading"
+   },
+   "f2": {
+    "type": "text",
+    "label": "Heading"
+   },
+   "f3": {
+    "type": "text",
+    "label": "Sub-heading"
+   },
+   "f4": {
+    "type": "text",
+    "label": "Paragraph"
+   },
+   "f5": {
+    "type": "text",
+    "label": "Sub-heading 2"
+   },
+   "f6": {
+    "type": "text",
+    "label": "Paragraph 2"
+   },
+   "f7": {
+    "type": "text",
+    "label": "Sub-heading 3"
+   },
+   "f8": {
+    "type": "text",
+    "label": "Paragraph 3"
+   },
+   "f9": {
+    "type": "text",
+    "label": "Sub-heading 4"
+   },
+   "f10": {
+    "type": "text",
+    "label": "Paragraph 4"
+   }
+  },
+  "html": "<section class=\"block\" style=\"background:var(--mist)\">\n  <div class=\"wrap\">\n    <span class=\"kicker\">{{f1}}</span>\n    <h2>{{f2}}</h2>\n    <div class=\"steps rv-stagger\"><div class=\"step\"><h3>{{f3}}</h3><p>{{f4}}</p></div><div class=\"step\"><h3>{{f5}}</h3><p>{{f6}}</p></div><div class=\"step\"><h3>{{f7}}</h3><p>{{f8}}</p></div><div class=\"step\"><h3>{{f9}}</h3><p>{{f10}}</p></div></div>\n  </div>\n</section>"
+ },
+ "jaw-bone-grafting/4": {
+  "label": "What patients ask us",
+  "fields": {
+   "f1": {
+    "type": "text",
+    "label": "Small label above the heading"
+   },
+   "f2": {
+    "type": "text",
+    "label": "Heading"
+   },
+   "f3": {
+    "type": "text",
+    "label": "Question"
+   },
+   "f4": {
+    "type": "text",
+    "label": "Answer"
+   },
+   "f5": {
+    "type": "text",
+    "label": "Question 2"
+   },
+   "f6": {
+    "type": "text",
+    "label": "Answer 2"
+   },
+   "f7": {
+    "type": "text",
+    "label": "Question 3"
+   },
+   "f8": {
+    "type": "text",
+    "label": "Answer 3"
+   },
+   "f9": {
+    "type": "text",
+    "label": "Question 4"
+   },
+   "f10": {
+    "type": "text",
+    "label": "Answer 4"
+   },
+   "f11": {
+    "type": "text",
+    "label": "Text"
+   }
+  },
+  "html": "<section class=\"block\">\n  <div class=\"wrap\">\n    <span class=\"kicker\">{{f1}}</span>\n    <h2>{{f2}}</h2>\n    <div class=\"faq\" style=\"margin-left:0\"><details><summary>{{f3}}</summary><p>{{f4}}</p></details><details><summary>{{f5}}</summary><p>{{f6}}</p></details><details><summary>{{f7}}</summary><p>{{f8}}</p></details><details><summary>{{f9}}</summary><p>{{f10}}</p></details></div>\n    <div class=\"notice\" style=\"margin-top:2rem;max-width:820px\">{{f11}}</div>\n  </div>\n</section>"
+ },
+ "orthognathic-corrective-jaw-surgery/1": {
+  "label": "Page heading: Corrective jaw surgery to align your bite and your face",
+  "fields": {
+   "f1": {
+    "type": "image",
+    "label": "Photo"
+   },
+   "f2": {
+    "type": "rich",
+    "label": "Breadcrumb"
+   },
+   "f3": {
+    "type": "text",
+    "label": "Main heading"
+   },
+   "f4": {
+    "type": "text",
+    "label": "Paragraph"
+   },
+   "f5": {
+    "type": "link",
+    "label": "Button"
+   }
+  },
+  "html": "<section class=\"pagehead\">\n  <div class=\"art\"><img src=\"{{f1.src}}\" alt=\"{{f1.alt}}\"></div>\n  <div class=\"wrap\"><div><div class=\"crumb\">{{f2}}</div><h1>{{f3}}</h1><p>{{f4}}</p><div style=\"margin-top:1.6rem;display:flex;gap:.7rem;flex-wrap:wrap\"><a class=\"btn btn-primary\" href=\"{{f5.href}}\">{{f5}}</a><a class=\"btn btn-ghost\" href=\"tel:{{phoneTel}}\">{{phone}}</a></div></div></div>\n</section>"
+ },
+ "orthognathic-corrective-jaw-surgery/2": {
+  "label": "When jaw surgery is recommended",
+  "fields": {
+   "f1": {
+    "type": "text",
+    "label": "Heading"
+   },
+   "f2": {
+    "type": "text",
+    "label": "Paragraph"
+   },
+   "f3": {
+    "type": "text",
+    "label": "List item"
+   },
+   "f4": {
+    "type": "text",
+    "label": "List item 2"
+   },
+   "f5": {
+    "type": "text",
+    "label": "List item 3"
+   },
+   "f6": {
+    "type": "text",
+    "label": "List item 4"
+   },
+   "f7": {
+    "type": "text",
+    "label": "List item 5"
+   },
+   "f8": {
+    "type": "text",
+    "label": "List item 6"
+   },
+   "f9": {
+    "type": "text",
+    "label": "Heading 2"
+   },
+   "f10": {
+    "type": "text",
+    "label": "Paragraph 2"
+   },
+   "f11": {
+    "type": "text",
+    "label": "Heading 3"
+   },
+   "f12": {
+    "type": "text",
+    "label": "Paragraph 3"
+   },
+   "f13": {
+    "type": "text",
+    "label": "Sub-heading"
+   },
+   "f14": {
+    "type": "text",
+    "label": "Paragraph 4"
+   },
+   "f15": {
+    "type": "link",
+    "label": "Button"
+   },
+   "f16": {
+    "type": "text",
+    "label": "Text"
+   },
+   "f17": {
+    "type": "text",
+    "label": "Text 2"
+   },
+   "f18": {
+    "type": "link",
+    "label": "Link"
+   },
+   "f19": {
+    "type": "image",
+    "label": "Photo"
+   }
+  },
+  "html": "<section class=\"block\">\n  <div class=\"wrap two narrow-r\">\n    <div class=\"prose\">\n<h2 style=\"margin-top:0\">{{f1}}</h2>\n<p>{{f2}}</p>\n<ul><li>{{f3}}</li><li>{{f4}}</li><li>{{f5}}</li><li>{{f6}}</li><li>{{f7}}</li><li>{{f8}}</li></ul>\n<h2>{{f9}}</h2>\n<p>{{f10}}</p>\n<h2>{{f11}}</h2>\n<p>{{f12}}</p></div>\n    <aside class=\"side\">\n      <h3>{{f13}}</h3>\n      <p style=\"font-size:.95rem;color:var(--muted)\">{{f14}}</p>\n      <a class=\"btn btn-primary\" href=\"{{f15.href}}\">{{f15}}</a>\n      <a class=\"btn btn-outline\" href=\"tel:{{phoneTel}}\">{{f16}}</a>\n      <small>{{f17}} <a href=\"{{f18.href}}\" style=\"color:var(--cyan-deep);font-weight:700\">{{f18}}</a></small>\n      <div class=\"photo\" style=\"aspect-ratio:4/3;margin-top:.5rem\"><img src=\"{{f19.src}}\" alt=\"{{f19.alt}}\"></div>\n    </aside>\n  </div>\n</section>"
+ },
+ "orthognathic-corrective-jaw-surgery/3": {
+  "label": "Your treatment, step by step",
+  "fields": {
+   "f1": {
+    "type": "text",
+    "label": "Small label above the heading"
+   },
+   "f2": {
+    "type": "text",
+    "label": "Heading"
+   },
+   "f3": {
+    "type": "text",
+    "label": "Sub-heading"
+   },
+   "f4": {
+    "type": "text",
+    "label": "Paragraph"
+   },
+   "f5": {
+    "type": "text",
+    "label": "Sub-heading 2"
+   },
+   "f6": {
+    "type": "text",
+    "label": "Paragraph 2"
+   },
+   "f7": {
+    "type": "text",
+    "label": "Sub-heading 3"
+   },
+   "f8": {
+    "type": "text",
+    "label": "Paragraph 3"
+   },
+   "f9": {
+    "type": "text",
+    "label": "Sub-heading 4"
+   },
+   "f10": {
+    "type": "text",
+    "label": "Paragraph 4"
+   }
+  },
+  "html": "<section class=\"block\" style=\"background:var(--mist)\">\n  <div class=\"wrap\">\n    <span class=\"kicker\">{{f1}}</span>\n    <h2>{{f2}}</h2>\n    <div class=\"steps rv-stagger\"><div class=\"step\"><h3>{{f3}}</h3><p>{{f4}}</p></div><div class=\"step\"><h3>{{f5}}</h3><p>{{f6}}</p></div><div class=\"step\"><h3>{{f7}}</h3><p>{{f8}}</p></div><div class=\"step\"><h3>{{f9}}</h3><p>{{f10}}</p></div></div>\n  </div>\n</section>"
+ },
+ "orthognathic-corrective-jaw-surgery/4": {
+  "label": "What patients ask us",
+  "fields": {
+   "f1": {
+    "type": "text",
+    "label": "Small label above the heading"
+   },
+   "f2": {
+    "type": "text",
+    "label": "Heading"
+   },
+   "f3": {
+    "type": "text",
+    "label": "Question"
+   },
+   "f4": {
+    "type": "text",
+    "label": "Answer"
+   },
+   "f5": {
+    "type": "text",
+    "label": "Question 2"
+   },
+   "f6": {
+    "type": "text",
+    "label": "Answer 2"
+   },
+   "f7": {
+    "type": "text",
+    "label": "Question 3"
+   },
+   "f8": {
+    "type": "text",
+    "label": "Answer 3"
+   },
+   "f9": {
+    "type": "text",
+    "label": "Question 4"
+   },
+   "f10": {
+    "type": "text",
+    "label": "Answer 4"
+   },
+   "f11": {
+    "type": "text",
+    "label": "Text"
+   }
+  },
+  "html": "<section class=\"block\">\n  <div class=\"wrap\">\n    <span class=\"kicker\">{{f1}}</span>\n    <h2>{{f2}}</h2>\n    <div class=\"faq\" style=\"margin-left:0\"><details><summary>{{f3}}</summary><p>{{f4}}</p></details><details><summary>{{f5}}</summary><p>{{f6}}</p></details><details><summary>{{f7}}</summary><p>{{f8}}</p></details><details><summary>{{f9}}</summary><p>{{f10}}</p></details></div>\n    <div class=\"notice\" style=\"margin-top:2rem;max-width:820px\">{{f11}}</div>\n  </div>\n</section>"
+ },
+ "facial-trauma/1": {
+  "label": "Page heading: Repair and reconstruction of facial injuries",
+  "fields": {
+   "f1": {
+    "type": "image",
+    "label": "Photo"
+   },
+   "f2": {
+    "type": "rich",
+    "label": "Breadcrumb"
+   },
+   "f3": {
+    "type": "text",
+    "label": "Main heading"
+   },
+   "f4": {
+    "type": "text",
+    "label": "Paragraph"
+   },
+   "f5": {
+    "type": "link",
+    "label": "Button"
+   }
+  },
+  "html": "<section class=\"pagehead\">\n  <div class=\"art\"><img src=\"{{f1.src}}\" alt=\"{{f1.alt}}\"></div>\n  <div class=\"wrap\"><div><div class=\"crumb\">{{f2}}</div><h1>{{f3}}</h1><p>{{f4}}</p><div style=\"margin-top:1.6rem;display:flex;gap:.7rem;flex-wrap:wrap\"><a class=\"btn btn-primary\" href=\"{{f5.href}}\">{{f5}}</a><a class=\"btn btn-ghost\" href=\"tel:{{phoneTel}}\">{{phone}}</a></div></div></div>\n</section>"
+ },
+ "facial-trauma/2": {
+  "label": "Injuries we treat",
+  "fields": {
+   "f1": {
+    "type": "text",
+    "label": "Heading"
+   },
+   "f2": {
+    "type": "text",
+    "label": "List item"
+   },
+   "f3": {
+    "type": "text",
+    "label": "List item 2"
+   },
+   "f4": {
+    "type": "text",
+    "label": "List item 3"
+   },
+   "f5": {
+    "type": "text",
+    "label": "List item 4"
+   },
+   "f6": {
+    "type": "text",
+    "label": "List item 5"
+   },
+   "f7": {
+    "type": "text",
+    "label": "List item 6"
+   },
+   "f8": {
+    "type": "text",
+    "label": "Heading 2"
+   },
+   "f9": {
+    "type": "text",
+    "label": "Paragraph"
+   },
+   "f10": {
+    "type": "text",
+    "label": "Heading 3"
+   },
+   "f11": {
+    "type": "text",
+    "label": "Paragraph 2"
+   },
+   "f12": {
+    "type": "text",
+    "label": "Heading 4"
+   },
+   "f13": {
+    "type": "text",
+    "label": "Paragraph 3"
+   },
+   "f14": {
+    "type": "text",
+    "label": "Sub-heading"
+   },
+   "f15": {
+    "type": "text",
+    "label": "Paragraph 4"
+   },
+   "f16": {
+    "type": "link",
+    "label": "Button"
+   },
+   "f17": {
+    "type": "text",
+    "label": "Text"
+   },
+   "f18": {
+    "type": "text",
+    "label": "Text 2"
+   },
+   "f19": {
+    "type": "link",
+    "label": "Link"
+   },
+   "f20": {
+    "type": "image",
+    "label": "Photo"
+   }
+  },
+  "html": "<section class=\"block\">\n  <div class=\"wrap two narrow-r\">\n    <div class=\"prose\">\n<h2 style=\"margin-top:0\">{{f1}}</h2>\n<ul><li>{{f2}}</li><li>{{f3}}</li><li>{{f4}}</li><li>{{f5}}</li><li>{{f6}}</li><li>{{f7}}</li></ul>\n<h2>{{f8}}</h2>\n<p>{{f9}}</p>\n<h2>{{f10}}</h2>\n<p>{{f11}}</p>\n<h2>{{f12}}</h2>\n<p>{{f13}}</p></div>\n    <aside class=\"side\">\n      <h3>{{f14}}</h3>\n      <p style=\"font-size:.95rem;color:var(--muted)\">{{f15}}</p>\n      <a class=\"btn btn-primary\" href=\"{{f16.href}}\">{{f16}}</a>\n      <a class=\"btn btn-outline\" href=\"tel:{{phoneTel}}\">{{f17}}</a>\n      <small>{{f18}} <a href=\"{{f19.href}}\" style=\"color:var(--cyan-deep);font-weight:700\">{{f19}}</a></small>\n      <div class=\"photo\" style=\"aspect-ratio:4/3;margin-top:.5rem\"><img src=\"{{f20.src}}\" alt=\"{{f20.alt}}\"></div>\n    </aside>\n  </div>\n</section>"
+ },
+ "facial-trauma/3": {
+  "label": "Your treatment, step by step",
+  "fields": {
+   "f1": {
+    "type": "text",
+    "label": "Small label above the heading"
+   },
+   "f2": {
+    "type": "text",
+    "label": "Heading"
+   },
+   "f3": {
+    "type": "text",
+    "label": "Sub-heading"
+   },
+   "f4": {
+    "type": "text",
+    "label": "Paragraph"
+   },
+   "f5": {
+    "type": "text",
+    "label": "Sub-heading 2"
+   },
+   "f6": {
+    "type": "text",
+    "label": "Paragraph 2"
+   },
+   "f7": {
+    "type": "text",
+    "label": "Sub-heading 3"
+   },
+   "f8": {
+    "type": "text",
+    "label": "Paragraph 3"
+   },
+   "f9": {
+    "type": "text",
+    "label": "Sub-heading 4"
+   },
+   "f10": {
+    "type": "text",
+    "label": "Paragraph 4"
+   }
+  },
+  "html": "<section class=\"block\" style=\"background:var(--mist)\">\n  <div class=\"wrap\">\n    <span class=\"kicker\">{{f1}}</span>\n    <h2>{{f2}}</h2>\n    <div class=\"steps rv-stagger\"><div class=\"step\"><h3>{{f3}}</h3><p>{{f4}}</p></div><div class=\"step\"><h3>{{f5}}</h3><p>{{f6}}</p></div><div class=\"step\"><h3>{{f7}}</h3><p>{{f8}}</p></div><div class=\"step\"><h3>{{f9}}</h3><p>{{f10}}</p></div></div>\n  </div>\n</section>"
+ },
+ "facial-trauma/4": {
+  "label": "What patients ask us",
+  "fields": {
+   "f1": {
+    "type": "text",
+    "label": "Small label above the heading"
+   },
+   "f2": {
+    "type": "text",
+    "label": "Heading"
+   },
+   "f3": {
+    "type": "text",
+    "label": "Question"
+   },
+   "f4": {
+    "type": "text",
+    "label": "Answer"
+   },
+   "f5": {
+    "type": "text",
+    "label": "Question 2"
+   },
+   "f6": {
+    "type": "text",
+    "label": "Answer 2"
+   },
+   "f7": {
+    "type": "text",
+    "label": "Question 3"
+   },
+   "f8": {
+    "type": "text",
+    "label": "Answer 3"
+   },
+   "f9": {
+    "type": "text",
+    "label": "Question 4"
+   },
+   "f10": {
+    "type": "text",
+    "label": "Answer 4"
+   },
+   "f11": {
+    "type": "text",
+    "label": "Text"
+   }
+  },
+  "html": "<section class=\"block\">\n  <div class=\"wrap\">\n    <span class=\"kicker\">{{f1}}</span>\n    <h2>{{f2}}</h2>\n    <div class=\"faq\" style=\"margin-left:0\"><details><summary>{{f3}}</summary><p>{{f4}}</p></details><details><summary>{{f5}}</summary><p>{{f6}}</p></details><details><summary>{{f7}}</summary><p>{{f8}}</p></details><details><summary>{{f9}}</summary><p>{{f10}}</p></details></div>\n    <div class=\"notice\" style=\"margin-top:2rem;max-width:820px\">{{f11}}</div>\n  </div>\n</section>"
+ },
+ "patient-information/1": {
+  "label": "Page heading: What to expect, from first call to full recovery",
+  "fields": {
+   "f1": {
+    "type": "image",
+    "label": "Photo"
+   },
+   "f2": {
+    "type": "rich",
+    "label": "Breadcrumb"
+   },
+   "f3": {
+    "type": "text",
+    "label": "Main heading"
+   },
+   "f4": {
+    "type": "text",
+    "label": "Paragraph"
+   }
+  },
+  "html": "<section class=\"pagehead\">\n  <div class=\"art\"><img src=\"{{f1.src}}\" alt=\"{{f1.alt}}\"></div>\n  <div class=\"wrap\"><div><div class=\"crumb\">{{f2}}</div><h1>{{f3}}</h1><p>{{f4}}</p></div></div>\n</section>"
+ },
+ "patient-information/2": {
+  "label": "Photo strip",
+  "fields": {
+   "f1": {
+    "type": "image",
+    "label": "Photo"
+   },
+   "f2": {
+    "type": "image",
+    "label": "Photo 2"
+   },
+   "f3": {
+    "type": "image",
+    "label": "Photo 3"
+   },
+   "f4": {
+    "type": "image",
+    "label": "Photo 4"
+   }
+  },
+  "html": "<section class=\"block\" style=\"padding-bottom:0\"><div class=\"wrap\"><div class=\"strip rv-stagger\"><img src=\"{{f1.src}}\" alt=\"{{f1.alt}}\"><img src=\"{{f2.src}}\" alt=\"{{f2.alt}}\"><img src=\"{{f3.src}}\" alt=\"{{f3.alt}}\"><img src=\"{{f4.src}}\" alt=\"{{f4.alt}}\"></div></div></section>"
+ },
+ "patient-information/3": {
+  "label": "Your first consultation",
+  "fields": {
+   "f1": {
+    "type": "text",
+    "label": "Heading"
+   },
+   "f2": {
+    "type": "text",
+    "label": "Paragraph"
+   },
+   "f3": {
+    "type": "text",
+    "label": "Paragraph 2"
+   },
+   "f4": {
+    "type": "text",
+    "label": "Sub-heading"
+   },
+   "f5": {
+    "type": "text",
+    "label": "List item"
+   },
+   "f6": {
+    "type": "text",
+    "label": "List item 2"
+   },
+   "f7": {
+    "type": "text",
+    "label": "List item 3"
+   },
+   "f8": {
+    "type": "text",
+    "label": "List item 4"
+   },
+   "f9": {
+    "type": "text",
+    "label": "List item 5"
+   },
+   "f10": {
+    "type": "text",
+    "label": "Heading 2"
+   },
+   "f11": {
+    "type": "text",
+    "label": "Paragraph 3"
+   },
+   "f12": {
+    "type": "text",
+    "label": "Sub-heading 2"
+   },
+   "f13": {
+    "type": "text",
+    "label": "Paragraph 4"
+   },
+   "f14": {
+    "type": "text",
+    "label": "Sub-heading 3"
+   },
+   "f15": {
+    "type": "text",
+    "label": "Paragraph 5"
+   },
+   "f16": {
+    "type": "text",
+    "label": "Sub-heading 4"
+   },
+   "f17": {
+    "type": "text",
+    "label": "Paragraph 6"
+   },
+   "f18": {
+    "type": "text",
+    "label": "Sub-heading 5"
+   },
+   "f19": {
+    "type": "text",
+    "label": "Paragraph 7"
+   },
+   "f20": {
+    "type": "text",
+    "label": "Heading 3"
+   },
+   "f21": {
+    "type": "text",
+    "label": "Sub-heading 6"
+   },
+   "f22": {
+    "type": "text",
+    "label": "List item 6"
+   },
+   "f23": {
+    "type": "text",
+    "label": "List item 7"
+   },
+   "f24": {
+    "type": "text",
+    "label": "List item 8"
+   },
+   "f25": {
+    "type": "text",
+    "label": "List item 9"
+   },
+   "f26": {
+    "type": "text",
+    "label": "List item 10"
+   },
+   "f27": {
+    "type": "text",
+    "label": "Sub-heading 7"
+   },
+   "f28": {
+    "type": "text",
+    "label": "List item 11"
+   },
+   "f29": {
+    "type": "text",
+    "label": "List item 12"
+   },
+   "f30": {
+    "type": "text",
+    "label": "List item 13"
+   },
+   "f31": {
+    "type": "text",
+    "label": "List item 14"
+   },
+   "f32": {
+    "type": "text",
+    "label": "List item 15"
+   },
+   "f33": {
+    "type": "text",
+    "label": "Text"
+   },
+   "f34": {
+    "type": "text",
+    "label": "Heading 4"
+   },
+   "f35": {
+    "type": "text",
+    "label": "Paragraph 8"
+   },
+   "f36": {
+    "type": "link",
+    "label": "Button"
+   },
+   "f37": {
+    "type": "text",
+    "label": "Sub-heading 8"
+   },
+   "f38": {
+    "type": "text",
+    "label": "Paragraph 9"
+   },
+   "f39": {
+    "type": "text",
+    "label": "Sub-heading 9"
+   },
+   "f40": {
+    "type": "text",
+    "label": "Paragraph 10"
+   },
+   "f41": {
+    "type": "text",
+    "label": "Text 2"
+   },
+   "f42": {
+    "type": "link",
+    "label": "Button 2"
+   },
+   "f43": {
+    "type": "text",
+    "label": "Small text"
+   },
+   "f44": {
+    "type": "image",
+    "label": "Photo"
+   }
+  },
+  "html": "<section class=\"block\">\n  <div class=\"wrap two narrow-r\">\n    <div class=\"prose\">\n      <h2 style=\"margin-top:0\" id=\"consult\">{{f1}}</h2>\n      <p>{{f2}}</p>\n      <p>{{f3}}</p>\n      <h3>{{f4}}</h3>\n      <ul><li>{{f5}}</li><li>{{f6}}</li><li>{{f7}}</li><li>{{f8}}</li><li>{{f9}}</li></ul>\n\n      <h2 id=\"payment\">{{f10}}</h2>\n      <p>{{f11}}</p>\n      <div class=\"info-cards\">\n        <div class=\"info\"><h3>{{f12}}</h3><p style=\"color:var(--muted);font-size:.95rem\">{{f13}}</p></div>\n        <div class=\"info\"><h3>{{f14}}</h3><p style=\"color:var(--muted);font-size:.95rem\">{{f15}}</p></div>\n        <div class=\"info\"><h3>{{f16}}</h3><p style=\"color:var(--muted);font-size:.95rem\">{{f17}}</p></div>\n        <div class=\"info\"><h3>{{f18}}</h3><p style=\"color:var(--muted);font-size:.95rem\">{{f19}}</p></div>\n      </div>\n\n      <h2 id=\"surgery\">{{f20}}</h2>\n      <h3>{{f21}}</h3>\n      <ul><li>{{f22}}</li><li>{{f23}}</li><li>{{f24}}</li><li>{{f25}}</li><li>{{f26}}</li></ul>\n      <h3>{{f27}}</h3>\n      <ul><li>{{f28}}</li><li>{{f29}}</li><li>{{f30}}</li><li>{{f31}}</li><li>{{f32}}</li></ul>\n      <div class=\"notice\">{{f33}}</div>\n\n      <h2 id=\"forms\">{{f34}}</h2>\n      <p>{{f35}}</p>\n      <p><a class=\"btn btn-navy\" href=\"{{f36.href}}\">{{f36}}</a></p>\n      <h3>{{f37}}</h3>\n      <p>{{f38}}</p>\n    </div>\n    <aside class=\"side\">\n      <h3>{{f39}}</h3>\n      <p style=\"font-size:.95rem;color:var(--muted)\">{{f40}}</p>\n      <a class=\"btn btn-primary\" href=\"tel:{{phoneTel}}\">{{f41}}</a>\n      <a class=\"btn btn-outline\" href=\"{{f42.href}}\">{{f42}}</a>\n      <small>{{f43}}</small>\n      <div class=\"photo\" style=\"aspect-ratio:4/3;margin-top:.5rem\"><img src=\"{{f44.src}}\" alt=\"{{f44.alt}}\"></div>\n    </aside>\n  </div>\n</section>"
+ },
+ "locations/1": {
+  "label": "Page heading: Consulting in Buderim, operating across the Coast and Wide Bay",
+  "fields": {
+   "f1": {
+    "type": "image",
+    "label": "Photo"
+   },
+   "f2": {
+    "type": "rich",
+    "label": "Breadcrumb"
+   },
+   "f3": {
+    "type": "text",
+    "label": "Main heading"
+   },
+   "f4": {
+    "type": "text",
+    "label": "Paragraph"
+   }
+  },
+  "html": "<section class=\"pagehead\">\n  <div class=\"art\"><img src=\"{{f1.src}}\" alt=\"{{f1.alt}}\"></div>\n  <div class=\"wrap\"><div><div class=\"crumb\">{{f2}}</div><h1>{{f3}}</h1><p>{{f4}}</p></div></div>\n</section>"
+ },
+ "locations/2": {
+  "label": "Nucleus Medical Suites, Buderim",
+  "fields": {
+   "f1": {
+    "type": "text",
+    "label": "Small label above the heading"
+   },
+   "f2": {
+    "type": "text",
+    "label": "Heading"
+   },
+   "f3": {
+    "type": "rich",
+    "label": "Paragraph"
+   },
+   "f4": {
+    "type": "text",
+    "label": "Bold text"
+   },
+   "f5": {
+    "type": "rich",
+    "label": "Paragraph 2"
+   },
+   "f6": {
+    "type": "text",
+    "label": "Paragraph 3"
+   },
+   "f7": {
+    "type": "link",
+    "label": "Button"
+   },
+   "f8": {
+    "type": "text",
+    "label": "Text"
+   },
+   "f9": {
+    "type": "image",
+    "label": "Photo"
+   },
+   "f10": {
+    "type": "image",
+    "label": "Photo 2"
+   },
+   "f11": {
+    "type": "image",
+    "label": "Photo 3"
+   },
+   "f12": {
+    "type": "image",
+    "label": "Photo 4"
+   }
+  },
+  "html": "<section class=\"block\">\n  <div class=\"wrap two\">\n    <div>\n      <span class=\"kicker\">{{f1}}</span>\n      <h2>{{f2}}</h2>\n      <div class=\"prose\" style=\"margin-top:1rem\">\n        <p>{{f3}}</p>\n        <p><strong>{{f4}}</strong> <a href=\"tel:{{phoneTel}}\" style=\"color:var(--cyan-deep);font-weight:700\">{{phone}}</a></p>\n        <p>{{f5}}</p>\n        <p>{{f6}}</p>\n        <p><a class=\"btn btn-navy\" href=\"{{f7.href}}\" target=\"_blank\" rel=\"noopener\">{{f7}}</a></p>\n      </div>\n    </div>\n    <div class=\"mapbox\"><div class=\"fallback\">{{f8}}</div><iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d886.5!2d153.0930069!3d-26.6838766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b93771d577bd3e7%3A0x1a52ca83026f674f!2sSunshine%20Coast%20Oral%2C%20Facial%20%26%20Implant%20Specialists!5e0!3m2!1sen!2sau!4v1759276800000!5m2!1sen!2sau\" title=\"Google Map showing Sunshine Coast Oral, Facial &amp; Implant Specialists, Suite 5, Nucleus Medical Suites, 23 Elsa Wilson Drive, Buderim QLD\" loading=\"lazy\" allowfullscreen referrerpolicy=\"no-referrer-when-downgrade\"></iframe></div>\n  </div>\n  <div class=\"wrap\"><div class=\"strip rv-stagger\"><img src=\"{{f9.src}}\" alt=\"{{f9.alt}}\"><img src=\"{{f10.src}}\" alt=\"{{f10.alt}}\"><img src=\"{{f11.src}}\" alt=\"{{f11.alt}}\"><img src=\"{{f12.src}}\" alt=\"{{f12.alt}}\"></div></div>\n</section>"
+ },
+ "locations/3": {
+  "label": "Our rooms and five private hospitals, from Buderim to Hervey Bay",
+  "fields": {
+   "f1": {
+    "type": "text",
+    "label": "Small label above the heading"
+   },
+   "f2": {
+    "type": "text",
+    "label": "Heading"
+   },
+   "f3": {
+    "type": "text",
+    "label": "Introduction"
+   },
+   "f4": {
+    "type": "text",
+    "label": "Small label above the heading 2"
+   },
+   "f5": {
+    "type": "text",
+    "label": "Sub-heading"
+   },
+   "f6": {
+    "type": "text",
+    "label": "Paragraph"
+   },
+   "f7": {
+    "type": "text",
+    "label": "Paragraph 2"
+   },
+   "f8": {
+    "type": "link",
+    "label": "Button"
+   },
+   "f9": {
+    "type": "text",
+    "label": "Text"
+   }
+  },
+  "html": "<section class=\"block\" style=\"background:var(--mist)\">\n  <div class=\"wrap\">\n    <span class=\"kicker\">{{f1}}</span>\n    <h2>{{f2}}</h2>\n    <p class=\"lead\" style=\"margin-top:.8rem\">{{f3}}</p>\n    <div class=\"coast\">\n      <div class=\"coast-map rv\"><svg viewBox=\"0 0 420 640\" xmlns=\"http://www.w3.org/2000/svg\" aria-label=\"Map of consulting and hospital locations from Hervey Bay to the Sunshine Coast\">\n<defs><linearGradient id=\"sea\" x1=\"0\" y1=\"0\" x2=\"1\" y2=\"1\"><stop offset=\"0\" stop-color=\"#D5EEF8\"/><stop offset=\"1\" stop-color=\"#BFE2F3\"/></linearGradient></defs>\n<rect width=\"420\" height=\"640\" fill=\"url(#sea)\" rx=\"18\"/>\n<path transform=\"scale(1.1,1)\" d=\"M0 0H62c14 8 30 12 46 26 18 16 22 30 34 30 18 0 30 20 34 50 6 40 6 70 18 90 14 24 10 60 12 90 2 34 0 70-2 100-2 30 2 60 8 90 4 24 6 40 10 64 6 30 8 60 12 100H0z\" fill=\"#EEF4F7\" stroke=\"#C9D8E3\" stroke-width=\"1.5\"/>\n<path d=\"M150 0h60c20 30 32 70 36 110 4 44-6 80-24 118-12 26-30 30-44 6-12-20-10-56-6-92 4-40 2-84-22-142z\" fill=\"#E4EEF3\" stroke=\"#C9D8E3\" stroke-width=\"1.5\"/>\n<text x=\"196\" y=\"86\" font-family=\"Outfit,sans-serif\" font-size=\"11\" fill=\"#7C8AA5\" text-anchor=\"middle\">K'gari</text>\n<text x=\"320\" y=\"330\" font-family=\"Outfit,sans-serif\" font-size=\"12\" fill=\"#7C8AA5\" text-anchor=\"middle\" letter-spacing=\"2\">PACIFIC OCEAN</text>\n<text x=\"70\" y=\"330\" font-family=\"Outfit,sans-serif\" font-size=\"11\" fill=\"#9AA6BB\" text-anchor=\"middle\">Gympie</text>\n<circle cx=\"70\" cy=\"340\" r=\"3\" fill=\"#C9D3E6\"/>\n<text x=\"90\" y=\"622\" font-family=\"Outfit,sans-serif\" font-size=\"11\" fill=\"#9AA6BB\">Brisbane 100 km south</text>\n<path d=\"M78 606v10M74 612l4 5 4-5\" stroke=\"#9AA6BB\" stroke-width=\"1.5\" fill=\"none\"/>\n<line x1=\"177\" y1=\"558\" x2=\"186\" y2=\"540\" stroke=\"#C9D3E6\" stroke-width=\"1\"/>\n<g class=\"pin\" data-pin=\"1\" tabindex=\"0\" role=\"button\" aria-label=\"Buderim\"><circle class=\"halo\" cx=\"177\" cy=\"558\" r=\"11\"/><circle class=\"dot\" cx=\"177\" cy=\"558\" r=\"6\"/><text x=\"163\" y=\"562\" text-anchor=\"end\">Buderim</text></g><g class=\"pin\" data-pin=\"2\" tabindex=\"0\" role=\"button\" aria-label=\"Maroochydore\"><circle class=\"halo\" cx=\"186\" cy=\"540\" r=\"11\"/><circle class=\"dot\" cx=\"186\" cy=\"540\" r=\"6\"/><text x=\"200\" y=\"538\" text-anchor=\"start\">Maroochydore</text></g><g class=\"pin\" data-pin=\"3\" tabindex=\"0\" role=\"button\" aria-label=\"Nambour\"><circle class=\"halo\" cx=\"134\" cy=\"537\" r=\"11\"/><circle class=\"dot\" cx=\"134\" cy=\"537\" r=\"6\"/><text x=\"122\" y=\"533\" text-anchor=\"end\">Nambour</text></g><g class=\"pin\" data-pin=\"4\" tabindex=\"0\" role=\"button\" aria-label=\"Hervey Bay\"><circle class=\"halo\" cx=\"88\" cy=\"55\" r=\"11\"/><circle class=\"dot\" cx=\"88\" cy=\"55\" r=\"6\"/><text x=\"104\" y=\"59\" text-anchor=\"start\">Hervey Bay</text></g>\n</svg></div>\n      <div class=\"loc-list rv-stagger\">{{@locations}}</div>\n    </div><div class=\"locdetail rv\" id=\"locdetail\">\n      <div class=\"txt\"><span class=\"kicker\" id=\"ld-area\">{{f4}}</span><h3 id=\"ld-name\">{{f5}}</h3><p id=\"ld-addr\">{{f6}}</p><p id=\"ld-note\">{{f7}}</p><p><a class=\"btn btn-navy\" id=\"ld-link\" href=\"{{f8.href}}\" target=\"_blank\" rel=\"noopener\">{{f8}}</a></p></div>\n      <div class=\"mapbox\"><div class=\"fallback\">{{f9}}</div><iframe id=\"ld-map\" data-title-main=\"Google Map showing Sunshine Coast Oral, Facial &amp; Implant Specialists, Suite 5, Nucleus Medical Suites, 23 Elsa Wilson Drive, Buderim QLD\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d886.5!2d153.0930069!3d-26.6838766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b93771d577bd3e7%3A0x1a52ca83026f674f!2sSunshine%20Coast%20Oral%2C%20Facial%20%26%20Implant%20Specialists!5e0!3m2!1sen!2sau!4v1759276800000!5m2!1sen!2sau\" title=\"Google Map showing Sunshine Coast Oral, Facial &amp; Implant Specialists, Suite 5, Nucleus Medical Suites, 23 Elsa Wilson Drive, Buderim QLD\" loading=\"lazy\" allowfullscreen referrerpolicy=\"no-referrer-when-downgrade\"></iframe></div>\n    </div>\n  </div>\n</section>"
+ },
+ "locations/4": {
+  "label": "Serving patients across Queensland",
+  "fields": {
+   "f1": {
+    "type": "text",
+    "label": "Heading"
+   },
+   "f2": {
+    "type": "text",
+    "label": "Paragraph"
+   },
+   "f3": {
+    "type": "text",
+    "label": "Sub-heading"
+   },
+   "f4": {
+    "type": "text",
+    "label": "Paragraph 2"
+   },
+   "f5": {
+    "type": "text",
+    "label": "Text"
+   },
+   "f6": {
+    "type": "link",
+    "label": "Button"
+   }
+  },
+  "html": "<section class=\"block\">\n  <div class=\"wrap two\">\n    <div class=\"prose\">\n      <h2 style=\"margin-top:0\">{{f1}}</h2>\n      <p>{{f2}}</p>\n    </div>\n    <div class=\"side\" style=\"position:static\">\n      <h3>{{f3}}</h3>\n      <p style=\"font-size:.95rem;color:var(--muted)\">{{f4}}</p>\n      <a class=\"btn btn-primary\" href=\"tel:{{phoneTel}}\">{{f5}}</a>\n      <a class=\"btn btn-outline\" href=\"{{f6.href}}\">{{f6}}</a>\n    </div>\n  </div>\n</section>"
+ },
+ "online-doctor-referral/1": {
+  "label": "Page heading: Online referral for dentists and doctors",
+  "fields": {
+   "f1": {
+    "type": "image",
+    "label": "Photo"
+   },
+   "f2": {
+    "type": "rich",
+    "label": "Breadcrumb"
+   },
+   "f3": {
+    "type": "text",
+    "label": "Main heading"
+   },
+   "f4": {
+    "type": "text",
+    "label": "Paragraph"
+   }
+  },
+  "html": "<section class=\"pagehead\">\n  <div class=\"art\"><img src=\"{{f1.src}}\" alt=\"{{f1.alt}}\"></div>\n  <div class=\"wrap\"><div><div class=\"crumb\">{{f2}}</div><h1>{{f3}}</h1><p>{{f4}}</p></div></div>\n</section>"
+ },
+ "online-doctor-referral/2": {
+  "label": "Working with referring practitioners",
+  "fields": {
+   "f1": {
+    "type": "href",
+    "label": "Link address"
+   },
+   "f2": {
+    "type": "text",
+    "label": "Button text"
+   },
+   "f3": {
+    "type": "text",
+    "label": "Heading"
+   },
+   "f4": {
+    "type": "text",
+    "label": "Paragraph"
+   },
+   "f5": {
+    "type": "text",
+    "label": "Sub-heading"
+   },
+   "f6": {
+    "type": "text",
+    "label": "List item"
+   },
+   "f7": {
+    "type": "text",
+    "label": "List item 2"
+   },
+   "f8": {
+    "type": "text",
+    "label": "List item 3"
+   },
+   "f9": {
+    "type": "text",
+    "label": "List item 4"
+   },
+   "f10": {
+    "type": "text",
+    "label": "Sub-heading 2"
+   },
+   "f11": {
+    "type": "text",
+    "label": "List item 5"
+   },
+   "f12": {
+    "type": "text",
+    "label": "List item 6"
+   },
+   "f13": {
+    "type": "text",
+    "label": "List item 7"
+   },
+   "f14": {
+    "type": "text",
+    "label": "List item 8"
+   },
+   "f15": {
+    "type": "text",
+    "label": "List item 9"
+   },
+   "f16": {
+    "type": "text",
+    "label": "List item 10"
+   },
+   "f17": {
+    "type": "text",
+    "label": "List item 11"
+   },
+   "f18": {
+    "type": "text",
+    "label": "List item 12"
+   },
+   "f19": {
+    "type": "text",
+    "label": "Text"
+   }
+  },
+  "html": "<section class=\"block\">\n  <div class=\"wrap two narrow-r\">\n    <div class=\"formcard\">\n      <p style=\"margin:0 0 1.2rem\"><a class=\"btn btn-outline\" href=\"{{f1.href}}\" id=\"referralPdf\" target=\"_blank\" rel=\"noopener\" download=\"SCOFIS-Referral-Form.pdf\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M12 3v12m0 0 4-4m-4 4-4-4M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2\"/></svg>{{f2}}</a></p>\n      <form class=\"f\" id=\"referralForm\" onsubmit=\"return fakeSubmit(event)\" enctype=\"multipart/form-data\" data-endpoint=\"/api/submit\">\n        <input type=\"text\" name=\"website\" tabindex=\"-1\" autocomplete=\"off\" aria-hidden=\"true\" style=\"position:absolute;left:-9999px;opacity:0;height:0;width:0\">\n        <h3>Referral Patient Details</h3>\n        <fieldset class=\"fs\"><legend>Patient Name *</legend>\n          <div class=\"row\">\n            <label><span class=\"sub\">First name</span><input type=\"text\" name=\"patient_first_name\" required autocomplete=\"off\" aria-label=\"Patient first name\"></label>\n            <label><span class=\"sub\">Last Name</span><input type=\"text\" name=\"patient_last_name\" required autocomplete=\"off\" aria-label=\"Patient last name\"></label>\n          </div>\n        </fieldset>\n        <div class=\"row\">\n          <label>Date of Birth *<input type=\"date\" name=\"patient_dob\" required></label>\n          <label>Patient Best Contact # *<input type=\"tel\" name=\"patient_contact\" required></label>\n          <label>E-mail<input type=\"email\" name=\"patient_email\"></label>\n          <label>Address<input type=\"text\" name=\"patient_address\" autocomplete=\"off\"></label>\n        </div>\n        <label>Reason For Referral *<textarea name=\"reason_for_referral\" required></textarea></label>\n        <label>Implant Brand Preference *<input type=\"text\" name=\"implant_brand_preference\" required></label>\n        <label>Medical History *<textarea name=\"medical_history\" required></textarea></label>\n        <label>Radiographs\n          <div class=\"opts\">\n            <label><input type=\"checkbox\" name=\"radiographs\" value=\"OPG\"><span>OPG</span></label>\n            <label><input type=\"checkbox\" name=\"radiographs\" value=\"CT\"><span>CT</span></label>\n          </div>\n        </label>\n        <label>Comments<textarea name=\"comments\"></textarea></label>\n        <label>Attach File<input type=\"file\" name=\"attach_file\" multiple accept=\".jpg,.jpeg,.png,.pdf,.dcm,.zip,.doc,.docx\"></label>\n\n        <h3 style=\"margin-top:.6rem\">Referral Doctor Details</h3>\n        <fieldset class=\"fs\"><legend>Referring Doctor *</legend>\n          <div class=\"row\">\n            <label><span class=\"sub\">First Name</span><input type=\"text\" name=\"doctor_first_name\" required autocomplete=\"given-name\" aria-label=\"Referring doctor first name\"></label>\n            <label><span class=\"sub\">Last Name</span><input type=\"text\" name=\"doctor_last_name\" required autocomplete=\"family-name\" aria-label=\"Referring doctor last name\"></label>\n          </div>\n        </fieldset>\n        <div class=\"row\">\n          <label>Practice Contact Number # *<input type=\"tel\" name=\"practice_contact_number\" required autocomplete=\"tel\"></label>\n          <label>E-mail<input type=\"email\" name=\"doctor_email\" autocomplete=\"email\"></label>\n        </div>\n        <div class=\"row\">\n          <label>Practice Address *<input type=\"text\" name=\"practice_address\" required autocomplete=\"street-address\"></label>\n          <label>Provider #<input type=\"text\" name=\"provider_number\"></label>\n        </div>\n        <label>Preferred specialist to see\n          <div class=\"opts\">\n            <label><input type=\"checkbox\" name=\"preferred_specialist\" value=\"Dr Trent Lincoln\"><span>Dr Trent Lincoln</span></label>\n            <label><input type=\"checkbox\" name=\"preferred_specialist\" value=\"Dr Andrew Higgins\"><span>Dr Andrew Higgins</span></label>\n          </div>\n        </label>\n        <label>Urgent\n          <div class=\"opts\">\n            <label><input type=\"checkbox\" name=\"urgent\" value=\"Yes\"><span>Urgent</span></label>\n          </div>\n        </label>\n        <label>Date *<input type=\"date\" name=\"referral_date\" required></label>\n        <div class=\"captcha\" id=\"referralCaptcha\">\n          <!-- TODO GYA: add data-recaptcha-sitekey=\"...\" to this div to switch on Google reCAPTCHA v2; until then a required tick box stands in -->\n          <label class=\"robot\"><input type=\"checkbox\" name=\"not_a_robot\" value=\"1\" required><span>I'm not a robot</span></label>\n        </div>\n        <p class=\"fine\">* Required fields</p>\n        <button class=\"btn btn-primary\" type=\"submit\">Submit now</button>\n        <p class=\"fine\">Referral details are used only to arrange the patient's care and are handled in line with our privacy policy. For urgent trauma or infection, call {{phone}}.</p>\n        <div class=\"ok\"><h4>Referral received</h4><p style=\"margin:.5rem auto 0;font-size:.95rem\">Thank you. Our team will contact your patient to arrange their consultation and confirm with your practice. Urgent matters: call {{phone}}.</p></div>\n      </form>\n    </div>\n    <div class=\"prose\">\n      <h2 style=\"margin-top:0\">{{f3}}</h2>\n      <p>{{f4}}</p>\n      <h3>{{f5}}</h3>\n      <ul><li>{{f6}}</li><li>{{f7}}</li><li>{{f8}}</li><li>{{f9}}</li></ul>\n      <h3>{{f10}}</h3>\n      <ul><li>{{f11}}</li><li>{{f12}}</li><li>{{f13}}</li><li>{{f14}}</li><li>{{f15}}</li><li>{{f16}}</li><li>{{f17}}</li><li>{{f18}}</li></ul>\n      <div class=\"notice\">{{f19}}</div>\n    </div>\n  </div>\n</section>"
+ },
+ "contact-us/1": {
+  "label": "Page heading: Make an enquiry",
+  "fields": {
+   "f1": {
+    "type": "image",
+    "label": "Photo"
+   },
+   "f2": {
+    "type": "rich",
+    "label": "Breadcrumb"
+   },
+   "f3": {
+    "type": "text",
+    "label": "Main heading"
+   },
+   "f4": {
+    "type": "text",
+    "label": "Paragraph"
+   }
+  },
+  "html": "<section class=\"pagehead\">\n  <div class=\"art\"><img src=\"{{f1.src}}\" alt=\"{{f1.alt}}\"></div>\n  <div class=\"wrap\"><div><div class=\"crumb\">{{f2}}</div><h1>{{f3}}</h1><p>{{f4}}</p></div></div>\n</section>"
+ },
+ "contact-us/2": {
+  "label": "Visit us in Buderim",
+  "fields": {
+   "f1": {
+    "type": "text",
+    "label": "Text"
+   },
+   "f2": {
+    "type": "text",
+    "label": "Text 2"
+   },
+   "f3": {
+    "type": "text",
+    "label": "Text 3"
+   },
+   "f4": {
+    "type": "text",
+    "label": "Heading"
+   },
+   "f5": {
+    "type": "rich",
+    "label": "Paragraph"
+   },
+   "f6": {
+    "type": "text",
+    "label": "Bold text"
+   },
+   "f7": {
+    "type": "rich",
+    "label": "Paragraph 2"
+   },
+   "f8": {
+    "type": "link",
+    "label": "Button"
+   },
+   "f9": {
+    "type": "text",
+    "label": "Text 4"
+   },
+   "f10": {
+    "type": "link",
+    "label": "Link"
+   },
+   "f11": {
+    "type": "text",
+    "label": "Text 5"
+   }
+  },
+  "html": "<section class=\"block\">\n  <div class=\"wrap\">\n    <div class=\"callblock rv\">\n      <div class=\"ph\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#fff\" stroke-width=\"2\"><path d=\"M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.9 2z\"/></svg></div>\n      <div><span>{{f1}}</span><b>{{phone}}</b><span>{{f2}}</span></div>\n      <a class=\"btn btn-primary\" href=\"tel:{{phoneTel}}\">{{f3}}</a>\n    </div>\n  </div>\n  <div class=\"wrap two narrow-r\">\n    <div class=\"formcard\">\n      <form class=\"f\" id=\"contactForm\" onsubmit=\"return fakeSubmit(event)\" enctype=\"multipart/form-data\" data-endpoint=\"/api/submit\">\n        <input type=\"text\" name=\"website\" tabindex=\"-1\" autocomplete=\"off\" aria-hidden=\"true\" style=\"position:absolute;left:-9999px;opacity:0;height:0;width:0\">\n        <div class=\"row\">\n          <label>First name<input type=\"text\" name=\"first\" required autocomplete=\"given-name\"></label>\n          <label>Last name<input type=\"text\" name=\"last\" required autocomplete=\"family-name\"></label>\n        </div>\n        <div class=\"row\">\n          <label>Mobile<input type=\"tel\" name=\"phone\" required autocomplete=\"tel\"></label>\n          <label>Email<input type=\"email\" name=\"email\" required autocomplete=\"email\"></label>\n        </div>\n        <label>What can we help with?\n          <div class=\"opts\">\n            <label><input type=\"radio\" name=\"topic\" value=\"Wisdom teeth\"><span>Wisdom teeth</span></label>\n            <label><input type=\"radio\" name=\"topic\" value=\"Dental implants\"><span>Dental implants</span></label>\n            <label><input type=\"radio\" name=\"topic\" value=\"All-on-4\"><span>All-on-4 / full arch</span></label>\n            <label><input type=\"radio\" name=\"topic\" value=\"Jaw surgery\"><span>Jaw surgery</span></label>\n            <label><input type=\"radio\" name=\"topic\" value=\"Facial injury\"><span>Facial injury</span></label>\n            <label><input type=\"radio\" name=\"topic\" value=\"Other\"><span>Something else</span></label>\n          </div>\n        </label>\n        <label>Do you have a referral?\n          <div class=\"opts\">\n            <label><input type=\"radio\" name=\"referral\" value=\"Yes\"><span>Yes</span></label>\n            <label><input type=\"radio\" name=\"referral\" value=\"No\"><span>No</span></label>\n          </div>\n        </label>\n        <label>Tell us a little more<textarea name=\"message\" placeholder=\"Optional\"></textarea></label>\n        <button class=\"btn btn-primary\" type=\"submit\">Request a call back</button>\n        <p class=\"fine\">Your details are used only to contact you about your enquiry. We will never share them.</p>\n        <div class=\"ok\"><h4>Thanks, we have your details</h4><p style=\"margin:.5rem auto 0;font-size:.95rem\">Our patient coordinator will be in touch shortly. If you would like to speak to someone now, call {{phone}}.</p></div>\n      </form>\n    </div>\n    <div>\n      <div class=\"prose\">\n        <h2 style=\"margin-top:0\">{{f4}}</h2>\n        <p>{{f5}}</p>\n        <p><strong>{{f6}}</strong> <a href=\"tel:{{phoneTel}}\" style=\"color:var(--cyan-deep);font-weight:700\">{{phone}}</a></p>\n        <p>{{f7}}</p>\n        <p><a class=\"btn btn-navy\" href=\"{{f8.href}}\" target=\"_blank\" rel=\"noopener\">{{f8}}</a></p>\n        <p>{{f9}} <a href=\"{{f10.href}}\" style=\"color:var(--cyan-deep);font-weight:700\">{{f10}}</a>.</p>\n      </div>\n      <div class=\"mapbox\" style=\"margin-top:1.5rem\"><div class=\"fallback\">{{f11}}</div><iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d886.5!2d153.0930069!3d-26.6838766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b93771d577bd3e7%3A0x1a52ca83026f674f!2sSunshine%20Coast%20Oral%2C%20Facial%20%26%20Implant%20Specialists!5e0!3m2!1sen!2sau!4v1759276800000!5m2!1sen!2sau\" title=\"Google Map showing Sunshine Coast Oral, Facial &amp; Implant Specialists, Suite 5, Nucleus Medical Suites, 23 Elsa Wilson Drive, Buderim QLD\" loading=\"lazy\" allowfullscreen referrerpolicy=\"no-referrer-when-downgrade\"></iframe></div>\n    </div>\n  </div>\n</section>"
+ },
+ "contact-us/3": {
+  "label": "Take a 3D tour of our practice",
+  "fields": {
+   "f1": {
+    "type": "text",
+    "label": "Small label above the heading"
+   },
+   "f2": {
+    "type": "text",
+    "label": "Heading"
+   },
+   "f3": {
+    "type": "text",
+    "label": "Introduction"
+   },
+   "f4": {
+    "type": "rich",
+    "label": "Paragraph"
+   }
+  },
+  "html": "<section class=\"block tour-sec\" aria-labelledby=\"tour-heading\">\n  <div class=\"wrap\">\n    <span class=\"kicker\">{{f1}}</span>\n    <h2 id=\"tour-heading\">{{f2}}</h2>\n    <p class=\"lead\" style=\"margin-top:.8rem\">{{f3}}</p>\n    <div class=\"tourbox\" id=\"tourbox\">\n      <div class=\"fallback\"><p>{{f4}}</p></div>\n      <!-- Matterport embed supplied by the client (19 Oct 2026). Kept exactly as supplied, plus a title for accessibility.\n           It is added to the page only when the Contact page is opened, so the tour doesn't load on every other page. -->\n      <template id=\"tourTpl\"><iframe width=\"853\" height=\"480\" src=\"https://my.matterport.com/show/?m=t1sXaNerUT7\" frameborder=\"0\" allowfullscreen allow=\"autoplay; fullscreen; web-share; xr-spatial-tracking;\" title=\"3D virtual tour of Sunshine Coast Oral, Facial &amp; Implant Specialists\"></iframe></template>\n    </div>\n  </div>\n</section>"
+ },
+ "blog/1": {
+  "label": "Page heading: News and articles from our surgeons",
+  "fields": {
+   "f1": {
+    "type": "image",
+    "label": "Photo"
+   },
+   "f2": {
+    "type": "rich",
+    "label": "Breadcrumb"
+   },
+   "f3": {
+    "type": "text",
+    "label": "Main heading"
+   },
+   "f4": {
+    "type": "text",
+    "label": "Paragraph"
+   }
+  },
+  "html": "<section class=\"pagehead\">\n  <div class=\"art\"><img src=\"{{f1.src}}\" alt=\"{{f1.alt}}\"></div>\n  <div class=\"wrap\"><div><div class=\"crumb\">{{f2}}</div><h1>{{f3}}</h1><p>{{f4}}</p></div></div>\n</section>"
+ },
+ "blog/2": {
+  "label": "From the blog",
+  "fields": {
+   "f1": {
+    "type": "text",
+    "label": "Small label above the heading"
+   },
+   "f2": {
+    "type": "text",
+    "label": "Heading"
+   },
+   "f3": {
+    "type": "text",
+    "label": "Paragraph"
+   }
+  },
+  "html": "<section class=\"block\">\n  <div class=\"wrap\">\n    <span class=\"kicker\">{{f1}}</span>\n    <h2>{{f2}}</h2>\n    <div class=\"svc-grid\" data-generated=\"posts\">{{@posts}}</div>\n    <p class=\"fine\" style=\"margin-top:2rem\">{{f3}}</p>\n  </div>\n</section>"
+ },
+ "patient-information-form/1": {
+  "label": "Page heading: Patient information form",
+  "fields": {
+   "f1": {
+    "type": "image",
+    "label": "Photo"
+   },
+   "f2": {
+    "type": "rich",
+    "label": "Breadcrumb"
+   },
+   "f3": {
+    "type": "text",
+    "label": "Main heading"
+   },
+   "f4": {
+    "type": "text",
+    "label": "Paragraph"
+   }
+  },
+  "html": "<section class=\"pagehead\">\n  <div class=\"art\"><img src=\"{{f1.src}}\" alt=\"{{f1.alt}}\"></div>\n  <div class=\"wrap\"><div><div class=\"crumb\">{{f2}}</div><h1>{{f3}}</h1><p>{{f4}}</p></div></div>\n</section>"
+ },
+ "patient-information-form/2": {
+  "label": "Why we ask for these details",
+  "fields": {
+   "f1": {
+    "type": "text",
+    "label": "Heading"
+   },
+   "f2": {
+    "type": "text",
+    "label": "Paragraph"
+   },
+   "f3": {
+    "type": "text",
+    "label": "Paragraph 2"
+   },
+   "f4": {
+    "type": "text",
+    "label": "Text"
+   }
+  },
+  "html": "<section class=\"block\">\n  <div class=\"wrap two narrow-r\">\n    <div class=\"formcard\">\n      <form class=\"f\" id=\"patientForm\" onsubmit=\"return fakeSubmit(event)\" enctype=\"multipart/form-data\" data-endpoint=\"/api/submit\">\n        <input type=\"text\" name=\"website\" tabindex=\"-1\" autocomplete=\"off\" aria-hidden=\"true\" style=\"position:absolute;left:-9999px;opacity:0;height:0;width:0\">\n        <h3>Patient Information</h3>\n        <label>Patient Name *<input type=\"text\" name=\"patient_name\" required autocomplete=\"name\"></label>\n        <div class=\"row\">\n          <label>Date of Birth *<input type=\"date\" name=\"dob\" required></label>\n          <label>Sex *\n            <div class=\"opts\">\n              <label><input type=\"radio\" name=\"sex\" value=\"Male\" required><span>Male</span></label>\n              <label><input type=\"radio\" name=\"sex\" value=\"Female\"><span>Female</span></label>\n            </div>\n          </label>\n        </div>\n        <label>Address<input type=\"text\" name=\"address\" autocomplete=\"street-address\"></label>\n        <div class=\"row\">\n          <label>Suburb<input type=\"text\" name=\"suburb\" autocomplete=\"address-level2\"></label>\n          <label>Postcode<input type=\"text\" name=\"postcode\" inputmode=\"numeric\" autocomplete=\"postal-code\"></label>\n        </div>\n        <div class=\"row\">\n          <label>Phone (L)<input type=\"tel\" name=\"phone_landline\" autocomplete=\"tel\"></label>\n          <label>Phone (M)<input type=\"tel\" name=\"phone_mobile\" autocomplete=\"tel\"></label>\n        </div>\n        <div class=\"row\">\n          <label>E-mail<input type=\"email\" name=\"email\" autocomplete=\"email\"></label>\n          <label>Occupation<input type=\"text\" name=\"occupation\"></label>\n        </div>\n        <div class=\"row\">\n          <label>Medicare<input type=\"text\" name=\"medicare_number\" inputmode=\"numeric\" autocomplete=\"off\"></label>\n          <label>Reference<input type=\"text\" name=\"medicare_reference\" inputmode=\"numeric\" autocomplete=\"off\"></label>\n          <label>Expiry Date<input type=\"text\" name=\"medicare_expiry\" placeholder=\"MM/YYYY\" autocomplete=\"off\"></label>\n        </div>\n\n        <h3 style=\"margin-top:.6rem\">Parent's Medicare Card Details</h3>\n        <p class=\"fine\" style=\"margin-top:-.4rem\">For patients under 18. Required for the Medicare rebate.</p>\n        <div class=\"row\">\n          <label>Parent Name<input type=\"text\" name=\"parent_name\" autocomplete=\"off\"></label>\n          <label>DOB<input type=\"date\" name=\"parent_dob\"></label>\n        </div>\n        <div class=\"row\">\n          <label>Medicare #<input type=\"text\" name=\"parent_medicare_number\" inputmode=\"numeric\" autocomplete=\"off\"></label>\n          <label>Ref. #<input type=\"text\" name=\"parent_medicare_reference\" inputmode=\"numeric\" autocomplete=\"off\"></label>\n          <label>Expiry Date<input type=\"text\" name=\"parent_medicare_expiry\" placeholder=\"MM/YYYY\" autocomplete=\"off\"></label>\n        </div>\n\n        <h3 style=\"margin-top:.6rem\">Patient Health Fund</h3>\n        <div class=\"row\">\n          <label>Patient Health Fund<input type=\"text\" name=\"health_fund\"></label>\n          <label>Member<input type=\"text\" name=\"health_fund_member\" autocomplete=\"off\"></label>\n        </div>\n        <label>Have you served your waiting period?\n          <div class=\"opts\"><label><input type=\"radio\" name=\"waiting_period\" value=\"Yes\"><span>Yes</span></label><label><input type=\"radio\" name=\"waiting_period\" value=\"No\"><span>No</span></label></div>\n        </label>\n        <label>Do you have hospital cover?\n          <div class=\"opts\"><label><input type=\"radio\" name=\"hospital_cover\" value=\"Yes\"><span>Yes</span></label><label><input type=\"radio\" name=\"hospital_cover\" value=\"No\"><span>No</span></label></div>\n        </label>\n        <label>Are you covered for both dental &amp; medical procedures in hospital?\n          <div class=\"opts\"><label><input type=\"radio\" name=\"dental_medical_cover\" value=\"Yes\"><span>Yes</span></label><label><input type=\"radio\" name=\"dental_medical_cover\" value=\"No\"><span>No</span></label></div>\n        </label>\n        <div class=\"row\">\n          <label>DVA\n            <div class=\"opts\"><label><input type=\"radio\" name=\"dva\" value=\"Yes\"><span>Yes</span></label><label><input type=\"radio\" name=\"dva\" value=\"No\"><span>No</span></label></div>\n          </label>\n          <label>Workcover\n            <div class=\"opts\"><label><input type=\"radio\" name=\"workcover\" value=\"Yes\"><span>Yes</span></label><label><input type=\"radio\" name=\"workcover\" value=\"No\"><span>No</span></label></div>\n          </label>\n        </div>\n\n        <h3 style=\"margin-top:.6rem\">Next of Kin</h3>\n        <div class=\"row\">\n          <label>Next of Kin<input type=\"text\" name=\"next_of_kin\"></label>\n          <label>Relationship<input type=\"text\" name=\"next_of_kin_relationship\"></label>\n          <label>Phone<input type=\"tel\" name=\"next_of_kin_phone\"></label>\n        </div>\n\n        <h3 style=\"margin-top:.6rem\">Medical History</h3>\n        <label>Please indicate if you have any of the following\n          <div class=\"opts\">\n            <label><input type=\"checkbox\" name=\"conditions\" value=\"Diabetes\"><span>Diabetes</span></label>\n            <label><input type=\"checkbox\" name=\"conditions\" value=\"Heart Valve Issues\"><span>Heart Valve Issues</span></label>\n            <label><input type=\"checkbox\" name=\"conditions\" value=\"Bleeding Disorder\"><span>Bleeding Disorder</span></label>\n            <label><input type=\"checkbox\" name=\"conditions\" value=\"Sleep Apnoea\"><span>Sleep Apnoea</span></label>\n            <label><input type=\"checkbox\" name=\"conditions\" value=\"Asthma\"><span>Asthma</span></label>\n          </div>\n        </label>\n        <label>Other Medical Conditions<textarea name=\"other_conditions\"></textarea></label>\n        <label>Previous Surgical Procedures<textarea name=\"previous_surgery\"></textarea></label>\n        <label>Current Regular Medications<textarea name=\"medications\"></textarea></label>\n        <label>Allergies<textarea name=\"allergies\"></textarea></label>\n        <label>Weight-loss medications (such as Ozempic)\n          <div class=\"opts\"><label><input type=\"radio\" name=\"weight_loss_medication\" value=\"Yes\"><span>Yes</span></label><label><input type=\"radio\" name=\"weight_loss_medication\" value=\"No\"><span>No</span></label></div>\n        </label>\n        <label>Difficulties with anaesthetics in the past\n          <div class=\"opts\"><label><input type=\"radio\" name=\"anaesthetic_difficulties\" value=\"Yes\"><span>Yes</span></label><label><input type=\"radio\" name=\"anaesthetic_difficulties\" value=\"No\"><span>No</span></label></div>\n        </label>\n        <div class=\"row\">\n          <label>Current weight?<input type=\"text\" name=\"weight\" inputmode=\"decimal\"></label>\n          <label>Current height?<input type=\"text\" name=\"height\" inputmode=\"decimal\"></label>\n        </div>\n        <label>Able to take NSAIDs (Nurofen)?\n          <div class=\"opts\"><label><input type=\"radio\" name=\"nsaids\" value=\"Yes\"><span>Yes</span></label><label><input type=\"radio\" name=\"nsaids\" value=\"No\"><span>No</span></label></div>\n        </label>\n        <label>Blood thinners\n          <div class=\"opts\"><label><input type=\"radio\" name=\"blood_thinners\" value=\"Yes\"><span>Yes</span></label><label><input type=\"radio\" name=\"blood_thinners\" value=\"No\"><span>No</span></label></div>\n        </label>\n        <label>Drugs for your Bones\n          <div class=\"opts\"><label><input type=\"radio\" name=\"bone_drugs\" value=\"Yes\"><span>Yes</span></label><label><input type=\"radio\" name=\"bone_drugs\" value=\"No\"><span>No</span></label></div>\n        </label>\n        <label>Radiotherapy to the head or neck\n          <div class=\"opts\"><label><input type=\"radio\" name=\"radiotherapy\" value=\"Yes\"><span>Yes</span></label><label><input type=\"radio\" name=\"radiotherapy\" value=\"No\"><span>No</span></label></div>\n        </label>\n        <label>When and where have you had radiotherapy?<input type=\"text\" name=\"radiotherapy_details\"></label>\n        <div class=\"row\">\n          <label>Smoker\n            <div class=\"opts\"><label><input type=\"radio\" name=\"smoker\" value=\"Yes\"><span>Yes</span></label><label><input type=\"radio\" name=\"smoker\" value=\"No\"><span>No</span></label></div>\n          </label>\n          <label>How many cigarettes per day?<input type=\"text\" name=\"cigarettes_per_day\" inputmode=\"numeric\"></label>\n        </div>\n        <div class=\"row\">\n          <label>Drink Alcohol\n            <div class=\"opts\"><label><input type=\"radio\" name=\"alcohol\" value=\"Yes\"><span>Yes</span></label><label><input type=\"radio\" name=\"alcohol\" value=\"No\"><span>No</span></label></div>\n          </label>\n          <label>How many glasses (per week)?<input type=\"text\" name=\"alcohol_per_week\" inputmode=\"numeric\"></label>\n        </div>\n        <label>Could you be pregnant?\n          <div class=\"opts\"><label><input type=\"radio\" name=\"pregnant\" value=\"Yes\"><span>Yes</span></label><label><input type=\"radio\" name=\"pregnant\" value=\"No\"><span>No</span></label><label><input type=\"radio\" name=\"pregnant\" value=\"Not applicable\"><span>Not applicable</span></label></div>\n        </label>\n        <div class=\"row\">\n          <label>Name of GP?<input type=\"text\" name=\"gp_name\"></label>\n          <label>Name of Dentist?<input type=\"text\" name=\"dentist_name\"></label>\n        </div>\n\n        <h3 style=\"margin-top:.6rem\">Acknowledgement of fee policy</h3>\n        <p class=\"fine\" style=\"margin-top:-.4rem\">Telephone consultations are paid one business day in advance. All other consultation fees are paid on the day by EFT, Visa or Mastercard. Surgical fees are due two weeks before your surgery; if they have not been paid, the procedure may be cancelled. I confirm the information I have provided is correct to the best of my knowledge.</p>\n        <label class=\"robot\"><input type=\"checkbox\" name=\"fee_policy_agreed\" value=\"Yes\" required><span>I have read and accept the fee policy *</span></label>\n        <div class=\"row\">\n          <label>Your Full Name *<input type=\"text\" name=\"fee_policy_name\" required autocomplete=\"name\"></label>\n          <label>Date *<input type=\"date\" name=\"fee_policy_date\" required></label>\n        </div>\n        <label>Name of parent or guardian<input type=\"text\" name=\"fee_policy_guardian\"></label>\n\n        <h3 style=\"margin-top:.6rem\">Consent to collect patient information</h3>\n        <p class=\"fine\" style=\"margin-top:-.4rem\">Australian privacy law requires your written consent for a health professional to obtain your medical information or share it with another practitioner. I give my surgeon and Sunshine Coast Oral, Facial &amp; Implant Specialists permission to: obtain my medical information, such as consultation notes and test results, from other medical or dental practitioners; communicate with other health professionals directly involved in my care; communicate with my referring practitioner; and take clinical, de-identified photographs and x-rays before, during and after my treatment, and use them in advertising, scientific papers or presentations. I confirm I have read and understood these terms.</p>\n        <label class=\"robot\"><input type=\"checkbox\" name=\"consent_agreed\" value=\"Yes\" required><span>I give this consent *</span></label>\n        <div class=\"row\">\n          <label>Your Full Name *<input type=\"text\" name=\"consent_name\" required autocomplete=\"name\"></label>\n          <label>Date *<input type=\"date\" name=\"consent_date\" required></label>\n        </div>\n        <label>Name of parent or guardian<input type=\"text\" name=\"consent_guardian\"></label>\n\n        <h3 style=\"margin-top:.6rem\">Use of artificial intelligence (AI) in your care</h3>\n        <p class=\"fine\" style=\"margin-top:-.4rem\">Our practice uses AI tools to help with clinical documentation, including the Heidi platform, which prepares clinical notes from consultations and transcribes the letters our surgeons dictate. Your personal information is handled securely and in line with Australian privacy law. Continuing your care with our practice is taken as your consent to the use of these tools.</p>\n        <label class=\"robot\"><input type=\"checkbox\" name=\"ai_agreed\" value=\"Yes\" required><span>I have read and understand how AI is used in my care *</span></label>\n        <div class=\"row\">\n          <label>Your Full Name *<input type=\"text\" name=\"ai_name\" required autocomplete=\"name\"></label>\n          <label>Date *<input type=\"date\" name=\"ai_date\" required></label>\n        </div>\n        <label>Name of parent or guardian<input type=\"text\" name=\"ai_guardian\"></label>\n\n        <p class=\"fine\">* Required fields</p>\n        <button class=\"btn btn-primary\" type=\"submit\">Submit form</button>\n        <p class=\"fine\">Your form is sent securely to our practice team and used only for your care, in line with our privacy policy. Please call {{phone}} if anything here is urgent.</p>\n        <div class=\"ok\"><h4>Thank you, your form has been sent</h4><p style=\"margin:.5rem auto 0;font-size:.95rem\">Our team will add it to your file before your consultation. If you have any questions, call {{phone}}.</p></div>\n      </form>\n    </div>\n    <div class=\"prose\">\n      <h2 style=\"margin-top:0\">{{f1}}</h2>\n      <p>{{f2}}</p>\n      <p>{{f3}}</p>\n      <div class=\"notice\">{{f4}}</div>\n    </div>\n  </div>\n</section>"
+ },
+ "feedback/1": {
+  "label": "Page heading: Tell us about your experience",
+  "fields": {
+   "f1": {
+    "type": "image",
+    "label": "Photo"
+   },
+   "f2": {
+    "type": "rich",
+    "label": "Breadcrumb"
+   },
+   "f3": {
+    "type": "text",
+    "label": "Main heading"
+   },
+   "f4": {
+    "type": "text",
+    "label": "Paragraph"
+   }
+  },
+  "html": "<section class=\"pagehead\">\n  <div class=\"art\"><img src=\"{{f1.src}}\" alt=\"{{f1.alt}}\"></div>\n  <div class=\"wrap\"><div><div class=\"crumb\">{{f2}}</div><h1>{{f3}}</h1><p>{{f4}}</p></div></div>\n</section>"
+ },
+ "feedback/2": {
+  "label": "Other ways to share your experience",
+  "fields": {
+   "f1": {
+    "type": "text",
+    "label": "Heading"
+   },
+   "f2": {
+    "type": "text",
+    "label": "Paragraph"
+   },
+   "f3": {
+    "type": "link",
+    "label": "Button"
+   },
+   "f4": {
+    "type": "text",
+    "label": "Text"
+   }
+  },
+  "html": "<section class=\"block\">\n  <div class=\"wrap two narrow-r\">\n    <div class=\"formcard\">\n      <form class=\"f\" id=\"feedbackForm\" onsubmit=\"return fakeSubmit(event)\" enctype=\"multipart/form-data\" data-endpoint=\"/api/submit\">\n        <input type=\"text\" name=\"website\" tabindex=\"-1\" autocomplete=\"off\" aria-hidden=\"true\" style=\"position:absolute;left:-9999px;opacity:0;height:0;width:0\">\n        <div class=\"row\">\n          <label>Your name *<input type=\"text\" name=\"name\" required autocomplete=\"name\"></label>\n          <label>Email *<input type=\"email\" name=\"email\" required autocomplete=\"email\"></label>\n        </div>\n        <label>Phone<input type=\"tel\" name=\"phone\" autocomplete=\"tel\"></label>\n        <label>Your feedback *<textarea name=\"message\" required></textarea></label>\n        <label>Would you like us to contact you?\n          <div class=\"opts\">\n            <label><input type=\"radio\" name=\"contact_me\" value=\"Yes\"><span>Yes, please</span></label>\n            <label><input type=\"radio\" name=\"contact_me\" value=\"No\"><span>No, thank you</span></label>\n          </div>\n        </label>\n        <button class=\"btn btn-primary\" type=\"submit\">Send feedback</button>\n        <p class=\"fine\">Your details are used only to respond to your feedback. We will never share them.</p>\n        <div class=\"ok\"><h4>Thank you for your feedback</h4><p style=\"margin:.5rem auto 0;font-size:.95rem\">Our practice manager will read it and, if you asked us to, be in touch. To speak to us now, call {{phone}}.</p></div>\n      </form>\n    </div>\n    <div class=\"prose\">\n      <h2 style=\"margin-top:0\">{{f1}}</h2>\n      <p>{{f2}}</p>\n      <p><a class=\"btn btn-navy\" href=\"{{f3.href}}\" target=\"_blank\" rel=\"noopener\">{{f3}}</a></p>\n      <p>{{f4}} <a href=\"tel:{{phoneTel}}\" style=\"color:var(--cyan-deep);font-weight:700\">{{phone}}</a>.</p>\n    </div>\n  </div>\n</section>"
+ },
+ "privacy-policy/1": {
+  "label": "Page heading: Privacy policy",
+  "fields": {
+   "f1": {
+    "type": "image",
+    "label": "Photo"
+   },
+   "f2": {
+    "type": "rich",
+    "label": "Breadcrumb"
+   },
+   "f3": {
+    "type": "text",
+    "label": "Main heading"
+   },
+   "f4": {
+    "type": "text",
+    "label": "Paragraph"
+   }
+  },
+  "html": "<section class=\"pagehead\">\n  <div class=\"art\"><img src=\"{{f1.src}}\" alt=\"{{f1.alt}}\"></div>\n  <div class=\"wrap\"><div><div class=\"crumb\">{{f2}}</div><h1>{{f3}}</h1><p>{{f4}}</p></div></div>\n</section>"
+ },
+ "privacy-policy/2": {
+  "label": "Our commitment to your privacy",
+  "fields": {
+   "f1": {
+    "type": "text",
+    "label": "Heading"
+   },
+   "f2": {
+    "type": "text",
+    "label": "Paragraph"
+   },
+   "f3": {
+    "type": "text",
+    "label": "Sub-heading"
+   },
+   "f4": {
+    "type": "text",
+    "label": "Paragraph 2"
+   },
+   "f5": {
+    "type": "text",
+    "label": "Sub-heading 2"
+   },
+   "f6": {
+    "type": "text",
+    "label": "Paragraph 3"
+   },
+   "f7": {
+    "type": "text",
+    "label": "Sub-heading 3"
+   },
+   "f8": {
+    "type": "text",
+    "label": "Paragraph 4"
+   },
+   "f9": {
+    "type": "text",
+    "label": "Sub-heading 4"
+   },
+   "f10": {
+    "type": "text",
+    "label": "Paragraph 5"
+   },
+   "f11": {
+    "type": "text",
+    "label": "Sub-heading 5"
+   },
+   "f12": {
+    "type": "text",
+    "label": "Paragraph 6"
+   },
+   "f13": {
+    "type": "text",
+    "label": "Sub-heading 6"
+   },
+   "f14": {
+    "type": "text",
+    "label": "Paragraph 7"
+   },
+   "f15": {
+    "type": "text",
+    "label": "Sub-heading 7"
+   },
+   "f16": {
+    "type": "text",
+    "label": "Paragraph 8"
+   },
+   "f17": {
+    "type": "text",
+    "label": "Sub-heading 8"
+   },
+   "f18": {
+    "type": "text",
+    "label": "Paragraph 9"
+   },
+   "f19": {
+    "type": "text",
+    "label": "Sub-heading 9"
+   },
+   "f20": {
+    "type": "text",
+    "label": "Paragraph 10"
+   },
+   "f21": {
+    "type": "text",
+    "label": "Text"
+   },
+   "f22": {
+    "type": "link",
+    "label": "Button"
+   }
+  },
+  "html": "<section class=\"block\">\n  <div class=\"wrap two narrow-r\">\n    <div class=\"prose\">\n      <h2 style=\"margin-top:0\">{{f1}}</h2>\n      <p>{{f2}}</p>\n      <h3>{{f3}}</h3>\n      <p>{{f4}}</p>\n      <h3>{{f5}}</h3>\n      <p>{{f6}}</p>\n      <h3>{{f7}}</h3>\n      <p>{{f8}}</p>\n      <h3>{{f9}}</h3>\n      <p>{{f10}}</p>\n      <h3>{{f11}}</h3>\n      <p>{{f12}}</p>\n      <h3>{{f13}}</h3>\n      <p>{{f14}}</p>\n      <h3>{{f15}}</h3>\n      <p>{{f16}}</p>\n      <h3>{{f17}}</h3>\n      <p>{{f18}}</p>\n    </div>\n    <aside class=\"side\">\n      <h3>{{f19}}</h3>\n      <p style=\"font-size:.95rem;color:var(--muted)\">{{f20}}</p>\n      <a class=\"btn btn-primary\" href=\"tel:{{phoneTel}}\">{{f21}}</a>\n      <a class=\"btn btn-outline\" href=\"{{f22.href}}\">{{f22}}</a>\n    </aside>\n  </div>\n</section>"
+ },
+ "disclaimer/1": {
+  "label": "Page heading: Disclaimer",
+  "fields": {
+   "f1": {
+    "type": "image",
+    "label": "Photo"
+   },
+   "f2": {
+    "type": "rich",
+    "label": "Breadcrumb"
+   },
+   "f3": {
+    "type": "text",
+    "label": "Main heading"
+   },
+   "f4": {
+    "type": "text",
+    "label": "Paragraph"
+   }
+  },
+  "html": "<section class=\"pagehead\">\n  <div class=\"art\"><img src=\"{{f1.src}}\" alt=\"{{f1.alt}}\"></div>\n  <div class=\"wrap\"><div><div class=\"crumb\">{{f2}}</div><h1>{{f3}}</h1><p>{{f4}}</p></div></div>\n</section>"
+ },
+ "disclaimer/2": {
+  "label": "General information only",
+  "fields": {
+   "f1": {
+    "type": "text",
+    "label": "Heading"
+   },
+   "f2": {
+    "type": "text",
+    "label": "Paragraph"
+   },
+   "f3": {
+    "type": "text",
+    "label": "Paragraph 2"
+   },
+   "f4": {
+    "type": "text",
+    "label": "Sub-heading"
+   },
+   "f5": {
+    "type": "text",
+    "label": "Paragraph 3"
+   },
+   "f6": {
+    "type": "text",
+    "label": "Sub-heading 2"
+   },
+   "f7": {
+    "type": "text",
+    "label": "Paragraph 4"
+   },
+   "f8": {
+    "type": "text",
+    "label": "Sub-heading 3"
+   },
+   "f9": {
+    "type": "text",
+    "label": "Paragraph 5"
+   },
+   "f10": {
+    "type": "text",
+    "label": "Sub-heading 4"
+   },
+   "f11": {
+    "type": "text",
+    "label": "Paragraph 6"
+   },
+   "f12": {
+    "type": "text",
+    "label": "Text"
+   },
+   "f13": {
+    "type": "link",
+    "label": "Button"
+   }
+  },
+  "html": "<section class=\"block\">\n  <div class=\"wrap two narrow-r\">\n    <div class=\"prose\">\n      <h2 style=\"margin-top:0\">{{f1}}</h2>\n      <p>{{f2}}</p>\n      <p>{{f3}}</p>\n      <h3>{{f4}}</h3>\n      <p>{{f5}}</p>\n      <h3>{{f6}}</h3>\n      <p>{{f7}}</p>\n      <h3>{{f8}}</h3>\n      <p>{{f9}}</p>\n    </div>\n    <aside class=\"side\">\n      <h3>{{f10}}</h3>\n      <p style=\"font-size:.95rem;color:var(--muted)\">{{f11}}</p>\n      <a class=\"btn btn-primary\" href=\"tel:{{phoneTel}}\">{{f12}}</a>\n      <a class=\"btn btn-outline\" href=\"{{f13.href}}\">{{f13}}</a>\n    </aside>\n  </div>\n</section>"
+ },
+ "not-found/1": {
+  "label": "Page heading: Sorry, we can't find that page",
+  "fields": {
+   "f1": {
+    "type": "image",
+    "label": "Photo"
+   },
+   "f2": {
+    "type": "rich",
+    "label": "Breadcrumb"
+   },
+   "f3": {
+    "type": "text",
+    "label": "Main heading"
+   },
+   "f4": {
+    "type": "text",
+    "label": "Paragraph"
+   }
+  },
+  "html": "<section class=\"pagehead\">\n  <div class=\"art\"><img src=\"{{f1.src}}\" alt=\"{{f1.alt}}\"></div>\n  <div class=\"wrap\"><div><div class=\"crumb\">{{f2}}</div><h1>{{f3}}</h1><p>{{f4}}</p></div></div>\n</section>"
+ },
+ "not-found/2": {
+  "label": "Popular pages",
+  "fields": {
+   "f1": {
+    "type": "text",
+    "label": "Heading"
+   },
+   "f2": {
+    "type": "rich",
+    "label": "List item"
+   },
+   "f3": {
+    "type": "rich",
+    "label": "List item 2"
+   },
+   "f4": {
+    "type": "rich",
+    "label": "List item 3"
+   },
+   "f5": {
+    "type": "rich",
+    "label": "List item 4"
+   },
+   "f6": {
+    "type": "rich",
+    "label": "List item 5"
+   },
+   "f7": {
+    "type": "rich",
+    "label": "List item 6"
+   },
+   "f8": {
+    "type": "rich",
+    "label": "List item 7"
+   },
+   "f9": {
+    "type": "link",
+    "label": "Button"
+   },
+   "f10": {
+    "type": "text",
+    "label": "Sub-heading"
+   },
+   "f11": {
+    "type": "text",
+    "label": "Paragraph"
+   },
+   "f12": {
+    "type": "text",
+    "label": "Text"
+   },
+   "f13": {
+    "type": "link",
+    "label": "Button 2"
+   }
+  },
+  "html": "<section class=\"block\">\n  <div class=\"wrap two narrow-r\">\n    <div class=\"prose\">\n      <h2 style=\"margin-top:0\">{{f1}}</h2>\n      <ul>\n        <li>{{f2}}</li>\n        <li>{{f3}}</li>\n        <li>{{f4}}</li>\n        <li>{{f5}}</li>\n        <li>{{f6}}</li>\n        <li>{{f7}}</li>\n        <li>{{f8}}</li>\n      </ul>\n      <p><a class=\"btn btn-navy\" href=\"{{f9.href}}\">{{f9}}</a></p>\n    </div>\n    <aside class=\"side\">\n      <h3>{{f10}}</h3>\n      <p style=\"font-size:.95rem;color:var(--muted)\">{{f11}}</p>\n      <a class=\"btn btn-primary\" href=\"tel:{{phoneTel}}\">{{f12}}</a>\n      <a class=\"btn btn-outline\" href=\"{{f13.href}}\">{{f13}}</a>\n    </aside>\n  </div>\n</section>"
+ }
+}

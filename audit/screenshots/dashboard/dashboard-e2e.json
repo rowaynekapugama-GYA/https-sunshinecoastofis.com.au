@@ -1,0 +1,147 @@
+[
+ {
+  "check": "Sign in as admin (GYA)",
+  "result": "PASS",
+  "detail": ""
+ },
+ {
+  "check": "Dashboard home: sidebar order, publish button",
+  "result": "PASS",
+  "detail": ""
+ },
+ {
+  "check": "Import missing content (loads the 2 migrated blog articles)",
+  "result": "PASS",
+  "detail": ""
+ },
+ {
+  "check": "Visual editor: click the heading on the page, type, save",
+  "result": "PASS",
+  "detail": ""
+ },
+ {
+  "check": "Reorder sections by drag handle (keyboard) and save",
+  "result": "PASS",
+  "detail": ""
+ },
+ {
+  "check": "Hide and show a section",
+  "result": "PASS",
+  "detail": ""
+ },
+ {
+  "check": "Preview shows unsaved and saved changes in a new tab",
+  "result": "PASS",
+  "detail": ""
+ },
+ {
+  "check": "SEO fields with Google preview, saved",
+  "result": "PASS",
+  "detail": ""
+ },
+ {
+  "check": "Media Library: upload a photo with alt text",
+  "result": "PASS",
+  "detail": ""
+ },
+ {
+  "check": "Media Library: replace a photo everywhere",
+  "result": "PASS",
+  "detail": ""
+ },
+ {
+  "check": "Visual editor: click a photo on the page, choose from the library, save",
+  "result": "PASS",
+  "detail": ""
+ },
+ {
+  "check": "Visual editor: click a button, Change link, save",
+  "result": "PASS",
+  "detail": ""
+ },
+ {
+  "check": "Visual editor: editing wording next to the phone number keeps it linked to Site Settings",
+  "result": "PASS",
+  "detail": ""
+ },
+ {
+  "check": "Visual editor: desktop and mobile views",
+  "result": "PASS",
+  "detail": ""
+ },
+ {
+  "check": "Visual editor: header and footer edited on their own screen",
+  "result": "PASS",
+  "detail": ""
+ },
+ {
+  "check": "Team: give Taylor a library photo, open a surgeon bio",
+  "result": "PASS",
+  "detail": ""
+ },
+ {
+  "check": "Team: hide and show a team member",
+  "result": "PASS",
+  "detail": ""
+ },
+ {
+  "check": "Site Settings: change a hospital note and the GA4 ID",
+  "result": "PASS",
+  "detail": ""
+ },
+ {
+  "check": "Blog: write and publish an article (AHPRA reminder shown)",
+  "result": "PASS",
+  "detail": ""
+ },
+ {
+  "check": "Redirects: see the migrated list, add one",
+  "result": "PASS",
+  "detail": ""
+ },
+ {
+  "check": "Publish website calls the deploy hook",
+  "result": "PASS",
+  "detail": ""
+ },
+ {
+  "check": "Contact us form sends and confirms",
+  "result": "PASS",
+  "detail": ""
+ },
+ {
+  "check": "Online doctor referral form (with attachment) sends and confirms",
+  "result": "PASS",
+  "detail": ""
+ },
+ {
+  "check": "Patient information form sends and confirms",
+  "result": "PASS",
+  "detail": ""
+ },
+ {
+  "check": "Feedback form sends and confirms",
+  "result": "PASS",
+  "detail": ""
+ },
+ {
+  "check": "Required fields block an empty form",
+  "result": "PASS",
+  "detail": ""
+ },
+ {
+  "check": "Spam: honeypot submission is accepted silently and not stored",
+  "result": "PASS",
+  "detail": ""
+ },
+ {
+  "check": "Enquiries: all four forms logged with date and page, CSV export, no medical details stored",
+  "result": "PASS",
+  "detail": ""
+ },
+ {
+  "check": "Editor role: no Users, Redirects or tracking IDs",
+  "result": "PASS",
+  "detail": ""
+ }
+]

@@ -1,0 +1,140 @@
+{
+  "slug": "locations",
+  "route": "/locations/",
+  "pageId": "locations",
+  "title": "Locations",
+  "kind": "page",
+  "seo": {
+    "metaTitle": "Clinic Locations | Sunshine Coast Oral, Facial & Implant Specialists",
+    "metaDescription": "Private Hospital locations on the Sunshine Coast that our specialists work from. From Buderim, Maroochydore, Nambour & Hervey Bay",
+    "ogTitle": "Locations | Sunshine Coast Oral, Facial & Implant Specialists",
+    "ogImage": "/images/reception2.jpg"
+  },
+  "sections": [
+    {
+      "id": "s1",
+      "template": "locations/1",
+      "fields": {
+        "f1": {
+          "src": "/images/reception2.jpg",
+          "alt": ""
+        },
+        "f2": {
+          "value": "<a href=\"/\">Home</a> / Locations"
+        },
+        "f3": {
+          "value": "Consulting in Buderim, operating across the Coast and Wide Bay"
+        },
+        "f4": {
+          "value": "Your surgeon recommends the setting that suits your case and where you live, from in-clinic sedation in Buderim to hospital theatres from Maroochydore to Hervey Bay."
+        }
+      }
+    },
+    {
+      "id": "s2",
+      "template": "locations/2",
+      "fields": {
+        "f1": {
+          "value": "Main practice"
+        },
+        "f2": {
+          "value": "Nucleus Medical Suites, Buderim"
+        },
+        "f3": {
+          "value": "Suite 5 (Blue Lifts), Nucleus Medical Suites<br>23 Elsa Wilson Drive, Buderim QLD 4556"
+        },
+        "f4": {
+          "value": "Phone"
+        },
+        "f5": {
+          "value": "<strong>Hours</strong> Monday to Thursday 8.00am to 5.00pm, Friday 8.00am to 4.00pm"
+        },
+        "f6": {
+          "value": "The suites are within the Buderim Private Hospital precinct with on-site parking. Take the Blue Lifts to our floor. Our rooms include a dedicated procedure room for in-clinic treatment under local anaesthetic or IV sedation, and on-site 3D CBCT imaging."
+        },
+        "f7": {
+          "value": "Get directions",
+          "href": "https://www.google.com/maps/place/Sunshine+Coast+Oral,+Facial+%26+Implant+Specialists/@-26.6838766,153.0930069,17z/data=!3m1!4b1!4m6!3m5!1s0x6b93771d577bd3e7:0x1a52ca83026f674f!8m2!3d-26.6838766!4d153.0930069!16s%2Fg%2F11f64f2h4n?hl=en&amp;entry=ttu&amp;g_ep=EgoyMDI2MDkyOC4wIKXMDSoASAFQAw%3D%3D"
+        },
+        "f8": {
+          "value": "Map of Suite 5, Nucleus Medical Suites, 23 Elsa Wilson Drive, Buderim"
+        },
+        "f9": {
+          "src": "/images/reception2.jpg",
+          "alt": "Reception"
+        },
+        "f10": {
+          "src": "/images/lounge.jpg",
+          "alt": "Patient lounge"
+        },
+        "f11": {
+          "src": "/images/theatre.jpg",
+          "alt": "Procedure room"
+        },
+        "f12": {
+          "src": "/images/hall.jpg",
+          "alt": "Consulting suites"
+        }
+      }
+    },
+    {
+      "id": "s3",
+      "template": "locations/3",
+      "fields": {
+        "f1": {
+          "value": "Where we consult and operate"
+        },
+        "f2": {
+          "value": "Our rooms and five private hospitals, from Buderim to Hervey Bay"
+        },
+        "f3": {
+          "value": "Select a location to see it on the map. Surgery under general anaesthetic is performed in a fully accredited private hospital theatre with a specialist anaesthetist."
+        },
+        "f4": {
+          "value": "Buderim, main practice"
+        },
+        "f5": {
+          "value": "Nucleus Medical Suites"
+        },
+        "f6": {
+          "value": "Suite 5 (Blue Lifts), 23 Elsa Wilson Drive, Buderim QLD 4556"
+        },
+        "f7": {
+          "value": "Consultations, in-clinic procedures under local anaesthetic or IV sedation, on-site CBCT. Mon to Thu 8.00am to 5.00pm, Fri 8.00am to 4.00pm."
+        },
+        "f8": {
+          "value": "Get directions",
+          "href": "https://www.google.com/maps/place/Sunshine+Coast+Oral,+Facial+%26+Implant+Specialists/@-26.6838766,153.0930069,17z/data=!3m1!4b1!4m6!3m5!1s0x6b93771d577bd3e7:0x1a52ca83026f674f!8m2!3d-26.6838766!4d153.0930069!16s%2Fg%2F11f64f2h4n?hl=en&amp;entry=ttu&amp;g_ep=EgoyMDI2MDkyOC4wIKXMDSoASAFQAw%3D%3D"
+        },
+        "f9": {
+          "value": "Google Map loads here on the live site"
+        }
+      }
+    },
+    {
+      "id": "s4",
+      "template": "locations/4",
+      "fields": {
+        "f1": {
+          "value": "Serving patients across Queensland"
+        },
+        "f2": {
+          "value": "Because both surgeons are dual-qualified specialists operating in accredited hospitals, patients travel to us from well beyond the Sunshine Coast. We regularly treat patients from Gympie, Hervey Bay, Maryborough, Bundaberg, Caboolture and the Moreton Bay region, and accept referrals from dentists and doctors in Brisbane and regional Queensland for complex implant, grafting, jaw and trauma cases."
+        },
+        "f3": {
+          "value": "Not sure which location suits you?"
+        },
+        "f4": {
+          "value": "Call us and our patient coordinator will match you with the closest consulting location and hospital for your procedure."
+        },
+        "f5": {
+          "value": "Call {{phone}}"
+        },
+        "f6": {
+          "value": "Make an enquiry",
+          "href": "/contact-us/"
+        }
+      }
+    }
+  ]
+}

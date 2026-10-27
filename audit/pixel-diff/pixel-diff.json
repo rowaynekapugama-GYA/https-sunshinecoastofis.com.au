@@ -1,0 +1,404 @@
+[
+ {
+  "page": "/",
+  "width": 1280,
+  "approved_size": [
+   1280,
+   7877
+  ],
+  "new_size": [
+   1280,
+   7877
+  ],
+  "pixels_different_pct": 0.0,
+  "diff_box": null
+ },
+ {
+  "page": "/about/",
+  "width": 1280,
+  "approved_size": [
+   1280,
+   5219
+  ],
+  "new_size": [
+   1280,
+   5219
+  ],
+  "pixels_different_pct": 0.0,
+  "diff_box": null
+ },
+ {
+  "page": "/services/",
+  "width": 1280,
+  "approved_size": [
+   1280,
+   2109
+  ],
+  "new_size": [
+   1280,
+   2109
+  ],
+  "pixels_different_pct": 0.0,
+  "diff_box": null
+ },
+ {
+  "page": "/services/wisdom-teeth-removal/",
+  "width": 1280,
+  "approved_size": [
+   1280,
+   3990
+  ],
+  "new_size": [
+   1280,
+   3990
+  ],
+  "pixels_different_pct": 0.0,
+  "diff_box": null
+ },
+ {
+  "page": "/services/dental-implants/",
+  "width": 1280,
+  "approved_size": [
+   1280,
+   3505
+  ],
+  "new_size": [
+   1280,
+   3505
+  ],
+  "pixels_different_pct": 0.0,
+  "diff_box": null
+ },
+ {
+  "page": "/services/all-on-4-dental-implants/",
+  "width": 1280,
+  "approved_size": [
+   1280,
+   4051
+  ],
+  "new_size": [
+   1280,
+   4051
+  ],
+  "pixels_different_pct": 0.0,
+  "diff_box": null
+ },
+ {
+  "page": "/services/zygomatic-implants/",
+  "width": 1280,
+  "approved_size": [
+   1280,
+   3520
+  ],
+  "new_size": [
+   1280,
+   3520
+  ],
+  "pixels_different_pct": 0.0,
+  "diff_box": null
+ },
+ {
+  "page": "/services/jaw-bone-grafting/",
+  "width": 1280,
+  "approved_size": [
+   1280,
+   3535
+  ],
+  "new_size": [
+   1280,
+   3535
+  ],
+  "pixels_different_pct": 0.0,
+  "diff_box": null
+ },
+ {
+  "page": "/services/orthognathic-corrective-jaw-surgery/",
+  "width": 1280,
+  "approved_size": [
+   1280,
+   3489
+  ],
+  "new_size": [
+   1280,
+   3489
+  ],
+  "pixels_different_pct": 0.0,
+  "diff_box": null
+ },
+ {
+  "page": "/services/facial-trauma/",
+  "width": 1280,
+  "approved_size": [
+   1280,
+   3581
+  ],
+  "new_size": [
+   1280,
+   3581
+  ],
+  "pixels_different_pct": 0.0,
+  "diff_box": null
+ },
+ {
+  "page": "/patient-information/",
+  "width": 1280,
+  "approved_size": [
+   1280,
+   3994
+  ],
+  "new_size": [
+   1280,
+   3994
+  ],
+  "pixels_different_pct": 0.0,
+  "diff_box": null
+ },
+ {
+  "page": "/locations/",
+  "width": 1280,
+  "approved_size": [
+   1280,
+   4292
+  ],
+  "new_size": [
+   1280,
+   4292
+  ],
+  "pixels_different_pct": 2.962,
+  "diff_box": [
+   151,
+   1861,
+   576,
+   2637
+  ]
+ },
+ {
+  "page": "/online-doctor-referral/",
+  "width": 1280,
+  "approved_size": [
+   1280,
+   3354
+  ],
+  "new_size": [
+   1280,
+   3354
+  ],
+  "pixels_different_pct": 0.0,
+  "diff_box": null
+ },
+ {
+  "page": "/contact-us/",
+  "width": 1280,
+  "approved_size": [
+   1280,
+   3152
+  ],
+  "new_size": [
+   1280,
+   3152
+  ],
+  "pixels_different_pct": 0.0,
+  "diff_box": null
+ },
+ {
+  "page": "/",
+  "width": 390,
+  "approved_size": [
+   390,
+   13276
+  ],
+  "new_size": [
+   390,
+   13276
+  ],
+  "pixels_different_pct": 0.0,
+  "diff_box": null
+ },
+ {
+  "page": "/about/",
+  "width": 390,
+  "approved_size": [
+   390,
+   9430
+  ],
+  "new_size": [
+   390,
+   9430
+  ],
+  "pixels_different_pct": 0.0,
+  "diff_box": null
+ },
+ {
+  "page": "/services/",
+  "width": 390,
+  "approved_size": [
+   390,
+   4060
+  ],
+  "new_size": [
+   390,
+   4060
+  ],
+  "pixels_different_pct": 0.0,
+  "diff_box": null
+ },
+ {
+  "page": "/services/wisdom-teeth-removal/",
+  "width": 390,
+  "approved_size": [
+   390,
+   6718
+  ],
+  "new_size": [
+   390,
+   6718
+  ],
+  "pixels_different_pct": 0.0,
+  "diff_box": null
+ },
+ {
+  "page": "/services/dental-implants/",
+  "width": 390,
+  "approved_size": [
+   390,
+   5850
+  ],
+  "new_size": [
+   390,
+   5850
+  ],
+  "pixels_different_pct": 0.0,
+  "diff_box": null
+ },
+ {
+  "page": "/services/all-on-4-dental-implants/",
+  "width": 390,
+  "approved_size": [
+   390,
+   6648
+  ],
+  "new_size": [
+   390,
+   6648
+  ],
+  "pixels_different_pct": 0.0,
+  "diff_box": null
+ },
+ {
+  "page": "/services/zygomatic-implants/",
+  "width": 390,
+  "approved_size": [
+   390,
+   5747
+  ],
+  "new_size": [
+   390,
+   5747
+  ],
+  "pixels_different_pct": 0.0,
+  "diff_box": null
+ },
+ {
+  "page": "/services/jaw-bone-grafting/",
+  "width": 390,
+  "approved_size": [
+   390,
+   5948
+  ],
+  "new_size": [
+   390,
+   5948
+  ],
+  "pixels_different_pct": 0.0,
+  "diff_box": null
+ },
+ {
+  "page": "/services/orthognathic-corrective-jaw-surgery/",
+  "width": 390,
+  "approved_size": [
+   390,
+   5740
+  ],
+  "new_size": [
+   390,
+   5740
+  ],
+  "pixels_different_pct": 0.0,
+  "diff_box": null
+ },
+ {
+  "page": "/services/facial-trauma/",
+  "width": 390,
+  "approved_size": [
+   390,
+   5875
+  ],
+  "new_size": [
+   390,
+   5875
+  ],
+  "pixels_different_pct": 0.0,
+  "diff_box": null
+ },
+ {
+  "page": "/patient-information/",
+  "width": 390,
+  "approved_size": [
+   390,
+   6951
+  ],
+  "new_size": [
+   390,
+   6951
+  ],
+  "pixels_different_pct": 0.0,
+  "diff_box": null
+ },
+ {
+  "page": "/locations/",
+  "width": 390,
+  "approved_size": [
+   390,
+   7049
+  ],
+  "new_size": [
+   390,
+   7049
+  ],
+  "pixels_different_pct": 2.3125,
+  "diff_box": [
+   88,
+   2167,
+   354,
+   2652
+  ]
+ },
+ {
+  "page": "/online-doctor-referral/",
+  "width": 390,
+  "approved_size": [
+   390,
+   6256
+  ],
+  "new_size": [
+   390,
+   6256
+  ],
+  "pixels_different_pct": 0.0,
+  "diff_box": null
+ },
+ {
+  "page": "/contact-us/",
+  "width": 390,
+  "approved_size": [
+   390,
+   4873
+  ],
+  "new_size": [
+   390,
+   4873
+  ],
+  "pixels_different_pct": 0.0,
+  "diff_box": null
+ }
+]

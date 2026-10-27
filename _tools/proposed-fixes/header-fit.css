@@ -1,0 +1,18 @@
+/* PROPOSED, NOT APPLIED. Needs Rowayne's (and the client's) OK because it changes the approved look:
+   between 821 and 1139 px wide (tablet landscape, small laptops, phones turned sideways) the menu
+   collapses to the burger, as it already does at 820 px and below. At 1140 px and wider nothing
+   changes. On phones the gap between the logo and the buttons is 6 px narrower.
+   Fixes: the logo shrinking to about 11 px wide at 1024 px (iPad landscape), the sideways scroll on
+   phones turned landscape (844 x 390), and the logo squeezed about 19% narrower on 375 px phones.
+   Tested at 320, 360, 375, 390, 414, 768, 820, 844, 1024, 1100, 1139, 1140 and 1280 px: no sideways
+   scroll and the logo keeps its proportions at every width.
+   To apply: append to public/assets/site.css. */
+.logo{flex-shrink:0}
+.logo img{max-width:none}
+@media (max-width:1139px){
+  nav.menu,.nav-cta .btn-outline{display:none}
+  .burger{display:flex}
+}
+@media (max-width:640px){
+  .nav .wrap{gap:.6rem}
+}

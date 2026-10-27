@@ -1,0 +1,77 @@
+[
+  {
+    "from": "/buderim-private-hospital/",
+    "to": "/locations/",
+    "type": "301"
+  },
+  {
+    "from": "/hervey-bay-st-stephens-private-hospital/",
+    "to": "/locations/",
+    "type": "301"
+  },
+  {
+    "from": "/nambour-selangor-private-hospital/",
+    "to": "/locations/",
+    "type": "301"
+  },
+  {
+    "from": "/noosa-private-hospital/",
+    "to": "/locations/",
+    "type": "301"
+  },
+  {
+    "from": "/online-doctor-referral-smileox-demo/",
+    "to": "/online-doctor-referral/",
+    "type": "301"
+  },
+  {
+    "from": "/patient-information/before-after-your-surgery/",
+    "to": "/patient-information/#surgery",
+    "type": "301"
+  },
+  {
+    "from": "/patient-information/initial-consultation/",
+    "to": "/patient-information/#consult",
+    "type": "301"
+  },
+  {
+    "from": "/patient-information/payment-information/",
+    "to": "/patient-information/#payment",
+    "type": "301"
+  },
+  {
+    "from": "/sample-page/",
+    "to": "/",
+    "type": "301"
+  },
+  {
+    "from": "/services/obstructive-sleep-apnoea/",
+    "to": "/services/orthognathic-corrective-jaw-surgery/",
+    "type": "301"
+  },
+  {
+    "from": "/services/orthognathic/",
+    "to": "/services/orthognathic-corrective-jaw-surgery/",
+    "type": "301"
+  },
+  {
+    "from": "/services/temporomandibular-joint-disorder/",
+    "to": "/services/",
+    "type": "301"
+  },
+  {
+    "from": "/sitemap/",
+    "to": "/",
+    "type": "301"
+  },
+  {
+    "from": "/sunshine-coast-day-surgery/",
+    "to": "/locations/",
+    "type": "301"
+  },
+  {
+    "from": "/what-is-oral-and-maxillofacial-surgery/",
+    "to": "/services/",
+    "type": "301"
+  }
+]

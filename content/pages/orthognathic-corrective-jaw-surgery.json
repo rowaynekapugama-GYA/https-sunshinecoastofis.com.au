@@ -1,0 +1,179 @@
+{
+  "slug": "orthognathic-corrective-jaw-surgery",
+  "route": "/services/orthognathic-corrective-jaw-surgery/",
+  "pageId": "services--orthognathic-surgery",
+  "title": "Corrective jaw surgery",
+  "kind": "page",
+  "seo": {
+    "metaTitle": "Orthognathic Sunshine Coast | Corrective Jaw Surgery",
+    "metaDescription": "A Genioplasty can involve surgery by cutting the bone of the chin to reduce or reposition the bone, altering the shape and/or position of the chin.",
+    "ogTitle": "Orthognathic | Sunshine Coast Oral, Facial & Implant Specialists",
+    "ogImage": "/images/corrective-jaw-surgery-hero-square.jpg"
+  },
+  "sections": [
+    {
+      "id": "s1",
+      "template": "orthognathic-corrective-jaw-surgery/1",
+      "fields": {
+        "f1": {
+          "src": "/images/corrective-jaw-surgery-hero-square.jpg",
+          "alt": ""
+        },
+        "f2": {
+          "value": "<a href=\"/\">Home</a> / <a href=\"/services/\">Services</a>"
+        },
+        "f3": {
+          "value": "Corrective jaw surgery to align your bite and your face"
+        },
+        "f4": {
+          "value": "Orthognathic surgery repositions the upper jaw, lower jaw or both to correct a bite that braces alone cannot fix. It improves chewing, speech and breathing, and brings the face into balance. Planned in partnership with your orthodontist and performed in hospital."
+        },
+        "f5": {
+          "value": "Make an enquiry",
+          "href": "/contact-us/"
+        }
+      }
+    },
+    {
+      "id": "s2",
+      "template": "orthognathic-corrective-jaw-surgery/2",
+      "fields": {
+        "f1": {
+          "value": "When jaw surgery is recommended"
+        },
+        "f2": {
+          "value": "Some bite problems are caused by the position of the teeth, and orthodontics alone corrects them. Others are caused by the size or position of the jaws themselves: a lower jaw that sits too far back or forward, an upper jaw that is too narrow or too long, an open bite where the front teeth do not meet, or facial asymmetry. In those cases braces move the teeth into position and surgery moves the jaws."
+        },
+        "f3": {
+          "value": "Difficulty biting, chewing or speaking"
+        },
+        "f4": {
+          "value": "Receding or protruding chin, gummy smile or long face"
+        },
+        "f5": {
+          "value": "Open bite, deep bite or crossbite that cannot be corrected orthodontically"
+        },
+        "f6": {
+          "value": "Facial asymmetry"
+        },
+        "f7": {
+          "value": "Obstructive sleep apnoea related to jaw position"
+        },
+        "f8": {
+          "value": "Jaw joint (TMJ) pain related to bite"
+        },
+        "f9": {
+          "value": "A team approach"
+        },
+        "f10": {
+          "value": "Orthognathic treatment is a partnership between you, your orthodontist and your surgeon. Braces or aligners align the teeth before surgery (usually 12 to 18 months), the surgery repositions the jaws, and a shorter period of orthodontics after surgery fine-tunes the bite. Your surgeon uses 3D imaging and digital planning so the movements are precise and predictable, and both surgeons trained in orthognathic surgery across Queensland's major teaching hospitals."
+        },
+        "f11": {
+          "value": "The surgery"
+        },
+        "f12": {
+          "value": "Surgery is performed inside the mouth under general anaesthetic in an accredited private hospital, so there are no visible facial scars. The jaws are repositioned and held with small titanium plates and screws that stay in place permanently. Most patients stay in hospital for one to two nights and return to school or work in two to three weeks, with swelling settling over the following weeks and months."
+        },
+        "f13": {
+          "value": "Book a consultation"
+        },
+        "f14": {
+          "value": "Consulting in Buderim. You're welcome to see us without a referral, and a referral from your general dentist or GP may make you eligible for a Medicare rebate. You receive a written, itemised treatment plan before deciding anything."
+        },
+        "f15": {
+          "value": "Make an enquiry",
+          "href": "/contact-us/"
+        },
+        "f16": {
+          "value": "Call {{phone}}"
+        },
+        "f17": {
+          "value": "Dentists and doctors:"
+        },
+        "f18": {
+          "value": "refer a patient online",
+          "href": "/online-doctor-referral/"
+        },
+        "f19": {
+          "src": "/images/hall.jpg",
+          "alt": ""
+        }
+      }
+    },
+    {
+      "id": "s3",
+      "template": "orthognathic-corrective-jaw-surgery/3",
+      "fields": {
+        "f1": {
+          "value": "What happens, and when"
+        },
+        "f2": {
+          "value": "Your treatment, step by step"
+        },
+        "f3": {
+          "value": "Consultation and 3D planning"
+        },
+        "f4": {
+          "value": "Assessment with your orthodontist, CBCT imaging and photographs. Your surgeon explains the movements needed and what to expect."
+        },
+        "f5": {
+          "value": "Pre-surgical orthodontics"
+        },
+        "f6": {
+          "value": "Braces or aligners align the teeth so the jaws can be moved into the correct bite, usually over 12 to 18 months."
+        },
+        "f7": {
+          "value": "Surgery in hospital"
+        },
+        "f8": {
+          "value": "Upper jaw, lower jaw or both are repositioned under general anaesthetic, with a stay of one to two nights."
+        },
+        "f9": {
+          "value": "Recovery and finishing orthodontics"
+        },
+        "f10": {
+          "value": "A soft diet for several weeks, regular reviews, then a short final phase of orthodontics to perfect the bite."
+        }
+      }
+    },
+    {
+      "id": "s4",
+      "template": "orthognathic-corrective-jaw-surgery/4",
+      "fields": {
+        "f1": {
+          "value": "Common questions"
+        },
+        "f2": {
+          "value": "What patients ask us"
+        },
+        "f3": {
+          "value": "Does jaw surgery leave scars?"
+        },
+        "f4": {
+          "value": "No. The surgery is performed inside the mouth, so there are no external scars."
+        },
+        "f5": {
+          "value": "How long is recovery?"
+        },
+        "f6": {
+          "value": "Most patients are home within two days and back to work or study in two to three weeks. A soft diet is needed for about six weeks while the jaws heal, and swelling can take a few months to fully settle."
+        },
+        "f7": {
+          "value": "Will Medicare or my health fund cover it?"
+        },
+        "f8": {
+          "value": "Orthognathic surgery for functional problems attracts Medicare item numbers, and private hospital cover usually applies to hospital and anaesthetic costs. We provide the item numbers so you can check with your fund."
+        },
+        "f9": {
+          "value": "Will my appearance change?"
+        },
+        "f10": {
+          "value": "Yes. Because the jaws are repositioned, facial balance improves. Digital planning lets your surgeon show you the expected change before surgery."
+        },
+        "f11": {
+          "value": "Any surgical or invasive procedure carries risks. Before proceeding, you should seek a second opinion from an appropriately qualified health practitioner."
+        }
+      }
+    }
+  ]
+}

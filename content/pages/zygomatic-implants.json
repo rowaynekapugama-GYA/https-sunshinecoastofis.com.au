@@ -1,0 +1,173 @@
+{
+  "slug": "zygomatic-implants",
+  "route": "/services/zygomatic-implants/",
+  "pageId": "services--zygomatic-implants",
+  "title": "Zygomatic implants",
+  "kind": "page",
+  "seo": {
+    "metaTitle": "Zygomatic Implants Sunshine Coast",
+    "metaDescription": "Zygomatic implants were originally developed by Professor Brånemark to allow denture use by patients that had surgery to remove part of the upper jaw",
+    "ogTitle": "Zygomatic Implants | SCOFIS",
+    "ogImage": "/images/zygomatic-implants-hero-square.jpg"
+  },
+  "sections": [
+    {
+      "id": "s1",
+      "template": "zygomatic-implants/1",
+      "fields": {
+        "f1": {
+          "src": "/images/zygomatic-implants-hero-square.jpg",
+          "alt": ""
+        },
+        "f2": {
+          "value": "<a href=\"/\">Home</a> / <a href=\"/services/\">Services</a>"
+        },
+        "f3": {
+          "value": "Fixed teeth when you have been told there is not enough bone"
+        },
+        "f4": {
+          "value": "Zygomatic implants are longer implants anchored in the dense cheekbone (zygoma) rather than the upper jaw. For patients with severe upper jaw bone loss they provide a fixed full arch, often within 24 hours, without months of bone grafting."
+        },
+        "f5": {
+          "value": "Make an enquiry",
+          "href": "/contact-us/"
+        }
+      }
+    },
+    {
+      "id": "s2",
+      "template": "zygomatic-implants/2",
+      "fields": {
+        "f1": {
+          "value": "Remote anchorage for the atrophic upper jaw"
+        },
+        "f2": {
+          "value": "When the upper jaw has shrunk after long-term denture wear, gum disease or failed implants, conventional implants may have nothing to hold onto. The traditional answer was extensive grafting: bone taken from the hip or skull, months of healing, and no guarantee of success. Remote anchorage implants bypass the problem by anchoring in bone that does not resorb."
+        },
+        "f3": {
+          "value": "<strong>Zygomatic implants</strong> anchor in the cheekbone, supporting the back of a full arch bridge."
+        },
+        "f4": {
+          "value": "<strong>Pterygoid implants</strong> engage the dense bone behind the upper jaw."
+        },
+        "f5": {
+          "value": "<strong>Nasal and trans-sinus implants</strong> use the bone beside the nasal cavity and sinus floor at the front."
+        },
+        "f6": {
+          "value": "Combined with conventional or All-on-4 style implants where bone allows, these techniques let both surgeons offer a fixed solution to patients who have previously been told nothing can be done."
+        },
+        "f7": {
+          "value": "Specialist training you can check"
+        },
+        "f8": {
+          "value": "Zygomatic surgery is advanced, technique-sensitive work performed by a small number of surgeons in Australia. Dr Lincoln trained in zygomatic implants in Hong Kong in 2017 and in zygomatic, nasal and pterygoid implants in Texas in 2023, and has since trained with leading surgeons from France, Brazil and Spain. Patients are referred to the practice from across Queensland for this procedure."
+        },
+        "f9": {
+          "value": "How it is done"
+        },
+        "f10": {
+          "value": "Zygomatic surgery is performed under general anaesthetic in an accredited private hospital, with a specialist anaesthetist. The implants are planned on 3D CBCT imaging and in many cases a temporary fixed bridge is attached within 24 hours of surgery. The final bridge follows once healing is complete."
+        },
+        "f11": {
+          "value": "Book a consultation"
+        },
+        "f12": {
+          "value": "Consulting in Buderim. You're welcome to see us without a referral, and a referral from your general dentist or GP may make you eligible for a Medicare rebate. You receive a written, itemised treatment plan before deciding anything."
+        },
+        "f13": {
+          "value": "Make an enquiry",
+          "href": "/contact-us/"
+        },
+        "f14": {
+          "value": "Call {{phone}}"
+        },
+        "f15": {
+          "value": "Dentists and doctors:"
+        },
+        "f16": {
+          "value": "refer a patient online",
+          "href": "/online-doctor-referral/"
+        },
+        "f17": {
+          "src": "/images/cbct.jpg",
+          "alt": ""
+        }
+      }
+    },
+    {
+      "id": "s3",
+      "template": "zygomatic-implants/3",
+      "fields": {
+        "f1": {
+          "value": "What happens, and when"
+        },
+        "f2": {
+          "value": "Your treatment, step by step"
+        },
+        "f3": {
+          "value": "Consultation and 3D scan"
+        },
+        "f4": {
+          "value": "A CBCT scan shows how much bone remains and where. Your surgeon confirms whether zygomatic, pterygoid or nasal implants are the right approach."
+        },
+        "f5": {
+          "value": "Digital planning"
+        },
+        "f6": {
+          "value": "Implant positions are planned on the 3D scan to avoid the sinus, orbit and nerves, and your hospital admission is booked."
+        },
+        "f7": {
+          "value": "Hospital surgery"
+        },
+        "f8": {
+          "value": "Under general anaesthetic, remaining teeth are removed and the implants placed. In most cases a temporary fixed bridge is fitted within 24 hours."
+        },
+        "f9": {
+          "value": "Healing and final bridge"
+        },
+        "f10": {
+          "value": "The implants integrate over several months, then your final bridge is made and fitted."
+        }
+      }
+    },
+    {
+      "id": "s4",
+      "template": "zygomatic-implants/4",
+      "fields": {
+        "f1": {
+          "value": "Common questions"
+        },
+        "f2": {
+          "value": "What patients ask us"
+        },
+        "f3": {
+          "value": "Who is a candidate for zygomatic implants?"
+        },
+        "f4": {
+          "value": "Patients with severe upper jaw bone loss who want fixed teeth without extensive grafting, including those with failed previous implants or long-term dentures. A 3D scan is required to confirm suitability."
+        },
+        "f5": {
+          "value": "Is it safe?"
+        },
+        "f6": {
+          "value": "Zygomatic implants have been used for decades with high success rates when placed by trained surgeons. As with any surgery there are risks, including sinus involvement, which your surgeon will explain in detail."
+        },
+        "f7": {
+          "value": "Do I really get teeth within 24 hours?"
+        },
+        "f8": {
+          "value": "In most cases, yes. A temporary fixed bridge is attached within 24 hours of surgery, and the final bridge is fitted after healing."
+        },
+        "f9": {
+          "value": "Does it hurt?"
+        },
+        "f10": {
+          "value": "Surgery is under general anaesthetic. Post-operative swelling and discomfort are managed with medication and settle over the first one to two weeks."
+        },
+        "f11": {
+          "value": "Any surgical or invasive procedure carries risks. Before proceeding, you should seek a second opinion from an appropriately qualified health practitioner."
+        }
+      }
+    }
+  ]
+}

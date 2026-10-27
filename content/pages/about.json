@@ -1,0 +1,91 @@
+{
+  "slug": "about",
+  "route": "/about/",
+  "pageId": "our-practice",
+  "title": "Our practice",
+  "kind": "page",
+  "seo": {
+    "metaTitle": "About Sunshine Coast Oral, Facial & Implant Specialists",
+    "metaDescription": "Sunshine Coast Oral, Facial & Implant Specialists (SCOFIS) was opened at the Nucleus Medical Suites at Buderim Private Hospital in 2018.",
+    "ogTitle": "About | Sunshine Coast Oral, Facial & Implant Specialists",
+    "ogImage": "/images/hall.jpg"
+  },
+  "sections": [
+    {
+      "id": "s1",
+      "template": "about/1",
+      "fields": {
+        "f1": {
+          "src": "/images/hall.jpg",
+          "alt": ""
+        },
+        "f2": {
+          "value": "<a href=\"/\">Home</a> / Our practice"
+        },
+        "f3": {
+          "value": "A specialist practice built around the patient"
+        },
+        "f4": {
+          "value": "Opened in 2018 by Dr Trent Lincoln at the Nucleus Medical Suites, Buderim, with a vision to provide exceptional care to the people of the Sunshine Coast and enduring, collaborative relationships with the practitioners who refer to us. Dr Andrew Higgins joined and bought into the practice in 2020, and the two surgeons now co-own it."
+        }
+      }
+    },
+    {
+      "id": "s2",
+      "template": "about/2",
+      "fields": {
+        "f1": {
+          "value": "Modern, welcoming and centrally located"
+        },
+        "f2": {
+          "value": "The practice sits within the Buderim Private Hospital precinct, surrounded by lush rainforest and five minutes from the beaches of Mooloolaba. It was designed from the ground up for oral and maxillofacial surgery, with a dedicated procedure room, on-site 3D CBCT imaging, and a calm, light-filled patient lounge."
+        },
+        "f3": {
+          "value": "Consultations are held in our Buderim rooms. Selected patients can be treated surgically in our rooms under local anaesthetic or IV sedation. Surgery under general anaesthetic, with a specialist anaesthetist, is performed at Buderim Private, Nambour Selangor Private, Sunshine Coast Day Surgery, Maroochy Private and St Stephen's Private in Hervey Bay."
+        },
+        "f4": {
+          "value": "Every treatment is delivered gently and with the latest evidence-based techniques. We take the time needed for you to understand your condition and the options available, and we look forward to caring for you."
+        },
+        "f5": {
+          "src": "/images/waiting.jpg",
+          "alt": "Waiting lounge at Sunshine Coast Oral, Facial & Implant Specialists"
+        },
+        "f6": {
+          "src": "/images/reception2.jpg",
+          "alt": "Reception at the Buderim practice"
+        },
+        "f7": {
+          "src": "/images/lounge.jpg",
+          "alt": "Patient lounge with refreshment bar"
+        }
+      }
+    },
+    {
+      "id": "s3",
+      "template": "about/3",
+      "fields": {
+        "f1": {
+          "value": "Our surgeons"
+        },
+        "f2": {
+          "value": "Dual qualified, fellowship trained"
+        }
+      }
+    },
+    {
+      "id": "s4",
+      "template": "about/4",
+      "fields": {
+        "f1": {
+          "value": "Behind the surgeons"
+        },
+        "f2": {
+          "value": "The team who will look after you"
+        },
+        "f3": {
+          "value": "From your first phone call to your final review, the same small team handles bookings, theatre coordination, accounts and aftercare."
+        }
+      }
+    }
+  ]
+}

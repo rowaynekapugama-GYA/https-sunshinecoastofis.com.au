@@ -1,0 +1,14 @@
+node_modules
+.next
+out
+.env
+.env.local
+.env*.local
+# Payload's local upload folder (Vercel Blob is used in production). Root only: app/(dashboard)/admin/(app)/media is the Media Library page.
+/media
+*.log
+tsconfig.tsbuildinfo
+.vercel
+# test output
+/audit/tmp
+/test-results

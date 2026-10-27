@@ -1,0 +1,93 @@
+{
+  "slug": "contact-us",
+  "route": "/contact-us/",
+  "pageId": "contact",
+  "title": "Contact us",
+  "kind": "page",
+  "seo": {
+    "metaTitle": "Contact Sunshine Coast Oral, Facial & Implant Specialists",
+    "metaDescription": "Contact us today and get the service you need at Sunshine Coast Oral, Facial, and implant specialists (SCOFIS).",
+    "ogTitle": "Contact Us | Sunshine Coast Oral, Facial, and Implant Specialists",
+    "ogImage": "/images/reception1.jpg"
+  },
+  "sections": [
+    {
+      "id": "s1",
+      "template": "contact-us/1",
+      "fields": {
+        "f1": {
+          "src": "/images/reception1.jpg",
+          "alt": ""
+        },
+        "f2": {
+          "value": "<a href=\"/\">Home</a> / Contact"
+        },
+        "f3": {
+          "value": "Make an enquiry"
+        },
+        "f4": {
+          "value": "Tell us what you need and our patient coordinator will call you to arrange a consultation with Dr Lincoln or Dr Higgins."
+        }
+      }
+    },
+    {
+      "id": "s2",
+      "template": "contact-us/2",
+      "fields": {
+        "f1": {
+          "value": "The fastest way to book. Speak to our patient coordinator now."
+        },
+        "f2": {
+          "value": "Mon to Thu 8.00am to 5.00pm, Fri 8.00am to 4.00pm"
+        },
+        "f3": {
+          "value": "Call {{phone}}"
+        },
+        "f4": {
+          "value": "Visit us in Buderim"
+        },
+        "f5": {
+          "value": "Suite 5 (Blue Lifts), Nucleus Medical Suites<br>23 Elsa Wilson Drive, Buderim QLD 4556"
+        },
+        "f6": {
+          "value": "Phone"
+        },
+        "f7": {
+          "value": "<strong>Hours</strong> Monday to Thursday 8.00am to 5.00pm<br>Friday 8.00am to 4.00pm"
+        },
+        "f8": {
+          "value": "Get directions",
+          "href": "https://www.google.com/maps/place/Sunshine+Coast+Oral,+Facial+%26+Implant+Specialists/@-26.6838766,153.0930069,17z/data=!3m1!4b1!4m6!3m5!1s0x6b93771d577bd3e7:0x1a52ca83026f674f!8m2!3d-26.6838766!4d153.0930069!16s%2Fg%2F11f64f2h4n?hl=en&amp;entry=ttu&amp;g_ep=EgoyMDI2MDkyOC4wIKXMDSoASAFQAw%3D%3D"
+        },
+        "f9": {
+          "value": "Surgery under general anaesthetic is performed at private hospitals from Maroochydore to Hervey Bay. See"
+        },
+        "f10": {
+          "value": "all locations",
+          "href": "/locations/"
+        },
+        "f11": {
+          "value": "Map of Suite 5, Nucleus Medical Suites, 23 Elsa Wilson Drive, Buderim"
+        }
+      }
+    },
+    {
+      "id": "s3",
+      "template": "contact-us/3",
+      "fields": {
+        "f1": {
+          "value": "Virtual tour"
+        },
+        "f2": {
+          "value": "Take a 3D tour of our practice"
+        },
+        "f3": {
+          "value": "Explore our Sunshine Coast practice before your visit."
+        },
+        "f4": {
+          "value": "Loading the 3D tour.<br><a href=\"https://my.matterport.com/show/?m=t1sXaNerUT7\" target=\"_blank\" rel=\"noopener\">Open it in a new tab</a>"
+        }
+      }
+    }
+  ]
+}

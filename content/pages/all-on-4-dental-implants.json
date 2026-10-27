@@ -1,0 +1,201 @@
+{
+  "slug": "all-on-4-dental-implants",
+  "route": "/services/all-on-4-dental-implants/",
+  "pageId": "services--all-on-4-dental-implants",
+  "title": "All-on-4 full arch implants",
+  "kind": "page",
+  "seo": {
+    "metaTitle": "All-on-4 Dental Implants | Sunshine Coast Oral, Facial & Implant Specialists",
+    "metaDescription": "All-on-4 Dental Implants as a solution for full mouth teeth replacement. Visit us today at Sunshine Coast Oral, Facial & Implant Specialists (SCOFIS).",
+    "ogTitle": "All-on-4 Dental Implants | SCOFIS",
+    "ogImage": "/images/lounge.jpg"
+  },
+  "sections": [
+    {
+      "id": "s1",
+      "template": "all-on-4-dental-implants/1",
+      "fields": {
+        "f1": {
+          "src": "/images/lounge.jpg",
+          "alt": ""
+        },
+        "f2": {
+          "value": "<a href=\"/\">Home</a> / <a href=\"/services/\">Services</a>"
+        },
+        "f3": {
+          "value": "Failing or missing teeth, replaced with a fixed full arch in a single day"
+        },
+        "f4": {
+          "value": "All-on-4 replaces every tooth in the upper or lower jaw on four or more titanium implants. No loose dentures, no adhesives, and in most cases no bone grafting. Payment plans are available, and eligible patients may be able to use early release of super."
+        },
+        "f5": {
+          "value": "Make an enquiry",
+          "href": "/contact-us/"
+        }
+      }
+    },
+    {
+      "id": "s2",
+      "template": "all-on-4-dental-implants/2",
+      "fields": {
+        "f1": {
+          "value": "Four implants. One fixed arch. No more loose dentures."
+        },
+        "f2": {
+          "value": "Two implants are placed vertically at the front of the jaw where bone is densest, and two are angled up to 45 degrees toward the back. That angle lets the implants anchor in the bone you already have, which is why most patients do not need grafting, even after years in dentures. A fixed bridge is attached to those implants so your new teeth are secured to your jaw rather than resting on your gums."
+        },
+        "f3": {
+          "value": "Some cases need more than four implants for stability, which is what the term All-on-X refers to. Your surgeon confirms exactly what your case needs after a 3D scan."
+        },
+        "f4": {
+          "value": "<strong>Fixed, not removable.</strong> Your teeth stay in place, with no adhesives and no taking them out at night."
+        },
+        "f5": {
+          "value": "<strong>Usually no bone graft.</strong> The tilted implant design works with existing bone in most cases."
+        },
+        "f6": {
+          "value": "<strong>A temporary bridge on the day.</strong> Most patients leave surgery with a full set of teeth."
+        },
+        "f7": {
+          "value": "<strong>Surgeon led, start to finish.</strong> Diagnosis, surgery and follow-up under one specialist team, with the final bridge made by an experienced prosthodontist or dentist."
+        },
+        "f8": {
+          "value": "Why full arch surgery with a specialist"
+        },
+        "f9": {
+          "value": "Full arch rehabilitation is Dr Lincoln's particular focus. He undertook advanced training in zygomatic implants in Hong Kong and zygomatic, nasal and pterygoid implants in Texas, and has trained further with leading surgeons from France, Brazil and Spain. Dr Higgins has a particular interest in complex implant surgery, grafting and full arch restoration. Where bone volume is very limited, both surgeons offer remote anchorage options such as"
+        },
+        "f10": {
+          "value": "zygomatic implants",
+          "href": "/services/zygomatic-implants/"
+        },
+        "f11": {
+          "value": ", so very few patients are turned away."
+        },
+        "f12": {
+          "value": "Paying for treatment"
+        },
+        "f13": {
+          "value": "Payment plans"
+        },
+        "f14": {
+          "value": "Spread the cost across manageable instalments. Our patient coordinator explains the plans available and what repayments look like for your case. Approval is subject to the provider's criteria."
+        },
+        "f15": {
+          "value": "Early release of super"
+        },
+        "f16": {
+          "value": "Many patients access part of their superannuation early on compassionate grounds to fund dental treatment. Applications are assessed by the ATO, and our team provides the clinical documentation to support your application. Eligibility is decided by the ATO, not by us."
+        },
+        "f17": {
+          "value": "You receive a written treatment plan with itemised costs after your consultation, so you know the full figure before you decide anything."
+        },
+        "f18": {
+          "value": "Book a consultation"
+        },
+        "f19": {
+          "value": "Consulting in Buderim. You're welcome to see us without a referral, and a referral from your general dentist or GP may make you eligible for a Medicare rebate. You receive a written, itemised treatment plan before deciding anything."
+        },
+        "f20": {
+          "value": "Make an enquiry",
+          "href": "/contact-us/"
+        },
+        "f21": {
+          "value": "Call {{phone}}"
+        },
+        "f22": {
+          "value": "Dentists and doctors:"
+        },
+        "f23": {
+          "value": "refer a patient online",
+          "href": "/online-doctor-referral/"
+        },
+        "f24": {
+          "src": "/images/lounge.jpg",
+          "alt": ""
+        }
+      }
+    },
+    {
+      "id": "s3",
+      "template": "all-on-4-dental-implants/3",
+      "fields": {
+        "f1": {
+          "value": "What happens, and when"
+        },
+        "f2": {
+          "value": "Your treatment, step by step"
+        },
+        "f3": {
+          "value": "Consultation and 3D scan"
+        },
+        "f4": {
+          "value": "A full assessment of your teeth, gums and jaw bone with a CBCT scan. You find out whether you are suitable, how many implants you need and what it costs before committing."
+        },
+        "f5": {
+          "value": "Surgical planning"
+        },
+        "f6": {
+          "value": "Your surgeon plans implant position digitally and confirms your anaesthetic: our Buderim rooms under IV sedation, or hospital under general anaesthetic."
+        },
+        "f7": {
+          "value": "Surgery and same-day teeth"
+        },
+        "f8": {
+          "value": "Remaining teeth are removed, the implants are placed and a temporary fixed bridge is fitted. Most patients go home the same day with a full arch of teeth."
+        },
+        "f9": {
+          "value": "Healing and final bridge"
+        },
+        "f10": {
+          "value": "Over the following months the bone integrates with the implants. Once healing is complete your final bridge is made and fitted, with reviews along the way."
+        }
+      }
+    },
+    {
+      "id": "s4",
+      "template": "all-on-4-dental-implants/4",
+      "fields": {
+        "f1": {
+          "value": "Common questions"
+        },
+        "f2": {
+          "value": "What patients ask us"
+        },
+        "f3": {
+          "value": "Am I suitable for All-on-4?"
+        },
+        "f4": {
+          "value": "All-on-4 suits people who have lost most of their teeth, have teeth that cannot be saved, or wear a denture they find loose and uncomfortable. Because the rear implants are angled it often works even with significant bone loss. A consultation with a 3D scan gives a definitive answer."
+        },
+        "f5": {
+          "value": "Will I leave with teeth on the day?"
+        },
+        "f6": {
+          "value": "In most cases, yes. A temporary fixed bridge is attached at the time of surgery. Your final bridge is fitted once the implants have integrated with the bone, generally three to six months later."
+        },
+        "f7": {
+          "value": "Do I need a bone graft?"
+        },
+        "f8": {
+          "value": "Usually not. Where bone is very limited, zygomatic or pterygoid implants may be recommended instead. Both surgeons are trained in these techniques."
+        },
+        "f9": {
+          "value": "Does private health insurance cover any of it?"
+        },
+        "f10": {
+          "value": "Some funds contribute toward parts of the treatment, and hospital cover may apply to theatre and anaesthetic costs if your surgery is under general anaesthetic. We give you item numbers so you can check with your fund."
+        },
+        "f11": {
+          "value": "How do I look after implant teeth?"
+        },
+        "f12": {
+          "value": "Fixed implant teeth are cleaned daily much like natural teeth, with some additional techniques for cleaning under the bridge that we teach you. Regular professional maintenance keeps the gum and bone around the implants healthy."
+        },
+        "f13": {
+          "value": "Any surgical or invasive procedure carries risks. Before proceeding, you should seek a second opinion from an appropriately qualified health practitioner."
+        }
+      }
+    }
+  ]
+}

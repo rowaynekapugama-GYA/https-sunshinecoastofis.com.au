@@ -1,0 +1,80 @@
+{
+  "slug": "not-found",
+  "route": "/404/",
+  "pageId": "not-found",
+  "title": "Page not found",
+  "kind": "page",
+  "seo": {
+    "metaTitle": "Page not found | Sunshine Coast Oral, Facial & Implant Specialists",
+    "ogImage": "/images/reception2.jpg",
+    "noindex": true
+  },
+  "sections": [
+    {
+      "id": "s1",
+      "template": "not-found/1",
+      "fields": {
+        "f1": {
+          "src": "/images/reception2.jpg",
+          "alt": ""
+        },
+        "f2": {
+          "value": "<a href=\"/\">Home</a> / Page not found"
+        },
+        "f3": {
+          "value": "Sorry, we can't find that page"
+        },
+        "f4": {
+          "value": "The page may have moved when our website was updated. These links will take you to the most popular pages."
+        }
+      }
+    },
+    {
+      "id": "s2",
+      "template": "not-found/2",
+      "fields": {
+        "f1": {
+          "value": "Popular pages"
+        },
+        "f2": {
+          "value": "<a href=\"/services/\">All services</a>"
+        },
+        "f3": {
+          "value": "<a href=\"/services/wisdom-teeth-removal/\">Wisdom teeth removal</a>"
+        },
+        "f4": {
+          "value": "<a href=\"/services/dental-implants/\">Dental implants</a>"
+        },
+        "f5": {
+          "value": "<a href=\"/services/all-on-4-dental-implants/\">All-on-4 full arch implants</a>"
+        },
+        "f6": {
+          "value": "<a href=\"/patient-information/\">Patient information</a>"
+        },
+        "f7": {
+          "value": "<a href=\"/locations/\">Locations and hospitals</a>"
+        },
+        "f8": {
+          "value": "<a href=\"/online-doctor-referral/\">Refer a patient</a>"
+        },
+        "f9": {
+          "value": "Back to the home page",
+          "href": "/"
+        },
+        "f10": {
+          "value": "Can't find what you need?"
+        },
+        "f11": {
+          "value": "Our patient coordinator can help."
+        },
+        "f12": {
+          "value": "Call {{phone}}"
+        },
+        "f13": {
+          "value": "Make an enquiry",
+          "href": "/contact-us/"
+        }
+      }
+    }
+  ]
+}

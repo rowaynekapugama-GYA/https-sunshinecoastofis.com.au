@@ -1,0 +1,447 @@
+{
+  "slug": "home",
+  "route": "/",
+  "pageId": "home",
+  "title": "Home",
+  "kind": "page",
+  "seo": {
+    "metaTitle": "Sunshine Coast Oral, Facial & Implant Specialists",
+    "metaDescription": "Sunshine Coast Oral, Facial & Implant Specialists (SCOFIS) was opened at the Nucleus Medical Suites at Buderim Private Hospital in 2018.",
+    "ogTitle": "Sunshine Coast | Sunshine Coast Oral, Facial & Implant Specialists",
+    "ogImage": "/images/reception2.jpg"
+  },
+  "sections": [
+    {
+      "id": "s1",
+      "template": "home/1",
+      "fields": {
+        "f1": {
+          "src": "/images/reception2.jpg",
+          "alt": ""
+        },
+        "f2": {
+          "value": "Specialist oral and maxillofacial surgeons on the Sunshine Coast"
+        },
+        "f3": {
+          "value": "Wisdom teeth, dental implants, full arch and zygomatic implants, corrective jaw surgery and facial trauma, delivered by two dual-qualified specialist surgeons from purpose built rooms in Buderim."
+        },
+        "f4": {
+          "value": "Make an enquiry",
+          "href": "/contact-us/"
+        },
+        "f5": {
+          "value": "Refer a patient",
+          "href": "/online-doctor-referral/"
+        },
+        "f6": {
+          "value": "5.0 on Google"
+        },
+        "f7": {
+          "value": "Rated by more than 300 patients across the Coast."
+        },
+        "f8": {
+          "value": "Medical and dental degrees, plus surgical fellowship"
+        },
+        "f9": {
+          "value": "Both surgeons hold FRACDS (OMS), the specialist qualification for oral and maxillofacial surgery in Australia."
+        },
+        "f10": {
+          "value": "In-clinic sedation or hospital general anaesthetic"
+        },
+        "f11": {
+          "value": "Treated in our Buderim rooms or at five accredited private hospitals from Maroochydore to Hervey Bay."
+        }
+      }
+    },
+    {
+      "id": "s2",
+      "template": "home/2",
+      "fields": {
+        "f1": {
+          "value": "2018"
+        },
+        "f2": {
+          "value": "Opened by Dr Lincoln, co-owned with Dr Higgins since 2020"
+        },
+        "f3": {
+          "value": "2"
+        },
+        "f4": {
+          "value": "Specialist oral and maxillofacial surgeons"
+        },
+        "f5": {
+          "value": "5"
+        },
+        "f6": {
+          "value": "Accredited private hospitals across the Coast and Wide Bay"
+        },
+        "f7": {
+          "value": "Same day"
+        },
+        "f8": {
+          "value": "Home the same day for most procedures"
+        }
+      }
+    },
+    {
+      "id": "s3",
+      "template": "home/3",
+      "fields": {
+        "f1": {
+          "value": "Your surgeons"
+        },
+        "f2": {
+          "value": "Two specialists who take on the cases others refer on"
+        },
+        "f3": {
+          "value": "Dr Trent Lincoln and Dr Andrew Higgins are registered specialist oral and maxillofacial surgeons. Each holds both a medical and a dental degree, and a fellowship of the Royal Australasian College of Dental Surgeons."
+        },
+        "f4": {
+          "src": "/images/trent.jpg",
+          "alt": "Dr Trent Lincoln, oral and maxillofacial surgeon"
+        },
+        "f5": {
+          "value": "Dr Trent Lincoln"
+        },
+        "f6": {
+          "value": "Oral & Maxillofacial Surgeon, Founder"
+        },
+        "f7": {
+          "value": "Dr Lincoln founded the practice in 2018 after graduating in Medicine with Honours from Monash, completing Dentistry at the University of Queensland and finishing the Queensland Oral and Maxillofacial Surgery training program. Full arch rehabilitation is his particular focus, with advanced zygomatic, nasal and pterygoid implant training in Hong Kong and Texas."
+        },
+        "f8": {
+          "value": "Full arch (All-on-X)"
+        },
+        "f9": {
+          "value": "Zygomatic implants"
+        },
+        "f10": {
+          "value": "Wisdom teeth"
+        },
+        "f11": {
+          "value": "Jaw surgery"
+        },
+        "f12": {
+          "value": "Facial trauma"
+        },
+        "f13": {
+          "value": "Read Dr Lincoln's profile",
+          "href": "/about/#trent"
+        },
+        "f14": {
+          "src": "/images/andrew.jpg",
+          "alt": "Dr Andrew Higgins, oral and maxillofacial surgeon"
+        },
+        "f15": {
+          "value": "Dr Andrew Higgins"
+        },
+        "f16": {
+          "value": "Oral & Maxillofacial Surgeon, Co-owner"
+        },
+        "f17": {
+          "value": "Dr Higgins joined and bought into the practice in 2020 and now co-owns it with Dr Lincoln. He completed medicine in Melbourne, dentistry at James Cook University with an academic prize, and four years of advanced surgical training across Brisbane's major hospitals and Royal Darwin. He was awarded the Robert M Cook Medal for the highest fellowship mark in Australia and New Zealand in 2019."
+        },
+        "f18": {
+          "value": "Complex implants"
+        },
+        "f19": {
+          "value": "Bone grafting"
+        },
+        "f20": {
+          "value": "Full arch restoration"
+        },
+        "f21": {
+          "value": "Wisdom teeth"
+        },
+        "f22": {
+          "value": "Facial trauma"
+        },
+        "f23": {
+          "value": "Read Dr Higgins' profile",
+          "href": "/about/#andrew"
+        }
+      }
+    },
+    {
+      "id": "s4",
+      "template": "home/4",
+      "fields": {
+        "f1": {
+          "value": "Oral, facial and implant surgery"
+        },
+        "f2": {
+          "value": "What we treat"
+        },
+        "f3": {
+          "href": "/services/all-on-4-dental-implants/"
+        },
+        "f4": {
+          "value": "All-on-4 full arch dental implants"
+        },
+        "f5": {
+          "value": "Failing or missing teeth replaced with a fixed full arch, usually in a single day and usually without bone grafting. Payment plans available, and eligible patients may access early release of super."
+        },
+        "f6": {
+          "value": "Learn about All-on-4"
+        },
+        "f7": {
+          "src": "/images/surgery.jpg",
+          "alt": "Consulting room at the Buderim practice"
+        },
+        "f8": {
+          "href": "/services/wisdom-teeth-removal/"
+        },
+        "f9": {
+          "value": "Wisdom teeth removal"
+        },
+        "f10": {
+          "value": "All four removed in one appointment, asleep under general anaesthetic in hospital or clinic, or relaxed under IV sedation."
+        },
+        "f11": {
+          "value": "Learn more"
+        },
+        "f12": {
+          "href": "/services/dental-implants/"
+        },
+        "f13": {
+          "value": "Dental implants"
+        },
+        "f14": {
+          "value": "Single and multiple tooth replacement planned on 3D imaging and placed by a specialist surgeon."
+        },
+        "f15": {
+          "value": "Learn more"
+        },
+        "f16": {
+          "href": "/services/zygomatic-implants/"
+        },
+        "f17": {
+          "value": "Zygomatic implants"
+        },
+        "f18": {
+          "value": "Fixed teeth for severe upper jaw bone loss, anchored in the cheekbone instead of grafting."
+        },
+        "f19": {
+          "value": "Learn more"
+        },
+        "f20": {
+          "href": "/services/jaw-bone-grafting/"
+        },
+        "f21": {
+          "value": "Jaw bone grafting"
+        },
+        "f22": {
+          "value": "Rebuilding bone volume so implants can be placed securely where teeth have been missing for years."
+        },
+        "f23": {
+          "value": "Learn more"
+        },
+        "f24": {
+          "href": "/services/orthognathic-corrective-jaw-surgery/"
+        },
+        "f25": {
+          "value": "Corrective jaw surgery"
+        },
+        "f26": {
+          "value": "Orthognathic surgery to reposition the jaws, correcting bite, function, airway and facial balance."
+        },
+        "f27": {
+          "value": "Learn more"
+        },
+        "f28": {
+          "href": "/services/facial-trauma/"
+        },
+        "f29": {
+          "value": "Facial trauma"
+        },
+        "f30": {
+          "value": "Repair and reconstruction of fractured jaws, cheekbones and facial injuries, including sports injuries."
+        },
+        "f31": {
+          "value": "Learn more"
+        }
+      }
+    },
+    {
+      "id": "s5",
+      "template": "home/5",
+      "fields": {
+        "f1": {
+          "value": "The practice"
+        },
+        "f2": {
+          "value": "Purpose built rooms in the Buderim rainforest"
+        },
+        "f3": {
+          "value": "Sunshine Coast Oral, Facial & Implant Specialists opened at the Nucleus Medical Suites in 2018. Dr Andrew Higgins joined and bought into the practice in 2020, and the two surgeons now own it together. The practice sits within the Buderim Private Hospital precinct, surrounded by rainforest and five minutes from Mooloolaba, with on-site parking and lift access."
+        },
+        "f4": {
+          "value": "Selected procedures done in our own rooms under local anaesthetic or IV sedation"
+        },
+        "f5": {
+          "value": "On-site 3D CBCT imaging, so planning happens on the day of your consultation"
+        },
+        "f6": {
+          "value": "General anaesthetic cases in accredited private hospital theatres with a specialist anaesthetist"
+        },
+        "f7": {
+          "value": "Patients welcomed from across the Sunshine Coast, Gympie, Hervey Bay and regional Queensland"
+        },
+        "f8": {
+          "value": "About our practice",
+          "href": "/about/"
+        },
+        "f9": {
+          "src": "/images/reception1.jpg",
+          "alt": "Reception desk with timber slats at Sunshine Coast Oral, Facial & Implant Specialists"
+        },
+        "f10": {
+          "src": "/images/lounge.jpg",
+          "alt": "Patient waiting lounge in Buderim"
+        },
+        "f11": {
+          "src": "/images/theatre.jpg",
+          "alt": "In-clinic procedure room with monitoring equipment"
+        },
+        "f12": {
+          "src": "/images/cbct.jpg",
+          "alt": "Vatech 3D CBCT scanner at the practice"
+        },
+        "f13": {
+          "src": "/images/hall.jpg",
+          "alt": "Consulting suite corridor with artwork"
+        },
+        "f14": {
+          "src": "/images/surgery.jpg",
+          "alt": "Consulting room with dental chair"
+        }
+      }
+    },
+    {
+      "id": "s6",
+      "template": "home/6",
+      "fields": {
+        "f1": {
+          "value": "Where we consult and operate"
+        },
+        "f2": {
+          "value": "Buderim, Nambour, Maroochydore and Hervey Bay"
+        },
+        "f3": {
+          "value": "Consultations are held in Buderim. Surgery under general anaesthetic takes place in the private hospital that suits your case and where you live."
+        }
+      }
+    },
+    {
+      "id": "s7",
+      "template": "home/7",
+      "fields": {
+        "f1": {
+          "value": "For dentists and doctors"
+        },
+        "f2": {
+          "value": "Refer a patient in under two minutes"
+        },
+        "f3": {
+          "value": "We accept referrals from general dentists, orthodontists, prosthodontists and medical practitioners across the Sunshine Coast, Gympie, Hervey Bay, Brisbane and regional Queensland. Send the referral online and our team will contact your patient directly to arrange their consultation."
+        },
+        "f4": {
+          "value": "Submit an online referral",
+          "href": "/online-doctor-referral/"
+        },
+        "f5": {
+          "value": "Call our referral line"
+        },
+        "f6": {
+          "value": "What to include"
+        },
+        "f7": {
+          "value": "Patient name, date of birth and best contact number"
+        },
+        "f8": {
+          "value": "Reason for referral and any relevant history"
+        },
+        "f9": {
+          "value": "Recent OPG, CBCT or x-rays if available"
+        },
+        "f10": {
+          "value": "Your preferred hospital or location for the patient"
+        },
+        "f11": {
+          "value": "Urgent trauma and infection cases: call {{phone}} for same day advice."
+        }
+      }
+    },
+    {
+      "id": "s8",
+      "template": "home/8",
+      "fields": {
+        "f1": {
+          "value": "Patient reviews"
+        },
+        "f2": {
+          "value": "Rated 5.0 on Google by more than 300 patients"
+        },
+        "f3": {
+          "value": "Read what patients from across the Sunshine Coast, Gympie and Hervey Bay say about their care, or share your own experience."
+        },
+        "f4": {
+          "value": "5.0"
+        },
+        "f5": {
+          "value": "317 Google reviews"
+        },
+        "f6": {
+          "value": "Read our Google reviews",
+          "href": "https://www.google.com/search?q=Sunshine+Coast+Oral%2C+Facial+%26+Implant+Specialists+reviews"
+        },
+        "f7": {
+          "value": "Leave a review",
+          "href": "https://g.page/r/CU9nbwKDylIaEBM/review"
+        }
+      }
+    },
+    {
+      "id": "s9",
+      "template": "home/9",
+      "fields": {
+        "f1": {
+          "value": "Common questions"
+        },
+        "f2": {
+          "value": "Before you enquire"
+        },
+        "f3": {
+          "value": "Do I need a referral to see a specialist?"
+        },
+        "f4": {
+          "value": "No, you're welcome to see us without a referral. However, if you have a referral from your general dentist or GP, you may be eligible for a Medicare rebate on your consultation. Our team is more than happy to assist with arranging a referral if needed."
+        },
+        "f5": {
+          "value": "What is the difference between an oral surgeon and an oral and maxillofacial surgeon?"
+        },
+        "f6": {
+          "value": "In Australia, an oral and maxillofacial surgeon (OMS) is a registered specialist who has completed both a medical and a dental degree followed by a four year surgical training program and fellowship examination. Both of our surgeons hold this specialist qualification and are trained to manage the full scope of surgery of the mouth, jaws and face, including hospital based surgery under general anaesthetic."
+        },
+        "f7": {
+          "value": "Can I be asleep for my procedure?"
+        },
+        "f8": {
+          "value": "Yes. Depending on your case you can be treated under local anaesthetic or IV sedation in our Buderim rooms, or under general anaesthetic in an accredited private hospital theatre with a specialist anaesthetist."
+        },
+        "f9": {
+          "value": "Do you see patients from Gympie, Hervey Bay and Brisbane?"
+        },
+        "f10": {
+          "value": "Yes. Consultations are held at our Buderim rooms, and patients travel to us from Gympie, the northern Sunshine Coast, Brisbane and regional Queensland. Hervey Bay and Fraser Coast patients can have surgery at St Stephen's Private Hospital in Urraween."
+        },
+        "f11": {
+          "value": "What will it cost?"
+        },
+        "f12": {
+          "value": "You receive a written, itemised treatment plan after your consultation, before you commit to anything. Payment plans are available, health fund rebates may apply, and for full arch treatment eligible patients may apply to the ATO for early release of super."
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "slug": "privacy-policy",
+  "route": "/privacy-policy/",
+  "pageId": "privacy-policy",
+  "title": "Privacy policy",
+  "kind": "page",
+  "seo": {
+    "metaTitle": "Privacy Policy | Sunshine Coast Oral, Facial & Implant Specialists",
+    "metaDescription": "How Sunshine Coast Oral, Facial & Implant Specialists collects, uses, stores and protects your personal and health information.",
+    "ogTitle": "Privacy Policy - Sunshine Coast Oral, Facial & Implant Specialists",
+    "ogImage": "/images/reception2.jpg"
+  },
+  "sections": [
+    {
+      "id": "s1",
+      "template": "privacy-policy/1",
+      "fields": {
+        "f1": {
+          "src": "/images/reception2.jpg",
+          "alt": ""
+        },
+        "f2": {
+          "value": "<a href=\"/\">Home</a> / Privacy policy"
+        },
+        "f3": {
+          "value": "Privacy policy"
+        },
+        "f4": {
+          "value": "How Sunshine Coast Oral, Facial &amp; Implant Specialists collects, uses, stores and protects your personal and health information."
+        }
+      }
+    },
+    {
+      "id": "s2",
+      "template": "privacy-policy/2",
+      "fields": {
+        "f1": {
+          "value": "Our commitment to your privacy"
+        },
+        "f2": {
+          "value": "We are bound by the Privacy Act 1988 (Cth) and the Australian Privacy Principles. This policy explains how we handle your personal information, including health information, and how you can access it or raise a concern."
+        },
+        "f3": {
+          "value": "What we collect"
+        },
+        "f4": {
+          "value": "We collect the information we need to provide your care: your name, date of birth, contact details, Medicare and health fund details, next of kin, your medical and dental history, referral letters, clinical notes, photographs, x-rays and scans, and payment details."
+        },
+        "f5": {
+          "value": "How we collect it"
+        },
+        "f6": {
+          "value": "We collect information from you directly, from your referring dentist or doctor, from other health professionals involved in your care, from hospitals and imaging providers, and through the forms on this website."
+        },
+        "f7": {
+          "value": "How we use it"
+        },
+        "f8": {
+          "value": "We use your information to assess and treat you, to communicate with you and with the practitioners involved in your care, to arrange hospital admission, to process payments, Medicare and health fund claims, and to meet our legal obligations."
+        },
+        "f9": {
+          "value": "Who we share it with"
+        },
+        "f10": {
+          "value": "We share information only as needed for your care or as the law requires: your referring practitioner and other treating practitioners, hospitals and anaesthetists, pathology and imaging providers, Medicare, your health fund, and our IT and clinical software providers, who are bound to keep it confidential. We do not sell your information."
+        },
+        "f11": {
+          "value": "Storage and security"
+        },
+        "f12": {
+          "value": "Your records are kept securely in our practice management system, with access limited to authorised staff. We keep health records for the periods required by law."
+        },
+        "f13": {
+          "value": "This website"
+        },
+        "f14": {
+          "value": "Information sent through the forms on this website is emailed to our practice team and kept in our secure website records. We may use cookies and analytics to understand how the website is used; this information does not identify you."
+        },
+        "f15": {
+          "value": "Access and correction"
+        },
+        "f16": {
+          "value": "You can ask to see your records or to correct information you believe is wrong. Please contact our practice manager. We may ask you to confirm your identity."
+        },
+        "f17": {
+          "value": "Questions and complaints"
+        },
+        "f18": {
+          "value": "If you have a question or concern about how we handle your information, please contact our practice manager on {{phone}}. If you are not satisfied with our response, you can contact the Office of the Australian Information Commissioner at oaic.gov.au."
+        },
+        "f19": {
+          "value": "Questions about your privacy?"
+        },
+        "f20": {
+          "value": "Our practice manager can help with access to your records or any privacy question."
+        },
+        "f21": {
+          "value": "Call {{phone}}"
+        },
+        "f22": {
+          "value": "Make an enquiry",
+          "href": "/contact-us/"
+        }
+      }
+    }
+  ]
+}

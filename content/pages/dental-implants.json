@@ -1,0 +1,186 @@
+{
+  "slug": "dental-implants",
+  "route": "/services/dental-implants/",
+  "pageId": "services--dental-implants",
+  "title": "Dental implants",
+  "kind": "page",
+  "seo": {
+    "metaTitle": "Dental Implants Sunshine Coast | Missing Teeth Option",
+    "metaDescription": "Sunshine Coast Patients who are missing one or more teeth or those with unstable or loose dentures could benefit from dental implants",
+    "ogImage": "/images/dental-implants-hero.jpg"
+  },
+  "sections": [
+    {
+      "id": "s1",
+      "template": "dental-implants/1",
+      "fields": {
+        "f1": {
+          "src": "/images/dental-implants-hero.jpg",
+          "alt": ""
+        },
+        "f2": {
+          "value": "<a href=\"/\">Home</a> / <a href=\"/services/\">Services</a>"
+        },
+        "f3": {
+          "value": "Dental implants placed by specialist surgeons"
+        },
+        "f4": {
+          "value": "A dental implant is a titanium fixture placed in the jaw to replace a missing tooth root, on which a crown, bridge or full arch is secured. Planned on 3D imaging and placed by a specialist oral and maxillofacial surgeon, then restored by your dentist or prosthodontist."
+        },
+        "f5": {
+          "value": "Make an enquiry",
+          "href": "/contact-us/"
+        }
+      }
+    },
+    {
+      "id": "s2",
+      "template": "dental-implants/2",
+      "fields": {
+        "f1": {
+          "value": "A fixed, long-term replacement for missing teeth"
+        },
+        "f2": {
+          "value": "Implants restore the ability to eat, speak and smile with confidence, and they preserve the jaw bone that would otherwise shrink after a tooth is lost. Unlike a bridge, an implant does not rely on grinding down neighbouring teeth, and unlike a denture, it does not move."
+        },
+        "f3": {
+          "value": "We place single implants, multiple implants for bridges, and implants to secure loose dentures, as well as full arch solutions. Where a tooth is failing, it can often be removed and the implant placed at the same visit (an immediate implant), shortening treatment time."
+        },
+        "f4": {
+          "value": "Why implant surgery with a specialist"
+        },
+        "f5": {
+          "value": "<strong>Surgical training.</strong> Oral and maxillofacial surgeons complete medicine, dentistry and a four year surgical fellowship. Implant placement, grafting and management of nerves and sinuses are core specialist skills."
+        },
+        "f6": {
+          "value": "<strong>3D planning.</strong> Every implant is planned on a CBCT scan taken in our rooms, so position, angle and bone volume are known before surgery starts."
+        },
+        "f7": {
+          "value": "<strong>Complex and compromised cases.</strong> We routinely treat patients with bone loss, sinus proximity, medical conditions or previous failed implants, in clinic under sedation or in hospital under general anaesthetic."
+        },
+        "f8": {
+          "value": "<strong>Team approach.</strong> Your dentist or prosthodontist restores the final crown or bridge, and we coordinate the plan with them from the start."
+        },
+        "f9": {
+          "value": "Bone grafting and implants"
+        },
+        "f10": {
+          "value": "If a tooth has been missing for some time there may not be enough bone to hold an implant securely. Options include socket preservation at the time of extraction, sinus lifts for the upper back jaw, and block or particulate grafting. See"
+        },
+        "f11": {
+          "value": "jaw bone grafting",
+          "href": "/services/jaw-bone-grafting/"
+        },
+        "f12": {
+          "value": ". For patients with severe upper jaw bone loss,"
+        },
+        "f13": {
+          "value": "zygomatic implants",
+          "href": "/services/zygomatic-implants/"
+        },
+        "f14": {
+          "value": "can avoid grafting altogether."
+        },
+        "f15": {
+          "value": "Book a consultation"
+        },
+        "f16": {
+          "value": "Consulting in Buderim. You're welcome to see us without a referral, and a referral from your general dentist or GP may make you eligible for a Medicare rebate. You receive a written, itemised treatment plan before deciding anything."
+        },
+        "f17": {
+          "value": "Make an enquiry",
+          "href": "/contact-us/"
+        },
+        "f18": {
+          "value": "Call {{phone}}"
+        },
+        "f19": {
+          "value": "Dentists and doctors:"
+        },
+        "f20": {
+          "value": "refer a patient online",
+          "href": "/online-doctor-referral/"
+        },
+        "f21": {
+          "src": "/images/surgery.jpg",
+          "alt": ""
+        }
+      }
+    },
+    {
+      "id": "s3",
+      "template": "dental-implants/3",
+      "fields": {
+        "f1": {
+          "value": "What happens, and when"
+        },
+        "f2": {
+          "value": "Your treatment, step by step"
+        },
+        "f3": {
+          "value": "Consultation and 3D scan"
+        },
+        "f4": {
+          "value": "Assessment of your teeth, gums and bone with a CBCT scan, and a written plan with itemised costs."
+        },
+        "f5": {
+          "value": "Surgical planning"
+        },
+        "f6": {
+          "value": "Implant position is planned digitally, and any grafting or extractions are scheduled. Anaesthetic is confirmed: local, IV sedation or general anaesthetic."
+        },
+        "f7": {
+          "value": "Implant placement"
+        },
+        "f8": {
+          "value": "The implant is placed in a short procedure. In many cases a temporary tooth can be fitted so you are never without a tooth."
+        },
+        "f9": {
+          "value": "Healing and final restoration"
+        },
+        "f10": {
+          "value": "Over three to six months the bone integrates with the implant. Your dentist or prosthodontist then fits the final crown or bridge."
+        }
+      }
+    },
+    {
+      "id": "s4",
+      "template": "dental-implants/4",
+      "fields": {
+        "f1": {
+          "value": "Common questions"
+        },
+        "f2": {
+          "value": "What patients ask us"
+        },
+        "f3": {
+          "value": "Am I suitable for a dental implant?"
+        },
+        "f4": {
+          "value": "Most adults with good general health and adequate bone are suitable. Smoking, uncontrolled diabetes and some medications affect healing, and bone loss may need grafting first. The consultation and 3D scan give a definitive answer."
+        },
+        "f5": {
+          "value": "Is the procedure painful?"
+        },
+        "f6": {
+          "value": "Placement is done under local anaesthetic, IV sedation or general anaesthetic, so you will not feel it. Post-operative discomfort is usually mild and settles within a few days."
+        },
+        "f7": {
+          "value": "How long do implants last?"
+        },
+        "f8": {
+          "value": "With good oral hygiene and regular maintenance, implants can last for decades. We will show you how to clean around them and recommend a review schedule."
+        },
+        "f9": {
+          "value": "Do you do the crown as well?"
+        },
+        "f10": {
+          "value": "The final crown or bridge is made by your dentist or prosthodontist. If you do not have one, we can recommend an experienced restorative clinician on the Coast."
+        },
+        "f11": {
+          "value": "Any surgical or invasive procedure carries risks. Before proceeding, you should seek a second opinion from an appropriately qualified health practitioner."
+        }
+      }
+    }
+  ]
+}

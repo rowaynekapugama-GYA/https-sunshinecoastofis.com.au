@@ -1,0 +1,273 @@
+{
+  "surgeons": [
+    {
+      "kind": "surgeon",
+      "key": "trent",
+      "name": "Dr Trent Lincoln",
+      "roleLine": "Oral & Maxillofacial Surgeon, Founder. BMed (Hons), BDSc, FRACDS (OMS)",
+      "lede": "A contemporarily trained oral and maxillofacial surgeon committed to expert care delivered in a compassionate, patient-focused way. Full arch implant rehabilitation is his particular passion, and patients are referred to him from across Queensland for zygomatic and remote anchorage implants.",
+      "tags": [
+        "Full arch (All-on-X)",
+        "Zygomatic implants",
+        "Wisdom teeth",
+        "Jaw surgery",
+        "Facial trauma"
+      ],
+      "facts": [
+        {
+          "title": "2018",
+          "text": "Founded the practice in Buderim, co-owned with Dr Higgins since 2020"
+        },
+        {
+          "title": "Hong Kong, Texas",
+          "text": "Advanced zygomatic and pterygoid training"
+        },
+        {
+          "title": "Published",
+          "text": "International author and researcher"
+        }
+      ],
+      "columns": [
+        {
+          "heading": "Training",
+          "items": [
+            "Medicine with Honours, Monash University",
+            "Dentistry, University of Queensland (lateral entry)",
+            "Queensland OMS training program: RBWH, PA, Mater, Queensland Children's, Ipswich, Logan, Townsville",
+            "Further training with surgeons in France, Brazil and Spain"
+          ],
+          "paragraph": ""
+        },
+        {
+          "heading": "Research",
+          "items": [
+            "Piezoelectric wisdom tooth removal",
+            "Local anaesthetic techniques in oral surgery",
+            "Paediatric orbital fractures",
+            "Return-to-play protocols after facial injury"
+          ],
+          "paragraph": ""
+        },
+        {
+          "heading": "Beyond the clinic",
+          "items": [],
+          "paragraph": "Originally from west of Rockhampton, Dr Lincoln and his wife Alison, a Sunshine Coast local, made the Coast their family's home."
+        }
+      ],
+      "storyLabel": "Read Dr Lincoln's full story",
+      "story": [
+        "After graduating in Medicine with Honours from Monash University, Dr Lincoln returned to Queensland for his residency at the Princess Alexandra Hospital, where treating complex facial trauma led him to oral and maxillofacial surgery. He worked as a registrar in ENT and general surgery in Rockhampton before earning a place in the University of Queensland's lateral-entry Dentistry program, continuing to work in the maxillofacial units of Brisbane's major hospitals while he studied.",
+        "He went on to complete the Queensland Oral and Maxillofacial Surgery training program across the Royal Brisbane & Women's, Princess Alexandra, Mater, Queensland Children's, Ipswich and Logan hospitals, with a valuable year in Townsville treating more complex and delayed presentations.",
+        "With a strong passion for dental implants and full arch rehabilitation, he undertook advanced training in zygomatic implants in Hong Kong in 2017 and zygomatic, nasal and pterygoid implants in Texas in 2023, then further training with world renowned surgeons from France, Brazil and Spain. He continues to refine his implant, bone and soft tissue grafting skills through global courses and conferences."
+      ],
+      "photoPath": "/images/trent.jpg",
+      "photoAlt": "Dr Trent Lincoln",
+      "hidden": false,
+      "order": 1
+    },
+    {
+      "kind": "surgeon",
+      "key": "andrew",
+      "name": "Dr Andrew Higgins",
+      "roleLine": "Oral & Maxillofacial Surgeon, Co-owner. MBBS, BDS, FRACDS (OMS)",
+      "lede": "A fully qualified oral and maxillofacial surgeon with medical and dental degrees and a fellowship of the Royal Australasian College of Dental Surgeons. He practises the full scope of the specialty, with a particular interest in complex implant surgery, grafting, full arch restoration, wisdom teeth and facial trauma.",
+      "tags": [
+        "Complex implants",
+        "Bone grafting",
+        "Full arch restoration",
+        "Wisdom teeth",
+        "Facial trauma"
+      ],
+      "facts": [
+        {
+          "title": "2020",
+          "text": "Joined and bought into the practice, now co-owner"
+        },
+        {
+          "title": "Robert M Cook Medal",
+          "text": "Highest fellowship mark in Australia and NZ, 2019"
+        },
+        {
+          "title": "First lateral entry",
+          "text": "James Cook University dental program"
+        }
+      ],
+      "columns": [
+        {
+          "heading": "Training",
+          "items": [
+            "Medicine, Melbourne, graduated 2008",
+            "Dentistry, James Cook University, academic prize 2015",
+            "Advanced surgical training: RBWH, Princess Alexandra, Queensland Children's, Mater and Royal Darwin",
+            "FRACDS (OMS) fellowship, 2019"
+          ],
+          "paragraph": ""
+        },
+        {
+          "heading": "Scope of practice",
+          "items": [
+            "Dentoalveolar, implant and grafting surgery",
+            "Head and neck and reconstructive surgery",
+            "Orthognathic surgery and TMJ surgery",
+            "Facial trauma"
+          ],
+          "paragraph": ""
+        },
+        {
+          "heading": "Beyond the clinic",
+          "items": [],
+          "paragraph": "Andrew surfs, trains and follows rugby league, rugby union and cricket. His wife is also a surgeon on the Sunshine Coast and they have two young boys."
+        }
+      ],
+      "storyLabel": "Read Dr Higgins' full story",
+      "story": [
+        "Dr Higgins grew up on the Gold Coast and moved to Melbourne to study medicine, graduating in 2008 and working as an intern and surgical resident in Melbourne's tertiary hospitals. Back in Queensland, a surgical senior house officer role in the world-renowned maxillofacial unit at the Royal Brisbane and Women's Hospital set his direction, and he became the first lateral entry student in the James Cook University dental program.",
+        "His four years of advanced surgical training gave him wide exposure to the full scope of oral and maxillofacial surgery. He passed his fellowship examination in 2019 and received the Robert M Cook Medal for the highest mark in Australia and New Zealand. He attends courses and conferences regularly to stay at the front of surgical technique and is involved in teaching on several courses."
+      ],
+      "photoPath": "/images/andrew.jpg",
+      "photoAlt": "Dr Andrew Higgins",
+      "hidden": false,
+      "order": 2
+    }
+  ],
+  "staff": [
+    {
+      "kind": "staff",
+      "key": "taryn",
+      "name": "Taryn",
+      "role": "Practice Manager",
+      "order": 1,
+      "hidden": false,
+      "photoPath": "/images/team/team-taryn.jpg",
+      "photoWebp": "/images/team/team-taryn.webp",
+      "width": 800,
+      "height": 1000
+    },
+    {
+      "kind": "staff",
+      "key": "taylah-v",
+      "name": "Taylah V",
+      "role": "Patient Coordinator",
+      "order": 2,
+      "hidden": false,
+      "photoPath": "/images/team/team-taylah.jpg",
+      "photoWebp": "/images/team/team-taylah.webp",
+      "width": 800,
+      "height": 1000
+    },
+    {
+      "kind": "staff",
+      "key": "anika",
+      "name": "Anika",
+      "role": "Theatre Coordinator",
+      "order": 3,
+      "hidden": false,
+      "photoPath": "/images/team/team-anika.jpg",
+      "photoWebp": "/images/team/team-anika.webp",
+      "width": 800,
+      "height": 1000
+    },
+    {
+      "kind": "staff",
+      "key": "megan",
+      "name": "Megan",
+      "role": "Registered Nurse",
+      "order": 4,
+      "hidden": false
+    },
+    {
+      "kind": "staff",
+      "key": "nicole",
+      "name": "Nicole",
+      "role": "Surgical Assistant",
+      "order": 5,
+      "hidden": false,
+      "photoPath": "/images/team/team-nicole.jpg",
+      "photoWebp": "/images/team/team-nicole.webp",
+      "width": 800,
+      "height": 1000
+    },
+    {
+      "kind": "staff",
+      "key": "jade",
+      "name": "Jade",
+      "role": "Surgical Assistant",
+      "order": 6,
+      "hidden": false,
+      "photoPath": "/images/team/team-jade.jpg",
+      "photoWebp": "/images/team/team-jade.webp",
+      "width": 480,
+      "height": 600,
+      "photoTop": true
+    },
+    {
+      "kind": "staff",
+      "key": "jenni",
+      "name": "Jenni",
+      "role": "Surgical Assistant",
+      "order": 7,
+      "hidden": false,
+      "photoPath": "/images/team/team-jenni.jpg",
+      "photoWebp": "/images/team/team-jenni.webp",
+      "width": 800,
+      "height": 1000
+    },
+    {
+      "kind": "staff",
+      "key": "maci",
+      "name": "Maci",
+      "role": "Surgical Assistant",
+      "order": 8,
+      "hidden": false,
+      "photoPath": "/images/team/team-maci.jpg",
+      "photoWebp": "/images/team/team-maci.webp",
+      "width": 800,
+      "height": 1000
+    },
+    {
+      "kind": "staff",
+      "key": "taylor",
+      "name": "Taylor",
+      "role": "Surgical Assistant",
+      "order": 9,
+      "hidden": false
+    },
+    {
+      "kind": "staff",
+      "key": "lauryn",
+      "name": "Lauryn",
+      "role": "Administration",
+      "order": 10,
+      "hidden": false,
+      "photoPath": "/images/team/team-lauryn.jpg",
+      "photoWebp": "/images/team/team-lauryn.webp",
+      "width": 800,
+      "height": 1000
+    },
+    {
+      "kind": "staff",
+      "key": "molly",
+      "name": "Molly",
+      "role": "Administration",
+      "order": 11,
+      "hidden": false,
+      "photoPath": "/images/team/team-molly.jpg",
+      "photoWebp": "/images/team/team-molly.webp",
+      "width": 800,
+      "height": 1000
+    },
+    {
+      "kind": "staff",
+      "key": "jodi",
+      "name": "Jodi",
+      "role": "Accounts Manager",
+      "order": 12,
+      "hidden": false,
+      "photoPath": "/images/team/team-jodi.jpg",
+      "photoWebp": "/images/team/team-jodi.webp",
+      "width": 480,
+      "height": 600,
+      "photoTop": true
+    }
+  ]
+}

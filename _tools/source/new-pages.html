@@ -1,0 +1,339 @@
+<!--
+  Pages added at go-live (27 Oct 2026). The live WordPress site has these addresses and
+  the approved single-page design does not, so they are built from the approved page
+  components only (page heading banner, prose column, side card, form card). No new
+  styles. Processed by _tools/extract_templates.py together with approved-index.html.
+  Wording marked for the practice to confirm is listed in GO-LIVE-AUDIT.md.
+-->
+<main id="main">
+
+<div data-page="blog">
+<section class="pagehead">
+  <div class="art"><img src="images/hall.jpg" alt=""></div>
+  <div class="wrap"><div><div class="crumb"><a href="#/">Home</a> / Blog</div><h1>News and articles from our surgeons</h1><p>General information about oral and maxillofacial surgery, dental implants and recovery, written by the team at Sunshine Coast Oral, Facial &amp; Implant Specialists.</p></div></div>
+</section>
+<section class="block">
+  <div class="wrap">
+    <span class="kicker">Latest articles</span>
+    <h2>From the blog</h2>
+    <div class="svc-grid" data-generated="posts">{{@posts}}</div>
+    <p class="fine" style="margin-top:2rem">Articles are general information only and are not a substitute for a consultation. Any surgical or invasive procedure carries risks.</p>
+  </div>
+</section>
+</div>
+
+<div data-page="patient-information--patient-information-form">
+<section class="pagehead">
+  <div class="art"><img src="images/first-consultation-hero-v2.jpg" alt=""></div>
+  <div class="wrap"><div><div class="crumb"><a href="#/">Home</a> / <a href="#/patient-information">Patient information</a> / Patient information form</div><h1>Patient information form</h1><p>Save time at your first visit by completing your details before you arrive. If you prefer, the form can be completed in our rooms on the day.</p></div></div>
+</section>
+<section class="block">
+  <div class="wrap two narrow-r">
+    <div class="formcard">
+      <form class="f" id="patientForm" onsubmit="return fakeSubmit(event)" enctype="multipart/form-data" data-endpoint="/api/submit">
+        <input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;opacity:0;height:0;width:0">
+        <h3>Patient Information</h3>
+        <label>Patient Name *<input type="text" name="patient_name" required autocomplete="name"></label>
+        <div class="row">
+          <label>Date of Birth *<input type="date" name="dob" required></label>
+          <label>Sex *
+            <div class="opts">
+              <label><input type="radio" name="sex" value="Male" required><span>Male</span></label>
+              <label><input type="radio" name="sex" value="Female"><span>Female</span></label>
+            </div>
+          </label>
+        </div>
+        <label>Address<input type="text" name="address" autocomplete="street-address"></label>
+        <div class="row">
+          <label>Suburb<input type="text" name="suburb" autocomplete="address-level2"></label>
+          <label>Postcode<input type="text" name="postcode" inputmode="numeric" autocomplete="postal-code"></label>
+        </div>
+        <div class="row">
+          <label>Phone (L)<input type="tel" name="phone_landline" autocomplete="tel"></label>
+          <label>Phone (M)<input type="tel" name="phone_mobile" autocomplete="tel"></label>
+        </div>
+        <div class="row">
+          <label>E-mail<input type="email" name="email" autocomplete="email"></label>
+          <label>Occupation<input type="text" name="occupation"></label>
+        </div>
+        <div class="row">
+          <label>Medicare<input type="text" name="medicare_number" inputmode="numeric" autocomplete="off"></label>
+          <label>Reference<input type="text" name="medicare_reference" inputmode="numeric" autocomplete="off"></label>
+          <label>Expiry Date<input type="text" name="medicare_expiry" placeholder="MM/YYYY" autocomplete="off"></label>
+        </div>
+
+        <h3 style="margin-top:.6rem">Parent's Medicare Card Details</h3>
+        <p class="fine" style="margin-top:-.4rem">For patients under 18. Required for the Medicare rebate.</p>
+        <div class="row">
+          <label>Parent Name<input type="text" name="parent_name" autocomplete="off"></label>
+          <label>DOB<input type="date" name="parent_dob"></label>
+        </div>
+        <div class="row">
+          <label>Medicare #<input type="text" name="parent_medicare_number" inputmode="numeric" autocomplete="off"></label>
+          <label>Ref. #<input type="text" name="parent_medicare_reference" inputmode="numeric" autocomplete="off"></label>
+          <label>Expiry Date<input type="text" name="parent_medicare_expiry" placeholder="MM/YYYY" autocomplete="off"></label>
+        </div>
+
+        <h3 style="margin-top:.6rem">Patient Health Fund</h3>
+        <div class="row">
+          <label>Patient Health Fund<input type="text" name="health_fund"></label>
+          <label>Member<input type="text" name="health_fund_member" autocomplete="off"></label>
+        </div>
+        <label>Have you served your waiting period?
+          <div class="opts"><label><input type="radio" name="waiting_period" value="Yes"><span>Yes</span></label><label><input type="radio" name="waiting_period" value="No"><span>No</span></label></div>
+        </label>
+        <label>Do you have hospital cover?
+          <div class="opts"><label><input type="radio" name="hospital_cover" value="Yes"><span>Yes</span></label><label><input type="radio" name="hospital_cover" value="No"><span>No</span></label></div>
+        </label>
+        <label>Are you covered for both dental &amp; medical procedures in hospital?
+          <div class="opts"><label><input type="radio" name="dental_medical_cover" value="Yes"><span>Yes</span></label><label><input type="radio" name="dental_medical_cover" value="No"><span>No</span></label></div>
+        </label>
+        <div class="row">
+          <label>DVA
+            <div class="opts"><label><input type="radio" name="dva" value="Yes"><span>Yes</span></label><label><input type="radio" name="dva" value="No"><span>No</span></label></div>
+          </label>
+          <label>Workcover
+            <div class="opts"><label><input type="radio" name="workcover" value="Yes"><span>Yes</span></label><label><input type="radio" name="workcover" value="No"><span>No</span></label></div>
+          </label>
+        </div>
+
+        <h3 style="margin-top:.6rem">Next of Kin</h3>
+        <div class="row">
+          <label>Next of Kin<input type="text" name="next_of_kin"></label>
+          <label>Relationship<input type="text" name="next_of_kin_relationship"></label>
+          <label>Phone<input type="tel" name="next_of_kin_phone"></label>
+        </div>
+
+        <h3 style="margin-top:.6rem">Medical History</h3>
+        <label>Please indicate if you have any of the following
+          <div class="opts">
+            <label><input type="checkbox" name="conditions" value="Diabetes"><span>Diabetes</span></label>
+            <label><input type="checkbox" name="conditions" value="Heart Valve Issues"><span>Heart Valve Issues</span></label>
+            <label><input type="checkbox" name="conditions" value="Bleeding Disorder"><span>Bleeding Disorder</span></label>
+            <label><input type="checkbox" name="conditions" value="Sleep Apnoea"><span>Sleep Apnoea</span></label>
+            <label><input type="checkbox" name="conditions" value="Asthma"><span>Asthma</span></label>
+          </div>
+        </label>
+        <label>Other Medical Conditions<textarea name="other_conditions"></textarea></label>
+        <label>Previous Surgical Procedures<textarea name="previous_surgery"></textarea></label>
+        <label>Current Regular Medications<textarea name="medications"></textarea></label>
+        <label>Allergies<textarea name="allergies"></textarea></label>
+        <label>Weight-loss medications (such as Ozempic)
+          <div class="opts"><label><input type="radio" name="weight_loss_medication" value="Yes"><span>Yes</span></label><label><input type="radio" name="weight_loss_medication" value="No"><span>No</span></label></div>
+        </label>
+        <label>Difficulties with anaesthetics in the past
+          <div class="opts"><label><input type="radio" name="anaesthetic_difficulties" value="Yes"><span>Yes</span></label><label><input type="radio" name="anaesthetic_difficulties" value="No"><span>No</span></label></div>
+        </label>
+        <div class="row">
+          <label>Current weight?<input type="text" name="weight" inputmode="decimal"></label>
+          <label>Current height?<input type="text" name="height" inputmode="decimal"></label>
+        </div>
+        <label>Able to take NSAIDs (Nurofen)?
+          <div class="opts"><label><input type="radio" name="nsaids" value="Yes"><span>Yes</span></label><label><input type="radio" name="nsaids" value="No"><span>No</span></label></div>
+        </label>
+        <label>Blood thinners
+          <div class="opts"><label><input type="radio" name="blood_thinners" value="Yes"><span>Yes</span></label><label><input type="radio" name="blood_thinners" value="No"><span>No</span></label></div>
+        </label>
+        <label>Drugs for your Bones
+          <div class="opts"><label><input type="radio" name="bone_drugs" value="Yes"><span>Yes</span></label><label><input type="radio" name="bone_drugs" value="No"><span>No</span></label></div>
+        </label>
+        <label>Radiotherapy to the head or neck
+          <div class="opts"><label><input type="radio" name="radiotherapy" value="Yes"><span>Yes</span></label><label><input type="radio" name="radiotherapy" value="No"><span>No</span></label></div>
+        </label>
+        <label>When and where have you had radiotherapy?<input type="text" name="radiotherapy_details"></label>
+        <div class="row">
+          <label>Smoker
+            <div class="opts"><label><input type="radio" name="smoker" value="Yes"><span>Yes</span></label><label><input type="radio" name="smoker" value="No"><span>No</span></label></div>
+          </label>
+          <label>How many cigarettes per day?<input type="text" name="cigarettes_per_day" inputmode="numeric"></label>
+        </div>
+        <div class="row">
+          <label>Drink Alcohol
+            <div class="opts"><label><input type="radio" name="alcohol" value="Yes"><span>Yes</span></label><label><input type="radio" name="alcohol" value="No"><span>No</span></label></div>
+          </label>
+          <label>How many glasses (per week)?<input type="text" name="alcohol_per_week" inputmode="numeric"></label>
+        </div>
+        <label>Could you be pregnant?
+          <div class="opts"><label><input type="radio" name="pregnant" value="Yes"><span>Yes</span></label><label><input type="radio" name="pregnant" value="No"><span>No</span></label><label><input type="radio" name="pregnant" value="Not applicable"><span>Not applicable</span></label></div>
+        </label>
+        <div class="row">
+          <label>Name of GP?<input type="text" name="gp_name"></label>
+          <label>Name of Dentist?<input type="text" name="dentist_name"></label>
+        </div>
+
+        <h3 style="margin-top:.6rem">Acknowledgement of fee policy</h3>
+        <p class="fine" style="margin-top:-.4rem">Telephone consultations are paid one business day in advance. All other consultation fees are paid on the day by EFT, Visa or Mastercard. Surgical fees are due two weeks before your surgery; if they have not been paid, the procedure may be cancelled. I confirm the information I have provided is correct to the best of my knowledge.</p>
+        <label class="robot"><input type="checkbox" name="fee_policy_agreed" value="Yes" required><span>I have read and accept the fee policy *</span></label>
+        <div class="row">
+          <label>Your Full Name *<input type="text" name="fee_policy_name" required autocomplete="name"></label>
+          <label>Date *<input type="date" name="fee_policy_date" required></label>
+        </div>
+        <label>Name of parent or guardian<input type="text" name="fee_policy_guardian"></label>
+
+        <h3 style="margin-top:.6rem">Consent to collect patient information</h3>
+        <p class="fine" style="margin-top:-.4rem">Australian privacy law requires your written consent for a health professional to obtain your medical information or share it with another practitioner. I give my surgeon and Sunshine Coast Oral, Facial &amp; Implant Specialists permission to: obtain my medical information, such as consultation notes and test results, from other medical or dental practitioners; communicate with other health professionals directly involved in my care; communicate with my referring practitioner; and take clinical, de-identified photographs and x-rays before, during and after my treatment, and use them in advertising, scientific papers or presentations. I confirm I have read and understood these terms.</p>
+        <label class="robot"><input type="checkbox" name="consent_agreed" value="Yes" required><span>I give this consent *</span></label>
+        <div class="row">
+          <label>Your Full Name *<input type="text" name="consent_name" required autocomplete="name"></label>
+          <label>Date *<input type="date" name="consent_date" required></label>
+        </div>
+        <label>Name of parent or guardian<input type="text" name="consent_guardian"></label>
+
+        <h3 style="margin-top:.6rem">Use of artificial intelligence (AI) in your care</h3>
+        <p class="fine" style="margin-top:-.4rem">Our practice uses AI tools to help with clinical documentation, including the Heidi platform, which prepares clinical notes from consultations and transcribes the letters our surgeons dictate. Your personal information is handled securely and in line with Australian privacy law. Continuing your care with our practice is taken as your consent to the use of these tools.</p>
+        <label class="robot"><input type="checkbox" name="ai_agreed" value="Yes" required><span>I have read and understand how AI is used in my care *</span></label>
+        <div class="row">
+          <label>Your Full Name *<input type="text" name="ai_name" required autocomplete="name"></label>
+          <label>Date *<input type="date" name="ai_date" required></label>
+        </div>
+        <label>Name of parent or guardian<input type="text" name="ai_guardian"></label>
+
+        <p class="fine">* Required fields</p>
+        <button class="btn btn-primary" type="submit">Submit form</button>
+        <p class="fine">Your form is sent securely to our practice team and used only for your care, in line with our privacy policy. Please call (07) 5406 0586 if anything here is urgent.</p>
+        <div class="ok"><h4>Thank you, your form has been sent</h4><p style="margin:.5rem auto 0;font-size:.95rem">Our team will add it to your file before your consultation. If you have any questions, call (07) 5406 0586.</p></div>
+      </form>
+    </div>
+    <div class="prose">
+      <h2 style="margin-top:0">Why we ask for these details</h2>
+      <p>Your surgeon reviews your medical history before your consultation so we can plan safe care, including sedation or general anaesthetic where it is needed.</p>
+      <p>Bring your Medicare card, health fund details, referral and any recent x-rays or scans to your appointment.</p>
+      <div class="notice">Prefer to fill it in on the day? That is fine. Arrive ten minutes early and our reception team will help you.</div>
+    </div>
+  </div>
+</section>
+</div>
+
+<div data-page="feedback">
+<section class="pagehead">
+  <div class="art"><img src="images/reception1.jpg" alt=""></div>
+  <div class="wrap"><div><div class="crumb"><a href="#/">Home</a> / Feedback</div><h1>Tell us about your experience</h1><p>We read every message. Your feedback goes to our practice manager, who will follow up if you would like us to.</p></div></div>
+</section>
+<section class="block">
+  <div class="wrap two narrow-r">
+    <div class="formcard">
+      <form class="f" id="feedbackForm" onsubmit="return fakeSubmit(event)" enctype="multipart/form-data" data-endpoint="/api/submit">
+        <input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;opacity:0;height:0;width:0">
+        <div class="row">
+          <label>Your name *<input type="text" name="name" required autocomplete="name"></label>
+          <label>Email *<input type="email" name="email" required autocomplete="email"></label>
+        </div>
+        <label>Phone<input type="tel" name="phone" autocomplete="tel"></label>
+        <label>Your feedback *<textarea name="message" required></textarea></label>
+        <label>Would you like us to contact you?
+          <div class="opts">
+            <label><input type="radio" name="contact_me" value="Yes"><span>Yes, please</span></label>
+            <label><input type="radio" name="contact_me" value="No"><span>No, thank you</span></label>
+          </div>
+        </label>
+        <button class="btn btn-primary" type="submit">Send feedback</button>
+        <p class="fine">Your details are used only to respond to your feedback. We will never share them.</p>
+        <div class="ok"><h4>Thank you for your feedback</h4><p style="margin:.5rem auto 0;font-size:.95rem">Our practice manager will read it and, if you asked us to, be in touch. To speak to us now, call (07) 5406 0586.</p></div>
+      </form>
+    </div>
+    <div class="prose">
+      <h2 style="margin-top:0">Other ways to share your experience</h2>
+      <p>You can also leave a review for the practice on Google.</p>
+      <p><a class="btn btn-navy" href="https://g.page/r/CU9nbwKDylIaEBM/review" target="_blank" rel="noopener">Leave a Google review</a></p>
+      <p>To speak with our practice manager directly, call <a href="tel:0754060586" style="color:var(--cyan-deep);font-weight:700">(07) 5406 0586</a>.</p>
+    </div>
+  </div>
+</section>
+</div>
+
+<div data-page="privacy-policy">
+<section class="pagehead">
+  <div class="art"><img src="images/reception2.jpg" alt=""></div>
+  <div class="wrap"><div><div class="crumb"><a href="#/">Home</a> / Privacy policy</div><h1>Privacy policy</h1><p>How Sunshine Coast Oral, Facial &amp; Implant Specialists collects, uses, stores and protects your personal and health information.</p></div></div>
+</section>
+<section class="block">
+  <div class="wrap two narrow-r">
+    <div class="prose">
+      <h2 style="margin-top:0">Our commitment to your privacy</h2>
+      <p>We are bound by the Privacy Act 1988 (Cth) and the Australian Privacy Principles. This policy explains how we handle your personal information, including health information, and how you can access it or raise a concern.</p>
+      <h3>What we collect</h3>
+      <p>We collect the information we need to provide your care: your name, date of birth, contact details, Medicare and health fund details, next of kin, your medical and dental history, referral letters, clinical notes, photographs, x-rays and scans, and payment details.</p>
+      <h3>How we collect it</h3>
+      <p>We collect information from you directly, from your referring dentist or doctor, from other health professionals involved in your care, from hospitals and imaging providers, and through the forms on this website.</p>
+      <h3>How we use it</h3>
+      <p>We use your information to assess and treat you, to communicate with you and with the practitioners involved in your care, to arrange hospital admission, to process payments, Medicare and health fund claims, and to meet our legal obligations.</p>
+      <h3>Who we share it with</h3>
+      <p>We share information only as needed for your care or as the law requires: your referring practitioner and other treating practitioners, hospitals and anaesthetists, pathology and imaging providers, Medicare, your health fund, and our IT and clinical software providers, who are bound to keep it confidential. We do not sell your information.</p>
+      <h3>Storage and security</h3>
+      <p>Your records are kept securely in our practice management system, with access limited to authorised staff. We keep health records for the periods required by law.</p>
+      <h3>This website</h3>
+      <p>Information sent through the forms on this website is emailed to our practice team and kept in our secure website records. We may use cookies and analytics to understand how the website is used; this information does not identify you.</p>
+      <h3>Access and correction</h3>
+      <p>You can ask to see your records or to correct information you believe is wrong. Please contact our practice manager. We may ask you to confirm your identity.</p>
+      <h3>Questions and complaints</h3>
+      <p>If you have a question or concern about how we handle your information, please contact our practice manager on (07) 5406 0586. If you are not satisfied with our response, you can contact the Office of the Australian Information Commissioner at oaic.gov.au.</p>
+    </div>
+    <aside class="side">
+      <h3>Questions about your privacy?</h3>
+      <p style="font-size:.95rem;color:var(--muted)">Our practice manager can help with access to your records or any privacy question.</p>
+      <a class="btn btn-primary" href="tel:0754060586">Call (07) 5406 0586</a>
+      <a class="btn btn-outline" href="#/contact">Make an enquiry</a>
+    </aside>
+  </div>
+</section>
+</div>
+
+<div data-page="disclaimer">
+<section class="pagehead">
+  <div class="art"><img src="images/hall.jpg" alt=""></div>
+  <div class="wrap"><div><div class="crumb"><a href="#/">Home</a> / Disclaimer</div><h1>Disclaimer</h1><p>About the information on this website.</p></div></div>
+</section>
+<section class="block">
+  <div class="wrap two narrow-r">
+    <div class="prose">
+      <h2 style="margin-top:0">General information only</h2>
+      <p>The information on this website is general in nature and is not a substitute for a consultation with a registered health practitioner. It does not take your individual circumstances into account.</p>
+      <p>Any surgical or invasive procedure carries risks. Individual results vary. Before proceeding, you should seek a second opinion from an appropriately qualified health practitioner.</p>
+      <h3>Accuracy</h3>
+      <p>We take care to keep this website accurate and up to date, but information can change. Fees, rebates and availability are confirmed at your consultation.</p>
+      <h3>Links to other websites</h3>
+      <p>This website links to other websites, such as hospitals and Google Maps. We are not responsible for their content.</p>
+      <h3>Emergencies</h3>
+      <p>If you have a medical emergency, call 000 or go to your nearest emergency department. For urgent facial trauma or infection, call us on (07) 5406 0586.</p>
+    </div>
+    <aside class="side">
+      <h3>Have a question about your treatment?</h3>
+      <p style="font-size:.95rem;color:var(--muted)">The best answers come from a consultation with one of our surgeons.</p>
+      <a class="btn btn-primary" href="tel:0754060586">Call (07) 5406 0586</a>
+      <a class="btn btn-outline" href="#/contact">Make an enquiry</a>
+    </aside>
+  </div>
+</section>
+</div>
+
+<div data-page="not-found">
+<section class="pagehead">
+  <div class="art"><img src="images/reception2.jpg" alt=""></div>
+  <div class="wrap"><div><div class="crumb"><a href="#/">Home</a> / Page not found</div><h1>Sorry, we can't find that page</h1><p>The page may have moved when our website was updated. These links will take you to the most popular pages.</p></div></div>
+</section>
+<section class="block">
+  <div class="wrap two narrow-r">
+    <div class="prose">
+      <h2 style="margin-top:0">Popular pages</h2>
+      <ul>
+        <li><a href="#/services">All services</a></li>
+        <li><a href="#/services/wisdom-teeth-removal">Wisdom teeth removal</a></li>
+        <li><a href="#/services/dental-implants">Dental implants</a></li>
+        <li><a href="#/services/all-on-4-dental-implants">All-on-4 full arch implants</a></li>
+        <li><a href="#/patient-information">Patient information</a></li>
+        <li><a href="#/locations">Locations and hospitals</a></li>
+        <li><a href="#/doctor-referral">Refer a patient</a></li>
+      </ul>
+      <p><a class="btn btn-navy" href="#/">Back to the home page</a></p>
+    </div>
+    <aside class="side">
+      <h3>Can't find what you need?</h3>
+      <p style="font-size:.95rem;color:var(--muted)">Our patient coordinator can help.</p>
+      <a class="btn btn-primary" href="tel:0754060586">Call (07) 5406 0586</a>
+      <a class="btn btn-outline" href="#/contact">Make an enquiry</a>
+    </aside>
+  </div>
+</section>
+</div>
+
+</main>

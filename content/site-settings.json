@@ -1,0 +1,160 @@
+{
+  "name": "Sunshine Coast Oral, Facial & Implant Specialists",
+  "shortName": "SCOFIS",
+  "phone": "(07) 5406 0586",
+  "phoneTel": "0754060586",
+  "phoneIntl": "+61754060586",
+  "email": "",
+  "address": {
+    "street": "Suite 5, Nucleus Medical Suites, 23 Elsa Wilson Drive",
+    "suburb": "Buderim",
+    "state": "QLD",
+    "postcode": "4556",
+    "country": "AU"
+  },
+  "geo": {
+    "lat": -26.6838766,
+    "lng": 153.0930069
+  },
+  "hours": [
+    {
+      "day": "Monday",
+      "open": "08:00",
+      "close": "17:00",
+      "closed": false
+    },
+    {
+      "day": "Tuesday",
+      "open": "08:00",
+      "close": "17:00",
+      "closed": false
+    },
+    {
+      "day": "Wednesday",
+      "open": "08:00",
+      "close": "17:00",
+      "closed": false
+    },
+    {
+      "day": "Thursday",
+      "open": "08:00",
+      "close": "17:00",
+      "closed": false
+    },
+    {
+      "day": "Friday",
+      "open": "08:00",
+      "close": "16:00",
+      "closed": false
+    },
+    {
+      "day": "Saturday",
+      "open": "",
+      "close": "",
+      "closed": true
+    },
+    {
+      "day": "Sunday",
+      "open": "",
+      "close": "",
+      "closed": true
+    }
+  ],
+  "mapsUrl": "https://www.google.com/maps/place/Sunshine+Coast+Oral,+Facial+%26+Implant+Specialists/@-26.6838766,153.0930069,17z/data=!3m1!4b1!4m6!3m5!1s0x6b93771d577bd3e7:0x1a52ca83026f674f!8m2!3d-26.6838766!4d153.0930069!16s%2Fg%2F11f64f2h4n?hl=en&entry=ttu&g_ep=EgoyMDI2MDkyOC4wIKXMDSoASAFQAw%3D%3D",
+  "googleReviewUrl": "https://g.page/r/CU9nbwKDylIaEBM/review",
+  "googleReviewsUrl": "https://www.google.com/search?q=Sunshine+Coast+Oral%2C+Facial+%26+Implant+Specialists+reviews",
+  "social": {
+    "facebook": "https://www.facebook.com/sunshinecoastoms",
+    "instagram": "https://www.instagram.com/scofispecialists/"
+  },
+  "areaServed": [
+    "Sunshine Coast",
+    "Buderim",
+    "Maroochydore",
+    "Nambour",
+    "Gympie",
+    "Hervey Bay",
+    "Brisbane",
+    "Queensland"
+  ],
+  "locations": [
+    {
+      "name": "Nucleus Medical Suites",
+      "area": "Buderim, main practice",
+      "address": "Suite 5 (Blue Lifts), 23 Elsa Wilson Drive, Buderim QLD 4556",
+      "note": "Consultations, in-clinic procedures under local anaesthetic or IV sedation, on-site CBCT. Mon to Thu 8.00am to 5.00pm, Fri 8.00am to 4.00pm.",
+      "mapLink": "https://www.google.com/maps/place/Sunshine+Coast+Oral,+Facial+%26+Implant+Specialists/@-26.6838766,153.0930069,17z/data=!3m1!4b1!4m6!3m5!1s0x6b93771d577bd3e7:0x1a52ca83026f674f!8m2!3d-26.6838766!4d153.0930069!16s%2Fg%2F11f64f2h4n?hl=en&entry=ttu&g_ep=EgoyMDI2MDkyOC4wIKXMDSoASAFQAw%3D%3D",
+      "mapQuery": "Sunshine Coast Oral, Facial & Implant Specialists, 23 Elsa Wilson Drive, Buderim QLD",
+      "mapEmbed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d886.5!2d153.0930069!3d-26.6838766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b93771d577bd3e7%3A0x1a52ca83026f674f!2sSunshine%20Coast%20Oral%2C%20Facial%20%26%20Implant%20Specialists!5e0!3m2!1sen!2sau!4v1759276800000!5m2!1sen!2sau",
+      "pin": "1",
+      "main": true
+    },
+    {
+      "name": "Buderim Private Hospital",
+      "area": "Buderim",
+      "address": "12 Elsa Wilson Drive, Buderim QLD 4556",
+      "note": "Next door to our rooms and the most common theatre setting for Sunshine Coast patients.",
+      "mapLink": "https://www.google.com/maps/place/Buderim+Private+Hospital/@-26.683806,153.0910466,17z",
+      "mapQuery": "Buderim Private Hospital, 12 Elsa Wilson Drive, Buderim QLD",
+      "mapEmbed": "",
+      "pin": "1",
+      "main": false
+    },
+    {
+      "name": "Sunshine Coast Day Surgery",
+      "area": "Maroochydore",
+      "address": "Second Ave & Memorial Ave, Maroochydore QLD 4558",
+      "note": "Day surgery for wisdom teeth, implants and dentoalveolar procedures.",
+      "mapLink": "https://www.google.com/maps/place/Sunshine+Coast+Day+Surgery/@-26.6553312,153.0935211,17z",
+      "mapQuery": "Sunshine Coast Day Surgery, Maroochydore QLD",
+      "mapEmbed": "",
+      "pin": "2",
+      "main": false
+    },
+    {
+      "name": "Maroochy Private Hospital",
+      "area": "Maroochydore",
+      "address": "12 Future Way, Maroochydore QLD 4558",
+      "note": "Modern private hospital in the Maroochydore city centre.",
+      "mapLink": "https://www.google.com/maps/search/Maroochy+Private+Hospital+12+Future+Way+Maroochydore",
+      "mapQuery": "Maroochy Private Hospital, 12 Future Way, Maroochydore QLD",
+      "mapEmbed": "",
+      "pin": "2",
+      "main": false
+    },
+    {
+      "name": "Nambour Selangor Private Hospital",
+      "area": "Nambour",
+      "address": "62 Netherton Street, Nambour QLD 4560",
+      "note": "Convenient for hinterland patients and the northern Coast.",
+      "mapLink": "https://www.google.com/maps/place/Nambour+Selangor+Private+Hospital/@-26.6196329,152.9544028,17z",
+      "mapQuery": "Nambour Selangor Private Hospital, Nambour QLD",
+      "mapEmbed": "",
+      "pin": "3",
+      "main": false
+    },
+    {
+      "name": "St Stephen's Private Hospital",
+      "area": "Hervey Bay",
+      "address": "1 Medical Place, Urraween QLD 4655",
+      "note": "Specialist oral and maxillofacial surgery for Hervey Bay, Maryborough and the Fraser Coast, without travelling to Brisbane.",
+      "mapLink": "https://www.google.com/maps/place/St+Stephen's+Hospital/@-25.299893,152.8238597,15z",
+      "mapQuery": "St Stephen's Hospital, 1 Medical Place, Urraween QLD",
+      "mapEmbed": "",
+      "pin": "4",
+      "main": false
+    }
+  ],
+  "logo": "",
+  "colours": {
+    "navy": "",
+    "cyan": ""
+  },
+  "tracking": {
+    "ga4Id": "",
+    "gtmId": "",
+    "metaPixelId": "",
+    "searchConsoleVerification": ""
+  },
+  "defaultShareImage": "/images/reception2.jpg"
+}

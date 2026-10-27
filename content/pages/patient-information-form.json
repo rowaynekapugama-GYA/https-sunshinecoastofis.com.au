@@ -1,0 +1,52 @@
+{
+  "slug": "patient-information-form",
+  "route": "/patient-information/patient-information-form/",
+  "pageId": "patient-information--patient-information-form",
+  "title": "Patient information form",
+  "kind": "page",
+  "seo": {
+    "metaTitle": "Patient Information Form | Sunshine Coast Oral, Facial & Implant Specialists",
+    "metaDescription": "Australian Privacy Laws dictate that a person’s written consent is required for a health professional to obtain medical information.",
+    "ogTitle": "Patient Information Form | SCOFIS",
+    "ogImage": "/images/first-consultation-hero-v2.jpg"
+  },
+  "sections": [
+    {
+      "id": "s1",
+      "template": "patient-information-form/1",
+      "fields": {
+        "f1": {
+          "src": "/images/first-consultation-hero-v2.jpg",
+          "alt": ""
+        },
+        "f2": {
+          "value": "<a href=\"/\">Home</a> / <a href=\"/patient-information/\">Patient information</a> / Patient information form"
+        },
+        "f3": {
+          "value": "Patient information form"
+        },
+        "f4": {
+          "value": "Save time at your first visit by completing your details before you arrive. If you prefer, the form can be completed in our rooms on the day."
+        }
+      }
+    },
+    {
+      "id": "s2",
+      "template": "patient-information-form/2",
+      "fields": {
+        "f1": {
+          "value": "Why we ask for these details"
+        },
+        "f2": {
+          "value": "Your surgeon reviews your medical history before your consultation so we can plan safe care, including sedation or general anaesthetic where it is needed."
+        },
+        "f3": {
+          "value": "Bring your Medicare card, health fund details, referral and any recent x-rays or scans to your appointment."
+        },
+        "f4": {
+          "value": "Prefer to fill it in on the day? That is fine. Arrive ten minutes early and our reception team will help you."
+        }
+      }
+    }
+  ]
+}

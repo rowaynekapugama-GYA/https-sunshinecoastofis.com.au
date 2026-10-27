@@ -1,0 +1,92 @@
+[
+  {
+    "from": "/services/orthognathic/",
+    "to": "/services/orthognathic-corrective-jaw-surgery/",
+    "type": "301",
+    "note": "Old short address; WordPress already sent it to the full page"
+  },
+  {
+    "from": "/services/temporomandibular-joint-disorder/",
+    "to": "/services/",
+    "type": "301",
+    "note": "Service not on the new site"
+  },
+  {
+    "from": "/services/obstructive-sleep-apnoea/",
+    "to": "/services/orthognathic-corrective-jaw-surgery/",
+    "type": "301",
+    "note": "Jaw surgery page covers airway; OSA page not on the new site"
+  },
+  {
+    "from": "/patient-information/initial-consultation/",
+    "to": "/patient-information/#consult",
+    "type": "301",
+    "note": "Merged into Patient information"
+  },
+  {
+    "from": "/patient-information/payment-information/",
+    "to": "/patient-information/#payment",
+    "type": "301",
+    "note": "Merged into Patient information"
+  },
+  {
+    "from": "/patient-information/before-after-your-surgery/",
+    "to": "/patient-information/#surgery",
+    "type": "301",
+    "note": "Merged into Patient information"
+  },
+  {
+    "from": "/online-doctor-referral-smileox-demo/",
+    "to": "/online-doctor-referral/",
+    "type": "301",
+    "note": "Demo page"
+  },
+  {
+    "from": "/buderim-private-hospital/",
+    "to": "/locations/",
+    "type": "301",
+    "note": "Hospital details are on Locations"
+  },
+  {
+    "from": "/sunshine-coast-day-surgery/",
+    "to": "/locations/",
+    "type": "301",
+    "note": "Hospital details are on Locations"
+  },
+  {
+    "from": "/noosa-private-hospital/",
+    "to": "/locations/",
+    "type": "301",
+    "note": "Was the Maroochy Private Hospital page; hospital details are on Locations"
+  },
+  {
+    "from": "/nambour-selangor-private-hospital/",
+    "to": "/locations/",
+    "type": "301",
+    "note": "Hospital details are on Locations"
+  },
+  {
+    "from": "/hervey-bay-st-stephens-private-hospital/",
+    "to": "/locations/",
+    "type": "301",
+    "note": "Hospital details are on Locations"
+  },
+  {
+    "from": "/what-is-oral-and-maxillofacial-surgery/",
+    "to": "/services/",
+    "type": "301",
+    "note": "Covered on Services and the home page FAQ"
+  },
+  {
+    "from": "/sitemap/",
+    "to": "/",
+    "type": "301",
+    "note": "Old HTML sitemap page"
+  },
+  {
+    "from": "/sample-page/",
+    "to": "/",
+    "type": "301",
+    "note": "WordPress sample page"
+  }
+]

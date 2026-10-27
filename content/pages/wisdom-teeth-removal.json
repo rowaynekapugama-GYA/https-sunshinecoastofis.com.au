@@ -1,0 +1,194 @@
+{
+  "slug": "wisdom-teeth-removal",
+  "route": "/services/wisdom-teeth-removal/",
+  "pageId": "services--wisdom-teeth-removal",
+  "title": "Wisdom teeth removal",
+  "kind": "page",
+  "seo": {
+    "metaTitle": "Wisdom teeth removal Sunshine Coast | Wisdom Tooth Extraction",
+    "metaDescription": "Wisdom teeth – is it wise to keep them? Learn more about Wisdom Teeth Removal at Sunshine Coast.",
+    "ogTitle": "Wisdom Teeth Removal | SCOFIS",
+    "ogImage": "/images/wisdom-teeth-hero-square.jpg"
+  },
+  "sections": [
+    {
+      "id": "s1",
+      "template": "wisdom-teeth-removal/1",
+      "fields": {
+        "f1": {
+          "src": "/images/wisdom-teeth-hero-square.jpg",
+          "alt": ""
+        },
+        "f2": {
+          "value": "<a href=\"/\">Home</a> / <a href=\"/services/\">Services</a>"
+        },
+        "f3": {
+          "value": "Wisdom teeth removed while you are completely asleep"
+        },
+        "f4": {
+          "value": "Specialist oral and maxillofacial surgeons remove all four wisdom teeth in a single appointment. Choose to be fully asleep under general anaesthetic in an accredited private hospital or in our Buderim clinic, or relaxed under IV sedation."
+        },
+        "f5": {
+          "value": "Make an enquiry",
+          "href": "/contact-us/"
+        }
+      }
+    },
+    {
+      "id": "s2",
+      "template": "wisdom-teeth-removal/2",
+      "fields": {
+        "f1": {
+          "value": "Why wisdom teeth cause trouble"
+        },
+        "f2": {
+          "value": "Most of us develop wisdom teeth, but many jaws simply do not have room for them. When they cannot come through properly they become impacted, and problems follow: infected, inflamed gums over a partially erupted tooth (pericoronitis), decay in the wisdom tooth or the molar in front, resorption of the neighbouring tooth, jaw pain, and occasionally cysts around a buried tooth."
+        },
+        "f3": {
+          "value": "Removal is also commonly recommended before or after orthodontic treatment, ahead of corrective jaw surgery, or preventively before problems begin. If your dentist has referred you or your x-ray shows impaction, it is worth a specialist assessment sooner rather than later. Removal is generally simpler, with lower risk, in younger patients before the roots have fully formed."
+        },
+        "f4": {
+          "value": "Why see a specialist surgeon"
+        },
+        "f5": {
+          "value": "Impacted lower wisdom teeth sit close to the inferior alveolar and lingual nerves. Assessing that anatomy on a 3D scan and managing it during surgery is precisely the work oral and maxillofacial surgeons train for. Both Dr Lincoln and Dr Higgins handle the complex and impacted cases that general dentists refer on, using modern techniques, including piezoelectric surgery, that reduce post-operative swelling and discomfort."
+        },
+        "f6": {
+          "value": "<strong>All four in one appointment.</strong> One procedure and one recovery, rather than returning tooth by tooth."
+        },
+        "f7": {
+          "value": "<strong>Your choice of anaesthetic.</strong> General anaesthetic in hospital or in clinic, or IV sedation, always with the surgical site fully numbed."
+        },
+        "f8": {
+          "value": "<strong>Home the same day.</strong> Day surgery in every setting, with written aftercare and direct contact with our team."
+        },
+        "f9": {
+          "value": "Your anaesthetic options"
+        },
+        "f10": {
+          "value": "General anaesthetic in hospital"
+        },
+        "f11": {
+          "value": "Completely unconscious for the whole procedure, cared for by a specialist anaesthetist in an accredited private hospital theatre. The most popular choice for all four wisdom teeth."
+        },
+        "f12": {
+          "value": "General anaesthetic in clinic"
+        },
+        "f13": {
+          "value": "The same fully asleep experience in our Buderim rooms with an anaesthetist present. Suitable for selected cases, and often a more affordable path to being asleep."
+        },
+        "f14": {
+          "value": "IV sedation in clinic"
+        },
+        "f15": {
+          "value": "Twilight sedation through a drip. Drowsy, calm and comfortable, and most patients remember little or nothing of the procedure."
+        },
+        "f16": {
+          "value": "Local anaesthetic"
+        },
+        "f17": {
+          "value": "For simpler cases, the area is fully numbed and you remain awake, in our rooms, with no fasting or escort required."
+        },
+        "f18": {
+          "value": "Book a consultation"
+        },
+        "f19": {
+          "value": "Consulting in Buderim. You're welcome to see us without a referral, and a referral from your general dentist or GP may make you eligible for a Medicare rebate. You receive a written, itemised treatment plan before deciding anything."
+        },
+        "f20": {
+          "value": "Make an enquiry",
+          "href": "/contact-us/"
+        },
+        "f21": {
+          "value": "Call {{phone}}"
+        },
+        "f22": {
+          "value": "Dentists and doctors:"
+        },
+        "f23": {
+          "value": "refer a patient online",
+          "href": "/online-doctor-referral/"
+        },
+        "f24": {
+          "src": "/images/theatre.jpg",
+          "alt": ""
+        }
+      }
+    },
+    {
+      "id": "s3",
+      "template": "wisdom-teeth-removal/3",
+      "fields": {
+        "f1": {
+          "value": "What happens, and when"
+        },
+        "f2": {
+          "value": "Your treatment, step by step"
+        },
+        "f3": {
+          "value": "Consultation and imaging"
+        },
+        "f4": {
+          "value": "Your surgeon assesses your wisdom teeth on an OPG or 3D scan, checks their position against nerves and sinuses, and confirms whether removal is recommended. You receive a written quote."
+        },
+        "f5": {
+          "value": "Choose your anaesthetic"
+        },
+        "f6": {
+          "value": "Together you decide between general anaesthetic in hospital, general anaesthetic in clinic, or IV sedation, and your date is booked."
+        },
+        "f7": {
+          "value": "Surgery day"
+        },
+        "f8": {
+          "value": "Usually all four teeth are removed in a single procedure well under an hour. You recover under supervision and go home the same day with someone to accompany you."
+        },
+        "f9": {
+          "value": "Recovery"
+        },
+        "f10": {
+          "value": "Swelling and tenderness settle over the first week and most people are back to work or study within a few days, with direct contact to our team throughout."
+        }
+      }
+    },
+    {
+      "id": "s4",
+      "template": "wisdom-teeth-removal/4",
+      "fields": {
+        "f1": {
+          "value": "Common questions"
+        },
+        "f2": {
+          "value": "What patients ask us"
+        },
+        "f3": {
+          "value": "Do my wisdom teeth actually need to come out?"
+        },
+        "f4": {
+          "value": "Not always. Impacted wisdom teeth causing pain, repeated infection, decay or damage to the tooth in front generally should be removed, and many patients choose preventive removal. A specialist consultation with imaging gives you a straight answer either way. If they do not need to come out, we will tell you."
+        },
+        "f5": {
+          "value": "How long is recovery?"
+        },
+        "f6": {
+          "value": "Most people take two to three days off and are largely back to normal within a week. Swelling peaks around day two or three then settles. You go home with written aftercare and a pain relief plan."
+        },
+        "f7": {
+          "value": "What are the risks?"
+        },
+        "f8": {
+          "value": "All surgery carries risk. For lower wisdom teeth the important ones involve the nerves near the roots, which can cause temporary and rarely permanent numbness of the lip, chin or tongue. Your surgeon assesses your nerve anatomy on imaging and explains your individual risks before you consent."
+        },
+        "f9": {
+          "value": "Does private health insurance cover it?"
+        },
+        "f10": {
+          "value": "Extras cover typically contributes to surgical fees, and hospital cover may apply to theatre and anaesthetic costs for a general anaesthetic in hospital. We give you item numbers so you can check your rebate before committing. Payment plans are also available."
+        },
+        "f11": {
+          "value": "Any surgical or invasive procedure carries risks. Before proceeding, you should seek a second opinion from an appropriately qualified health practitioner."
+        }
+      }
+    }
+  ]
+}

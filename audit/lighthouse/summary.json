@@ -1,0 +1,122 @@
+[
+ {
+  "run": "blog-desktop",
+  "performance": 100,
+  "accessibility": 95,
+  "best-practices": 96,
+  "seo": 100,
+  "FCP": "0.5\u00a0s",
+  "LCP": "0.6\u00a0s",
+  "TBT": "0\u00a0ms",
+  "CLS": "0",
+  "SI": "0.5\u00a0s"
+ },
+ {
+  "run": "blog-mobile",
+  "performance": 96,
+  "accessibility": 95,
+  "best-practices": 96,
+  "seo": 100,
+  "FCP": "1.6\u00a0s",
+  "LCP": "2.8\u00a0s",
+  "TBT": "0\u00a0ms",
+  "CLS": "0",
+  "SI": "1.6\u00a0s"
+ },
+ {
+  "run": "contact-desktop",
+  "performance": 100,
+  "accessibility": 94,
+  "best-practices": 96,
+  "seo": 100,
+  "FCP": "0.5\u00a0s",
+  "LCP": "0.6\u00a0s",
+  "TBT": "0\u00a0ms",
+  "CLS": "0.001",
+  "SI": "0.6\u00a0s"
+ },
+ {
+  "run": "contact-mobile",
+  "performance": 95,
+  "accessibility": 94,
+  "best-practices": 96,
+  "seo": 100,
+  "FCP": "1.8\u00a0s",
+  "LCP": "2.6\u00a0s",
+  "TBT": "0\u00a0ms",
+  "CLS": "0",
+  "SI": "3.0\u00a0s"
+ },
+ {
+  "run": "home-desktop",
+  "performance": 100,
+  "accessibility": 94,
+  "best-practices": 96,
+  "seo": 100,
+  "FCP": "0.5\u00a0s",
+  "LCP": "0.6\u00a0s",
+  "TBT": "0\u00a0ms",
+  "CLS": "0.001",
+  "SI": "0.5\u00a0s"
+ },
+ {
+  "run": "home-mobile",
+  "performance": 96,
+  "accessibility": 95,
+  "best-practices": 96,
+  "seo": 100,
+  "FCP": "1.6\u00a0s",
+  "LCP": "2.6\u00a0s",
+  "TBT": "10\u00a0ms",
+  "CLS": "0",
+  "SI": "1.6\u00a0s"
+ },
+ {
+  "run": "locations-desktop",
+  "performance": 100,
+  "accessibility": 96,
+  "best-practices": 96,
+  "seo": 100,
+  "FCP": "0.5\u00a0s",
+  "LCP": "0.8\u00a0s",
+  "TBT": "0\u00a0ms",
+  "CLS": "0",
+  "SI": "0.5\u00a0s"
+ },
+ {
+  "run": "locations-mobile",
+  "performance": 92,
+  "accessibility": 96,
+  "best-practices": 96,
+  "seo": 100,
+  "FCP": "1.6\u00a0s",
+  "LCP": "3.4\u00a0s",
+  "TBT": "0\u00a0ms",
+  "CLS": "0",
+  "SI": "1.6\u00a0s"
+ },
+ {
+  "run": "service-desktop",
+  "performance": 100,
+  "accessibility": 93,
+  "best-practices": 96,
+  "seo": 100,
+  "FCP": "0.4\u00a0s",
+  "LCP": "0.6\u00a0s",
+  "TBT": "0\u00a0ms",
+  "CLS": "0",
+  "SI": "0.5\u00a0s"
+ },
+ {
+  "run": "service-mobile",
+  "performance": 97,
+  "accessibility": 94,
+  "best-practices": 96,
+  "seo": 100,
+  "FCP": "1.5\u00a0s",
+  "LCP": "2.4\u00a0s",
+  "TBT": "0\u00a0ms",
+  "CLS": "0",
+  "SI": "1.5\u00a0s"
+ }
+]

@@ -1,0 +1,97 @@
+{
+  "slug": "online-doctor-referral",
+  "route": "/online-doctor-referral/",
+  "pageId": "doctor-referral",
+  "title": "Refer a patient",
+  "kind": "page",
+  "seo": {
+    "metaTitle": "Online Doctor Referral | Sunshine Coast Oral, Facial & Implant Specialists",
+    "metaDescription": "Start your journey to better smile with our reliable and efficient online doctor referral system at SCOFIS.",
+    "ogTitle": "Online Doctor Referral | SCOFIS",
+    "ogImage": "/images/refer-a-patient-hero-square.jpg"
+  },
+  "sections": [
+    {
+      "id": "s1",
+      "template": "online-doctor-referral/1",
+      "fields": {
+        "f1": {
+          "src": "/images/refer-a-patient-hero-square.jpg",
+          "alt": ""
+        },
+        "f2": {
+          "value": "<a href=\"/\">Home</a> / Refer a patient"
+        },
+        "f3": {
+          "value": "Online referral for dentists and doctors"
+        },
+        "f4": {
+          "value": "Send a referral in under two minutes. Our team contacts your patient directly to arrange their consultation and keeps you informed of the treatment plan and outcome."
+        }
+      }
+    },
+    {
+      "id": "s2",
+      "template": "online-doctor-referral/2",
+      "fields": {
+        "f1": {
+          "href": "/files/SCOFIS-Referral-Form.pdf"
+        },
+        "f2": {
+          "value": "Click to download Referral Form (PDF)"
+        },
+        "f3": {
+          "value": "Working with referring practitioners"
+        },
+        "f4": {
+          "value": "Our vision has always included enduring, collaborative relationships with the practitioners who refer to us. We keep you informed at consultation, after surgery and at discharge, and we return patients to you for ongoing care."
+        },
+        "f5": {
+          "value": "Who we accept referrals from"
+        },
+        "f6": {
+          "value": "General dentists and dental prosthetists"
+        },
+        "f7": {
+          "value": "Orthodontists, prosthodontists and periodontists"
+        },
+        "f8": {
+          "value": "General practitioners and medical specialists"
+        },
+        "f9": {
+          "value": "Emergency departments and hospital units"
+        },
+        "f10": {
+          "value": "Common reasons for referral"
+        },
+        "f11": {
+          "value": "Impacted or complex wisdom teeth, especially close to the inferior alveolar nerve"
+        },
+        "f12": {
+          "value": "Implant placement including immediate, complex and full arch cases"
+        },
+        "f13": {
+          "value": "Grafting for insufficient bone volume, sinus lifts"
+        },
+        "f14": {
+          "value": "Zygomatic and pterygoid implants for the atrophic maxilla"
+        },
+        "f15": {
+          "value": "Orthognathic surgery in orthodontic patients"
+        },
+        "f16": {
+          "value": "Facial fractures and dentoalveolar trauma"
+        },
+        "f17": {
+          "value": "Oral pathology, cysts and biopsies"
+        },
+        "f18": {
+          "value": "Medically compromised patients who require hospital based care"
+        },
+        "f19": {
+          "value": "Prefer to fax or email? Referrals can also be sent to the practice directly. Call {{phone}} for details, or to discuss a case with one of the surgeons."
+        }
+      }
+    }
+  ]
+}

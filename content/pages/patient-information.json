@@ -1,0 +1,196 @@
+{
+  "slug": "patient-information",
+  "route": "/patient-information/",
+  "pageId": "patient-information",
+  "title": "Patient information",
+  "kind": "page",
+  "seo": {
+    "metaTitle": "Patient Information | SCOFIS",
+    "metaDescription": "Click on the below to find out more, or contact us direct to arrange a consultation at Sunshine Coast Oral, Facial & Implant Specialists",
+    "ogImage": "/images/first-consultation-hero-v2.jpg"
+  },
+  "sections": [
+    {
+      "id": "s1",
+      "template": "patient-information/1",
+      "fields": {
+        "f1": {
+          "src": "/images/first-consultation-hero-v2.jpg",
+          "alt": ""
+        },
+        "f2": {
+          "value": "<a href=\"/\">Home</a> / Patient information"
+        },
+        "f3": {
+          "value": "What to expect, from first call to full recovery"
+        },
+        "f4": {
+          "value": "Everything you need before your consultation, before your surgery and in the days that follow."
+        }
+      }
+    },
+    {
+      "id": "s2",
+      "template": "patient-information/2",
+      "fields": {
+        "f1": {
+          "src": "/images/waiting.jpg",
+          "alt": "Waiting lounge"
+        },
+        "f2": {
+          "src": "/images/cbct.jpg",
+          "alt": "3D CBCT scanner"
+        },
+        "f3": {
+          "src": "/images/surgery.jpg",
+          "alt": "Consulting room"
+        },
+        "f4": {
+          "src": "/images/theatre.jpg",
+          "alt": "Procedure room"
+        }
+      }
+    },
+    {
+      "id": "s3",
+      "template": "patient-information/3",
+      "fields": {
+        "f1": {
+          "value": "Your first consultation"
+        },
+        "f2": {
+          "value": "Your consultation is where we work out exactly what you need. Your surgeon will take a full history, examine your mouth and jaws, and arrange imaging. Most patients have an OPG or a 3D CBCT scan taken in our rooms on the day, so planning can begin immediately."
+        },
+        "f3": {
+          "value": "You will leave with a clear explanation of your condition, the treatment options, the anaesthetic choices for your case, and a written, itemised treatment plan. Nothing is booked until you are ready."
+        },
+        "f4": {
+          "value": "What to bring"
+        },
+        "f5": {
+          "value": "Your referral letter, if you have one"
+        },
+        "f6": {
+          "value": "Any recent x-rays, OPG or CBCT scans"
+        },
+        "f7": {
+          "value": "A list of current medications and any allergies"
+        },
+        "f8": {
+          "value": "Your Medicare card and private health fund details"
+        },
+        "f9": {
+          "value": "Your completed patient information form, if you have filled it in online"
+        },
+        "f10": {
+          "value": "Fees and payment"
+        },
+        "f11": {
+          "value": "Fees depend on the procedure, its complexity, and whether it is performed in our rooms or in hospital. Every patient receives a written quote with item numbers after their consultation so you can check rebates with your health fund before committing."
+        },
+        "f12": {
+          "value": "Payment plans"
+        },
+        "f13": {
+          "value": "Spread the cost of treatment across manageable instalments. Our patient coordinator will walk you through the plans available and what repayments look like for your case. Approval is subject to the provider's criteria."
+        },
+        "f14": {
+          "value": "Health fund rebates"
+        },
+        "f15": {
+          "value": "Extras cover often contributes to surgical fees. If your surgery is under general anaesthetic in hospital, your hospital cover may apply to theatre and anaesthetist costs. We provide item numbers so you can confirm your exact rebate."
+        },
+        "f16": {
+          "value": "Early release of super"
+        },
+        "f17": {
+          "value": "For major treatment such as full arch implants, eligible patients may apply to the ATO for early release of superannuation on compassionate grounds. We supply the clinical documentation. Eligibility is decided by the ATO."
+        },
+        "f18": {
+          "value": "Medicare and hospital fees"
+        },
+        "f19": {
+          "value": "Some procedures attract a Medicare rebate. Hospital accommodation and anaesthetist fees are billed separately by the hospital and anaesthetist, and we will explain these before you book."
+        },
+        "f20": {
+          "value": "Before and after your surgery"
+        },
+        "f21": {
+          "value": "Before surgery"
+        },
+        "f22": {
+          "value": "For general anaesthetic or IV sedation, do not eat for six hours or drink clear fluids for two hours before your admission time, unless told otherwise"
+        },
+        "f23": {
+          "value": "Take your regular medications with a sip of water unless your surgeon or anaesthetist has advised you to stop them"
+        },
+        "f24": {
+          "value": "Arrange for a responsible adult to drive you home and stay with you overnight"
+        },
+        "f25": {
+          "value": "Wear loose, comfortable clothing and leave jewellery and valuables at home"
+        },
+        "f26": {
+          "value": "Let us know of any change in your health, including a cold or infection, before your surgery date"
+        },
+        "f27": {
+          "value": "After surgery"
+        },
+        "f28": {
+          "value": "Some swelling, bruising and discomfort is normal and usually peaks around day two or three before settling"
+        },
+        "f29": {
+          "value": "Use the pain relief plan you are sent home with and keep the surgical sites clean as instructed"
+        },
+        "f30": {
+          "value": "Stick to soft foods for the first few days and avoid smoking, alcohol and strenuous exercise while you heal"
+        },
+        "f31": {
+          "value": "Do not drive, operate machinery or sign legal documents for 24 hours after a general anaesthetic or sedation"
+        },
+        "f32": {
+          "value": "Call us straight away on {{phone}} if you have bleeding that will not settle, increasing pain, fever, or any concern at all"
+        },
+        "f33": {
+          "value": "You will receive written aftercare instructions specific to your procedure, and direct contact details for our team."
+        },
+        "f34": {
+          "value": "Patient forms"
+        },
+        "f35": {
+          "value": "Save time at your first visit by completing your patient information form before you arrive. If you prefer, the form can be completed in our rooms on the day."
+        },
+        "f36": {
+          "value": "Complete the patient information form",
+          "href": "/patient-information/patient-information-form/"
+        },
+        "f37": {
+          "value": "Feedback"
+        },
+        "f38": {
+          "value": "We welcome feedback about your experience. You can leave a Google review, or contact the practice manager directly on {{phone}}."
+        },
+        "f39": {
+          "value": "Book a consultation"
+        },
+        "f40": {
+          "value": "Call us or send an enquiry and our patient coordinator will arrange your appointment with Dr Lincoln or Dr Higgins."
+        },
+        "f41": {
+          "value": "Call {{phone}}"
+        },
+        "f42": {
+          "value": "Make an enquiry",
+          "href": "/contact-us/"
+        },
+        "f43": {
+          "value": "Mon to Thu 8.00am to 5.00pm, Fri 8.00am to 4.00pm"
+        },
+        "f44": {
+          "src": "/images/waiting.jpg",
+          "alt": "Waiting lounge"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "slug": "blog",
+  "route": "/blog/",
+  "pageId": "blog",
+  "title": "Blog",
+  "kind": "page",
+  "seo": {
+    "metaTitle": "Blog | Sunshine Coast Oral, Facial & Implant Specialists",
+    "metaDescription": "The Sunshine Coast Oral, Facial & Implant Specialists (SCOFIS) blog is your trusted resource for expert information and compassionate care",
+    "ogTitle": "Blog | Sunshine Coast Oral, Facial & Implant Specialists (SCOFIS)",
+    "ogImage": "/images/hall.jpg"
+  },
+  "sections": [
+    {
+      "id": "s1",
+      "template": "blog/1",
+      "fields": {
+        "f1": {
+          "src": "/images/hall.jpg",
+          "alt": ""
+        },
+        "f2": {
+          "value": "<a href=\"/\">Home</a> / Blog"
+        },
+        "f3": {
+          "value": "News and articles from our surgeons"
+        },
+        "f4": {
+          "value": "General information about oral and maxillofacial surgery, dental implants and recovery, written by the team at Sunshine Coast Oral, Facial &amp; Implant Specialists."
+        }
+      }
+    },
+    {
+      "id": "s2",
+      "template": "blog/2",
+      "fields": {
+        "f1": {
+          "value": "Latest articles"
+        },
+        "f2": {
+          "value": "From the blog"
+        },
+        "f3": {
+          "value": "Articles are general information only and are not a substitute for a consultation. Any surgical or invasive procedure carries risks."
+        }
+      }
+    }
+  ]
+}

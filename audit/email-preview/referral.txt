@@ -1,0 +1,24 @@
+Referral Patient Details
+Patient Name: Zoë O'Brien-Smith
+Date of Birth: 1990-04-12
+Email: patient@example.com
+Patient Best Contact : 0400 000 000
+Address: 12 Example St
+Buderim QLD 4556
+Reason For Referral: Assessment for lower left wisdom tooth <urgent>
+Implant Brand Preference:
+Medical History: Nil known
+Radiographs: OPG, CT
+Radiographs: OPG attached
+Referral Doctor Details
+Doctor Name: Sam Example
+Email: dr@example.com
+Phone Number: (07) 5400 0000
+Practice Address : 1 Practice Rd, Maroochydore
+Provider: 1234567A
+Preferred specialist to see: Dr Trent Lincoln
+Date: 2026-10-27
+Attach File: obriensmith_zoe_P1_2026-10-27_09_05.pdf
+obriensmith_zoe_P2_2026-10-27_09_05.jpg
+--
+This e-mail was sent from Sunshine Coast Oral, Facial & Implant Specialists (https://sunshinecoastofis.com.au)
