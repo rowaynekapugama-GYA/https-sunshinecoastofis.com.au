@@ -1,5 +1,9 @@
 # Changelog
 
+## 3.1.3 (29 Oct 2026): form check page no longer lists other domains
+
+- `GET /api/submit` (the email setup check) listed every sender domain on the SMTP2GO account, which includes other GYA clients, to anyone who opened it. It now answers yes or no only: `sender_domain_registered` (the current sender) and `practice_domain_registered` (sunshinecoastofis.com.au).
+
 ## 3.1.2 (27 Oct 2026): View links follow the site being tested
 
 - Every "View" link in the dashboard (sidebar, top bar, Pages list, page and article editors) opens the copy of the site the dashboard belongs to: the staging (`cms`) preview while testing, the vercel.app address before the domain moves, and sunshinecoastofis.com.au once it is live. Nothing to change at go-live.

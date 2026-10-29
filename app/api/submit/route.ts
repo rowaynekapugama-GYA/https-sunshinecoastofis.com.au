@@ -134,7 +134,7 @@ export async function POST(req: Request) {
   return json({ ok: true });
 }
 
-// ---------------------------------------------------------------- GET: setup check, sends nothing
+// ---------------------------------------------------------------- GET: setup check, sends nothing, reveals no secrets or other clients
 export async function GET() {
   const key = process.env.SMTP2GO_API_KEY?.trim() || '';
   const fromDomain = (sender().match(/@([^>\s]+)/) || [])[1] || '';
@@ -153,8 +153,10 @@ export async function GET() {
     out.smtp2go_key_accepted = r.ok;
     const list = (j.data?.domains || []) as { domain?: { fulldomain?: string; domain?: string } }[];
     const names = list.map((d) => d.domain?.fulldomain || d.domain?.domain || '').filter(Boolean);
-    out.sender_domains = names;
-    out.sender_domain_registered = names.some((n) => fromDomain && n.toLowerCase().endsWith(fromDomain.toLowerCase()));
+    // Yes or no only: the full list would show every domain on the SMTP2GO account (other GYA clients) to anyone.
+    const has = (d: string) => names.some((n) => d && n.toLowerCase().endsWith(d.toLowerCase()));
+    out.sender_domain_registered = has(fromDomain);
+    out.practice_domain_registered = has('sunshinecoastofis.com.au');
   } catch (e) {
     out.smtp2go_message = `Could not reach SMTP2GO: ${(e as Error).message}`;
   }
