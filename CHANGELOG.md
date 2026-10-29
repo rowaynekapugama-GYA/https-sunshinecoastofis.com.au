@@ -1,5 +1,10 @@
 # Changelog
 
+## 3.1.2 (27 Oct 2026): View links follow the site being tested
+
+- Every "View" link in the dashboard (sidebar, top bar, Pages list, page and article editors) opens the copy of the site the dashboard belongs to: the staging (`cms`) preview while testing, the vercel.app address before the domain moves, and sunshinecoastofis.com.au once it is live. Nothing to change at go-live.
+- The Google previews in the SEO panels still show sunshinecoastofis.com.au, as Google will.
+
 ## 3.1.1 (27 Oct 2026): faster page editor
 
 - Server functions now run in Sydney (`vercel.json` `regions: ["syd1"]`), next to the Neon database. They were running in Vercel's default US region, so every dashboard request crossed the Pacific several times.

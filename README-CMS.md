@@ -74,6 +74,7 @@ The live site keeps running from `main` until the new version has been checked o
    - Or from a terminal with the Neon `DATABASE_URL` and `PAYLOAD_SECRET` set: `npx tsx scripts/create-user.ts <email> <password> admin "<name>"` (password 10 characters or more; it is not stored anywhere else).
 4. **Import:** on `/admin`, Dashboard > **Import missing content**. This loads every page, the team, site settings, the two blog articles and the 15 redirects from `content/` into the dashboard. It only adds what is missing, so it is safe to run again.
 5. **Deploy hook:** create the hook for `main` (Settings > Git > Deploy Hooks) and add it as `PUBLISH_HOOK_URL`.
+   - **For testing on staging:** also create a hook for branch `cms` and set it as `PUBLISH_HOOK_URL` for the **Preview** environment only (Production keeps the `main` hook). Then "Publish website" on the staging dashboard rebuilds the staging site, and the dashboard's View links (which always open the copy of the site the dashboard is on) show the change.
 6. **Practice accounts:** Users > Add, role **Editor**, one per staff member. Send them `docs/HOW-TO-UPDATE.md`.
 7. **Check the preview** against `GO-LIVE-AUDIT.md` (forms send to the right inbox, `/api/submit` in a browser shows the SMTP2GO setup).
 8. **Promote:** `bash scripts/push-to-github.sh promote` fast-forwards `main` to the checked `cms` commit. Rollback: `bash scripts/push-to-github.sh rollback`.

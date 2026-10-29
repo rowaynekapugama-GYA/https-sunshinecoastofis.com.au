@@ -2,6 +2,7 @@ import { notFound } from 'next/navigation';
 import { db, requireUser } from '@/dashboard/lib/auth';
 import { PostEditor } from '@/dashboard/editors/PostEditor';
 import { SITE } from '@/lib/site';
+import { siteBase } from '@/dashboard/lib/siteBase';
 
 export default async function EditPost({ params }: { params: Promise<{ id: string }> }) {
   await requireUser();
@@ -13,5 +14,5 @@ export default async function EditPost({ params }: { params: Promise<{ id: strin
   ]);
   if (!doc) notFound();
   const initial = { ...doc, publishedAt: doc.publishedAt ? String(doc.publishedAt).slice(0, 10) : '' };
-  return <PostEditor initial={initial} categories={cats.docs.map((c: any) => ({ id: c.id, title: c.title }))} siteUrl={SITE.domain} siteName={SITE.name} />;
+  return <PostEditor initial={initial} categories={cats.docs.map((c: any) => ({ id: c.id, title: c.title }))} siteUrl={await siteBase()} siteName={SITE.name} />;
 }

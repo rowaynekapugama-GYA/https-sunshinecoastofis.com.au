@@ -18,7 +18,7 @@ export function SeoPanel({ value, onChange, url, siteName, fallbackTitle, fallba
   const host = useMemo(() => {
     try {
       const u = new URL(url);
-      return { host: u.host.replace(/^www\./, ''), path: u.pathname.replace(/\/$/, '').split('/').filter(Boolean).join(' › ') };
+      return { host: 'sunshinecoastofis.com.au', path: u.pathname.replace(/\/$/, '').split('/').filter(Boolean).join(' › ') };
     } catch {
       return { host: 'sunshinecoastofis.com.au', path: url };
     }

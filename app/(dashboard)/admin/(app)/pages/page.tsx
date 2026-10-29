@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { db, requireUser } from '@/dashboard/lib/auth';
-import { SITE } from '@/lib/site';
+import { siteBase } from '@/dashboard/lib/siteBase';
 
 const fmt = (iso: string) => new Date(iso).toLocaleString('en-AU', { timeZone: 'Australia/Brisbane', day: 'numeric', month: 'short', hour: 'numeric', minute: '2-digit' });
 /** Website order: home, about, services, the service pages, then the rest. */
@@ -9,6 +9,7 @@ const rank = (p: any) => (p.kind === 'site' ? 99 : p.route === '/' ? 0 : p.route
 export default async function PagesList() {
   await requireUser();
   const payload = await db();
+  const base = await siteBase();
   const { docs } = await payload.find({ collection: 'pages', limit: 200, depth: 0, sort: 'title', overrideAccess: true });
   const pages = [...docs].sort((a: any, b: any) => rank(a) - rank(b) || String(a.route).localeCompare(String(b.route)));
   return (
@@ -45,7 +46,7 @@ export default async function PagesList() {
                     Edit
                   </Link>{' '}
                   {p.kind !== 'site' && p.slug !== 'not-found' && (
-                    <a className="d-btn sm ghost" href={`${SITE.domain}${p.route}`} target="_blank" rel="noopener">
+                    <a className="d-btn sm ghost" href={`${base}${p.route}`} target="_blank" rel="noopener">
                       View
                     </a>
                   )}
