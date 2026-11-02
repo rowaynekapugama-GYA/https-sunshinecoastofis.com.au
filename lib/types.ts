@@ -15,6 +15,8 @@ export interface TemplateDef {
   fields: Record<string, FieldDef>;
   html: string;
   before_main?: boolean;
+  /** Leave empty headings, paragraphs, list items and lists out of the page (general text sections). */
+  trim?: boolean;
 }
 
 /**

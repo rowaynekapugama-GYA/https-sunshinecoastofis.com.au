@@ -177,6 +177,15 @@
           "value": "Any surgical or invasive procedure carries risks. Before proceeding, you should seek a second opinion from an appropriately qualified health practitioner."
         }
       }
+    },
+    {
+      "id": "risk",
+      "template": "notice/risk",
+      "fields": {
+        "f1": {
+          "value": "Any surgical or invasive procedure carries risks. Before proceeding, you should seek a second opinion from an appropriately qualified health practitioner."
+        }
+      }
     }
   ]
 }

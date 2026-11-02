@@ -1,0 +1,2345 @@
+{
+ "pages": {
+  "about": {
+   "ops": [
+    {
+     "op": "field",
+     "section": "s1",
+     "key": "f4",
+     "prop": "value",
+     "old": "Opened in 2018 by Dr Trent Lincoln at the Nucleus Medical Suites, Buderim, with a vision to provide exceptional care to the people of the Sunshine Coast and enduring, collaborative relationships with the practitioners who refer to us. Dr Andrew Higgins joined and bought into the practice in 2020, and the two surgeons now co-own it.",
+     "new": "Opened in 2018 by Dr Trent Lincoln at the Nucleus Medical Suites, Buderim, with a vision to provide careful, patient-focused care to the people of the Sunshine Coast and enduring, collaborative relationships with the practitioners who refer to us. Dr Andrew Higgins joined and bought into the practice in 2020, and the two surgeons now co-own it."
+    }
+   ]
+  },
+  "all-on-4-dental-implants": {
+   "ops": [
+    {
+     "op": "field",
+     "section": "s2",
+     "key": "f9",
+     "prop": "value",
+     "old": "Full arch rehabilitation is Dr Lincoln's particular focus. He undertook advanced training in zygomatic implants in Hong Kong and zygomatic, nasal and pterygoid implants in Texas, and has trained further with leading surgeons from France, Brazil and Spain. Dr Higgins has a particular interest in complex implant surgery, grafting and full arch restoration. Where bone volume is very limited, both surgeons offer remote anchorage options such as",
+     "new": "Full arch rehabilitation is Dr Lincoln's particular focus. He undertook advanced training in zygomatic implants in Hong Kong and zygomatic, nasal and pterygoid implants in Texas, and has trained further with surgeons in France, Brazil and Spain. Dr Higgins has a particular interest in complex implant surgery, grafting and full arch restoration. Where bone volume is very limited, both surgeons offer remote anchorage options such as"
+    },
+    {
+     "op": "insert",
+     "after": "s4",
+     "section": {
+      "id": "risk",
+      "template": "notice/risk",
+      "fields": {
+       "f1": {
+        "value": "Any surgical or invasive procedure carries risks. Before proceeding, you should seek a second opinion from an appropriately qualified health practitioner."
+       }
+      }
+     }
+    }
+   ]
+  },
+  "blog": {
+   "ops": [
+    {
+     "op": "seo",
+     "key": "metaDescription",
+     "old": "The Sunshine Coast Oral, Facial & Implant Specialists (SCOFIS) blog is your trusted resource for expert information and compassionate care",
+     "new": "General information about oral and maxillofacial surgery, wisdom teeth and dental implants from Sunshine Coast Oral, Facial & Implant Specialists in Buderim."
+    }
+   ]
+  },
+  "dental-implants": {
+   "ops": [
+    {
+     "op": "field",
+     "section": "s1",
+     "key": "f3",
+     "prop": "value",
+     "old": "Dental implants placed by specialist surgeons",
+     "new": "Dental implants on the Sunshine Coast, placed by specialist surgeons"
+    },
+    {
+     "op": "insert",
+     "after": "s4",
+     "section": {
+      "id": "risk",
+      "template": "notice/risk",
+      "fields": {
+       "f1": {
+        "value": "Any surgical or invasive procedure carries risks. Before proceeding, you should seek a second opinion from an appropriately qualified health practitioner."
+       }
+      }
+     }
+    }
+   ]
+  },
+  "disclaimer": {
+   "ops": [
+    {
+     "op": "field",
+     "section": "s1",
+     "key": "f4",
+     "prop": "value",
+     "old": "About the information on this website.",
+     "new": "About the information on this website. Last updated: 2 November 2026."
+    },
+    {
+     "op": "replace",
+     "old": {
+      "id": "s2",
+      "template": "disclaimer/2",
+      "fields": {
+       "f1": {
+        "value": "General information only"
+       },
+       "f2": {
+        "value": "The information on this website is general in nature and is not a substitute for a consultation with a registered health practitioner. It does not take your individual circumstances into account."
+       },
+       "f3": {
+        "value": "Any surgical or invasive procedure carries risks. Individual results vary. Before proceeding, you should seek a second opinion from an appropriately qualified health practitioner."
+       },
+       "f4": {
+        "value": "Accuracy"
+       },
+       "f5": {
+        "value": "We take care to keep this website accurate and up to date, but information can change. Fees, rebates and availability are confirmed at your consultation."
+       },
+       "f6": {
+        "value": "Links to other websites"
+       },
+       "f7": {
+        "value": "This website links to other websites, such as hospitals and Google Maps. We are not responsible for their content."
+       },
+       "f8": {
+        "value": "Emergencies"
+       },
+       "f9": {
+        "value": "If you have a medical emergency, call 000 or go to your nearest emergency department. For urgent facial trauma or infection, call us on {{phone}}."
+       },
+       "f10": {
+        "value": "Have a question about your treatment?"
+       },
+       "f11": {
+        "value": "The best answers come from a consultation with one of our surgeons."
+       },
+       "f12": {
+        "value": "Call {{phone}}"
+       },
+       "f13": {
+        "value": "Make an enquiry",
+        "href": "/contact-us/"
+       }
+      }
+     },
+     "section": {
+      "id": "s2",
+      "template": "content/body",
+      "fields": {
+       "f1": {
+        "value": "General information only"
+       },
+       "f2": {
+        "value": "<em>Last updated: 2 November 2026</em>"
+       },
+       "f3": {
+        "value": "The information on this website is general in nature. It is not medical or dental advice and is not a substitute for a consultation with a qualified health practitioner who can assess your individual circumstances."
+       },
+       "f4": {
+        "value": "Do not rely on this website to make decisions about your health or treatment. If you have questions about your health, please consult your doctor, dentist or one of our surgeons."
+       },
+       "f5": {
+        "value": ""
+       },
+       "f6": {
+        "value": ""
+       },
+       "f7": {
+        "value": ""
+       },
+       "f8": {
+        "value": ""
+       },
+       "f9": {
+        "value": ""
+       },
+       "f10": {
+        "value": ""
+       },
+       "f11": {
+        "value": ""
+       },
+       "f12": {
+        "value": ""
+       },
+       "f13": {
+        "value": ""
+       },
+       "f14": {
+        "value": "Risks of treatment"
+       },
+       "f15": {
+        "value": "Any surgical or invasive procedure carries risks. Before proceeding, you should seek a second opinion from an appropriately qualified health practitioner."
+       },
+       "f16": {
+        "value": "Every patient is different. The suitability, risks, recovery and outcome of any treatment depend on your individual circumstances and are discussed with you at your consultation. No outcome is guaranteed."
+       },
+       "f17": {
+        "value": ""
+       },
+       "f18": {
+        "value": ""
+       },
+       "f19": {
+        "value": ""
+       },
+       "f20": {
+        "value": ""
+       },
+       "f21": {
+        "value": ""
+       },
+       "f22": {
+        "value": ""
+       },
+       "f23": {
+        "value": ""
+       },
+       "f24": {
+        "value": ""
+       },
+       "f25": {
+        "value": ""
+       },
+       "f26": {
+        "value": ""
+       },
+       "f27": {
+        "value": "Our surgeons"
+       },
+       "f28": {
+        "value": "Dr Trent Lincoln and Dr Andrew Higgins are registered with the Australian Health Practitioner Regulation Agency (AHPRA) as specialist oral and maxillofacial surgeons. You can check any practitioner's registration on the <a href=\"https://www.ahpra.gov.au/Registration/Registers-of-Practitioners.aspx\" target=\"_blank\" rel=\"noopener\">AHPRA public register</a>."
+       },
+       "f29": {
+        "value": ""
+       },
+       "f30": {
+        "value": ""
+       },
+       "f31": {
+        "value": ""
+       },
+       "f32": {
+        "value": ""
+       },
+       "f33": {
+        "value": ""
+       },
+       "f34": {
+        "value": ""
+       },
+       "f35": {
+        "value": ""
+       },
+       "f36": {
+        "value": ""
+       },
+       "f37": {
+        "value": ""
+       },
+       "f38": {
+        "value": ""
+       },
+       "f39": {
+        "value": ""
+       },
+       "f40": {
+        "value": "Fees"
+       },
+       "f41": {
+        "value": "Any fees, rebates or costs mentioned on this website are a general guide only. Your consultation and treatment fees, and any Medicare or health fund rebates you may be eligible for, are confirmed in writing after your consultation."
+       },
+       "f42": {
+        "value": ""
+       },
+       "f43": {
+        "value": ""
+       },
+       "f44": {
+        "value": ""
+       },
+       "f45": {
+        "value": ""
+       },
+       "f46": {
+        "value": ""
+       },
+       "f47": {
+        "value": ""
+       },
+       "f48": {
+        "value": ""
+       },
+       "f49": {
+        "value": ""
+       },
+       "f50": {
+        "value": ""
+       },
+       "f51": {
+        "value": ""
+       },
+       "f52": {
+        "value": ""
+       },
+       "f53": {
+        "value": "Accuracy"
+       },
+       "f54": {
+        "value": "We take reasonable care to keep this website accurate and up to date, but information can change and we do not warrant that it is complete or current. To the extent permitted by law, we are not liable for any loss arising from reliance on information on this website."
+       },
+       "f55": {
+        "value": ""
+       },
+       "f56": {
+        "value": ""
+       },
+       "f57": {
+        "value": ""
+       },
+       "f58": {
+        "value": ""
+       },
+       "f59": {
+        "value": ""
+       },
+       "f60": {
+        "value": ""
+       },
+       "f61": {
+        "value": ""
+       },
+       "f62": {
+        "value": ""
+       },
+       "f63": {
+        "value": ""
+       },
+       "f64": {
+        "value": ""
+       },
+       "f65": {
+        "value": ""
+       },
+       "f66": {
+        "value": "Links to other websites"
+       },
+       "f67": {
+        "value": "This website links to other websites and services, such as hospitals, professional organisations, Google Maps and Google reviews. We provide these links for convenience. We do not control and are not responsible for their content, accuracy or privacy practices, and a link does not mean we endorse them."
+       },
+       "f68": {
+        "value": ""
+       },
+       "f69": {
+        "value": ""
+       },
+       "f70": {
+        "value": ""
+       },
+       "f71": {
+        "value": ""
+       },
+       "f72": {
+        "value": ""
+       },
+       "f73": {
+        "value": ""
+       },
+       "f74": {
+        "value": ""
+       },
+       "f75": {
+        "value": ""
+       },
+       "f76": {
+        "value": ""
+       },
+       "f77": {
+        "value": ""
+       },
+       "f78": {
+        "value": ""
+       },
+       "f79": {
+        "value": "Emergencies"
+       },
+       "f80": {
+        "value": "This website is not for emergencies. If you have a medical emergency, call 000 or go to your nearest emergency department. For urgent trauma or infection, please call our rooms on {{phone}} during opening hours."
+       },
+       "f81": {
+        "value": ""
+       },
+       "f82": {
+        "value": ""
+       },
+       "f83": {
+        "value": ""
+       },
+       "f84": {
+        "value": ""
+       },
+       "f85": {
+        "value": ""
+       },
+       "f86": {
+        "value": ""
+       },
+       "f87": {
+        "value": ""
+       },
+       "f88": {
+        "value": ""
+       },
+       "f89": {
+        "value": ""
+       },
+       "f90": {
+        "value": ""
+       },
+       "f91": {
+        "value": ""
+       },
+       "f92": {
+        "value": "Copyright"
+       },
+       "f93": {
+        "value": "The content on this website, including text and photographs, belongs to Sunshine Coast Oral, Facial &amp; Implant Specialists or is used with permission. It may not be copied for commercial use without our written permission."
+       },
+       "f94": {
+        "value": ""
+       },
+       "f95": {
+        "value": ""
+       },
+       "f96": {
+        "value": ""
+       },
+       "f97": {
+        "value": ""
+       },
+       "f98": {
+        "value": ""
+       },
+       "f99": {
+        "value": ""
+       },
+       "f100": {
+        "value": ""
+       },
+       "f101": {
+        "value": ""
+       },
+       "f102": {
+        "value": ""
+       },
+       "f103": {
+        "value": ""
+       },
+       "f104": {
+        "value": ""
+       },
+       "f105": {
+        "value": "Have a question about your treatment?"
+       },
+       "f106": {
+        "value": "A consultation with one of our surgeons is the right place to discuss your own situation."
+       },
+       "f107": {
+        "value": "Call {{phone}}"
+       },
+       "f108": {
+        "value": "Make an enquiry",
+        "href": "/contact-us/"
+       }
+      }
+     }
+    }
+   ]
+  },
+  "facial-trauma": {
+   "ops": [
+    {
+     "op": "insert",
+     "after": "s4",
+     "section": {
+      "id": "risk",
+      "template": "notice/risk",
+      "fields": {
+       "f1": {
+        "value": "Any surgical or invasive procedure carries risks. Before proceeding, you should seek a second opinion from an appropriately qualified health practitioner."
+       }
+      }
+     }
+    }
+   ]
+  },
+  "home": {
+   "ops": [
+    {
+     "op": "seo",
+     "key": "metaDescription",
+     "old": "Sunshine Coast Oral, Facial & Implant Specialists (SCOFIS) was opened at the Nucleus Medical Suites at Buderim Private Hospital in 2018.",
+     "new": "Specialist oral and maxillofacial surgeons in Buderim, Sunshine Coast: wisdom teeth, dental implants, All-on-4, jaw surgery and facial trauma."
+    },
+    {
+     "op": "field",
+     "section": "s1",
+     "key": "f6",
+     "prop": "value",
+     "old": "5.0 on Google",
+     "new": "Specialist practice since 2018"
+    },
+    {
+     "op": "field",
+     "section": "s1",
+     "key": "f7",
+     "prop": "value",
+     "old": "Rated by more than 300 patients across the Coast.",
+     "new": "Opened in 2018 at the Nucleus Medical Suites, Buderim."
+    },
+    {
+     "op": "hidden",
+     "section": "s8",
+     "old": false,
+     "new": true
+    }
+   ]
+  },
+  "jaw-bone-grafting": {
+   "ops": [
+    {
+     "op": "insert",
+     "after": "s4",
+     "section": {
+      "id": "risk",
+      "template": "notice/risk",
+      "fields": {
+       "f1": {
+        "value": "Any surgical or invasive procedure carries risks. Before proceeding, you should seek a second opinion from an appropriately qualified health practitioner."
+       }
+      }
+     }
+    }
+   ]
+  },
+  "locations-gympie": {
+   "create": {
+    "slug": "locations-gympie",
+    "route": "/locations/gympie/",
+    "pageId": "locations--gympie",
+    "title": "Gympie",
+    "kind": "page",
+    "seo": {
+     "metaTitle": "Oral & Maxillofacial Surgeon for Gympie Patients | SCOFIS",
+     "metaDescription": "Specialist oral and maxillofacial surgery for Gympie patients: consultations in Buderim and surgery at accredited private hospitals on the Sunshine Coast.",
+     "ogTitle": "Oral and maxillofacial surgeons for Gympie patients"
+    },
+    "sections": [
+     {
+      "id": "s1",
+      "template": "locations/1",
+      "fields": {
+       "f1": {
+        "src": "/images/reception1.jpg",
+        "alt": "Reception at our Buderim rooms"
+       },
+       "f2": {
+        "value": "<a href=\"/\">Home</a> / <a href=\"/locations/\">Locations</a>"
+       },
+       "f3": {
+        "value": "Oral and maxillofacial surgeons for Gympie patients"
+       },
+       "f4": {
+        "value": "Patients travel to us from Gympie for wisdom teeth, dental implants, jaw surgery and facial trauma, with consultations in Buderim and surgery at accredited private hospitals on the Sunshine Coast."
+       }
+      }
+     },
+     {
+      "id": "s2",
+      "template": "content/body",
+      "fields": {
+       "f1": {
+        "value": "Where Gympie patients are seen"
+       },
+       "f2": {
+        "value": "Consultations are held at our Buderim rooms in the Nucleus Medical Suites, within the Buderim Private Hospital precinct, with on-site parking."
+       },
+       "f3": {
+        "value": "<strong>Nucleus Medical Suites</strong><br>Suite 5 (Blue Lifts), 23 Elsa Wilson Drive, Buderim QLD 4556<br><a href=\"https://www.google.com/maps/place/Sunshine+Coast+Oral,+Facial+%26+Implant+Specialists/@-26.6838766,153.0930069,17z/data=!3m1!4b1!4m6!3m5!1s0x6b93771d577bd3e7:0x1a52ca83026f674f!8m2!3d-26.6838766!4d153.0930069!16s%2Fg%2F11f64f2h4n?hl=en&amp;entry=ttu&amp;g_ep=EgoyMDI2MDkyOC4wIKXMDSoASAFQAw%3D%3D\" target=\"_blank\" rel=\"noopener\">Get directions</a>"
+       },
+       "f4": {
+        "value": "[CONFIRM WITH CLIENT: whether there is any visiting consulting service for Gympie patients (the old website mentioned a visiting service at Noosa Private Hospital), and the usual travel time from Gympie to Buderim.]"
+       },
+       "f5": {
+        "value": ""
+       },
+       "f6": {
+        "value": ""
+       },
+       "f7": {
+        "value": ""
+       },
+       "f8": {
+        "value": ""
+       },
+       "f9": {
+        "value": ""
+       },
+       "f10": {
+        "value": ""
+       },
+       "f11": {
+        "value": ""
+       },
+       "f12": {
+        "value": ""
+       },
+       "f13": {
+        "value": ""
+       },
+       "f14": {
+        "value": "Where surgery happens"
+       },
+       "f15": {
+        "value": "Selected patients can be treated in our Buderim rooms under local anaesthetic or IV sedation. Surgery under general anaesthetic, with a specialist anaesthetist, is performed at accredited private hospitals:"
+       },
+       "f16": {
+        "value": ""
+       },
+       "f17": {
+        "value": ""
+       },
+       "f18": {
+        "value": "Buderim Private Hospital, next door to our rooms"
+       },
+       "f19": {
+        "value": "Sunshine Coast Day Surgery, Maroochydore"
+       },
+       "f20": {
+        "value": "Maroochy Private Hospital, Maroochydore"
+       },
+       "f21": {
+        "value": "Nambour Selangor Private Hospital, Nambour"
+       },
+       "f22": {
+        "value": ""
+       },
+       "f23": {
+        "value": ""
+       },
+       "f24": {
+        "value": ""
+       },
+       "f25": {
+        "value": ""
+       },
+       "f26": {
+        "value": "Your surgeon recommends the setting that suits your case and where you live."
+       },
+       "f27": {
+        "value": "One trip for your consultation and scan"
+       },
+       "f28": {
+        "value": "A 3D CBCT scan is taken in our rooms at your consultation, so you do not need a separate trip for imaging and planning can begin straight away."
+       },
+       "f29": {
+        "value": "You receive a written treatment plan with itemised costs after your consultation, so you know the full figure before you decide anything."
+       },
+       "f30": {
+        "value": ""
+       },
+       "f31": {
+        "value": ""
+       },
+       "f32": {
+        "value": ""
+       },
+       "f33": {
+        "value": ""
+       },
+       "f34": {
+        "value": ""
+       },
+       "f35": {
+        "value": ""
+       },
+       "f36": {
+        "value": ""
+       },
+       "f37": {
+        "value": ""
+       },
+       "f38": {
+        "value": ""
+       },
+       "f39": {
+        "value": ""
+       },
+       "f40": {
+        "value": "Treatment for Gympie patients"
+       },
+       "f41": {
+        "value": "Our surgeons provide the full scope of oral and maxillofacial surgery:"
+       },
+       "f42": {
+        "value": ""
+       },
+       "f43": {
+        "value": ""
+       },
+       "f44": {
+        "value": "<a href=\"/services/wisdom-teeth-removal/\">Wisdom teeth removal</a>"
+       },
+       "f45": {
+        "value": "<a href=\"/services/dental-implants/\">Dental implants</a>"
+       },
+       "f46": {
+        "value": "<a href=\"/services/all-on-4-dental-implants/\">All-on-4 full arch implants</a>"
+       },
+       "f47": {
+        "value": "<a href=\"/services/zygomatic-implants/\">Zygomatic implants</a>"
+       },
+       "f48": {
+        "value": "<a href=\"/services/jaw-bone-grafting/\">Jaw bone grafting</a>"
+       },
+       "f49": {
+        "value": "<a href=\"/services/orthognathic-corrective-jaw-surgery/\">Corrective jaw surgery</a>"
+       },
+       "f50": {
+        "value": "<a href=\"/services/facial-trauma/\">Facial trauma</a>"
+       },
+       "f51": {
+        "value": ""
+       },
+       "f52": {
+        "value": ""
+       },
+       "f53": {
+        "value": "Referrals from Gympie dentists and doctors"
+       },
+       "f54": {
+        "value": "Dentists, orthodontists and doctors in Gympie can <a href=\"/online-doctor-referral/\">refer online</a>. Our team contacts the patient directly to arrange their consultation."
+       },
+       "f55": {
+        "value": "You're welcome to see us without a referral. However, if you have a referral from your general dentist or GP, you may be eligible for a Medicare rebate on your consultation."
+       },
+       "f56": {
+        "value": "See <a href=\"/locations/\">all our locations</a>."
+       },
+       "f57": {
+        "value": ""
+       },
+       "f58": {
+        "value": ""
+       },
+       "f59": {
+        "value": ""
+       },
+       "f60": {
+        "value": ""
+       },
+       "f61": {
+        "value": ""
+       },
+       "f62": {
+        "value": ""
+       },
+       "f63": {
+        "value": ""
+       },
+       "f64": {
+        "value": ""
+       },
+       "f65": {
+        "value": "Any surgical or invasive procedure carries risks. Before proceeding, you should seek a second opinion from an appropriately qualified health practitioner."
+       },
+       "f66": {
+        "value": ""
+       },
+       "f67": {
+        "value": ""
+       },
+       "f68": {
+        "value": ""
+       },
+       "f69": {
+        "value": ""
+       },
+       "f70": {
+        "value": ""
+       },
+       "f71": {
+        "value": ""
+       },
+       "f72": {
+        "value": ""
+       },
+       "f73": {
+        "value": ""
+       },
+       "f74": {
+        "value": ""
+       },
+       "f75": {
+        "value": ""
+       },
+       "f76": {
+        "value": ""
+       },
+       "f77": {
+        "value": ""
+       },
+       "f78": {
+        "value": ""
+       },
+       "f79": {
+        "value": ""
+       },
+       "f80": {
+        "value": ""
+       },
+       "f81": {
+        "value": ""
+       },
+       "f82": {
+        "value": ""
+       },
+       "f83": {
+        "value": ""
+       },
+       "f84": {
+        "value": ""
+       },
+       "f85": {
+        "value": ""
+       },
+       "f86": {
+        "value": ""
+       },
+       "f87": {
+        "value": ""
+       },
+       "f88": {
+        "value": ""
+       },
+       "f89": {
+        "value": ""
+       },
+       "f90": {
+        "value": ""
+       },
+       "f91": {
+        "value": ""
+       },
+       "f92": {
+        "value": ""
+       },
+       "f93": {
+        "value": ""
+       },
+       "f94": {
+        "value": ""
+       },
+       "f95": {
+        "value": ""
+       },
+       "f96": {
+        "value": ""
+       },
+       "f97": {
+        "value": ""
+       },
+       "f98": {
+        "value": ""
+       },
+       "f99": {
+        "value": ""
+       },
+       "f100": {
+        "value": ""
+       },
+       "f101": {
+        "value": ""
+       },
+       "f102": {
+        "value": ""
+       },
+       "f103": {
+        "value": ""
+       },
+       "f104": {
+        "value": ""
+       },
+       "f105": {
+        "value": "Book a consultation"
+       },
+       "f106": {
+        "value": "Our team will arrange your consultation in Buderim and, if you need surgery, your hospital booking."
+       },
+       "f107": {
+        "value": "Call {{phone}}"
+       },
+       "f108": {
+        "value": "Make an enquiry",
+        "href": "/contact-us/"
+       }
+      }
+     }
+    ]
+   }
+  },
+  "locations-hervey-bay": {
+   "create": {
+    "slug": "locations-hervey-bay",
+    "route": "/locations/hervey-bay/",
+    "pageId": "locations--hervey-bay",
+    "title": "Hervey Bay",
+    "kind": "page",
+    "seo": {
+     "metaTitle": "Oral & Maxillofacial Surgeon Hervey Bay | SCOFIS",
+     "metaDescription": "Specialist oral and maxillofacial surgery for Hervey Bay, Maryborough and Fraser Coast patients at St Stephen's Private Hospital, Urraween.",
+     "ogTitle": "Oral and maxillofacial surgeons in Hervey Bay | St Stephen's Private Hospital"
+    },
+    "sections": [
+     {
+      "id": "s1",
+      "template": "locations/1",
+      "fields": {
+       "f1": {
+        "src": "/images/theatre.jpg",
+        "alt": "Procedure room with monitoring equipment"
+       },
+       "f2": {
+        "value": "<a href=\"/\">Home</a> / <a href=\"/locations/\">Locations</a>"
+       },
+       "f3": {
+        "value": "Oral and maxillofacial surgeons in Hervey Bay"
+       },
+       "f4": {
+        "value": "Specialist surgery at St Stephen's Private Hospital in Urraween for patients from Hervey Bay, Maryborough and the Fraser Coast, without travelling to Brisbane."
+       }
+      }
+     },
+     {
+      "id": "s2",
+      "template": "content/body",
+      "fields": {
+       "f1": {
+        "value": "Surgery at St Stephen's Private Hospital"
+       },
+       "f2": {
+        "value": "Hervey Bay and Fraser Coast patients can have their surgery at St Stephen's Private Hospital in Urraween, so treatment under general anaesthetic happens close to home."
+       },
+       "f3": {
+        "value": "<strong>St Stephen's Private Hospital</strong><br>1 Medical Place, Urraween QLD 4655<br><a href=\"https://www.google.com/maps/place/St+Stephen's+Hospital/@-25.299893,152.8238597,15z\" target=\"_blank\" rel=\"noopener\">Get directions</a>"
+       },
+       "f4": {
+        "value": "Surgery under general anaesthetic is performed with a specialist anaesthetist. [CONFIRM WITH CLIENT: which surgeon or surgeons operate at St Stephen's Private Hospital, Dr Trent Lincoln, Dr Andrew Higgins or both.]"
+       },
+       "f5": {
+        "value": ""
+       },
+       "f6": {
+        "value": ""
+       },
+       "f7": {
+        "value": ""
+       },
+       "f8": {
+        "value": ""
+       },
+       "f9": {
+        "value": ""
+       },
+       "f10": {
+        "value": ""
+       },
+       "f11": {
+        "value": ""
+       },
+       "f12": {
+        "value": ""
+       },
+       "f13": {
+        "value": ""
+       },
+       "f14": {
+        "value": "Consultations and theatre days"
+       },
+       "f15": {
+        "value": "Consultations are held at our Buderim rooms, Nucleus Medical Suites, Suite 5 (Blue Lifts), 23 Elsa Wilson Drive, Buderim QLD 4556. A 3D CBCT scan is taken in our rooms on the day, so planning can begin straight away."
+       },
+       "f16": {
+        "value": "[CONFIRM WITH CLIENT: whether any consultations are held in Hervey Bay, and on which days; and the usual theatre days at St Stephen's Private Hospital.]"
+       },
+       "f17": {
+        "value": "Call {{phone}} and our team will arrange your consultation and, if you need surgery, your booking at St Stephen's."
+       },
+       "f18": {
+        "value": ""
+       },
+       "f19": {
+        "value": ""
+       },
+       "f20": {
+        "value": ""
+       },
+       "f21": {
+        "value": ""
+       },
+       "f22": {
+        "value": ""
+       },
+       "f23": {
+        "value": ""
+       },
+       "f24": {
+        "value": ""
+       },
+       "f25": {
+        "value": ""
+       },
+       "f26": {
+        "value": ""
+       },
+       "f27": {
+        "value": "Treatment for Hervey Bay patients"
+       },
+       "f28": {
+        "value": "Our surgeons provide the full scope of oral and maxillofacial surgery. [CONFIRM WITH CLIENT: which of these are performed at St Stephen's Private Hospital.]"
+       },
+       "f29": {
+        "value": ""
+       },
+       "f30": {
+        "value": ""
+       },
+       "f31": {
+        "value": "<a href=\"/services/wisdom-teeth-removal/\">Wisdom teeth removal</a>"
+       },
+       "f32": {
+        "value": "<a href=\"/services/dental-implants/\">Dental implants</a>"
+       },
+       "f33": {
+        "value": "<a href=\"/services/all-on-4-dental-implants/\">All-on-4 full arch implants</a>"
+       },
+       "f34": {
+        "value": "<a href=\"/services/zygomatic-implants/\">Zygomatic implants</a>"
+       },
+       "f35": {
+        "value": "<a href=\"/services/jaw-bone-grafting/\">Jaw bone grafting</a>"
+       },
+       "f36": {
+        "value": "<a href=\"/services/orthognathic-corrective-jaw-surgery/\">Corrective jaw surgery</a>"
+       },
+       "f37": {
+        "value": "<a href=\"/services/facial-trauma/\">Facial trauma</a>"
+       },
+       "f38": {
+        "value": ""
+       },
+       "f39": {
+        "value": ""
+       },
+       "f40": {
+        "value": "Referrals from Hervey Bay and Maryborough"
+       },
+       "f41": {
+        "value": "Dentists, orthodontists and doctors on the Fraser Coast can <a href=\"/online-doctor-referral/\">refer online</a>. Our team contacts the patient directly to arrange their consultation."
+       },
+       "f42": {
+        "value": "You're welcome to see us without a referral. However, if you have a referral from your general dentist or GP, you may be eligible for a Medicare rebate on your consultation."
+       },
+       "f43": {
+        "value": ""
+       },
+       "f44": {
+        "value": ""
+       },
+       "f45": {
+        "value": ""
+       },
+       "f46": {
+        "value": ""
+       },
+       "f47": {
+        "value": ""
+       },
+       "f48": {
+        "value": ""
+       },
+       "f49": {
+        "value": ""
+       },
+       "f50": {
+        "value": ""
+       },
+       "f51": {
+        "value": ""
+       },
+       "f52": {
+        "value": ""
+       },
+       "f53": {
+        "value": "Our other locations"
+       },
+       "f54": {
+        "value": "Patients can also be treated in our Buderim rooms or at private hospitals in Buderim, Maroochydore and Nambour. See <a href=\"/locations/\">all our locations</a>."
+       },
+       "f55": {
+        "value": ""
+       },
+       "f56": {
+        "value": ""
+       },
+       "f57": {
+        "value": ""
+       },
+       "f58": {
+        "value": ""
+       },
+       "f59": {
+        "value": ""
+       },
+       "f60": {
+        "value": ""
+       },
+       "f61": {
+        "value": ""
+       },
+       "f62": {
+        "value": ""
+       },
+       "f63": {
+        "value": ""
+       },
+       "f64": {
+        "value": ""
+       },
+       "f65": {
+        "value": "Any surgical or invasive procedure carries risks. Before proceeding, you should seek a second opinion from an appropriately qualified health practitioner."
+       },
+       "f66": {
+        "value": ""
+       },
+       "f67": {
+        "value": ""
+       },
+       "f68": {
+        "value": ""
+       },
+       "f69": {
+        "value": ""
+       },
+       "f70": {
+        "value": ""
+       },
+       "f71": {
+        "value": ""
+       },
+       "f72": {
+        "value": ""
+       },
+       "f73": {
+        "value": ""
+       },
+       "f74": {
+        "value": ""
+       },
+       "f75": {
+        "value": ""
+       },
+       "f76": {
+        "value": ""
+       },
+       "f77": {
+        "value": ""
+       },
+       "f78": {
+        "value": ""
+       },
+       "f79": {
+        "value": ""
+       },
+       "f80": {
+        "value": ""
+       },
+       "f81": {
+        "value": ""
+       },
+       "f82": {
+        "value": ""
+       },
+       "f83": {
+        "value": ""
+       },
+       "f84": {
+        "value": ""
+       },
+       "f85": {
+        "value": ""
+       },
+       "f86": {
+        "value": ""
+       },
+       "f87": {
+        "value": ""
+       },
+       "f88": {
+        "value": ""
+       },
+       "f89": {
+        "value": ""
+       },
+       "f90": {
+        "value": ""
+       },
+       "f91": {
+        "value": ""
+       },
+       "f92": {
+        "value": ""
+       },
+       "f93": {
+        "value": ""
+       },
+       "f94": {
+        "value": ""
+       },
+       "f95": {
+        "value": ""
+       },
+       "f96": {
+        "value": ""
+       },
+       "f97": {
+        "value": ""
+       },
+       "f98": {
+        "value": ""
+       },
+       "f99": {
+        "value": ""
+       },
+       "f100": {
+        "value": ""
+       },
+       "f101": {
+        "value": ""
+       },
+       "f102": {
+        "value": ""
+       },
+       "f103": {
+        "value": ""
+       },
+       "f104": {
+        "value": ""
+       },
+       "f105": {
+        "value": "Book a consultation"
+       },
+       "f106": {
+        "value": "Our team will arrange your consultation in Buderim and, if you need surgery, your hospital booking."
+       },
+       "f107": {
+        "value": "Call {{phone}}"
+       },
+       "f108": {
+        "value": "Make an enquiry",
+        "href": "/contact-us/"
+       }
+      }
+     }
+    ]
+   }
+  },
+  "locations": {
+   "ops": [
+    {
+     "op": "field",
+     "section": "s4",
+     "key": "f2",
+     "prop": "value",
+     "old": "Because both surgeons are dual-qualified specialists operating in accredited hospitals, patients travel to us from well beyond the Sunshine Coast. We regularly treat patients from Gympie, Hervey Bay, Maryborough, Bundaberg, Caboolture and the Moreton Bay region, and accept referrals from dentists and doctors in Brisbane and regional Queensland for complex implant, grafting, jaw and trauma cases.",
+     "new": "Because both surgeons are dual-qualified specialists operating in accredited hospitals, patients travel to us from well beyond the Sunshine Coast. We regularly treat patients from <a href=\"/locations/gympie/\">Gympie</a>, <a href=\"/locations/hervey-bay/\">Hervey Bay</a>, Maryborough, Bundaberg, Caboolture and the Moreton Bay region, and accept referrals from dentists and doctors in Brisbane and regional Queensland for complex implant, grafting, jaw and trauma cases."
+    }
+   ]
+  },
+  "orthognathic-corrective-jaw-surgery": {
+   "ops": [
+    {
+     "op": "field",
+     "section": "s3",
+     "key": "f10",
+     "prop": "value",
+     "old": "A soft diet for several weeks, regular reviews, then a short final phase of orthodontics to perfect the bite.",
+     "new": "A soft diet for several weeks, regular reviews, then a short final phase of orthodontics to fine-tune the bite."
+    },
+    {
+     "op": "insert",
+     "after": "s4",
+     "section": {
+      "id": "risk",
+      "template": "notice/risk",
+      "fields": {
+       "f1": {
+        "value": "Any surgical or invasive procedure carries risks. Before proceeding, you should seek a second opinion from an appropriately qualified health practitioner."
+       }
+      }
+     }
+    }
+   ]
+  },
+  "privacy-policy": {
+   "ops": [
+    {
+     "op": "field",
+     "section": "s1",
+     "key": "f4",
+     "prop": "value",
+     "old": "How Sunshine Coast Oral, Facial &amp; Implant Specialists collects, uses, stores and protects your personal and health information.",
+     "new": "How Sunshine Coast Oral, Facial &amp; Implant Specialists collects, uses, stores and protects your personal and health information. Last updated: 2 November 2026."
+    },
+    {
+     "op": "replace",
+     "old": {
+      "id": "s2",
+      "template": "privacy-policy/2",
+      "fields": {
+       "f1": {
+        "value": "Our commitment to your privacy"
+       },
+       "f2": {
+        "value": "We are bound by the Privacy Act 1988 (Cth) and the Australian Privacy Principles. This policy explains how we handle your personal information, including health information, and how you can access it or raise a concern."
+       },
+       "f3": {
+        "value": "What we collect"
+       },
+       "f4": {
+        "value": "We collect the information we need to provide your care: your name, date of birth, contact details, Medicare and health fund details, next of kin, your medical and dental history, referral letters, clinical notes, photographs, x-rays and scans, and payment details."
+       },
+       "f5": {
+        "value": "How we collect it"
+       },
+       "f6": {
+        "value": "We collect information from you directly, from your referring dentist or doctor, from other health professionals involved in your care, from hospitals and imaging providers, and through the forms on this website."
+       },
+       "f7": {
+        "value": "How we use it"
+       },
+       "f8": {
+        "value": "We use your information to assess and treat you, to communicate with you and with the practitioners involved in your care, to arrange hospital admission, to process payments, Medicare and health fund claims, and to meet our legal obligations."
+       },
+       "f9": {
+        "value": "Who we share it with"
+       },
+       "f10": {
+        "value": "We share information only as needed for your care or as the law requires: your referring practitioner and other treating practitioners, hospitals and anaesthetists, pathology and imaging providers, Medicare, your health fund, and our IT and clinical software providers, who are bound to keep it confidential. We do not sell your information."
+       },
+       "f11": {
+        "value": "Storage and security"
+       },
+       "f12": {
+        "value": "Your records are kept securely in our practice management system, with access limited to authorised staff. We keep health records for the periods required by law."
+       },
+       "f13": {
+        "value": "This website"
+       },
+       "f14": {
+        "value": "Information sent through the forms on this website is emailed to our practice team and kept in our secure website records. We may use cookies and analytics to understand how the website is used; this information does not identify you."
+       },
+       "f15": {
+        "value": "Access and correction"
+       },
+       "f16": {
+        "value": "You can ask to see your records or to correct information you believe is wrong. Please contact our practice manager. We may ask you to confirm your identity."
+       },
+       "f17": {
+        "value": "Questions and complaints"
+       },
+       "f18": {
+        "value": "If you have a question or concern about how we handle your information, please contact our practice manager on {{phone}}. If you are not satisfied with our response, you can contact the Office of the Australian Information Commissioner at oaic.gov.au."
+       },
+       "f19": {
+        "value": "Questions about your privacy?"
+       },
+       "f20": {
+        "value": "Our practice manager can help with access to your records or any privacy question."
+       },
+       "f21": {
+        "value": "Call {{phone}}"
+       },
+       "f22": {
+        "value": "Make an enquiry",
+        "href": "/contact-us/"
+       }
+      }
+     },
+     "section": {
+      "id": "s2",
+      "template": "content/body",
+      "fields": {
+       "f1": {
+        "value": "About this policy"
+       },
+       "f2": {
+        "value": "<em>Last updated: 2 November 2026</em>"
+       },
+       "f3": {
+        "value": "This policy explains how Sunshine Coast Oral, Facial &amp; Implant Specialists ([CONFIRM: legal entity name], ABN [CONFIRM: ABN]) collects, uses, discloses and protects your personal information, including your health information. We are bound by the <em>Privacy Act 1988</em> (Cth) and the Australian Privacy Principles (APPs)."
+       },
+       "f4": {
+        "value": "In this policy, \"we\", \"us\" and \"our\" mean our practice, including our surgeons and staff. Our rooms are at Suite 5, Nucleus Medical Suites, 23 Elsa Wilson Drive, Buderim QLD 4556."
+       },
+       "f5": {
+        "value": ""
+       },
+       "f6": {
+        "value": ""
+       },
+       "f7": {
+        "value": ""
+       },
+       "f8": {
+        "value": ""
+       },
+       "f9": {
+        "value": ""
+       },
+       "f10": {
+        "value": ""
+       },
+       "f11": {
+        "value": ""
+       },
+       "f12": {
+        "value": ""
+       },
+       "f13": {
+        "value": ""
+       },
+       "f14": {
+        "value": "What information we collect"
+       },
+       "f15": {
+        "value": "We collect only the information we need to provide your care and run our practice. This may include:"
+       },
+       "f16": {
+        "value": ""
+       },
+       "f17": {
+        "value": ""
+       },
+       "f18": {
+        "value": "your name, date of birth, gender, address, phone numbers and email address"
+       },
+       "f19": {
+        "value": "your medical and dental history, medications, allergies and other health information"
+       },
+       "f20": {
+        "value": "referral letters, clinical notes, test results, photographs, x-rays, CBCT scans and other images"
+       },
+       "f21": {
+        "value": "your Medicare number, Department of Veterans' Affairs number and private health insurance details"
+       },
+       "f22": {
+        "value": "the name and contact details of your referring practitioner, your general practitioner and your next of kin or emergency contact"
+       },
+       "f23": {
+        "value": "billing and payment information"
+       },
+       "f24": {
+        "value": "information you send us through our website forms, by email or by phone"
+       },
+       "f25": {
+        "value": ""
+       },
+       "f26": {
+        "value": "You can ask to deal with us anonymously or using a pseudonym, but in most cases this is not practical for providing clinical care, issuing referrals or claiming Medicare or health fund benefits."
+       },
+       "f27": {
+        "value": "How we collect it"
+       },
+       "f28": {
+        "value": "We collect most information directly from you, at your consultation, through our patient information form, by phone or email, or through our website."
+       },
+       "f29": {
+        "value": "We also collect information from other people when this is needed for your care and you would reasonably expect it, for example from your referring dentist, doctor or specialist, hospitals, radiology and pathology providers, your health fund, or a parent, guardian or carer."
+       },
+       "f30": {
+        "value": ""
+       },
+       "f31": {
+        "value": ""
+       },
+       "f32": {
+        "value": ""
+       },
+       "f33": {
+        "value": ""
+       },
+       "f34": {
+        "value": ""
+       },
+       "f35": {
+        "value": ""
+       },
+       "f36": {
+        "value": ""
+       },
+       "f37": {
+        "value": ""
+       },
+       "f38": {
+        "value": ""
+       },
+       "f39": {
+        "value": ""
+       },
+       "f40": {
+        "value": "Why we collect, use and disclose it"
+       },
+       "f41": {
+        "value": "We use and disclose your information to provide your care and for directly related purposes you would reasonably expect, including to:"
+       },
+       "f42": {
+        "value": ""
+       },
+       "f43": {
+        "value": ""
+       },
+       "f44": {
+        "value": "assess, diagnose, plan and provide your treatment"
+       },
+       "f45": {
+        "value": "communicate with you about appointments, treatment and follow-up care"
+       },
+       "f46": {
+        "value": "report to and correspond with your referring practitioner, your general practitioner and other practitioners involved in your care"
+       },
+       "f47": {
+        "value": "arrange surgery with hospitals, day surgeries and anaesthetists"
+       },
+       "f48": {
+        "value": "request and receive imaging, pathology and other test results"
+       },
+       "f49": {
+        "value": "process Medicare, Department of Veterans' Affairs and private health fund claims, and manage billing"
+       },
+       "f50": {
+        "value": "meet our legal, regulatory, professional and insurance obligations"
+       },
+       "f51": {
+        "value": "improve the quality and safety of our services, including through audits and accreditation"
+       },
+       "f52": {
+        "value": "We disclose information for other purposes only with your consent, or where the law requires or allows it, for example to lessen a serious threat to someone's life, health or safety."
+       },
+       "f53": {
+        "value": "Photographs and images"
+       },
+       "f54": {
+        "value": "Clinical photographs, x-rays and scans are part of your health record and are used for your care. With the consent you give on our patient information form, de-identified photographs and x-rays may also be used for teaching, scientific papers or presentations. We do not use your clinical images in advertising, and we will not use any image that could identify you without your separate written consent, which you can decline or withdraw at any time without it affecting your care."
+       },
+       "f55": {
+        "value": ""
+       },
+       "f56": {
+        "value": ""
+       },
+       "f57": {
+        "value": ""
+       },
+       "f58": {
+        "value": ""
+       },
+       "f59": {
+        "value": ""
+       },
+       "f60": {
+        "value": ""
+       },
+       "f61": {
+        "value": ""
+       },
+       "f62": {
+        "value": ""
+       },
+       "f63": {
+        "value": ""
+       },
+       "f64": {
+        "value": ""
+       },
+       "f65": {
+        "value": ""
+       },
+       "f66": {
+        "value": "Direct marketing"
+       },
+       "f67": {
+        "value": "We do not sell or share your personal information for marketing. We may send you information about your own care, such as appointment reminders. If we ever send other information, you can opt out at any time."
+       },
+       "f68": {
+        "value": ""
+       },
+       "f69": {
+        "value": ""
+       },
+       "f70": {
+        "value": ""
+       },
+       "f71": {
+        "value": ""
+       },
+       "f72": {
+        "value": ""
+       },
+       "f73": {
+        "value": ""
+       },
+       "f74": {
+        "value": ""
+       },
+       "f75": {
+        "value": ""
+       },
+       "f76": {
+        "value": ""
+       },
+       "f77": {
+        "value": ""
+       },
+       "f78": {
+        "value": ""
+       },
+       "f79": {
+        "value": "Storage and security"
+       },
+       "f80": {
+        "value": "We store your information in our practice management system [CONFIRM: name of practice management system and whether it is hosted in Australia] and in secure paper or electronic records. We take reasonable steps to protect it from misuse, interference, loss and unauthorised access, modification or disclosure, including staff confidentiality obligations, password and access controls, and secure storage and disposal."
+       },
+       "f81": {
+        "value": "We keep health records for as long as the law requires [CONFIRM: retention period, for example at least 7 years after the last contact for adults, and until a patient who was a child turns 25], then destroy or de-identify them securely."
+       },
+       "f82": {
+        "value": ""
+       },
+       "f83": {
+        "value": ""
+       },
+       "f84": {
+        "value": ""
+       },
+       "f85": {
+        "value": ""
+       },
+       "f86": {
+        "value": ""
+       },
+       "f87": {
+        "value": ""
+       },
+       "f88": {
+        "value": ""
+       },
+       "f89": {
+        "value": ""
+       },
+       "f90": {
+        "value": ""
+       },
+       "f91": {
+        "value": ""
+       },
+       "f92": {
+        "value": "Access and correction"
+       },
+       "f93": {
+        "value": "You can ask to see or receive a copy of the personal information we hold about you, and ask us to correct anything you believe is inaccurate, out of date, incomplete or misleading."
+       },
+       "f94": {
+        "value": "Please make your request in writing to our privacy officer. We will respond within 30 days. We may charge a reasonable fee for providing copies, but not for making the request or correcting your information. If we refuse access or correction, we will tell you why in writing, as the law allows."
+       },
+       "f95": {
+        "value": ""
+       },
+       "f96": {
+        "value": ""
+       },
+       "f97": {
+        "value": ""
+       },
+       "f98": {
+        "value": ""
+       },
+       "f99": {
+        "value": ""
+       },
+       "f100": {
+        "value": ""
+       },
+       "f101": {
+        "value": ""
+       },
+       "f102": {
+        "value": ""
+       },
+       "f103": {
+        "value": ""
+       },
+       "f104": {
+        "value": ""
+       },
+       "f105": {
+        "value": "Questions about your privacy?"
+       },
+       "f106": {
+        "value": "Our privacy officer can help with access to your records or any privacy question."
+       },
+       "f107": {
+        "value": "Call {{phone}}"
+       },
+       "f108": {
+        "value": "Make an enquiry",
+        "href": "/contact-us/"
+       }
+      }
+     }
+    },
+    {
+     "op": "insert",
+     "after": "s2",
+     "section": {
+      "id": "s3",
+      "template": "content/body",
+      "fields": {
+       "f1": {
+        "value": "Our website, analytics and cookies"
+       },
+       "f2": {
+        "value": "Our website is hosted by Vercel. When you send a form on our website (Contact us, Online doctor referral, Patient information form or Feedback), the details you enter are emailed to our practice team through SMTP2GO, an email delivery service. Contact details and messages are also kept in our website dashboard so our team can follow up your enquiry; the medical details from the patient information form are emailed only and are not kept in the dashboard."
+       },
+       "f3": {
+        "value": "We may use Google Analytics and Google Tag Manager to understand how our website is used, for example which pages are visited and how people find us. These services use cookies and collect information such as your IP address, device, browser and pages viewed. We do not use them to identify you. You can block cookies in your browser settings or use the <a href=\"https://tools.google.com/dlpage/gaoptout\" target=\"_blank\" rel=\"noopener\">Google Analytics opt-out add-on</a>."
+       },
+       "f4": {
+        "value": "Some pages include content from other services, such as Google Maps, a Vimeo video and a Matterport virtual tour, which may set their own cookies under their own privacy policies."
+       },
+       "f5": {
+        "value": ""
+       },
+       "f6": {
+        "value": ""
+       },
+       "f7": {
+        "value": ""
+       },
+       "f8": {
+        "value": ""
+       },
+       "f9": {
+        "value": ""
+       },
+       "f10": {
+        "value": ""
+       },
+       "f11": {
+        "value": ""
+       },
+       "f12": {
+        "value": ""
+       },
+       "f13": {
+        "value": ""
+       },
+       "f14": {
+        "value": "Overseas disclosure"
+       },
+       "f15": {
+        "value": "We do not send your health records overseas. Some of the services that support our website may store or process information outside Australia, including Google (website analytics) in the United States and other countries, and SMTP2GO (website form emails) [CONFIRM: the countries where SMTP2GO stores data for this account]. Our website hosting and dashboard database are located in Sydney, Australia."
+       },
+       "f16": {
+        "value": ""
+       },
+       "f17": {
+        "value": ""
+       },
+       "f18": {
+        "value": ""
+       },
+       "f19": {
+        "value": ""
+       },
+       "f20": {
+        "value": ""
+       },
+       "f21": {
+        "value": ""
+       },
+       "f22": {
+        "value": ""
+       },
+       "f23": {
+        "value": ""
+       },
+       "f24": {
+        "value": ""
+       },
+       "f25": {
+        "value": ""
+       },
+       "f26": {
+        "value": ""
+       },
+       "f27": {
+        "value": "Data breaches"
+       },
+       "f28": {
+        "value": "If a data breach is likely to result in serious harm to you, we will notify you and the Office of the Australian Information Commissioner as required by the Notifiable Data Breaches scheme."
+       },
+       "f29": {
+        "value": ""
+       },
+       "f30": {
+        "value": ""
+       },
+       "f31": {
+        "value": ""
+       },
+       "f32": {
+        "value": ""
+       },
+       "f33": {
+        "value": ""
+       },
+       "f34": {
+        "value": ""
+       },
+       "f35": {
+        "value": ""
+       },
+       "f36": {
+        "value": ""
+       },
+       "f37": {
+        "value": ""
+       },
+       "f38": {
+        "value": ""
+       },
+       "f39": {
+        "value": ""
+       },
+       "f40": {
+        "value": "Questions and complaints"
+       },
+       "f41": {
+        "value": "If you have a question or concern about how we handle your personal information, please contact our privacy officer first. We will acknowledge your complaint promptly and aim to resolve it within 30 days."
+       },
+       "f42": {
+        "value": "If you are not satisfied with our response, you can contact the <a href=\"https://www.oaic.gov.au/\" target=\"_blank\" rel=\"noopener\">Office of the Australian Information Commissioner</a> (OAIC) on 1300 363 992. For concerns about a health service in Queensland, you can also contact the <a href=\"https://www.oho.qld.gov.au/\" target=\"_blank\" rel=\"noopener\">Office of the Health Ombudsman</a> on 133 646."
+       },
+       "f43": {
+        "value": ""
+       },
+       "f44": {
+        "value": ""
+       },
+       "f45": {
+        "value": ""
+       },
+       "f46": {
+        "value": ""
+       },
+       "f47": {
+        "value": ""
+       },
+       "f48": {
+        "value": ""
+       },
+       "f49": {
+        "value": ""
+       },
+       "f50": {
+        "value": ""
+       },
+       "f51": {
+        "value": ""
+       },
+       "f52": {
+        "value": ""
+       },
+       "f53": {
+        "value": "Contact our privacy officer"
+       },
+       "f54": {
+        "value": "Privacy officer: [CONFIRM: privacy officer name]<br>Email: [CONFIRM: privacy officer email, for example reception@sunshinecoastofis.com.au]<br>Phone: {{phone}}<br>Post: Suite 5, Nucleus Medical Suites, 23 Elsa Wilson Drive, Buderim QLD 4556"
+       },
+       "f55": {
+        "value": ""
+       },
+       "f56": {
+        "value": ""
+       },
+       "f57": {
+        "value": ""
+       },
+       "f58": {
+        "value": ""
+       },
+       "f59": {
+        "value": ""
+       },
+       "f60": {
+        "value": ""
+       },
+       "f61": {
+        "value": ""
+       },
+       "f62": {
+        "value": ""
+       },
+       "f63": {
+        "value": ""
+       },
+       "f64": {
+        "value": ""
+       },
+       "f65": {
+        "value": ""
+       },
+       "f66": {
+        "value": "Changes to this policy"
+       },
+       "f67": {
+        "value": "We may update this policy from time to time. The current version is always on this page, with the date it was last updated at the top."
+       },
+       "f68": {
+        "value": ""
+       },
+       "f69": {
+        "value": ""
+       },
+       "f70": {
+        "value": ""
+       },
+       "f71": {
+        "value": ""
+       },
+       "f72": {
+        "value": ""
+       },
+       "f73": {
+        "value": ""
+       },
+       "f74": {
+        "value": ""
+       },
+       "f75": {
+        "value": ""
+       },
+       "f76": {
+        "value": ""
+       },
+       "f77": {
+        "value": ""
+       },
+       "f78": {
+        "value": ""
+       },
+       "f79": {
+        "value": ""
+       },
+       "f80": {
+        "value": ""
+       },
+       "f81": {
+        "value": ""
+       },
+       "f82": {
+        "value": ""
+       },
+       "f83": {
+        "value": ""
+       },
+       "f84": {
+        "value": ""
+       },
+       "f85": {
+        "value": ""
+       },
+       "f86": {
+        "value": ""
+       },
+       "f87": {
+        "value": ""
+       },
+       "f88": {
+        "value": ""
+       },
+       "f89": {
+        "value": ""
+       },
+       "f90": {
+        "value": ""
+       },
+       "f91": {
+        "value": ""
+       },
+       "f92": {
+        "value": ""
+       },
+       "f93": {
+        "value": ""
+       },
+       "f94": {
+        "value": ""
+       },
+       "f95": {
+        "value": ""
+       },
+       "f96": {
+        "value": ""
+       },
+       "f97": {
+        "value": ""
+       },
+       "f98": {
+        "value": ""
+       },
+       "f99": {
+        "value": ""
+       },
+       "f100": {
+        "value": ""
+       },
+       "f101": {
+        "value": ""
+       },
+       "f102": {
+        "value": ""
+       },
+       "f103": {
+        "value": ""
+       },
+       "f104": {
+        "value": ""
+       },
+       "f105": {
+        "value": ""
+       },
+       "f106": {
+        "value": ""
+       },
+       "f107": {
+        "value": ""
+       },
+       "f108": {
+        "value": "",
+        "href": ""
+       }
+      }
+     }
+    }
+   ]
+  },
+  "site-wide": {
+   "ops": [
+    {
+     "op": "field",
+     "section": "footer",
+     "key": "f26",
+     "prop": "value",
+     "old": "<a href=\"/locations/\">Hervey Bay, St Stephen's Private</a>",
+     "new": "<a href=\"/locations/hervey-bay/\">Hervey Bay, St Stephen's Private</a>"
+    }
+   ]
+  },
+  "wisdom-teeth-removal": {
+   "ops": [
+    {
+     "op": "field",
+     "section": "s1",
+     "key": "f3",
+     "prop": "value",
+     "old": "Wisdom teeth removed while you are completely asleep",
+     "new": "Wisdom teeth removal on the Sunshine Coast, completely asleep"
+    },
+    {
+     "op": "insert",
+     "after": "s4",
+     "section": {
+      "id": "risk",
+      "template": "notice/risk",
+      "fields": {
+       "f1": {
+        "value": "Any surgical or invasive procedure carries risks. Before proceeding, you should seek a second opinion from an appropriately qualified health practitioner."
+       }
+      }
+     }
+    }
+   ]
+  },
+  "zygomatic-implants": {
+   "ops": [
+    {
+     "op": "field",
+     "section": "s2",
+     "key": "f8",
+     "prop": "value",
+     "old": "Zygomatic surgery is advanced, technique-sensitive work performed by a small number of surgeons in Australia. Dr Lincoln trained in zygomatic implants in Hong Kong in 2017 and in zygomatic, nasal and pterygoid implants in Texas in 2023, and has since trained with leading surgeons from France, Brazil and Spain. Patients are referred to the practice from across Queensland for this procedure.",
+     "new": "Zygomatic surgery is advanced, technique-sensitive work performed by a small number of surgeons in Australia. Dr Lincoln trained in zygomatic implants in Hong Kong in 2017 and in zygomatic, nasal and pterygoid implants in Texas in 2023, and has since trained with surgeons in France, Brazil and Spain. Patients are referred to the practice from across Queensland for this procedure."
+    },
+    {
+     "op": "insert",
+     "after": "s4",
+     "section": {
+      "id": "risk",
+      "template": "notice/risk",
+      "fields": {
+       "f1": {
+        "value": "Any surgical or invasive procedure carries risks. Before proceeding, you should seek a second opinion from an appropriately qualified health practitioner."
+       }
+      }
+     }
+    }
+   ]
+  }
+ },
+ "team": [
+  {
+   "key": "trent",
+   "field": "lede",
+   "old": "A contemporarily trained oral and maxillofacial surgeon committed to expert care delivered in a compassionate, patient-focused way. Full arch implant rehabilitation is his particular passion, and patients are referred to him from across Queensland for zygomatic and remote anchorage implants.",
+   "new": "A contemporarily trained oral and maxillofacial surgeon committed to care delivered in a compassionate, patient-focused way. Full arch implant rehabilitation is his particular passion, and patients are referred to him from across Queensland for zygomatic and remote anchorage implants."
+  },
+  {
+   "key": "trent",
+   "field": "story",
+   "index": 2,
+   "old": "With a strong passion for dental implants and full arch rehabilitation, he undertook advanced training in zygomatic implants in Hong Kong in 2017 and zygomatic, nasal and pterygoid implants in Texas in 2023, then further training with world renowned surgeons from France, Brazil and Spain. He continues to refine his implant, bone and soft tissue grafting skills through global courses and conferences.",
+   "new": "With a strong passion for dental implants and full arch rehabilitation, he undertook advanced training in zygomatic implants in Hong Kong in 2017 and zygomatic, nasal and pterygoid implants in Texas in 2023, then further training with surgeons in France, Brazil and Spain. He continues to refine his implant, bone and soft tissue grafting skills through global courses and conferences."
+  },
+  {
+   "key": "andrew",
+   "field": "story",
+   "index": 0,
+   "old": "Dr Higgins grew up on the Gold Coast and moved to Melbourne to study medicine, graduating in 2008 and working as an intern and surgical resident in Melbourne's tertiary hospitals. Back in Queensland, a surgical senior house officer role in the world-renowned maxillofacial unit at the Royal Brisbane and Women's Hospital set his direction, and he became the first lateral entry student in the James Cook University dental program.",
+   "new": "Dr Higgins grew up on the Gold Coast and moved to Melbourne to study medicine, graduating in 2008 and working as an intern and surgical resident in Melbourne's tertiary hospitals. Back in Queensland, a surgical senior house officer role in the maxillofacial unit at the Royal Brisbane and Women's Hospital set his direction, and he became the first lateral entry student in the James Cook University dental program."
+  }
+ ],
+ "posts": [
+  {
+   "slug": "teeth-in-a-day",
+   "old": "Imagine waking up and having a brand-new set of permanent teeth in just one day. This dream can now become a reality with the innovative dental procedure known as “teeth-in-a-day.” If you’re curious about how this process works and whether it’s right for you, keep reading.",
+   "new": "For suitable patients, a full arch of fixed temporary teeth can be fitted on the same day as implant surgery, a treatment often called “teeth in a day”. This article explains how it works, who it may suit and the factors that affect the result."
+  },
+  {
+   "slug": "teeth-in-a-day",
+   "old": "is a cutting-edge dental procedure that allows patients to receive a full set of new teeth in a single day. Unlike traditional dental implant treatments that can take several months to complete, teeth in a day offers a quicker and more convenient solution for full mouth restorations.",
+   "new": "is a treatment in which a fixed temporary bridge is attached to the implants on the day of surgery. The final bridge is made and fitted once the implants have integrated with the bone, generally three to six months later."
+  },
+  {
+   "slug": "teeth-in-a-day",
+   "old": "is surgically permanently implanted into the jaw bone",
+   "new": "is surgically placed in the jaw bone"
+  },
+  {
+   "slug": "teeth-in-a-day",
+   "old": "However, with the teeth in a day procedure, everything is completed in just one appointment. This means that patients can leave the dental office with a beautiful new smile on the same day as their surgery.",
+   "new": "With teeth in a day, the implants and a fixed temporary bridge are placed in one surgical appointment, so suitable patients do not go without teeth while the implants heal. Follow-up visits are still needed, and the final bridge is fitted later."
+  },
+  {
+   "slug": "teeth-in-a-day",
+   "old": "Thanks to advancements in dental technology, this process can often be completed with less trauma and discomfort compared to traditional implant surgeries. Generally, only four implants",
+   "new": "Generally, four implants"
+  },
+  {
+   "slug": "teeth-in-a-day",
+   "old": "<p>Photo Credit: Nobel Biocare</p>",
+   "new": ""
+  },
+  {
+   "slug": "teeth-in-a-day",
+   "old": "which allows the placement of a fixed set of teeth, that are indistinguishable from natural teeth.",
+   "new": "which allows the placement of a fixed set of teeth."
+  },
+  {
+   "slug": "teeth-in-a-day",
+   "old": "<p>All-on-4 Dental Implants Prosthesis</p>",
+   "new": ""
+  },
+  {
+   "slug": "teeth-in-a-day",
+   "old": "<h2>Benefits of Teeth in a Day</h2>",
+   "new": "<h2>Possible Benefits of Teeth in a Day</h2>"
+  },
+  {
+   "slug": "teeth-in-a-day",
+   "old": "<h3>1. Immediate Results</h3>",
+   "new": "<h3>1. Fixed Temporary Teeth From the Day of Surgery</h3>"
+  },
+  {
+   "slug": "teeth-in-a-day",
+   "old": "One of the most significant advantages of the same day teeth procedure is the immediate results it offers. Instead of waiting months for your final restoration, you can enjoy a brand-new smile with renewed function right away.",
+   "new": "For suitable patients, a fixed temporary bridge is attached on the day of surgery, so there is no period without teeth while waiting for the final bridge. A soft diet is needed while the implants heal."
+  },
+  {
+   "slug": "teeth-in-a-day",
+   "old": "<h3>2. Reduced Healing Period</h3>",
+   "new": "<h3>2. Fewer Surgical Procedures</h3>"
+  },
+  {
+   "slug": "teeth-in-a-day",
+   "old": "Because teeth in a day eliminates the need for multiple surgeries and lengthy healing periods, patients can return to their normal activities much sooner. This means less time spent recovering and more time enjoying life with your new set of teeth.",
+   "new": "Because extractions and implant placement are often done in the same operation, and bone grafting can sometimes be avoided, some patients need fewer surgical procedures. Recovery varies from person to person, and your surgeon will explain what to expect in your case."
+  },
+  {
+   "slug": "teeth-in-a-day",
+   "old": "<h3>3. Enhanced Confidence</h3>",
+   "new": "<h3>3. Function and Appearance</h3>"
+  },
+  {
+   "slug": "teeth-in-a-day",
+   "old": "Missing teeth can take a toll on your self-esteem and confidence. With teeth in a day, you can regain your smile and your confidence in just one day, allowing you to feel great about your appearance once again.",
+   "new": "Missing teeth can affect eating, speaking and how people feel about their smile. A fixed bridge may help with these, although individual results vary."
+  },
+  {
+   "slug": "teeth-in-a-day",
+   "old": "Teeth in a day is an excellent option for individuals who are missing one or more teeth and are looking for a permanent solution for tooth replacement.",
+   "new": "Teeth in a day may be an option for people who are missing most or all of their teeth in one or both jaws, or whose remaining teeth cannot be saved. A consultation and 3D scan show whether it suits you."
+  },
+  {
+   "slug": "teeth-in-a-day",
+   "old": "teeth in a day may be the perfect solution for you.",
+   "new": "teeth in a day may be worth discussing with your surgeon."
+  },
+  {
+   "slug": "teeth-in-a-day",
+   "old": "For busy individuals who don’t have time for multiple dental appointments, teeth in a day offers a convenient and time-saving alternative.",
+   "new": "Teeth in a day can mean fewer surgical appointments, although reviews and the final bridge still need several visits."
+  },
+  {
+   "slug": "teeth-in-a-day",
+   "old": "<h2>Conclusion: A New Smile in Just One Day is Possible.</h2>",
+   "new": "<h2>Conclusion</h2>"
+  },
+  {
+   "slug": "teeth-in-a-day",
+   "old": "The teeth in a day technology has revolutionised the field of dentistry, offering a fast, convenient, and permanent solution for tooth replacement. Whether you’re missing one tooth or an entire arch, this innovative procedure can provide you with a brand-new smile in just one day. If you’re tired of dealing with missing teeth, pain or uncomfortable dentures, schedule a consultation with your dental practitioner to see if teeth in a day is right for you.",
+   "new": "Teeth in a day is one way to replace a full arch of teeth with fixed implant-supported teeth, with a temporary bridge fitted on the day of surgery for suitable patients. Whether it suits you depends on your bone, your general health and your goals. Talk to your dentist, or arrange a consultation with an oral and maxillofacial surgeon, to find out whether it is right for you."
+  },
+  {
+   "slug": "teeth-in-a-day",
+   "old": "<h2>Why Chose Our Specialised Oral Surgeons?</h2>",
+   "new": "<h2>About Our Surgeons</h2>"
+  },
+  {
+   "slug": "teeth-in-a-day",
+   "old": "is an advanced oral surgery clinic. <a href=\"/about/\">Dr Trent Lincoln and Dr Andrew Higgins</a> are highly experienced and highly qualified Oral and Maxillofacial surgeons, who are used to treat even the most difficult cases through referrals from general dentists. They are both:",
+   "new": "is a specialist oral and maxillofacial surgery practice in Buderim. <a href=\"/about/\">Dr Trent Lincoln and Dr Andrew Higgins</a> are registered specialist oral and maxillofacial surgeons who see patients referred by general dentists and doctors as well as patients who contact us directly. They are both:"
+  },
+  {
+   "slug": "teeth-in-a-day",
+   "old": "<li>Specialists Fellow of the Royal Australian College of Dental Surgeons (RACDS)</li>",
+   "new": "<li>Fellows of the Royal Australasian College of Dental Surgeons in oral and maxillofacial surgery, FRACDS (OMS)</li>"
+  },
+  {
+   "slug": "teeth-in-a-day",
+   "old": "If you are in the Sunshine Coast area, you want to get your smile back, and are considering a full arch restoration, call our dental team today at 07 5406 0586 or email reception@sunshinecoastofis.com.au  to schedule an appointment and discuss your treatment plan. Remember: everything begins with a consultation and your life could change in a single visit!</p>",
+   "new": "If you are considering a full arch restoration, call our team on 07 5406 0586 or email reception@sunshinecoastofis.com.au to arrange a consultation and discuss your treatment options.</p>\n<p><em>Any surgical or invasive procedure carries risks. Before proceeding, you should seek a second opinion from an appropriately qualified health practitioner.</em></p>"
+  },
+  {
+   "slug": "wisdom-teeth-removal-before-age-25",
+   "old": "however this procedure is often left too late and can cause serious complications. In this article, we explain what to pay attention to and why intervening early is important. Older adults may require longer procedure and/or face complications.",
+   "new": "and when a wisdom tooth does need to come out, removal is often simpler in younger adults. In this article, we explain what to look out for and why the timing can matter. Surgery in older adults can take longer and may carry a higher risk of complications."
+  },
+  {
+   "slug": "wisdom-teeth-removal-before-age-25",
+   "old": "Wisdom teeth is the most common term behind third set of molars.",
+   "new": "Wisdom teeth is the common name for the third set of molars."
+  },
+  {
+   "slug": "wisdom-teeth-removal-before-age-25",
+   "old": "which is a fancy dental term to say that the tooth is partially or fully trapped",
+   "new": "which means the tooth is partially or fully trapped"
+  },
+  {
+   "slug": "wisdom-teeth-removal-before-age-25",
+   "old": "other impacted wisdom teeth may cause sever issues",
+   "new": "other impacted wisdom teeth may cause serious issues"
+  },
+  {
+   "slug": "wisdom-teeth-removal-before-age-25",
+   "old": "or cause by an infection.",
+   "new": "or caused by an infection."
+  },
+  {
+   "slug": "wisdom-teeth-removal-before-age-25",
+   "old": "rubbing against he inside of the cheek.",
+   "new": "rubs against the inside of the cheek."
+  },
+  {
+   "slug": "wisdom-teeth-removal-before-age-25",
+   "old": "causing bone damage to both teeth. Luckily this is not very common.",
+   "new": "causing damage to both teeth. This is not very common."
+  },
+  {
+   "slug": "wisdom-teeth-removal-before-age-25",
+   "old": "<strong>A food trap:</strong> when food becomes trapped when food becomes trapped between",
+   "new": "<strong>A food trap:</strong> when food becomes trapped between"
+  },
+  {
+   "slug": "wisdom-teeth-removal-before-age-25",
+   "old": "<h2>What is the Best Age to Remove Your Wisdom Teeth?</h2>",
+   "new": "<h2>When Should Wisdom Teeth Be Removed?</h2>"
+  },
+  {
+   "slug": "wisdom-teeth-removal-before-age-25",
+   "old": "Removing the wisdom teeth, particularly, if any pain has been noticed, should be done as early as possible. Having such problematic teeth removed between ages of 17 and 25 is recommended because the roots of the wisdom teeth have not formed totally, and the bone surrounding the tooth is softer making the extraction process easier.",
+   "new": "Not every wisdom tooth needs to be removed. When a wisdom tooth is causing problems, or is likely to, removal between the ages of 17 and 25 is often simpler, because the roots may not be fully formed and the surrounding bone is softer. Your surgeon will advise whether and when removal is recommended for you."
+  },
+  {
+   "slug": "wisdom-teeth-removal-before-age-25",
+   "old": "<p>Delaying <a href=\"/services/wisdom-teeth-removal/\">wisdom teeth removal</a> is often regretted when not occurred in the teenage years.</p>",
+   "new": "<p>If you have been advised that a wisdom tooth may need to come out, <a href=\"/services/wisdom-teeth-removal/\">wisdom teeth removal</a> is usually easier to plan before problems develop.</p>"
+  },
+  {
+   "slug": "wisdom-teeth-removal-before-age-25",
+   "old": "<h2>Why Chose Our Specialised Oral Surgeons?</h2>",
+   "new": "<h2>About Our Surgeons</h2>"
+  },
+  {
+   "slug": "wisdom-teeth-removal-before-age-25",
+   "old": "is an advanced oral surgery clinic. Dr Trent Lincoln and Dr Andrew Higgins are highly experienced and highly qualified Oral and Maxillofacial surgeons, who are used to treat even the most difficult cases through referrals from general dentists. They are both:",
+   "new": "is a specialist oral and maxillofacial surgery practice in Buderim. Dr Trent Lincoln and Dr Andrew Higgins are registered specialist oral and maxillofacial surgeons who see patients referred by general dentists and doctors as well as patients who contact us directly. They are both:"
+  },
+  {
+   "slug": "wisdom-teeth-removal-before-age-25",
+   "old": "<li>Specialists Fellow of the <a href=\"https://racds.org/\" target=\"_blank\" rel=\"noopener\">Royal Australian College of Dental Surgeons</a> (RACDS)</li>",
+   "new": "<li>Fellows of the <a href=\"https://racds.org/\" target=\"_blank\" rel=\"noopener\">Royal Australasian College of Dental Surgeons</a> in oral and maxillofacial surgery, FRACDS (OMS)</li>"
+  },
+  {
+   "slug": "wisdom-teeth-removal-before-age-25",
+   "old": "If you are in the Sunshine Coast area, and are considering the removal of wisdom teeth, call our dental team today at 07 5406 0586 or email reception@sunshinecoastofis.com.au  to ask for an appointment and discuss the best course of action for your needs.</p>",
+   "new": "If you are considering wisdom teeth removal, call our team on 07 5406 0586 or email reception@sunshinecoastofis.com.au to arrange a consultation and discuss the options for your needs.</p>\n<p><em>Any surgical or invasive procedure carries risks. Before proceeding, you should seek a second opinion from an appropriately qualified health practitioner.</em></p>"
+  }
+ ],
+ "redirects": [
+  {
+   "from": "/hervey-bay-st-stephens-private-hospital/",
+   "old": "/locations/",
+   "new": "/locations/hervey-bay/"
+  }
+ ]
+}

@@ -6,7 +6,7 @@
   "kind": "page",
   "seo": {
     "metaTitle": "Sunshine Coast Oral, Facial & Implant Specialists",
-    "metaDescription": "Sunshine Coast Oral, Facial & Implant Specialists (SCOFIS) was opened at the Nucleus Medical Suites at Buderim Private Hospital in 2018.",
+    "metaDescription": "Specialist oral and maxillofacial surgeons in Buderim, Sunshine Coast: wisdom teeth, dental implants, All-on-4, jaw surgery and facial trauma.",
     "ogTitle": "Sunshine Coast | Sunshine Coast Oral, Facial & Implant Specialists",
     "ogImage": "/images/reception2.jpg"
   },
@@ -34,10 +34,10 @@
           "href": "/online-doctor-referral/"
         },
         "f6": {
-          "value": "5.0 on Google"
+          "value": "Specialist practice since 2018"
         },
         "f7": {
-          "value": "Rated by more than 300 patients across the Coast."
+          "value": "Opened in 2018 at the Nucleus Medical Suites, Buderim."
         },
         "f8": {
           "value": "Medical and dental degrees, plus surgical fellowship"
@@ -399,7 +399,8 @@
           "value": "Leave a review",
           "href": "https://g.page/r/CU9nbwKDylIaEBM/review"
         }
-      }
+      },
+      "hidden": true
     },
     {
       "id": "s9",

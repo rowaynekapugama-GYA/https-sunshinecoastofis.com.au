@@ -1,18 +1,29 @@
 [
   {
-    "post": "teeth-in-a-day",
-    "image": "https://sunshinecoastofis.com.au/wp-content/uploads/2024/05/alldental-300x210.jpg",
-    "alt": "All-on-4 Dental Implants"
+    "post": "/teeth-in-a-day/",
+    "position": 1,
+    "original_url": "https://sunshinecoastofis.com.au/wp-content/uploads/2024/05/alldental-300x210.jpg",
+    "insert_after": "The paragraph under \"What Can I Expect During Surgery?\" ending \"...all-on-4 dental implants.\"",
+    "original_alt": "All-on-4 Dental Implants",
+    "suggested_alt": "Diagram of a full arch bridge attached to four dental implants in the lower jaw",
+    "credit": "Photo Credit: Nobel Biocare (the stray credit line has been removed from the text; add it as the image caption if the image is re-used, and confirm the practice may use it)"
   },
   {
-    "post": "teeth-in-a-day",
-    "image": "https://sunshinecoastofis.com.au/wp-content/uploads/2024/05/All-on-4-300x169.webp",
-    "alt": "All-on-4 Dental Implants"
+    "post": "/teeth-in-a-day/",
+    "position": 2,
+    "original_url": "https://sunshinecoastofis.com.au/wp-content/uploads/2024/05/All-on-4-300x169.webp",
+    "insert_after": "The paragraph ending \"...which allows the placement of a fixed set of teeth.\" (live wording: \"...ready for the patient immediately.\")",
+    "original_alt": "All-on-4 Dental Implants",
+    "suggested_alt": "All-on-4 implant bridge shown beside the four implants that support it",
+    "credit": "Caption on the live site: \"All-on-4 Dental Implants Prosthesis\" (the stray caption line has been removed from the text; add it back as the image caption)"
   },
   {
-    "post": "wisdom-teeth-removal-before-age-25",
-    "image": "https://sunshinecoastofis.com.au/wp-content/uploads/2024/06/Impacted-wisdom-tooth.jpeg",
-    "alt": "Impacted Wisdom Tooth",
-    "caption": "3d render of teeth with wisdom horizontal impaction over white background. Concept of different types of wisdom teeth impactions. Source: iStock"
+    "post": "/wisdom-teeth-removal-before-age-25/",
+    "position": 1,
+    "original_url": "https://sunshinecoastofis.com.au/wp-content/uploads/2024/06/Impacted-wisdom-tooth.jpeg",
+    "insert_after": "The paragraph under \"What are Impacted Wisdom Teeth?\"",
+    "original_alt": "Impacted Wisdom Tooth",
+    "suggested_alt": "3D illustration of a lower wisdom tooth lying sideways against the molar in front of it",
+    "credit": "iStock stock image (\"3d render of teeth with wisdom horizontal impaction\"). Re-use only if the practice holds the iStock licence"
   }
 ]

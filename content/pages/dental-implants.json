@@ -22,7 +22,7 @@
           "value": "<a href=\"/\">Home</a> / <a href=\"/services/\">Services</a>"
         },
         "f3": {
-          "value": "Dental implants placed by specialist surgeons"
+          "value": "Dental implants on the Sunshine Coast, placed by specialist surgeons"
         },
         "f4": {
           "value": "A dental implant is a titanium fixture placed in the jaw to replace a missing tooth root, on which a crown, bridge or full arch is secured. Planned on 3D imaging and placed by a specialist oral and maxillofacial surgeon, then restored by your dentist or prosthodontist."
@@ -178,6 +178,15 @@
           "value": "The final crown or bridge is made by your dentist or prosthodontist. If you do not have one, we can recommend an experienced restorative clinician on the Coast."
         },
         "f11": {
+          "value": "Any surgical or invasive procedure carries risks. Before proceeding, you should seek a second opinion from an appropriately qualified health practitioner."
+        }
+      }
+    },
+    {
+      "id": "risk",
+      "template": "notice/risk",
+      "fields": {
+        "f1": {
           "value": "Any surgical or invasive procedure carries risks. Before proceeding, you should seek a second opinion from an appropriately qualified health practitioner."
         }
       }

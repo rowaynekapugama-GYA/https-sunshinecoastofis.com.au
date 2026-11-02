@@ -26,80 +26,669 @@
           "value": "Privacy policy"
         },
         "f4": {
-          "value": "How Sunshine Coast Oral, Facial &amp; Implant Specialists collects, uses, stores and protects your personal and health information."
+          "value": "How Sunshine Coast Oral, Facial &amp; Implant Specialists collects, uses, stores and protects your personal and health information. Last updated: 2 November 2026."
         }
       }
     },
     {
       "id": "s2",
-      "template": "privacy-policy/2",
+      "template": "content/body",
       "fields": {
         "f1": {
-          "value": "Our commitment to your privacy"
+          "value": "About this policy"
         },
         "f2": {
-          "value": "We are bound by the Privacy Act 1988 (Cth) and the Australian Privacy Principles. This policy explains how we handle your personal information, including health information, and how you can access it or raise a concern."
+          "value": "<em>Last updated: 2 November 2026</em>"
         },
         "f3": {
-          "value": "What we collect"
+          "value": "This policy explains how Sunshine Coast Oral, Facial &amp; Implant Specialists ([CONFIRM: legal entity name], ABN [CONFIRM: ABN]) collects, uses, discloses and protects your personal information, including your health information. We are bound by the <em>Privacy Act 1988</em> (Cth) and the Australian Privacy Principles (APPs)."
         },
         "f4": {
-          "value": "We collect the information we need to provide your care: your name, date of birth, contact details, Medicare and health fund details, next of kin, your medical and dental history, referral letters, clinical notes, photographs, x-rays and scans, and payment details."
+          "value": "In this policy, \"we\", \"us\" and \"our\" mean our practice, including our surgeons and staff. Our rooms are at Suite 5, Nucleus Medical Suites, 23 Elsa Wilson Drive, Buderim QLD 4556."
         },
         "f5": {
-          "value": "How we collect it"
+          "value": ""
         },
         "f6": {
-          "value": "We collect information from you directly, from your referring dentist or doctor, from other health professionals involved in your care, from hospitals and imaging providers, and through the forms on this website."
+          "value": ""
         },
         "f7": {
-          "value": "How we use it"
+          "value": ""
         },
         "f8": {
-          "value": "We use your information to assess and treat you, to communicate with you and with the practitioners involved in your care, to arrange hospital admission, to process payments, Medicare and health fund claims, and to meet our legal obligations."
+          "value": ""
         },
         "f9": {
-          "value": "Who we share it with"
+          "value": ""
         },
         "f10": {
-          "value": "We share information only as needed for your care or as the law requires: your referring practitioner and other treating practitioners, hospitals and anaesthetists, pathology and imaging providers, Medicare, your health fund, and our IT and clinical software providers, who are bound to keep it confidential. We do not sell your information."
+          "value": ""
         },
         "f11": {
-          "value": "Storage and security"
+          "value": ""
         },
         "f12": {
-          "value": "Your records are kept securely in our practice management system, with access limited to authorised staff. We keep health records for the periods required by law."
+          "value": ""
         },
         "f13": {
-          "value": "This website"
+          "value": ""
         },
         "f14": {
-          "value": "Information sent through the forms on this website is emailed to our practice team and kept in our secure website records. We may use cookies and analytics to understand how the website is used; this information does not identify you."
+          "value": "What information we collect"
         },
         "f15": {
-          "value": "Access and correction"
+          "value": "We collect only the information we need to provide your care and run our practice. This may include:"
         },
         "f16": {
-          "value": "You can ask to see your records or to correct information you believe is wrong. Please contact our practice manager. We may ask you to confirm your identity."
+          "value": ""
         },
         "f17": {
-          "value": "Questions and complaints"
+          "value": ""
         },
         "f18": {
-          "value": "If you have a question or concern about how we handle your information, please contact our practice manager on {{phone}}. If you are not satisfied with our response, you can contact the Office of the Australian Information Commissioner at oaic.gov.au."
+          "value": "your name, date of birth, gender, address, phone numbers and email address"
         },
         "f19": {
-          "value": "Questions about your privacy?"
+          "value": "your medical and dental history, medications, allergies and other health information"
         },
         "f20": {
-          "value": "Our practice manager can help with access to your records or any privacy question."
+          "value": "referral letters, clinical notes, test results, photographs, x-rays, CBCT scans and other images"
         },
         "f21": {
-          "value": "Call {{phone}}"
+          "value": "your Medicare number, Department of Veterans' Affairs number and private health insurance details"
         },
         "f22": {
+          "value": "the name and contact details of your referring practitioner, your general practitioner and your next of kin or emergency contact"
+        },
+        "f23": {
+          "value": "billing and payment information"
+        },
+        "f24": {
+          "value": "information you send us through our website forms, by email or by phone"
+        },
+        "f25": {
+          "value": ""
+        },
+        "f26": {
+          "value": "You can ask to deal with us anonymously or using a pseudonym, but in most cases this is not practical for providing clinical care, issuing referrals or claiming Medicare or health fund benefits."
+        },
+        "f27": {
+          "value": "How we collect it"
+        },
+        "f28": {
+          "value": "We collect most information directly from you, at your consultation, through our patient information form, by phone or email, or through our website."
+        },
+        "f29": {
+          "value": "We also collect information from other people when this is needed for your care and you would reasonably expect it, for example from your referring dentist, doctor or specialist, hospitals, radiology and pathology providers, your health fund, or a parent, guardian or carer."
+        },
+        "f30": {
+          "value": ""
+        },
+        "f31": {
+          "value": ""
+        },
+        "f32": {
+          "value": ""
+        },
+        "f33": {
+          "value": ""
+        },
+        "f34": {
+          "value": ""
+        },
+        "f35": {
+          "value": ""
+        },
+        "f36": {
+          "value": ""
+        },
+        "f37": {
+          "value": ""
+        },
+        "f38": {
+          "value": ""
+        },
+        "f39": {
+          "value": ""
+        },
+        "f40": {
+          "value": "Why we collect, use and disclose it"
+        },
+        "f41": {
+          "value": "We use and disclose your information to provide your care and for directly related purposes you would reasonably expect, including to:"
+        },
+        "f42": {
+          "value": ""
+        },
+        "f43": {
+          "value": ""
+        },
+        "f44": {
+          "value": "assess, diagnose, plan and provide your treatment"
+        },
+        "f45": {
+          "value": "communicate with you about appointments, treatment and follow-up care"
+        },
+        "f46": {
+          "value": "report to and correspond with your referring practitioner, your general practitioner and other practitioners involved in your care"
+        },
+        "f47": {
+          "value": "arrange surgery with hospitals, day surgeries and anaesthetists"
+        },
+        "f48": {
+          "value": "request and receive imaging, pathology and other test results"
+        },
+        "f49": {
+          "value": "process Medicare, Department of Veterans' Affairs and private health fund claims, and manage billing"
+        },
+        "f50": {
+          "value": "meet our legal, regulatory, professional and insurance obligations"
+        },
+        "f51": {
+          "value": "improve the quality and safety of our services, including through audits and accreditation"
+        },
+        "f52": {
+          "value": "We disclose information for other purposes only with your consent, or where the law requires or allows it, for example to lessen a serious threat to someone's life, health or safety."
+        },
+        "f53": {
+          "value": "Photographs and images"
+        },
+        "f54": {
+          "value": "Clinical photographs, x-rays and scans are part of your health record and are used for your care. With the consent you give on our patient information form, de-identified photographs and x-rays may also be used for teaching, scientific papers or presentations. We do not use your clinical images in advertising, and we will not use any image that could identify you without your separate written consent, which you can decline or withdraw at any time without it affecting your care."
+        },
+        "f55": {
+          "value": ""
+        },
+        "f56": {
+          "value": ""
+        },
+        "f57": {
+          "value": ""
+        },
+        "f58": {
+          "value": ""
+        },
+        "f59": {
+          "value": ""
+        },
+        "f60": {
+          "value": ""
+        },
+        "f61": {
+          "value": ""
+        },
+        "f62": {
+          "value": ""
+        },
+        "f63": {
+          "value": ""
+        },
+        "f64": {
+          "value": ""
+        },
+        "f65": {
+          "value": ""
+        },
+        "f66": {
+          "value": "Direct marketing"
+        },
+        "f67": {
+          "value": "We do not sell or share your personal information for marketing. We may send you information about your own care, such as appointment reminders. If we ever send other information, you can opt out at any time."
+        },
+        "f68": {
+          "value": ""
+        },
+        "f69": {
+          "value": ""
+        },
+        "f70": {
+          "value": ""
+        },
+        "f71": {
+          "value": ""
+        },
+        "f72": {
+          "value": ""
+        },
+        "f73": {
+          "value": ""
+        },
+        "f74": {
+          "value": ""
+        },
+        "f75": {
+          "value": ""
+        },
+        "f76": {
+          "value": ""
+        },
+        "f77": {
+          "value": ""
+        },
+        "f78": {
+          "value": ""
+        },
+        "f79": {
+          "value": "Storage and security"
+        },
+        "f80": {
+          "value": "We store your information in our practice management system [CONFIRM: name of practice management system and whether it is hosted in Australia] and in secure paper or electronic records. We take reasonable steps to protect it from misuse, interference, loss and unauthorised access, modification or disclosure, including staff confidentiality obligations, password and access controls, and secure storage and disposal."
+        },
+        "f81": {
+          "value": "We keep health records for as long as the law requires [CONFIRM: retention period, for example at least 7 years after the last contact for adults, and until a patient who was a child turns 25], then destroy or de-identify them securely."
+        },
+        "f82": {
+          "value": ""
+        },
+        "f83": {
+          "value": ""
+        },
+        "f84": {
+          "value": ""
+        },
+        "f85": {
+          "value": ""
+        },
+        "f86": {
+          "value": ""
+        },
+        "f87": {
+          "value": ""
+        },
+        "f88": {
+          "value": ""
+        },
+        "f89": {
+          "value": ""
+        },
+        "f90": {
+          "value": ""
+        },
+        "f91": {
+          "value": ""
+        },
+        "f92": {
+          "value": "Access and correction"
+        },
+        "f93": {
+          "value": "You can ask to see or receive a copy of the personal information we hold about you, and ask us to correct anything you believe is inaccurate, out of date, incomplete or misleading."
+        },
+        "f94": {
+          "value": "Please make your request in writing to our privacy officer. We will respond within 30 days. We may charge a reasonable fee for providing copies, but not for making the request or correcting your information. If we refuse access or correction, we will tell you why in writing, as the law allows."
+        },
+        "f95": {
+          "value": ""
+        },
+        "f96": {
+          "value": ""
+        },
+        "f97": {
+          "value": ""
+        },
+        "f98": {
+          "value": ""
+        },
+        "f99": {
+          "value": ""
+        },
+        "f100": {
+          "value": ""
+        },
+        "f101": {
+          "value": ""
+        },
+        "f102": {
+          "value": ""
+        },
+        "f103": {
+          "value": ""
+        },
+        "f104": {
+          "value": ""
+        },
+        "f105": {
+          "value": "Questions about your privacy?"
+        },
+        "f106": {
+          "value": "Our privacy officer can help with access to your records or any privacy question."
+        },
+        "f107": {
+          "value": "Call {{phone}}"
+        },
+        "f108": {
           "value": "Make an enquiry",
           "href": "/contact-us/"
+        }
+      }
+    },
+    {
+      "id": "s3",
+      "template": "content/body",
+      "fields": {
+        "f1": {
+          "value": "Our website, analytics and cookies"
+        },
+        "f2": {
+          "value": "Our website is hosted by Vercel. When you send a form on our website (Contact us, Online doctor referral, Patient information form or Feedback), the details you enter are emailed to our practice team through SMTP2GO, an email delivery service. Contact details and messages are also kept in our website dashboard so our team can follow up your enquiry; the medical details from the patient information form are emailed only and are not kept in the dashboard."
+        },
+        "f3": {
+          "value": "We may use Google Analytics and Google Tag Manager to understand how our website is used, for example which pages are visited and how people find us. These services use cookies and collect information such as your IP address, device, browser and pages viewed. We do not use them to identify you. You can block cookies in your browser settings or use the <a href=\"https://tools.google.com/dlpage/gaoptout\" target=\"_blank\" rel=\"noopener\">Google Analytics opt-out add-on</a>."
+        },
+        "f4": {
+          "value": "Some pages include content from other services, such as Google Maps, a Vimeo video and a Matterport virtual tour, which may set their own cookies under their own privacy policies."
+        },
+        "f5": {
+          "value": ""
+        },
+        "f6": {
+          "value": ""
+        },
+        "f7": {
+          "value": ""
+        },
+        "f8": {
+          "value": ""
+        },
+        "f9": {
+          "value": ""
+        },
+        "f10": {
+          "value": ""
+        },
+        "f11": {
+          "value": ""
+        },
+        "f12": {
+          "value": ""
+        },
+        "f13": {
+          "value": ""
+        },
+        "f14": {
+          "value": "Overseas disclosure"
+        },
+        "f15": {
+          "value": "We do not send your health records overseas. Some of the services that support our website may store or process information outside Australia, including Google (website analytics) in the United States and other countries, and SMTP2GO (website form emails) [CONFIRM: the countries where SMTP2GO stores data for this account]. Our website hosting and dashboard database are located in Sydney, Australia."
+        },
+        "f16": {
+          "value": ""
+        },
+        "f17": {
+          "value": ""
+        },
+        "f18": {
+          "value": ""
+        },
+        "f19": {
+          "value": ""
+        },
+        "f20": {
+          "value": ""
+        },
+        "f21": {
+          "value": ""
+        },
+        "f22": {
+          "value": ""
+        },
+        "f23": {
+          "value": ""
+        },
+        "f24": {
+          "value": ""
+        },
+        "f25": {
+          "value": ""
+        },
+        "f26": {
+          "value": ""
+        },
+        "f27": {
+          "value": "Data breaches"
+        },
+        "f28": {
+          "value": "If a data breach is likely to result in serious harm to you, we will notify you and the Office of the Australian Information Commissioner as required by the Notifiable Data Breaches scheme."
+        },
+        "f29": {
+          "value": ""
+        },
+        "f30": {
+          "value": ""
+        },
+        "f31": {
+          "value": ""
+        },
+        "f32": {
+          "value": ""
+        },
+        "f33": {
+          "value": ""
+        },
+        "f34": {
+          "value": ""
+        },
+        "f35": {
+          "value": ""
+        },
+        "f36": {
+          "value": ""
+        },
+        "f37": {
+          "value": ""
+        },
+        "f38": {
+          "value": ""
+        },
+        "f39": {
+          "value": ""
+        },
+        "f40": {
+          "value": "Questions and complaints"
+        },
+        "f41": {
+          "value": "If you have a question or concern about how we handle your personal information, please contact our privacy officer first. We will acknowledge your complaint promptly and aim to resolve it within 30 days."
+        },
+        "f42": {
+          "value": "If you are not satisfied with our response, you can contact the <a href=\"https://www.oaic.gov.au/\" target=\"_blank\" rel=\"noopener\">Office of the Australian Information Commissioner</a> (OAIC) on 1300 363 992. For concerns about a health service in Queensland, you can also contact the <a href=\"https://www.oho.qld.gov.au/\" target=\"_blank\" rel=\"noopener\">Office of the Health Ombudsman</a> on 133 646."
+        },
+        "f43": {
+          "value": ""
+        },
+        "f44": {
+          "value": ""
+        },
+        "f45": {
+          "value": ""
+        },
+        "f46": {
+          "value": ""
+        },
+        "f47": {
+          "value": ""
+        },
+        "f48": {
+          "value": ""
+        },
+        "f49": {
+          "value": ""
+        },
+        "f50": {
+          "value": ""
+        },
+        "f51": {
+          "value": ""
+        },
+        "f52": {
+          "value": ""
+        },
+        "f53": {
+          "value": "Contact our privacy officer"
+        },
+        "f54": {
+          "value": "Privacy officer: [CONFIRM: privacy officer name]<br>Email: [CONFIRM: privacy officer email, for example reception@sunshinecoastofis.com.au]<br>Phone: {{phone}}<br>Post: Suite 5, Nucleus Medical Suites, 23 Elsa Wilson Drive, Buderim QLD 4556"
+        },
+        "f55": {
+          "value": ""
+        },
+        "f56": {
+          "value": ""
+        },
+        "f57": {
+          "value": ""
+        },
+        "f58": {
+          "value": ""
+        },
+        "f59": {
+          "value": ""
+        },
+        "f60": {
+          "value": ""
+        },
+        "f61": {
+          "value": ""
+        },
+        "f62": {
+          "value": ""
+        },
+        "f63": {
+          "value": ""
+        },
+        "f64": {
+          "value": ""
+        },
+        "f65": {
+          "value": ""
+        },
+        "f66": {
+          "value": "Changes to this policy"
+        },
+        "f67": {
+          "value": "We may update this policy from time to time. The current version is always on this page, with the date it was last updated at the top."
+        },
+        "f68": {
+          "value": ""
+        },
+        "f69": {
+          "value": ""
+        },
+        "f70": {
+          "value": ""
+        },
+        "f71": {
+          "value": ""
+        },
+        "f72": {
+          "value": ""
+        },
+        "f73": {
+          "value": ""
+        },
+        "f74": {
+          "value": ""
+        },
+        "f75": {
+          "value": ""
+        },
+        "f76": {
+          "value": ""
+        },
+        "f77": {
+          "value": ""
+        },
+        "f78": {
+          "value": ""
+        },
+        "f79": {
+          "value": ""
+        },
+        "f80": {
+          "value": ""
+        },
+        "f81": {
+          "value": ""
+        },
+        "f82": {
+          "value": ""
+        },
+        "f83": {
+          "value": ""
+        },
+        "f84": {
+          "value": ""
+        },
+        "f85": {
+          "value": ""
+        },
+        "f86": {
+          "value": ""
+        },
+        "f87": {
+          "value": ""
+        },
+        "f88": {
+          "value": ""
+        },
+        "f89": {
+          "value": ""
+        },
+        "f90": {
+          "value": ""
+        },
+        "f91": {
+          "value": ""
+        },
+        "f92": {
+          "value": ""
+        },
+        "f93": {
+          "value": ""
+        },
+        "f94": {
+          "value": ""
+        },
+        "f95": {
+          "value": ""
+        },
+        "f96": {
+          "value": ""
+        },
+        "f97": {
+          "value": ""
+        },
+        "f98": {
+          "value": ""
+        },
+        "f99": {
+          "value": ""
+        },
+        "f100": {
+          "value": ""
+        },
+        "f101": {
+          "value": ""
+        },
+        "f102": {
+          "value": ""
+        },
+        "f103": {
+          "value": ""
+        },
+        "f104": {
+          "value": ""
+        },
+        "f105": {
+          "value": ""
+        },
+        "f106": {
+          "value": ""
+        },
+        "f107": {
+          "value": ""
+        },
+        "f108": {
+          "value": "",
+          "href": ""
         }
       }
     }

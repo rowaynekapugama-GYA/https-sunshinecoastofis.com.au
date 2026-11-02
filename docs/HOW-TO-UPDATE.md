@@ -21,7 +21,8 @@ The website advertises a regulated health service, so AHPRA's rules apply to eve
 - No claims such as "pain-free", "painless", "guaranteed", "best", "leading" or "expert", and nothing that promises a result.
 - Any offer must state the price, what is included and the period it runs for.
 - Use "specialist" only for Dr Trent Lincoln and Dr Andrew Higgins as registered specialist oral and maxillofacial surgeons. Never call the practice team, a treatment or anyone else a specialist.
-- Keep articles to general information, and say that surgery carries risks and that patients should seek a second opinion where appropriate.
+- Keep articles to general information, and end each one with the risk statement: "Any surgical or invasive procedure carries risks. Before proceeding, you should seek a second opinion from an appropriately qualified health practitioner." Every procedure page already ends with it (the **Risk statement** section); keep it there.
+- No star ratings, review scores or review counts on the pages.
 
 If you are unsure, ask GYA before publishing.
 
@@ -113,6 +114,8 @@ The hospital cards on the Locations page, the list on the homepage map and the d
 3. To stop showing a hospital without deleting it, tick **Hide**.
 4. To add a hospital, click **+ Add a location** and fill in the details, including **Pin on the coast map** to choose where it sits on the map.
 5. Click **Save settings**, then **Publish website**.
+
+The **Hervey Bay** and **Gympie** pages (listed under **Pages** as Hervey Bay and Gympie) are written pages: edit their wording like any other page (step 1). Their address lines are typed into the page, so if a hospital's address changes, update the page as well as Site Settings.
 
 The practice's own address and phone number are on the **Practice** tab. Changing the phone number there changes it in every button, the header and the footer.
 

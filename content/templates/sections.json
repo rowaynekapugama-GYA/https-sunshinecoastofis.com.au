@@ -530,7 +530,7 @@
     "label": "Small text 3"
    }
   },
-  "html": "<section class=\"hero\">\n  <div class=\"media\">\n    <img src=\"{{f1.src}}\" alt=\"{{f1.alt}}\" fetchpriority=\"high\">\n    <div class=\"vid\"><iframe src=\"https://player.vimeo.com/video/1226478707?background=1&autoplay=1&loop=1&muted=1&autopause=0&dnt=1\" title=\"Practice video\" allow=\"autoplay; fullscreen\" loading=\"eager\"></iframe></div>\n    <div class=\"shade\"></div>\n  </div>\n  <div class=\"wrap\">\n    <div>\n      <h1>{{f2}}</h1>\n      <p class=\"sub\">{{f3}}</p>\n      <div class=\"acts\">\n        <a class=\"btn btn-primary\" href=\"{{f4.href}}\">{{f4}}</a>\n        <a class=\"btn btn-ghost\" href=\"{{f5.href}}\">{{f5}}</a>\n        <a class=\"btn btn-ghost\" href=\"tel:{{phoneTel}}\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.9 2z\"/></svg>{{phone}}</a>\n      </div>\n    </div>\n    <div class=\"card\">\n      <div class=\"row\">\n        <svg viewBox=\"0 0 24 24\" fill=\"currentColor\"><path d=\"M12 2 9.2 8.4 2 9.2l5.3 4.9L5.8 21 12 17.4 18.2 21l-1.5-6.9L22 9.2l-7.2-.8z\"/></svg>\n        <div><strong>{{f6}} <span class=\"stars\">&#9733;&#9733;&#9733;&#9733;&#9733;</span></strong><small>{{f7}}</small></div>\n      </div>\n      <div class=\"row\">\n        <svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M12 2 4 6v6c0 5 3.4 9.4 8 10 4.6-.6 8-5 8-10V6z\"/><path d=\"m9 12 2 2 4-4\"/></svg>\n        <div><strong>{{f8}}</strong><small>{{f9}}</small></div>\n      </div>\n      <div class=\"row\">\n        <svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6\"/></svg>\n        <div><strong>{{f10}}</strong><small>{{f11}}</small></div>\n      </div>\n    </div>\n  </div>\n</section>"
+  "html": "<section class=\"hero\">\n  <div class=\"media\">\n    <img src=\"{{f1.src}}\" alt=\"{{f1.alt}}\" fetchpriority=\"high\">\n    <div class=\"vid\"><iframe src=\"https://player.vimeo.com/video/1226478707?background=1&autoplay=1&loop=1&muted=1&autopause=0&dnt=1\" title=\"Practice video\" allow=\"autoplay; fullscreen\" loading=\"eager\"></iframe></div>\n    <div class=\"shade\"></div>\n  </div>\n  <div class=\"wrap\">\n    <div>\n      <h1>{{f2}}</h1>\n      <p class=\"sub\">{{f3}}</p>\n      <div class=\"acts\">\n        <a class=\"btn btn-primary\" href=\"{{f4.href}}\">{{f4}}</a>\n        <a class=\"btn btn-ghost\" href=\"{{f5.href}}\">{{f5}}</a>\n        <a class=\"btn btn-ghost\" href=\"tel:{{phoneTel}}\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.9 2z\"/></svg>{{phone}}</a>\n      </div>\n    </div>\n    <div class=\"card\">\n      <div class=\"row\">\n        <svg viewBox=\"0 0 24 24\" fill=\"currentColor\"><path d=\"M12 2 9.2 8.4 2 9.2l5.3 4.9L5.8 21 12 17.4 18.2 21l-1.5-6.9L22 9.2l-7.2-.8z\"/></svg>\n        <div><strong>{{f6}}</strong><small>{{f7}}</small></div>\n      </div>\n      <div class=\"row\">\n        <svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M12 2 4 6v6c0 5 3.4 9.4 8 10 4.6-.6 8-5 8-10V6z\"/><path d=\"m9 12 2 2 4-4\"/></svg>\n        <div><strong>{{f8}}</strong><small>{{f9}}</small></div>\n      </div>\n      <div class=\"row\">\n        <svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6\"/></svg>\n        <div><strong>{{f10}}</strong><small>{{f11}}</small></div>\n      </div>\n    </div>\n  </div>\n</section>"
  },
  "home/2": {
   "label": "Key figures strip",
@@ -3080,7 +3080,7 @@
     "label": "Heading"
    },
    "f2": {
-    "type": "text",
+    "type": "rich",
     "label": "Paragraph"
    },
    "f3": {
@@ -3382,7 +3382,7 @@
     "label": "Text"
    }
   },
-  "html": "<section class=\"block\">\n  <div class=\"wrap two narrow-r\">\n    <div class=\"formcard\">\n      <form class=\"f\" id=\"patientForm\" onsubmit=\"return fakeSubmit(event)\" enctype=\"multipart/form-data\" data-endpoint=\"/api/submit\">\n        <input type=\"text\" name=\"website\" tabindex=\"-1\" autocomplete=\"off\" aria-hidden=\"true\" style=\"position:absolute;left:-9999px;opacity:0;height:0;width:0\">\n        <h3>Patient Information</h3>\n        <label>Patient Name *<input type=\"text\" name=\"patient_name\" required autocomplete=\"name\"></label>\n        <div class=\"row\">\n          <label>Date of Birth *<input type=\"date\" name=\"dob\" required></label>\n          <label>Sex *\n            <div class=\"opts\">\n              <label><input type=\"radio\" name=\"sex\" value=\"Male\" required><span>Male</span></label>\n              <label><input type=\"radio\" name=\"sex\" value=\"Female\"><span>Female</span></label>\n            </div>\n          </label>\n        </div>\n        <label>Address<input type=\"text\" name=\"address\" autocomplete=\"street-address\"></label>\n        <div class=\"row\">\n          <label>Suburb<input type=\"text\" name=\"suburb\" autocomplete=\"address-level2\"></label>\n          <label>Postcode<input type=\"text\" name=\"postcode\" inputmode=\"numeric\" autocomplete=\"postal-code\"></label>\n        </div>\n        <div class=\"row\">\n          <label>Phone (L)<input type=\"tel\" name=\"phone_landline\" autocomplete=\"tel\"></label>\n          <label>Phone (M)<input type=\"tel\" name=\"phone_mobile\" autocomplete=\"tel\"></label>\n        </div>\n        <div class=\"row\">\n          <label>E-mail<input type=\"email\" name=\"email\" autocomplete=\"email\"></label>\n          <label>Occupation<input type=\"text\" name=\"occupation\"></label>\n        </div>\n        <div class=\"row\">\n          <label>Medicare<input type=\"text\" name=\"medicare_number\" inputmode=\"numeric\" autocomplete=\"off\"></label>\n          <label>Reference<input type=\"text\" name=\"medicare_reference\" inputmode=\"numeric\" autocomplete=\"off\"></label>\n          <label>Expiry Date<input type=\"text\" name=\"medicare_expiry\" placeholder=\"MM/YYYY\" autocomplete=\"off\"></label>\n        </div>\n\n        <h3 style=\"margin-top:.6rem\">Parent's Medicare Card Details</h3>\n        <p class=\"fine\" style=\"margin-top:-.4rem\">For patients under 18. Required for the Medicare rebate.</p>\n        <div class=\"row\">\n          <label>Parent Name<input type=\"text\" name=\"parent_name\" autocomplete=\"off\"></label>\n          <label>DOB<input type=\"date\" name=\"parent_dob\"></label>\n        </div>\n        <div class=\"row\">\n          <label>Medicare #<input type=\"text\" name=\"parent_medicare_number\" inputmode=\"numeric\" autocomplete=\"off\"></label>\n          <label>Ref. #<input type=\"text\" name=\"parent_medicare_reference\" inputmode=\"numeric\" autocomplete=\"off\"></label>\n          <label>Expiry Date<input type=\"text\" name=\"parent_medicare_expiry\" placeholder=\"MM/YYYY\" autocomplete=\"off\"></label>\n        </div>\n\n        <h3 style=\"margin-top:.6rem\">Patient Health Fund</h3>\n        <div class=\"row\">\n          <label>Patient Health Fund<input type=\"text\" name=\"health_fund\"></label>\n          <label>Member<input type=\"text\" name=\"health_fund_member\" autocomplete=\"off\"></label>\n        </div>\n        <label>Have you served your waiting period?\n          <div class=\"opts\"><label><input type=\"radio\" name=\"waiting_period\" value=\"Yes\"><span>Yes</span></label><label><input type=\"radio\" name=\"waiting_period\" value=\"No\"><span>No</span></label></div>\n        </label>\n        <label>Do you have hospital cover?\n          <div class=\"opts\"><label><input type=\"radio\" name=\"hospital_cover\" value=\"Yes\"><span>Yes</span></label><label><input type=\"radio\" name=\"hospital_cover\" value=\"No\"><span>No</span></label></div>\n        </label>\n        <label>Are you covered for both dental &amp; medical procedures in hospital?\n          <div class=\"opts\"><label><input type=\"radio\" name=\"dental_medical_cover\" value=\"Yes\"><span>Yes</span></label><label><input type=\"radio\" name=\"dental_medical_cover\" value=\"No\"><span>No</span></label></div>\n        </label>\n        <div class=\"row\">\n          <label>DVA\n            <div class=\"opts\"><label><input type=\"radio\" name=\"dva\" value=\"Yes\"><span>Yes</span></label><label><input type=\"radio\" name=\"dva\" value=\"No\"><span>No</span></label></div>\n          </label>\n          <label>Workcover\n            <div class=\"opts\"><label><input type=\"radio\" name=\"workcover\" value=\"Yes\"><span>Yes</span></label><label><input type=\"radio\" name=\"workcover\" value=\"No\"><span>No</span></label></div>\n          </label>\n        </div>\n\n        <h3 style=\"margin-top:.6rem\">Next of Kin</h3>\n        <div class=\"row\">\n          <label>Next of Kin<input type=\"text\" name=\"next_of_kin\"></label>\n          <label>Relationship<input type=\"text\" name=\"next_of_kin_relationship\"></label>\n          <label>Phone<input type=\"tel\" name=\"next_of_kin_phone\"></label>\n        </div>\n\n        <h3 style=\"margin-top:.6rem\">Medical History</h3>\n        <label>Please indicate if you have any of the following\n          <div class=\"opts\">\n            <label><input type=\"checkbox\" name=\"conditions\" value=\"Diabetes\"><span>Diabetes</span></label>\n            <label><input type=\"checkbox\" name=\"conditions\" value=\"Heart Valve Issues\"><span>Heart Valve Issues</span></label>\n            <label><input type=\"checkbox\" name=\"conditions\" value=\"Bleeding Disorder\"><span>Bleeding Disorder</span></label>\n            <label><input type=\"checkbox\" name=\"conditions\" value=\"Sleep Apnoea\"><span>Sleep Apnoea</span></label>\n            <label><input type=\"checkbox\" name=\"conditions\" value=\"Asthma\"><span>Asthma</span></label>\n          </div>\n        </label>\n        <label>Other Medical Conditions<textarea name=\"other_conditions\"></textarea></label>\n        <label>Previous Surgical Procedures<textarea name=\"previous_surgery\"></textarea></label>\n        <label>Current Regular Medications<textarea name=\"medications\"></textarea></label>\n        <label>Allergies<textarea name=\"allergies\"></textarea></label>\n        <label>Weight-loss medications (such as Ozempic)\n          <div class=\"opts\"><label><input type=\"radio\" name=\"weight_loss_medication\" value=\"Yes\"><span>Yes</span></label><label><input type=\"radio\" name=\"weight_loss_medication\" value=\"No\"><span>No</span></label></div>\n        </label>\n        <label>Difficulties with anaesthetics in the past\n          <div class=\"opts\"><label><input type=\"radio\" name=\"anaesthetic_difficulties\" value=\"Yes\"><span>Yes</span></label><label><input type=\"radio\" name=\"anaesthetic_difficulties\" value=\"No\"><span>No</span></label></div>\n        </label>\n        <div class=\"row\">\n          <label>Current weight?<input type=\"text\" name=\"weight\" inputmode=\"decimal\"></label>\n          <label>Current height?<input type=\"text\" name=\"height\" inputmode=\"decimal\"></label>\n        </div>\n        <label>Able to take NSAIDs (Nurofen)?\n          <div class=\"opts\"><label><input type=\"radio\" name=\"nsaids\" value=\"Yes\"><span>Yes</span></label><label><input type=\"radio\" name=\"nsaids\" value=\"No\"><span>No</span></label></div>\n        </label>\n        <label>Blood thinners\n          <div class=\"opts\"><label><input type=\"radio\" name=\"blood_thinners\" value=\"Yes\"><span>Yes</span></label><label><input type=\"radio\" name=\"blood_thinners\" value=\"No\"><span>No</span></label></div>\n        </label>\n        <label>Drugs for your Bones\n          <div class=\"opts\"><label><input type=\"radio\" name=\"bone_drugs\" value=\"Yes\"><span>Yes</span></label><label><input type=\"radio\" name=\"bone_drugs\" value=\"No\"><span>No</span></label></div>\n        </label>\n        <label>Radiotherapy to the head or neck\n          <div class=\"opts\"><label><input type=\"radio\" name=\"radiotherapy\" value=\"Yes\"><span>Yes</span></label><label><input type=\"radio\" name=\"radiotherapy\" value=\"No\"><span>No</span></label></div>\n        </label>\n        <label>When and where have you had radiotherapy?<input type=\"text\" name=\"radiotherapy_details\"></label>\n        <div class=\"row\">\n          <label>Smoker\n            <div class=\"opts\"><label><input type=\"radio\" name=\"smoker\" value=\"Yes\"><span>Yes</span></label><label><input type=\"radio\" name=\"smoker\" value=\"No\"><span>No</span></label></div>\n          </label>\n          <label>How many cigarettes per day?<input type=\"text\" name=\"cigarettes_per_day\" inputmode=\"numeric\"></label>\n        </div>\n        <div class=\"row\">\n          <label>Drink Alcohol\n            <div class=\"opts\"><label><input type=\"radio\" name=\"alcohol\" value=\"Yes\"><span>Yes</span></label><label><input type=\"radio\" name=\"alcohol\" value=\"No\"><span>No</span></label></div>\n          </label>\n          <label>How many glasses (per week)?<input type=\"text\" name=\"alcohol_per_week\" inputmode=\"numeric\"></label>\n        </div>\n        <label>Could you be pregnant?\n          <div class=\"opts\"><label><input type=\"radio\" name=\"pregnant\" value=\"Yes\"><span>Yes</span></label><label><input type=\"radio\" name=\"pregnant\" value=\"No\"><span>No</span></label><label><input type=\"radio\" name=\"pregnant\" value=\"Not applicable\"><span>Not applicable</span></label></div>\n        </label>\n        <div class=\"row\">\n          <label>Name of GP?<input type=\"text\" name=\"gp_name\"></label>\n          <label>Name of Dentist?<input type=\"text\" name=\"dentist_name\"></label>\n        </div>\n\n        <h3 style=\"margin-top:.6rem\">Acknowledgement of fee policy</h3>\n        <p class=\"fine\" style=\"margin-top:-.4rem\">Telephone consultations are paid one business day in advance. All other consultation fees are paid on the day by EFT, Visa or Mastercard. Surgical fees are due two weeks before your surgery; if they have not been paid, the procedure may be cancelled. I confirm the information I have provided is correct to the best of my knowledge.</p>\n        <label class=\"robot\"><input type=\"checkbox\" name=\"fee_policy_agreed\" value=\"Yes\" required><span>I have read and accept the fee policy *</span></label>\n        <div class=\"row\">\n          <label>Your Full Name *<input type=\"text\" name=\"fee_policy_name\" required autocomplete=\"name\"></label>\n          <label>Date *<input type=\"date\" name=\"fee_policy_date\" required></label>\n        </div>\n        <label>Name of parent or guardian<input type=\"text\" name=\"fee_policy_guardian\"></label>\n\n        <h3 style=\"margin-top:.6rem\">Consent to collect patient information</h3>\n        <p class=\"fine\" style=\"margin-top:-.4rem\">Australian privacy law requires your written consent for a health professional to obtain your medical information or share it with another practitioner. I give my surgeon and Sunshine Coast Oral, Facial &amp; Implant Specialists permission to: obtain my medical information, such as consultation notes and test results, from other medical or dental practitioners; communicate with other health professionals directly involved in my care; communicate with my referring practitioner; and take clinical, de-identified photographs and x-rays before, during and after my treatment, and use them in advertising, scientific papers or presentations. I confirm I have read and understood these terms.</p>\n        <label class=\"robot\"><input type=\"checkbox\" name=\"consent_agreed\" value=\"Yes\" required><span>I give this consent *</span></label>\n        <div class=\"row\">\n          <label>Your Full Name *<input type=\"text\" name=\"consent_name\" required autocomplete=\"name\"></label>\n          <label>Date *<input type=\"date\" name=\"consent_date\" required></label>\n        </div>\n        <label>Name of parent or guardian<input type=\"text\" name=\"consent_guardian\"></label>\n\n        <h3 style=\"margin-top:.6rem\">Use of artificial intelligence (AI) in your care</h3>\n        <p class=\"fine\" style=\"margin-top:-.4rem\">Our practice uses AI tools to help with clinical documentation, including the Heidi platform, which prepares clinical notes from consultations and transcribes the letters our surgeons dictate. Your personal information is handled securely and in line with Australian privacy law. Continuing your care with our practice is taken as your consent to the use of these tools.</p>\n        <label class=\"robot\"><input type=\"checkbox\" name=\"ai_agreed\" value=\"Yes\" required><span>I have read and understand how AI is used in my care *</span></label>\n        <div class=\"row\">\n          <label>Your Full Name *<input type=\"text\" name=\"ai_name\" required autocomplete=\"name\"></label>\n          <label>Date *<input type=\"date\" name=\"ai_date\" required></label>\n        </div>\n        <label>Name of parent or guardian<input type=\"text\" name=\"ai_guardian\"></label>\n\n        <p class=\"fine\">* Required fields</p>\n        <button class=\"btn btn-primary\" type=\"submit\">Submit form</button>\n        <p class=\"fine\">Your form is sent securely to our practice team and used only for your care, in line with our privacy policy. Please call {{phone}} if anything here is urgent.</p>\n        <div class=\"ok\"><h4>Thank you, your form has been sent</h4><p style=\"margin:.5rem auto 0;font-size:.95rem\">Our team will add it to your file before your consultation. If you have any questions, call {{phone}}.</p></div>\n      </form>\n    </div>\n    <div class=\"prose\">\n      <h2 style=\"margin-top:0\">{{f1}}</h2>\n      <p>{{f2}}</p>\n      <p>{{f3}}</p>\n      <div class=\"notice\">{{f4}}</div>\n    </div>\n  </div>\n</section>"
+  "html": "<section class=\"block\">\n  <div class=\"wrap two narrow-r\">\n    <div class=\"formcard\">\n      <form class=\"f\" id=\"patientForm\" onsubmit=\"return fakeSubmit(event)\" enctype=\"multipart/form-data\" data-endpoint=\"/api/submit\">\n        <input type=\"text\" name=\"website\" tabindex=\"-1\" autocomplete=\"off\" aria-hidden=\"true\" style=\"position:absolute;left:-9999px;opacity:0;height:0;width:0\">\n        <h3>Patient Information</h3>\n        <label>Patient Name *<input type=\"text\" name=\"patient_name\" required autocomplete=\"name\"></label>\n        <div class=\"row\">\n          <label>Date of Birth *<input type=\"date\" name=\"dob\" required></label>\n          <label>Sex *\n            <div class=\"opts\">\n              <label><input type=\"radio\" name=\"sex\" value=\"Male\" required><span>Male</span></label>\n              <label><input type=\"radio\" name=\"sex\" value=\"Female\"><span>Female</span></label>\n            </div>\n          </label>\n        </div>\n        <label>Address<input type=\"text\" name=\"address\" autocomplete=\"street-address\"></label>\n        <div class=\"row\">\n          <label>Suburb<input type=\"text\" name=\"suburb\" autocomplete=\"address-level2\"></label>\n          <label>Postcode<input type=\"text\" name=\"postcode\" inputmode=\"numeric\" autocomplete=\"postal-code\"></label>\n        </div>\n        <div class=\"row\">\n          <label>Phone (L)<input type=\"tel\" name=\"phone_landline\" autocomplete=\"tel\"></label>\n          <label>Phone (M)<input type=\"tel\" name=\"phone_mobile\" autocomplete=\"tel\"></label>\n        </div>\n        <div class=\"row\">\n          <label>E-mail<input type=\"email\" name=\"email\" autocomplete=\"email\"></label>\n          <label>Occupation<input type=\"text\" name=\"occupation\"></label>\n        </div>\n        <div class=\"row\">\n          <label>Medicare<input type=\"text\" name=\"medicare_number\" inputmode=\"numeric\" autocomplete=\"off\"></label>\n          <label>Reference<input type=\"text\" name=\"medicare_reference\" inputmode=\"numeric\" autocomplete=\"off\"></label>\n          <label>Expiry Date<input type=\"text\" name=\"medicare_expiry\" placeholder=\"MM/YYYY\" autocomplete=\"off\"></label>\n        </div>\n\n        <h3 style=\"margin-top:.6rem\">Parent's Medicare Card Details</h3>\n        <p class=\"fine\" style=\"margin-top:-.4rem\">For patients under 18. Required for the Medicare rebate.</p>\n        <div class=\"row\">\n          <label>Parent Name<input type=\"text\" name=\"parent_name\" autocomplete=\"off\"></label>\n          <label>DOB<input type=\"date\" name=\"parent_dob\"></label>\n        </div>\n        <div class=\"row\">\n          <label>Medicare #<input type=\"text\" name=\"parent_medicare_number\" inputmode=\"numeric\" autocomplete=\"off\"></label>\n          <label>Ref. #<input type=\"text\" name=\"parent_medicare_reference\" inputmode=\"numeric\" autocomplete=\"off\"></label>\n          <label>Expiry Date<input type=\"text\" name=\"parent_medicare_expiry\" placeholder=\"MM/YYYY\" autocomplete=\"off\"></label>\n        </div>\n\n        <h3 style=\"margin-top:.6rem\">Patient Health Fund</h3>\n        <div class=\"row\">\n          <label>Patient Health Fund<input type=\"text\" name=\"health_fund\"></label>\n          <label>Member<input type=\"text\" name=\"health_fund_member\" autocomplete=\"off\"></label>\n        </div>\n        <label>Have you served your waiting period?\n          <div class=\"opts\"><label><input type=\"radio\" name=\"waiting_period\" value=\"Yes\"><span>Yes</span></label><label><input type=\"radio\" name=\"waiting_period\" value=\"No\"><span>No</span></label></div>\n        </label>\n        <label>Do you have hospital cover?\n          <div class=\"opts\"><label><input type=\"radio\" name=\"hospital_cover\" value=\"Yes\"><span>Yes</span></label><label><input type=\"radio\" name=\"hospital_cover\" value=\"No\"><span>No</span></label></div>\n        </label>\n        <label>Are you covered for both dental &amp; medical procedures in hospital?\n          <div class=\"opts\"><label><input type=\"radio\" name=\"dental_medical_cover\" value=\"Yes\"><span>Yes</span></label><label><input type=\"radio\" name=\"dental_medical_cover\" value=\"No\"><span>No</span></label></div>\n        </label>\n        <div class=\"row\">\n          <label>DVA\n            <div class=\"opts\"><label><input type=\"radio\" name=\"dva\" value=\"Yes\"><span>Yes</span></label><label><input type=\"radio\" name=\"dva\" value=\"No\"><span>No</span></label></div>\n          </label>\n          <label>Workcover\n            <div class=\"opts\"><label><input type=\"radio\" name=\"workcover\" value=\"Yes\"><span>Yes</span></label><label><input type=\"radio\" name=\"workcover\" value=\"No\"><span>No</span></label></div>\n          </label>\n        </div>\n\n        <h3 style=\"margin-top:.6rem\">Next of Kin</h3>\n        <div class=\"row\">\n          <label>Next of Kin<input type=\"text\" name=\"next_of_kin\"></label>\n          <label>Relationship<input type=\"text\" name=\"next_of_kin_relationship\"></label>\n          <label>Phone<input type=\"tel\" name=\"next_of_kin_phone\"></label>\n        </div>\n\n        <h3 style=\"margin-top:.6rem\">Medical History</h3>\n        <label>Please indicate if you have any of the following\n          <div class=\"opts\">\n            <label><input type=\"checkbox\" name=\"conditions\" value=\"Diabetes\"><span>Diabetes</span></label>\n            <label><input type=\"checkbox\" name=\"conditions\" value=\"Heart Valve Issues\"><span>Heart Valve Issues</span></label>\n            <label><input type=\"checkbox\" name=\"conditions\" value=\"Bleeding Disorder\"><span>Bleeding Disorder</span></label>\n            <label><input type=\"checkbox\" name=\"conditions\" value=\"Sleep Apnoea\"><span>Sleep Apnoea</span></label>\n            <label><input type=\"checkbox\" name=\"conditions\" value=\"Asthma\"><span>Asthma</span></label>\n          </div>\n        </label>\n        <label>Other Medical Conditions<textarea name=\"other_conditions\"></textarea></label>\n        <label>Previous Surgical Procedures<textarea name=\"previous_surgery\"></textarea></label>\n        <label>Current Regular Medications<textarea name=\"medications\"></textarea></label>\n        <label>Allergies<textarea name=\"allergies\"></textarea></label>\n        <label>Weight-loss medications (such as Ozempic)\n          <div class=\"opts\"><label><input type=\"radio\" name=\"weight_loss_medication\" value=\"Yes\"><span>Yes</span></label><label><input type=\"radio\" name=\"weight_loss_medication\" value=\"No\"><span>No</span></label></div>\n        </label>\n        <label>Difficulties with anaesthetics in the past\n          <div class=\"opts\"><label><input type=\"radio\" name=\"anaesthetic_difficulties\" value=\"Yes\"><span>Yes</span></label><label><input type=\"radio\" name=\"anaesthetic_difficulties\" value=\"No\"><span>No</span></label></div>\n        </label>\n        <div class=\"row\">\n          <label>Current weight?<input type=\"text\" name=\"weight\" inputmode=\"decimal\"></label>\n          <label>Current height?<input type=\"text\" name=\"height\" inputmode=\"decimal\"></label>\n        </div>\n        <label>Able to take NSAIDs (Nurofen)?\n          <div class=\"opts\"><label><input type=\"radio\" name=\"nsaids\" value=\"Yes\"><span>Yes</span></label><label><input type=\"radio\" name=\"nsaids\" value=\"No\"><span>No</span></label></div>\n        </label>\n        <label>Blood thinners\n          <div class=\"opts\"><label><input type=\"radio\" name=\"blood_thinners\" value=\"Yes\"><span>Yes</span></label><label><input type=\"radio\" name=\"blood_thinners\" value=\"No\"><span>No</span></label></div>\n        </label>\n        <label>Drugs for your Bones\n          <div class=\"opts\"><label><input type=\"radio\" name=\"bone_drugs\" value=\"Yes\"><span>Yes</span></label><label><input type=\"radio\" name=\"bone_drugs\" value=\"No\"><span>No</span></label></div>\n        </label>\n        <label>Radiotherapy to the head or neck\n          <div class=\"opts\"><label><input type=\"radio\" name=\"radiotherapy\" value=\"Yes\"><span>Yes</span></label><label><input type=\"radio\" name=\"radiotherapy\" value=\"No\"><span>No</span></label></div>\n        </label>\n        <label>When and where have you had radiotherapy?<input type=\"text\" name=\"radiotherapy_details\"></label>\n        <div class=\"row\">\n          <label>Smoker\n            <div class=\"opts\"><label><input type=\"radio\" name=\"smoker\" value=\"Yes\"><span>Yes</span></label><label><input type=\"radio\" name=\"smoker\" value=\"No\"><span>No</span></label></div>\n          </label>\n          <label>How many cigarettes per day?<input type=\"text\" name=\"cigarettes_per_day\" inputmode=\"numeric\"></label>\n        </div>\n        <div class=\"row\">\n          <label>Drink Alcohol\n            <div class=\"opts\"><label><input type=\"radio\" name=\"alcohol\" value=\"Yes\"><span>Yes</span></label><label><input type=\"radio\" name=\"alcohol\" value=\"No\"><span>No</span></label></div>\n          </label>\n          <label>How many glasses (per week)?<input type=\"text\" name=\"alcohol_per_week\" inputmode=\"numeric\"></label>\n        </div>\n        <label>Could you be pregnant?\n          <div class=\"opts\"><label><input type=\"radio\" name=\"pregnant\" value=\"Yes\"><span>Yes</span></label><label><input type=\"radio\" name=\"pregnant\" value=\"No\"><span>No</span></label><label><input type=\"radio\" name=\"pregnant\" value=\"Not applicable\"><span>Not applicable</span></label></div>\n        </label>\n        <div class=\"row\">\n          <label>Name of GP?<input type=\"text\" name=\"gp_name\"></label>\n          <label>Name of Dentist?<input type=\"text\" name=\"dentist_name\"></label>\n        </div>\n\n        <h3 style=\"margin-top:.6rem\">Acknowledgement of fee policy</h3>\n        <p class=\"fine\" style=\"margin-top:-.4rem\">Telephone consultations are paid one business day in advance. All other consultation fees are paid on the day by EFT, Visa or Mastercard. Surgical fees are due two weeks before your surgery; if they have not been paid, the procedure may be cancelled. I confirm the information I have provided is correct to the best of my knowledge.</p>\n        <label class=\"robot\"><input type=\"checkbox\" name=\"fee_policy_agreed\" value=\"Yes\" required><span>I have read and accept the fee policy *</span></label>\n        <div class=\"row\">\n          <label>Your Full Name *<input type=\"text\" name=\"fee_policy_name\" required autocomplete=\"name\"></label>\n          <label>Date *<input type=\"date\" name=\"fee_policy_date\" required></label>\n        </div>\n        <label>Name of parent or guardian<input type=\"text\" name=\"fee_policy_guardian\"></label>\n\n        <h3 style=\"margin-top:.6rem\">Consent to collect patient information</h3>\n        <p class=\"fine\" style=\"margin-top:-.4rem\">Australian privacy law requires your written consent for a health professional to obtain your medical information or share it with another practitioner. I give my surgeon and Sunshine Coast Oral, Facial &amp; Implant Specialists permission to: obtain my medical information, such as consultation notes and test results, from other medical or dental practitioners; communicate with other health professionals directly involved in my care; communicate with my referring practitioner; and take clinical, de-identified photographs and x-rays before, during and after my treatment, and use them for teaching, scientific papers or presentations. I confirm I have read and understood these terms.</p>\n        <label class=\"robot\"><input type=\"checkbox\" name=\"consent_agreed\" value=\"Yes\" required><span>I give this consent *</span></label>\n        <div class=\"row\">\n          <label>Your Full Name *<input type=\"text\" name=\"consent_name\" required autocomplete=\"name\"></label>\n          <label>Date *<input type=\"date\" name=\"consent_date\" required></label>\n        </div>\n        <label>Name of parent or guardian<input type=\"text\" name=\"consent_guardian\"></label>\n\n        <h3 style=\"margin-top:.6rem\">Use of artificial intelligence (AI) in your care</h3>\n        <p class=\"fine\" style=\"margin-top:-.4rem\">Our practice uses AI tools to help with clinical documentation, including the Heidi platform, which prepares clinical notes from consultations and transcribes the letters our surgeons dictate. Your personal information is handled securely and in line with Australian privacy law. Continuing your care with our practice is taken as your consent to the use of these tools.</p>\n        <label class=\"robot\"><input type=\"checkbox\" name=\"ai_agreed\" value=\"Yes\" required><span>I have read and understand how AI is used in my care *</span></label>\n        <div class=\"row\">\n          <label>Your Full Name *<input type=\"text\" name=\"ai_name\" required autocomplete=\"name\"></label>\n          <label>Date *<input type=\"date\" name=\"ai_date\" required></label>\n        </div>\n        <label>Name of parent or guardian<input type=\"text\" name=\"ai_guardian\"></label>\n\n        <p class=\"fine\">* Required fields</p>\n        <button class=\"btn btn-primary\" type=\"submit\">Submit form</button>\n        <p class=\"fine\">Your form is sent securely to our practice team and used only for your care, in line with our privacy policy. Please call {{phone}} if anything here is urgent.</p>\n        <div class=\"ok\"><h4>Thank you, your form has been sent</h4><p style=\"margin:.5rem auto 0;font-size:.95rem\">Our team will add it to your file before your consultation. If you have any questions, call {{phone}}.</p></div>\n      </form>\n    </div>\n    <div class=\"prose\">\n      <h2 style=\"margin-top:0\">{{f1}}</h2>\n      <p>{{f2}}</p>\n      <p>{{f3}}</p>\n      <div class=\"notice\">{{f4}}</div>\n    </div>\n  </div>\n</section>"
  },
  "feedback/1": {
   "label": "Page heading: Tell us about your experience",
@@ -3703,5 +3703,454 @@
    }
   },
   "html": "<section class=\"block\">\n  <div class=\"wrap two narrow-r\">\n    <div class=\"prose\">\n      <h2 style=\"margin-top:0\">{{f1}}</h2>\n      <ul>\n        <li>{{f2}}</li>\n        <li>{{f3}}</li>\n        <li>{{f4}}</li>\n        <li>{{f5}}</li>\n        <li>{{f6}}</li>\n        <li>{{f7}}</li>\n        <li>{{f8}}</li>\n      </ul>\n      <p><a class=\"btn btn-navy\" href=\"{{f9.href}}\">{{f9}}</a></p>\n    </div>\n    <aside class=\"side\">\n      <h3>{{f10}}</h3>\n      <p style=\"font-size:.95rem;color:var(--muted)\">{{f11}}</p>\n      <a class=\"btn btn-primary\" href=\"tel:{{phoneTel}}\">{{f12}}</a>\n      <a class=\"btn btn-outline\" href=\"{{f13.href}}\">{{f13}}</a>\n    </aside>\n  </div>\n</section>"
+ },
+ "content/body": {
+  "label": "Text with headings, paragraphs and lists",
+  "trim": true,
+  "fields": {
+   "f1": {
+    "type": "text",
+    "label": "Part 1: heading"
+   },
+   "f2": {
+    "type": "rich",
+    "label": "Part 1: paragraph 1"
+   },
+   "f3": {
+    "type": "rich",
+    "label": "Part 1: paragraph 2"
+   },
+   "f4": {
+    "type": "rich",
+    "label": "Part 1: paragraph 3"
+   },
+   "f5": {
+    "type": "rich",
+    "label": "Part 1: list item 1"
+   },
+   "f6": {
+    "type": "rich",
+    "label": "Part 1: list item 2"
+   },
+   "f7": {
+    "type": "rich",
+    "label": "Part 1: list item 3"
+   },
+   "f8": {
+    "type": "rich",
+    "label": "Part 1: list item 4"
+   },
+   "f9": {
+    "type": "rich",
+    "label": "Part 1: list item 5"
+   },
+   "f10": {
+    "type": "rich",
+    "label": "Part 1: list item 6"
+   },
+   "f11": {
+    "type": "rich",
+    "label": "Part 1: list item 7"
+   },
+   "f12": {
+    "type": "rich",
+    "label": "Part 1: list item 8"
+   },
+   "f13": {
+    "type": "rich",
+    "label": "Part 1: closing paragraph"
+   },
+   "f14": {
+    "type": "text",
+    "label": "Part 2: heading"
+   },
+   "f15": {
+    "type": "rich",
+    "label": "Part 2: paragraph 1"
+   },
+   "f16": {
+    "type": "rich",
+    "label": "Part 2: paragraph 2"
+   },
+   "f17": {
+    "type": "rich",
+    "label": "Part 2: paragraph 3"
+   },
+   "f18": {
+    "type": "rich",
+    "label": "Part 2: list item 1"
+   },
+   "f19": {
+    "type": "rich",
+    "label": "Part 2: list item 2"
+   },
+   "f20": {
+    "type": "rich",
+    "label": "Part 2: list item 3"
+   },
+   "f21": {
+    "type": "rich",
+    "label": "Part 2: list item 4"
+   },
+   "f22": {
+    "type": "rich",
+    "label": "Part 2: list item 5"
+   },
+   "f23": {
+    "type": "rich",
+    "label": "Part 2: list item 6"
+   },
+   "f24": {
+    "type": "rich",
+    "label": "Part 2: list item 7"
+   },
+   "f25": {
+    "type": "rich",
+    "label": "Part 2: list item 8"
+   },
+   "f26": {
+    "type": "rich",
+    "label": "Part 2: closing paragraph"
+   },
+   "f27": {
+    "type": "text",
+    "label": "Part 3: heading"
+   },
+   "f28": {
+    "type": "rich",
+    "label": "Part 3: paragraph 1"
+   },
+   "f29": {
+    "type": "rich",
+    "label": "Part 3: paragraph 2"
+   },
+   "f30": {
+    "type": "rich",
+    "label": "Part 3: paragraph 3"
+   },
+   "f31": {
+    "type": "rich",
+    "label": "Part 3: list item 1"
+   },
+   "f32": {
+    "type": "rich",
+    "label": "Part 3: list item 2"
+   },
+   "f33": {
+    "type": "rich",
+    "label": "Part 3: list item 3"
+   },
+   "f34": {
+    "type": "rich",
+    "label": "Part 3: list item 4"
+   },
+   "f35": {
+    "type": "rich",
+    "label": "Part 3: list item 5"
+   },
+   "f36": {
+    "type": "rich",
+    "label": "Part 3: list item 6"
+   },
+   "f37": {
+    "type": "rich",
+    "label": "Part 3: list item 7"
+   },
+   "f38": {
+    "type": "rich",
+    "label": "Part 3: list item 8"
+   },
+   "f39": {
+    "type": "rich",
+    "label": "Part 3: closing paragraph"
+   },
+   "f40": {
+    "type": "text",
+    "label": "Part 4: heading"
+   },
+   "f41": {
+    "type": "rich",
+    "label": "Part 4: paragraph 1"
+   },
+   "f42": {
+    "type": "rich",
+    "label": "Part 4: paragraph 2"
+   },
+   "f43": {
+    "type": "rich",
+    "label": "Part 4: paragraph 3"
+   },
+   "f44": {
+    "type": "rich",
+    "label": "Part 4: list item 1"
+   },
+   "f45": {
+    "type": "rich",
+    "label": "Part 4: list item 2"
+   },
+   "f46": {
+    "type": "rich",
+    "label": "Part 4: list item 3"
+   },
+   "f47": {
+    "type": "rich",
+    "label": "Part 4: list item 4"
+   },
+   "f48": {
+    "type": "rich",
+    "label": "Part 4: list item 5"
+   },
+   "f49": {
+    "type": "rich",
+    "label": "Part 4: list item 6"
+   },
+   "f50": {
+    "type": "rich",
+    "label": "Part 4: list item 7"
+   },
+   "f51": {
+    "type": "rich",
+    "label": "Part 4: list item 8"
+   },
+   "f52": {
+    "type": "rich",
+    "label": "Part 4: closing paragraph"
+   },
+   "f53": {
+    "type": "text",
+    "label": "Part 5: heading"
+   },
+   "f54": {
+    "type": "rich",
+    "label": "Part 5: paragraph 1"
+   },
+   "f55": {
+    "type": "rich",
+    "label": "Part 5: paragraph 2"
+   },
+   "f56": {
+    "type": "rich",
+    "label": "Part 5: paragraph 3"
+   },
+   "f57": {
+    "type": "rich",
+    "label": "Part 5: list item 1"
+   },
+   "f58": {
+    "type": "rich",
+    "label": "Part 5: list item 2"
+   },
+   "f59": {
+    "type": "rich",
+    "label": "Part 5: list item 3"
+   },
+   "f60": {
+    "type": "rich",
+    "label": "Part 5: list item 4"
+   },
+   "f61": {
+    "type": "rich",
+    "label": "Part 5: list item 5"
+   },
+   "f62": {
+    "type": "rich",
+    "label": "Part 5: list item 6"
+   },
+   "f63": {
+    "type": "rich",
+    "label": "Part 5: list item 7"
+   },
+   "f64": {
+    "type": "rich",
+    "label": "Part 5: list item 8"
+   },
+   "f65": {
+    "type": "rich",
+    "label": "Part 5: closing paragraph"
+   },
+   "f66": {
+    "type": "text",
+    "label": "Part 6: heading"
+   },
+   "f67": {
+    "type": "rich",
+    "label": "Part 6: paragraph 1"
+   },
+   "f68": {
+    "type": "rich",
+    "label": "Part 6: paragraph 2"
+   },
+   "f69": {
+    "type": "rich",
+    "label": "Part 6: paragraph 3"
+   },
+   "f70": {
+    "type": "rich",
+    "label": "Part 6: list item 1"
+   },
+   "f71": {
+    "type": "rich",
+    "label": "Part 6: list item 2"
+   },
+   "f72": {
+    "type": "rich",
+    "label": "Part 6: list item 3"
+   },
+   "f73": {
+    "type": "rich",
+    "label": "Part 6: list item 4"
+   },
+   "f74": {
+    "type": "rich",
+    "label": "Part 6: list item 5"
+   },
+   "f75": {
+    "type": "rich",
+    "label": "Part 6: list item 6"
+   },
+   "f76": {
+    "type": "rich",
+    "label": "Part 6: list item 7"
+   },
+   "f77": {
+    "type": "rich",
+    "label": "Part 6: list item 8"
+   },
+   "f78": {
+    "type": "rich",
+    "label": "Part 6: closing paragraph"
+   },
+   "f79": {
+    "type": "text",
+    "label": "Part 7: heading"
+   },
+   "f80": {
+    "type": "rich",
+    "label": "Part 7: paragraph 1"
+   },
+   "f81": {
+    "type": "rich",
+    "label": "Part 7: paragraph 2"
+   },
+   "f82": {
+    "type": "rich",
+    "label": "Part 7: paragraph 3"
+   },
+   "f83": {
+    "type": "rich",
+    "label": "Part 7: list item 1"
+   },
+   "f84": {
+    "type": "rich",
+    "label": "Part 7: list item 2"
+   },
+   "f85": {
+    "type": "rich",
+    "label": "Part 7: list item 3"
+   },
+   "f86": {
+    "type": "rich",
+    "label": "Part 7: list item 4"
+   },
+   "f87": {
+    "type": "rich",
+    "label": "Part 7: list item 5"
+   },
+   "f88": {
+    "type": "rich",
+    "label": "Part 7: list item 6"
+   },
+   "f89": {
+    "type": "rich",
+    "label": "Part 7: list item 7"
+   },
+   "f90": {
+    "type": "rich",
+    "label": "Part 7: list item 8"
+   },
+   "f91": {
+    "type": "rich",
+    "label": "Part 7: closing paragraph"
+   },
+   "f92": {
+    "type": "text",
+    "label": "Part 8: heading"
+   },
+   "f93": {
+    "type": "rich",
+    "label": "Part 8: paragraph 1"
+   },
+   "f94": {
+    "type": "rich",
+    "label": "Part 8: paragraph 2"
+   },
+   "f95": {
+    "type": "rich",
+    "label": "Part 8: paragraph 3"
+   },
+   "f96": {
+    "type": "rich",
+    "label": "Part 8: list item 1"
+   },
+   "f97": {
+    "type": "rich",
+    "label": "Part 8: list item 2"
+   },
+   "f98": {
+    "type": "rich",
+    "label": "Part 8: list item 3"
+   },
+   "f99": {
+    "type": "rich",
+    "label": "Part 8: list item 4"
+   },
+   "f100": {
+    "type": "rich",
+    "label": "Part 8: list item 5"
+   },
+   "f101": {
+    "type": "rich",
+    "label": "Part 8: list item 6"
+   },
+   "f102": {
+    "type": "rich",
+    "label": "Part 8: list item 7"
+   },
+   "f103": {
+    "type": "rich",
+    "label": "Part 8: list item 8"
+   },
+   "f104": {
+    "type": "rich",
+    "label": "Part 8: closing paragraph"
+   },
+   "f105": {
+    "type": "text",
+    "label": "Side panel: heading"
+   },
+   "f106": {
+    "type": "text",
+    "label": "Side panel: text"
+   },
+   "f107": {
+    "type": "text",
+    "label": "Side panel: call button wording"
+   },
+   "f108": {
+    "type": "link",
+    "label": "Side panel: second button"
+   }
+  },
+  "html": "<section class=\"block\">\n  <div class=\"wrap two narrow-r\">\n    <div class=\"prose\">\n      <h2 style=\"margin-top:0\">{{f1}}</h2>\n      <p>{{f2}}</p>\n      <p>{{f3}}</p>\n      <p>{{f4}}</p>\n      <ul><li>{{f5}}</li><li>{{f6}}</li><li>{{f7}}</li><li>{{f8}}</li><li>{{f9}}</li><li>{{f10}}</li><li>{{f11}}</li><li>{{f12}}</li></ul>\n      <p>{{f13}}</p>\n      <h2>{{f14}}</h2>\n      <p>{{f15}}</p>\n      <p>{{f16}}</p>\n      <p>{{f17}}</p>\n      <ul><li>{{f18}}</li><li>{{f19}}</li><li>{{f20}}</li><li>{{f21}}</li><li>{{f22}}</li><li>{{f23}}</li><li>{{f24}}</li><li>{{f25}}</li></ul>\n      <p>{{f26}}</p>\n      <h2>{{f27}}</h2>\n      <p>{{f28}}</p>\n      <p>{{f29}}</p>\n      <p>{{f30}}</p>\n      <ul><li>{{f31}}</li><li>{{f32}}</li><li>{{f33}}</li><li>{{f34}}</li><li>{{f35}}</li><li>{{f36}}</li><li>{{f37}}</li><li>{{f38}}</li></ul>\n      <p>{{f39}}</p>\n      <h2>{{f40}}</h2>\n      <p>{{f41}}</p>\n      <p>{{f42}}</p>\n      <p>{{f43}}</p>\n      <ul><li>{{f44}}</li><li>{{f45}}</li><li>{{f46}}</li><li>{{f47}}</li><li>{{f48}}</li><li>{{f49}}</li><li>{{f50}}</li><li>{{f51}}</li></ul>\n      <p>{{f52}}</p>\n      <h2>{{f53}}</h2>\n      <p>{{f54}}</p>\n      <p>{{f55}}</p>\n      <p>{{f56}}</p>\n      <ul><li>{{f57}}</li><li>{{f58}}</li><li>{{f59}}</li><li>{{f60}}</li><li>{{f61}}</li><li>{{f62}}</li><li>{{f63}}</li><li>{{f64}}</li></ul>\n      <p>{{f65}}</p>\n      <h2>{{f66}}</h2>\n      <p>{{f67}}</p>\n      <p>{{f68}}</p>\n      <p>{{f69}}</p>\n      <ul><li>{{f70}}</li><li>{{f71}}</li><li>{{f72}}</li><li>{{f73}}</li><li>{{f74}}</li><li>{{f75}}</li><li>{{f76}}</li><li>{{f77}}</li></ul>\n      <p>{{f78}}</p>\n      <h2>{{f79}}</h2>\n      <p>{{f80}}</p>\n      <p>{{f81}}</p>\n      <p>{{f82}}</p>\n      <ul><li>{{f83}}</li><li>{{f84}}</li><li>{{f85}}</li><li>{{f86}}</li><li>{{f87}}</li><li>{{f88}}</li><li>{{f89}}</li><li>{{f90}}</li></ul>\n      <p>{{f91}}</p>\n      <h2>{{f92}}</h2>\n      <p>{{f93}}</p>\n      <p>{{f94}}</p>\n      <p>{{f95}}</p>\n      <ul><li>{{f96}}</li><li>{{f97}}</li><li>{{f98}}</li><li>{{f99}}</li><li>{{f100}}</li><li>{{f101}}</li><li>{{f102}}</li><li>{{f103}}</li></ul>\n      <p>{{f104}}</p>\n    </div>\n    <aside class=\"side\">\n      <h3>{{f105}}</h3>\n      <p style=\"font-size:.95rem;color:var(--muted)\">{{f106}}</p>\n      <a class=\"btn btn-primary\" href=\"tel:{{phoneTel}}\">{{f107}}</a>\n      <a class=\"btn btn-outline\" href=\"{{f108.href}}\">{{f108}}</a>\n    </aside>\n  </div>\n</section>"
+ },
+ "notice/risk": {
+  "label": "Risk statement",
+  "fields": {
+   "f1": {
+    "type": "rich",
+    "label": "Statement"
+   }
+  },
+  "html": "<section class=\"block\" style=\"padding-top:0\">\n  <div class=\"wrap\">\n    <p style=\"color:var(--muted);font-size:.95rem;max-width:62rem\">{{f1}}</p>\n  </div>\n</section>"
  }
 }

@@ -132,7 +132,7 @@
           "value": "Recovery and finishing orthodontics"
         },
         "f10": {
-          "value": "A soft diet for several weeks, regular reviews, then a short final phase of orthodontics to perfect the bite."
+          "value": "A soft diet for several weeks, regular reviews, then a short final phase of orthodontics to fine-tune the bite."
         }
       }
     },
@@ -171,6 +171,15 @@
           "value": "Yes. Because the jaws are repositioned, facial balance improves. Digital planning lets your surgeon show you the expected change before surgery."
         },
         "f11": {
+          "value": "Any surgical or invasive procedure carries risks. Before proceeding, you should seek a second opinion from an appropriately qualified health practitioner."
+        }
+      }
+    },
+    {
+      "id": "risk",
+      "template": "notice/risk",
+      "fields": {
+        "f1": {
           "value": "Any surgical or invasive procedure carries risks. Before proceeding, you should seek a second opinion from an appropriately qualified health practitioner."
         }
       }

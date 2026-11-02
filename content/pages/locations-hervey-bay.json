@@ -1,0 +1,364 @@
+{
+  "slug": "locations-hervey-bay",
+  "route": "/locations/hervey-bay/",
+  "pageId": "locations--hervey-bay",
+  "title": "Hervey Bay",
+  "kind": "page",
+  "seo": {
+    "metaTitle": "Oral & Maxillofacial Surgeon Hervey Bay | SCOFIS",
+    "metaDescription": "Specialist oral and maxillofacial surgery for Hervey Bay, Maryborough and Fraser Coast patients at St Stephen's Private Hospital, Urraween.",
+    "ogTitle": "Oral and maxillofacial surgeons in Hervey Bay | St Stephen's Private Hospital"
+  },
+  "sections": [
+    {
+      "id": "s1",
+      "template": "locations/1",
+      "fields": {
+        "f1": {
+          "src": "/images/theatre.jpg",
+          "alt": "Procedure room with monitoring equipment"
+        },
+        "f2": {
+          "value": "<a href=\"/\">Home</a> / <a href=\"/locations/\">Locations</a>"
+        },
+        "f3": {
+          "value": "Oral and maxillofacial surgeons in Hervey Bay"
+        },
+        "f4": {
+          "value": "Specialist surgery at St Stephen's Private Hospital in Urraween for patients from Hervey Bay, Maryborough and the Fraser Coast, without travelling to Brisbane."
+        }
+      }
+    },
+    {
+      "id": "s2",
+      "template": "content/body",
+      "fields": {
+        "f1": {
+          "value": "Surgery at St Stephen's Private Hospital"
+        },
+        "f2": {
+          "value": "Hervey Bay and Fraser Coast patients can have their surgery at St Stephen's Private Hospital in Urraween, so treatment under general anaesthetic happens close to home."
+        },
+        "f3": {
+          "value": "<strong>St Stephen's Private Hospital</strong><br>1 Medical Place, Urraween QLD 4655<br><a href=\"https://www.google.com/maps/place/St+Stephen's+Hospital/@-25.299893,152.8238597,15z\" target=\"_blank\" rel=\"noopener\">Get directions</a>"
+        },
+        "f4": {
+          "value": "Surgery under general anaesthetic is performed with a specialist anaesthetist. [CONFIRM WITH CLIENT: which surgeon or surgeons operate at St Stephen's Private Hospital, Dr Trent Lincoln, Dr Andrew Higgins or both.]"
+        },
+        "f5": {
+          "value": ""
+        },
+        "f6": {
+          "value": ""
+        },
+        "f7": {
+          "value": ""
+        },
+        "f8": {
+          "value": ""
+        },
+        "f9": {
+          "value": ""
+        },
+        "f10": {
+          "value": ""
+        },
+        "f11": {
+          "value": ""
+        },
+        "f12": {
+          "value": ""
+        },
+        "f13": {
+          "value": ""
+        },
+        "f14": {
+          "value": "Consultations and theatre days"
+        },
+        "f15": {
+          "value": "Consultations are held at our Buderim rooms, Nucleus Medical Suites, Suite 5 (Blue Lifts), 23 Elsa Wilson Drive, Buderim QLD 4556. A 3D CBCT scan is taken in our rooms on the day, so planning can begin straight away."
+        },
+        "f16": {
+          "value": "[CONFIRM WITH CLIENT: whether any consultations are held in Hervey Bay, and on which days; and the usual theatre days at St Stephen's Private Hospital.]"
+        },
+        "f17": {
+          "value": "Call {{phone}} and our team will arrange your consultation and, if you need surgery, your booking at St Stephen's."
+        },
+        "f18": {
+          "value": ""
+        },
+        "f19": {
+          "value": ""
+        },
+        "f20": {
+          "value": ""
+        },
+        "f21": {
+          "value": ""
+        },
+        "f22": {
+          "value": ""
+        },
+        "f23": {
+          "value": ""
+        },
+        "f24": {
+          "value": ""
+        },
+        "f25": {
+          "value": ""
+        },
+        "f26": {
+          "value": ""
+        },
+        "f27": {
+          "value": "Treatment for Hervey Bay patients"
+        },
+        "f28": {
+          "value": "Our surgeons provide the full scope of oral and maxillofacial surgery. [CONFIRM WITH CLIENT: which of these are performed at St Stephen's Private Hospital.]"
+        },
+        "f29": {
+          "value": ""
+        },
+        "f30": {
+          "value": ""
+        },
+        "f31": {
+          "value": "<a href=\"/services/wisdom-teeth-removal/\">Wisdom teeth removal</a>"
+        },
+        "f32": {
+          "value": "<a href=\"/services/dental-implants/\">Dental implants</a>"
+        },
+        "f33": {
+          "value": "<a href=\"/services/all-on-4-dental-implants/\">All-on-4 full arch implants</a>"
+        },
+        "f34": {
+          "value": "<a href=\"/services/zygomatic-implants/\">Zygomatic implants</a>"
+        },
+        "f35": {
+          "value": "<a href=\"/services/jaw-bone-grafting/\">Jaw bone grafting</a>"
+        },
+        "f36": {
+          "value": "<a href=\"/services/orthognathic-corrective-jaw-surgery/\">Corrective jaw surgery</a>"
+        },
+        "f37": {
+          "value": "<a href=\"/services/facial-trauma/\">Facial trauma</a>"
+        },
+        "f38": {
+          "value": ""
+        },
+        "f39": {
+          "value": ""
+        },
+        "f40": {
+          "value": "Referrals from Hervey Bay and Maryborough"
+        },
+        "f41": {
+          "value": "Dentists, orthodontists and doctors on the Fraser Coast can <a href=\"/online-doctor-referral/\">refer online</a>. Our team contacts the patient directly to arrange their consultation."
+        },
+        "f42": {
+          "value": "You're welcome to see us without a referral. However, if you have a referral from your general dentist or GP, you may be eligible for a Medicare rebate on your consultation."
+        },
+        "f43": {
+          "value": ""
+        },
+        "f44": {
+          "value": ""
+        },
+        "f45": {
+          "value": ""
+        },
+        "f46": {
+          "value": ""
+        },
+        "f47": {
+          "value": ""
+        },
+        "f48": {
+          "value": ""
+        },
+        "f49": {
+          "value": ""
+        },
+        "f50": {
+          "value": ""
+        },
+        "f51": {
+          "value": ""
+        },
+        "f52": {
+          "value": ""
+        },
+        "f53": {
+          "value": "Our other locations"
+        },
+        "f54": {
+          "value": "Patients can also be treated in our Buderim rooms or at private hospitals in Buderim, Maroochydore and Nambour. See <a href=\"/locations/\">all our locations</a>."
+        },
+        "f55": {
+          "value": ""
+        },
+        "f56": {
+          "value": ""
+        },
+        "f57": {
+          "value": ""
+        },
+        "f58": {
+          "value": ""
+        },
+        "f59": {
+          "value": ""
+        },
+        "f60": {
+          "value": ""
+        },
+        "f61": {
+          "value": ""
+        },
+        "f62": {
+          "value": ""
+        },
+        "f63": {
+          "value": ""
+        },
+        "f64": {
+          "value": ""
+        },
+        "f65": {
+          "value": "Any surgical or invasive procedure carries risks. Before proceeding, you should seek a second opinion from an appropriately qualified health practitioner."
+        },
+        "f66": {
+          "value": ""
+        },
+        "f67": {
+          "value": ""
+        },
+        "f68": {
+          "value": ""
+        },
+        "f69": {
+          "value": ""
+        },
+        "f70": {
+          "value": ""
+        },
+        "f71": {
+          "value": ""
+        },
+        "f72": {
+          "value": ""
+        },
+        "f73": {
+          "value": ""
+        },
+        "f74": {
+          "value": ""
+        },
+        "f75": {
+          "value": ""
+        },
+        "f76": {
+          "value": ""
+        },
+        "f77": {
+          "value": ""
+        },
+        "f78": {
+          "value": ""
+        },
+        "f79": {
+          "value": ""
+        },
+        "f80": {
+          "value": ""
+        },
+        "f81": {
+          "value": ""
+        },
+        "f82": {
+          "value": ""
+        },
+        "f83": {
+          "value": ""
+        },
+        "f84": {
+          "value": ""
+        },
+        "f85": {
+          "value": ""
+        },
+        "f86": {
+          "value": ""
+        },
+        "f87": {
+          "value": ""
+        },
+        "f88": {
+          "value": ""
+        },
+        "f89": {
+          "value": ""
+        },
+        "f90": {
+          "value": ""
+        },
+        "f91": {
+          "value": ""
+        },
+        "f92": {
+          "value": ""
+        },
+        "f93": {
+          "value": ""
+        },
+        "f94": {
+          "value": ""
+        },
+        "f95": {
+          "value": ""
+        },
+        "f96": {
+          "value": ""
+        },
+        "f97": {
+          "value": ""
+        },
+        "f98": {
+          "value": ""
+        },
+        "f99": {
+          "value": ""
+        },
+        "f100": {
+          "value": ""
+        },
+        "f101": {
+          "value": ""
+        },
+        "f102": {
+          "value": ""
+        },
+        "f103": {
+          "value": ""
+        },
+        "f104": {
+          "value": ""
+        },
+        "f105": {
+          "value": "Book a consultation"
+        },
+        "f106": {
+          "value": "Our team will arrange your consultation in Buderim and, if you need surgery, your hospital booking."
+        },
+        "f107": {
+          "value": "Call {{phone}}"
+        },
+        "f108": {
+          "value": "Make an enquiry",
+          "href": "/contact-us/"
+        }
+      }
+    }
+  ]
+}

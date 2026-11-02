@@ -63,7 +63,7 @@
           "value": "Why full arch surgery with a specialist"
         },
         "f9": {
-          "value": "Full arch rehabilitation is Dr Lincoln's particular focus. He undertook advanced training in zygomatic implants in Hong Kong and zygomatic, nasal and pterygoid implants in Texas, and has trained further with leading surgeons from France, Brazil and Spain. Dr Higgins has a particular interest in complex implant surgery, grafting and full arch restoration. Where bone volume is very limited, both surgeons offer remote anchorage options such as"
+          "value": "Full arch rehabilitation is Dr Lincoln's particular focus. He undertook advanced training in zygomatic implants in Hong Kong and zygomatic, nasal and pterygoid implants in Texas, and has trained further with surgeons in France, Brazil and Spain. Dr Higgins has a particular interest in complex implant surgery, grafting and full arch restoration. Where bone volume is very limited, both surgeons offer remote anchorage options such as"
         },
         "f10": {
           "value": "zygomatic implants",
@@ -193,6 +193,15 @@
           "value": "Fixed implant teeth are cleaned daily much like natural teeth, with some additional techniques for cleaning under the bridge that we teach you. Regular professional maintenance keeps the gum and bone around the implants healthy."
         },
         "f13": {
+          "value": "Any surgical or invasive procedure carries risks. Before proceeding, you should seek a second opinion from an appropriately qualified health practitioner."
+        }
+      }
+    },
+    {
+      "id": "risk",
+      "template": "notice/risk",
+      "fields": {
+        "f1": {
           "value": "Any surgical or invasive procedure carries risks. Before proceeding, you should seek a second opinion from an appropriately qualified health practitioner."
         }
       }

@@ -382,11 +382,11 @@
   "old_path": "/hervey-bay-st-stephens-private-hospital/",
   "live_status": "ok",
   "new_status": 301,
-  "new_url": "https://sunshinecoastofis.com.au/locations/",
+  "new_url": "https://sunshinecoastofis.com.au/locations/hervey-bay/",
   "hops": 1,
   "final_status": 200,
   "match": "redirected",
-  "action": "301 to /locations/ (Hospital details are on Locations)",
+  "action": "301 to /locations/hervey-bay/ (Hervey Bay page (St Stephen's Private Hospital), added in 3.2.0)",
   "no_slash_status": 301,
   "no_slash_hops": 1,
   "result": "PASS"

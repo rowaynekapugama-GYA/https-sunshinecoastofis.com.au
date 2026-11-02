@@ -23,7 +23,7 @@
           "value": "<a href=\"/\">Home</a> / <a href=\"/services/\">Services</a>"
         },
         "f3": {
-          "value": "Wisdom teeth removed while you are completely asleep"
+          "value": "Wisdom teeth removal on the Sunshine Coast, completely asleep"
         },
         "f4": {
           "value": "Specialist oral and maxillofacial surgeons remove all four wisdom teeth in a single appointment. Choose to be fully asleep under general anaesthetic in an accredited private hospital or in our Buderim clinic, or relaxed under IV sedation."
@@ -186,6 +186,15 @@
           "value": "Extras cover typically contributes to surgical fees, and hospital cover may apply to theatre and anaesthetic costs for a general anaesthetic in hospital. We give you item numbers so you can check your rebate before committing. Payment plans are also available."
         },
         "f11": {
+          "value": "Any surgical or invasive procedure carries risks. Before proceeding, you should seek a second opinion from an appropriately qualified health practitioner."
+        }
+      }
+    },
+    {
+      "id": "risk",
+      "template": "notice/risk",
+      "fields": {
+        "f1": {
           "value": "Any surgical or invasive procedure carries risks. Before proceeding, you should seek a second opinion from an appropriately qualified health practitioner."
         }
       }

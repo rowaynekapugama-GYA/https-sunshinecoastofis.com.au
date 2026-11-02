@@ -60,7 +60,7 @@
           "value": "Specialist training you can check"
         },
         "f8": {
-          "value": "Zygomatic surgery is advanced, technique-sensitive work performed by a small number of surgeons in Australia. Dr Lincoln trained in zygomatic implants in Hong Kong in 2017 and in zygomatic, nasal and pterygoid implants in Texas in 2023, and has since trained with leading surgeons from France, Brazil and Spain. Patients are referred to the practice from across Queensland for this procedure."
+          "value": "Zygomatic surgery is advanced, technique-sensitive work performed by a small number of surgeons in Australia. Dr Lincoln trained in zygomatic implants in Hong Kong in 2017 and in zygomatic, nasal and pterygoid implants in Texas in 2023, and has since trained with surgeons in France, Brazil and Spain. Patients are referred to the practice from across Queensland for this procedure."
         },
         "f9": {
           "value": "How it is done"
@@ -165,6 +165,15 @@
           "value": "Surgery is under general anaesthetic. Post-operative swelling and discomfort are managed with medication and settle over the first one to two weeks."
         },
         "f11": {
+          "value": "Any surgical or invasive procedure carries risks. Before proceeding, you should seek a second opinion from an appropriately qualified health practitioner."
+        }
+      }
+    },
+    {
+      "id": "risk",
+      "template": "notice/risk",
+      "fields": {
+        "f1": {
           "value": "Any surgical or invasive procedure carries risks. Before proceeding, you should seek a second opinion from an appropriately qualified health practitioner."
         }
       }

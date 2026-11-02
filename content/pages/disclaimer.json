@@ -26,51 +26,336 @@
           "value": "Disclaimer"
         },
         "f4": {
-          "value": "About the information on this website."
+          "value": "About the information on this website. Last updated: 2 November 2026."
         }
       }
     },
     {
       "id": "s2",
-      "template": "disclaimer/2",
+      "template": "content/body",
       "fields": {
         "f1": {
           "value": "General information only"
         },
         "f2": {
-          "value": "The information on this website is general in nature and is not a substitute for a consultation with a registered health practitioner. It does not take your individual circumstances into account."
+          "value": "<em>Last updated: 2 November 2026</em>"
         },
         "f3": {
-          "value": "Any surgical or invasive procedure carries risks. Individual results vary. Before proceeding, you should seek a second opinion from an appropriately qualified health practitioner."
+          "value": "The information on this website is general in nature. It is not medical or dental advice and is not a substitute for a consultation with a qualified health practitioner who can assess your individual circumstances."
         },
         "f4": {
-          "value": "Accuracy"
+          "value": "Do not rely on this website to make decisions about your health or treatment. If you have questions about your health, please consult your doctor, dentist or one of our surgeons."
         },
         "f5": {
-          "value": "We take care to keep this website accurate and up to date, but information can change. Fees, rebates and availability are confirmed at your consultation."
+          "value": ""
         },
         "f6": {
-          "value": "Links to other websites"
+          "value": ""
         },
         "f7": {
-          "value": "This website links to other websites, such as hospitals and Google Maps. We are not responsible for their content."
+          "value": ""
         },
         "f8": {
-          "value": "Emergencies"
+          "value": ""
         },
         "f9": {
-          "value": "If you have a medical emergency, call 000 or go to your nearest emergency department. For urgent facial trauma or infection, call us on {{phone}}."
+          "value": ""
         },
         "f10": {
-          "value": "Have a question about your treatment?"
+          "value": ""
         },
         "f11": {
-          "value": "The best answers come from a consultation with one of our surgeons."
+          "value": ""
         },
         "f12": {
-          "value": "Call {{phone}}"
+          "value": ""
         },
         "f13": {
+          "value": ""
+        },
+        "f14": {
+          "value": "Risks of treatment"
+        },
+        "f15": {
+          "value": "Any surgical or invasive procedure carries risks. Before proceeding, you should seek a second opinion from an appropriately qualified health practitioner."
+        },
+        "f16": {
+          "value": "Every patient is different. The suitability, risks, recovery and outcome of any treatment depend on your individual circumstances and are discussed with you at your consultation. No outcome is guaranteed."
+        },
+        "f17": {
+          "value": ""
+        },
+        "f18": {
+          "value": ""
+        },
+        "f19": {
+          "value": ""
+        },
+        "f20": {
+          "value": ""
+        },
+        "f21": {
+          "value": ""
+        },
+        "f22": {
+          "value": ""
+        },
+        "f23": {
+          "value": ""
+        },
+        "f24": {
+          "value": ""
+        },
+        "f25": {
+          "value": ""
+        },
+        "f26": {
+          "value": ""
+        },
+        "f27": {
+          "value": "Our surgeons"
+        },
+        "f28": {
+          "value": "Dr Trent Lincoln and Dr Andrew Higgins are registered with the Australian Health Practitioner Regulation Agency (AHPRA) as specialist oral and maxillofacial surgeons. You can check any practitioner's registration on the <a href=\"https://www.ahpra.gov.au/Registration/Registers-of-Practitioners.aspx\" target=\"_blank\" rel=\"noopener\">AHPRA public register</a>."
+        },
+        "f29": {
+          "value": ""
+        },
+        "f30": {
+          "value": ""
+        },
+        "f31": {
+          "value": ""
+        },
+        "f32": {
+          "value": ""
+        },
+        "f33": {
+          "value": ""
+        },
+        "f34": {
+          "value": ""
+        },
+        "f35": {
+          "value": ""
+        },
+        "f36": {
+          "value": ""
+        },
+        "f37": {
+          "value": ""
+        },
+        "f38": {
+          "value": ""
+        },
+        "f39": {
+          "value": ""
+        },
+        "f40": {
+          "value": "Fees"
+        },
+        "f41": {
+          "value": "Any fees, rebates or costs mentioned on this website are a general guide only. Your consultation and treatment fees, and any Medicare or health fund rebates you may be eligible for, are confirmed in writing after your consultation."
+        },
+        "f42": {
+          "value": ""
+        },
+        "f43": {
+          "value": ""
+        },
+        "f44": {
+          "value": ""
+        },
+        "f45": {
+          "value": ""
+        },
+        "f46": {
+          "value": ""
+        },
+        "f47": {
+          "value": ""
+        },
+        "f48": {
+          "value": ""
+        },
+        "f49": {
+          "value": ""
+        },
+        "f50": {
+          "value": ""
+        },
+        "f51": {
+          "value": ""
+        },
+        "f52": {
+          "value": ""
+        },
+        "f53": {
+          "value": "Accuracy"
+        },
+        "f54": {
+          "value": "We take reasonable care to keep this website accurate and up to date, but information can change and we do not warrant that it is complete or current. To the extent permitted by law, we are not liable for any loss arising from reliance on information on this website."
+        },
+        "f55": {
+          "value": ""
+        },
+        "f56": {
+          "value": ""
+        },
+        "f57": {
+          "value": ""
+        },
+        "f58": {
+          "value": ""
+        },
+        "f59": {
+          "value": ""
+        },
+        "f60": {
+          "value": ""
+        },
+        "f61": {
+          "value": ""
+        },
+        "f62": {
+          "value": ""
+        },
+        "f63": {
+          "value": ""
+        },
+        "f64": {
+          "value": ""
+        },
+        "f65": {
+          "value": ""
+        },
+        "f66": {
+          "value": "Links to other websites"
+        },
+        "f67": {
+          "value": "This website links to other websites and services, such as hospitals, professional organisations, Google Maps and Google reviews. We provide these links for convenience. We do not control and are not responsible for their content, accuracy or privacy practices, and a link does not mean we endorse them."
+        },
+        "f68": {
+          "value": ""
+        },
+        "f69": {
+          "value": ""
+        },
+        "f70": {
+          "value": ""
+        },
+        "f71": {
+          "value": ""
+        },
+        "f72": {
+          "value": ""
+        },
+        "f73": {
+          "value": ""
+        },
+        "f74": {
+          "value": ""
+        },
+        "f75": {
+          "value": ""
+        },
+        "f76": {
+          "value": ""
+        },
+        "f77": {
+          "value": ""
+        },
+        "f78": {
+          "value": ""
+        },
+        "f79": {
+          "value": "Emergencies"
+        },
+        "f80": {
+          "value": "This website is not for emergencies. If you have a medical emergency, call 000 or go to your nearest emergency department. For urgent trauma or infection, please call our rooms on {{phone}} during opening hours."
+        },
+        "f81": {
+          "value": ""
+        },
+        "f82": {
+          "value": ""
+        },
+        "f83": {
+          "value": ""
+        },
+        "f84": {
+          "value": ""
+        },
+        "f85": {
+          "value": ""
+        },
+        "f86": {
+          "value": ""
+        },
+        "f87": {
+          "value": ""
+        },
+        "f88": {
+          "value": ""
+        },
+        "f89": {
+          "value": ""
+        },
+        "f90": {
+          "value": ""
+        },
+        "f91": {
+          "value": ""
+        },
+        "f92": {
+          "value": "Copyright"
+        },
+        "f93": {
+          "value": "The content on this website, including text and photographs, belongs to Sunshine Coast Oral, Facial &amp; Implant Specialists or is used with permission. It may not be copied for commercial use without our written permission."
+        },
+        "f94": {
+          "value": ""
+        },
+        "f95": {
+          "value": ""
+        },
+        "f96": {
+          "value": ""
+        },
+        "f97": {
+          "value": ""
+        },
+        "f98": {
+          "value": ""
+        },
+        "f99": {
+          "value": ""
+        },
+        "f100": {
+          "value": ""
+        },
+        "f101": {
+          "value": ""
+        },
+        "f102": {
+          "value": ""
+        },
+        "f103": {
+          "value": ""
+        },
+        "f104": {
+          "value": ""
+        },
+        "f105": {
+          "value": "Have a question about your treatment?"
+        },
+        "f106": {
+          "value": "A consultation with one of our surgeons is the right place to discuss your own situation."
+        },
+        "f107": {
+          "value": "Call {{phone}}"
+        },
+        "f108": {
           "value": "Make an enquiry",
           "href": "/contact-us/"
         }

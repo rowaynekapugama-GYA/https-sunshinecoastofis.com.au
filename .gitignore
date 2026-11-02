@@ -12,3 +12,7 @@ tsconfig.tsbuildinfo
 # test output
 /audit/tmp
 /test-results
+
+# Python bytecode
+__pycache__/
+*.pyc

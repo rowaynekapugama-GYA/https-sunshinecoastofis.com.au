@@ -51,6 +51,21 @@ Set in Vercel > Project > Settings > Environment Variables (Production, and Prev
 
 Tracking IDs (GA4, Google Tag Manager, Meta Pixel, Search Console verification) are **not** environment variables. They are entered by an admin in the dashboard under Site Settings > Tracking and links, and written into every page at the next publish.
 
+### Where to paste each tracking code (at go-live)
+
+Sign in at `/admin` as an **admin** (editors cannot see these fields), open **Site Settings > Tracking and links**, paste, save, then **Publish website**.
+
+| Field | What to paste | Example format | Notes |
+|---|---|---|---|
+| GA4 Measurement ID | The ID only, from GA4 > Admin > Data streams > the web stream | `G-XXXXXXXXXX` | Leave empty if GA4 is set up inside Google Tag Manager instead, or every visit is counted twice |
+| Google Tag Manager container ID | The ID only, from the top of the GTM workspace | `GTM-XXXXXXX` | The site adds both GTM snippets (head script, and the noscript frame straight after `<body>`) |
+| Search Console verification | Only the `content` value of Google's HTML tag | `abc123...` | **Prefer DNS verification** (below) and leave this empty |
+| Meta Pixel ID | The number only | `123456789012345` | Optional |
+
+**Search Console: verify by DNS TXT record.** In Search Console add a **Domain** property for `sunshinecoastofis.com.au`, copy the `google-site-verification=...` TXT record Google gives you, add it at the domain's DNS host (TXT, host `@`), wait for it to resolve, then click Verify. A Domain property covers `www`, non-`www`, `http` and `https`, and keeps working if the site is ever rebuilt. Use the meta tag field above only if DNS access is not available.
+
+**When the codes load.** Google Analytics, Tag Manager and the Meta Pixel load only on the production deployment (`VERCEL_ENV=production`) and, in the browser, only when the address is `sunshinecoastofis.com.au` or `www.sunshinecoastofis.com.au`. Preview deployments, the `vercel.app` address, the dashboard and local development never load them, so testing does not pollute the reports. The Search Console meta tag (when used) is on every page of every deployment, which is harmless. To test the tags locally: `TRACKING_TEST=1 npm run build && npm start`, then look at the page source (the browser-side host check still stops them running on `localhost`).
+
 Credentials always come from the client or from GYA's own accounts. None are in this repo.
 
 ## Neon and Blob setup (one time)

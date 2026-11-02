@@ -1,7 +1,7 @@
 import { asset } from './assets';
 import { locationCards, postCards, staffCards, surgeonBios } from './blocks';
 import { posts as allPosts, settings as loadSettings, siteWide, team as loadTeam, templates } from './content';
-import { headTags, type HeadInput } from './head';
+import { headTags, trackingBody, type HeadInput } from './head';
 import type { PageData, Post, SectionData, SiteSettings, TeamData, TemplateDef } from './types';
 
 export interface RenderContext {
@@ -86,7 +86,21 @@ export function fillSection(section: SectionData, ctx: RenderContext): string {
     return val ?? '';
   });
   out = out.replace(/\{\{@(\w+)\}\}/g, (_, name: string) => generated(name, ctx));
+  // Empty parts are left out everywhere, including the visual editor; they are filled in from the section's form.
+  if (t.trim) out = trimEmpty(out);
   return tokens(out, ctx.settings);
+}
+
+/** Removes empty headings, paragraphs, list items, links and lists, then empty side panels. */
+export function trimEmpty(html: string): string {
+  let out = html;
+  for (let i = 0; i < 3; i++) {
+    out = out
+      .replace(/<(h2|h3|p|li|a)\b[^>]*>\s*<\/\1>/g, '')
+      .replace(/<ul\b[^>]*>\s*<\/ul>/g, '')
+      .replace(/<aside\b[^>]*>\s*<\/aside>/g, '');
+  }
+  return out.replace(/\n\s*\n+/g, '\n');
 }
 
 function generated(name: string, ctx: RenderContext): string {
@@ -156,7 +170,7 @@ export function renderDocument(input: DocumentInput, ctx: RenderContext): string
     '</head>',
     '',
     '<body>',
-    '',
+    trackingBody(ctx.settings.tracking),
     shell.topbar,
     '',
     lazyImages(shell.header || '', 1),

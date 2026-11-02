@@ -24,6 +24,7 @@ const FAIL = [
   'lorem',
   'ipsum',
   '[to confirm',
+  '[confirm',
   'tbc',
   'todo',
   'xxx',

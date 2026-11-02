@@ -75,25 +75,45 @@ export function headTags(input: HeadInput, ctx: RenderContext): string {
   return lines.filter(Boolean).join('\n');
 }
 
+/**
+ * Analytics (GA4, Google Tag Manager, Meta Pixel) load only on the live website:
+ *   1. only in a Vercel production build (VERCEL_ENV=production), never in previews or local dev;
+ *   2. and, in the browser, only when the address is sunshinecoastofis.com.au (or www), so the
+ *      vercel.app production address and anyone testing it never reach the reports.
+ * TRACKING_TEST=1 forces step 1 on (for local checks only; never set it on Vercel).
+ * The Search Console verification meta tag is not analytics and is always included.
+ */
+export const trackingEnabled = () => process.env.VERCEL_ENV === 'production' || process.env.TRACKING_TEST === '1';
+const LIVE_HOST_TEST = "/^(www\\.)?sunshinecoastofis\\.com\\.au$/.test(location.hostname)";
+
+export const validGtm = (id?: string) => Boolean(id && /^GTM-[A-Z0-9]+$/i.test(id.trim()));
+const validGa4 = (id?: string) => Boolean(id && /^(G|GT|AW)-[A-Z0-9]+$/i.test(id.trim()));
+const validPixel = (id?: string) => Boolean(id && /^\d+$/.test(id.trim()));
+
 function tracking(t: SiteSettings['tracking']): string {
-  const out: string[] = [];
-  if (t.gtmId && /^GTM-[A-Z0-9]+$/i.test(t.gtmId)) {
-    out.push(
-      `<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','${t.gtmId}');</script>`,
-    );
+  if (!trackingEnabled()) return '';
+  const gtm = (t.gtmId || '').trim();
+  const ga4 = (t.ga4Id || '').trim();
+  const px = (t.metaPixelId || '').trim();
+  const parts: string[] = [];
+  if (validGtm(gtm)) {
+    parts.push(`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','${gtm}');`);
   }
-  if (t.ga4Id && /^(G|GT|AW)-[A-Z0-9]+$/i.test(t.ga4Id)) {
-    out.push(
-      `<script async src="https://www.googletagmanager.com/gtag/js?id=${t.ga4Id}"></script>`,
-      `<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','${t.ga4Id}');</script>`,
-    );
+  if (validGa4(ga4)) {
+    parts.push(`var g=document.createElement('script');g.async=true;g.src='https://www.googletagmanager.com/gtag/js?id=${ga4}';document.head.appendChild(g);window.dataLayer=window.dataLayer||[];window.gtag=function(){dataLayer.push(arguments);};gtag('js',new Date());gtag('config','${ga4}');`);
   }
-  if (t.metaPixelId && /^\d+$/.test(t.metaPixelId)) {
-    out.push(
-      `<script>!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');fbq('init','${t.metaPixelId}');fbq('track','PageView');</script>`,
-    );
+  if (validPixel(px)) {
+    parts.push(`!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');fbq('init','${px}');fbq('track','PageView');`);
   }
-  return out.join('\n');
+  if (!parts.length) return '';
+  return `<script>if(${LIVE_HOST_TEST}){${parts.join('\n')}}</script>`;
+}
+
+/** Google Tag Manager's no-JavaScript fallback, placed straight after <body>. */
+export function trackingBody(t: SiteSettings['tracking']): string {
+  const gtm = (t?.gtmId || '').trim();
+  if (!trackingEnabled() || !validGtm(gtm)) return '';
+  return `<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=${gtm}" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>`;
 }
 
 // ------------------------------------------------------------------ structured data
@@ -180,6 +200,8 @@ function faqs(html: string) {
   };
 }
 
+const slug = (v?: string) => String(v || '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+
 function hospitals(s: SiteSettings) {
   return s.locations
     .filter((l) => !l.main && !l.hidden)
@@ -202,6 +224,9 @@ function schema(input: HeadInput, ctx: RenderContext): object[] {
   if (isHome || input.route === '/about/') out.push(...surgeons(ctx));
   if (!isHome) out.push(breadcrumbs(input));
   if (input.route === '/locations/') out.push(...hospitals(s));
+  // A town page (/locations/<town>/) also describes the hospital in that town, when there is one.
+  const town = /^\/locations\/([a-z0-9-]+)\/$/.exec(input.route)?.[1];
+  if (town) out.push(...hospitals(s).filter((_, i) => slug(s.locations.filter((l) => !l.main && !l.hidden)[i].area) === town));
   if (input.bodyForSchema) {
     const f = faqs(input.bodyForSchema);
     if (f) out.push(f);

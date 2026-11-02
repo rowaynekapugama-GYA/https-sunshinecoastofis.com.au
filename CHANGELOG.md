@@ -1,5 +1,36 @@
 # Changelog
 
+## 3.2.0 (2 Nov 2026): SEO and compliance fixes before go-live
+
+Content changes are made in `content/` and reach the dashboard through the data migration `20261102_000001_seo_compliance_content`, which runs once in the next Vercel build. It changes a field only where the dashboard still has the wording being replaced, so edits made by the practice are kept; anything skipped is listed in the build log under `[content 3.2.0]`.
+
+### Tracking
+- Google Analytics, Tag Manager and the Meta Pixel load only on the production deployment, and only on sunshinecoastofis.com.au (not previews, `vercel.app` or local). The Tag Manager noscript frame now sits straight after `<body>`. Tag Manager IDs are checked (`GTM-...`) before use.
+- README: where to paste each code, and Search Console verification by DNS TXT record.
+
+### Headings
+- Wisdom teeth H1: "Wisdom teeth removal on the Sunshine Coast, completely asleep". Dental implants H1: "Dental implants on the Sunshine Coast, placed by specialist surgeons". Meta titles unchanged.
+
+### New pages
+- `/locations/hervey-bay/` (St Stephen's Private Hospital, Urraween, with Hospital structured data) and `/locations/gympie/`, built from the approved page heading, text and side panel styles. Both in the sitemap, linked from Locations; the footer's Hervey Bay link opens the new page.
+- The old `/hervey-bay-st-stephens-private-hospital/` now 301s to `/locations/hervey-bay/` in one hop.
+- New section designs: "Text with headings, paragraphs and lists" (`content/body`, empty parts are left out of the page) and "Risk statement" (`notice/risk`).
+
+### AHPRA wording
+- Risk statement on all seven procedure pages and both articles.
+- Google rating and review count removed from the homepage banner (five stars removed from the design) and the homepage review section hidden.
+- "exceptional", "expert", "leading", "world renowned", "perfect", "highly experienced", "cutting-edge", "revolutionised", "permanent solution" and similar claims reworded; "Royal Australian College" corrected to "Royal Australasian College of Dental Surgeons". Full list in the 3.2.0 summary.
+- Patient information form consent: clinical photos no longer consented for "advertising" (teaching, scientific papers and presentations stay).
+- Article side panel: "can be discussed at a consultation" instead of "are best answered".
+
+### Privacy policy and Disclaimer
+- Full privacy policy (Privacy Act 1988 and APPs) and disclaimer, each with "Last updated: 2 November 2026". Placeholders marked `[CONFIRM: ...]` for the practice to fill in. `npm run qa:banned` now fails while any `[CONFIRM` remains, so they cannot reach the live site unnoticed.
+
+### SEO
+- Homepage meta description made unique (it repeated About's).
+- `seo-migration/old-wordpress-urls.txt`: the 44 live WordPress URLs, one per line. All 44 re-tested: 21 kept, 23 one 301 to a 200.
+- `seo-migration/post-images-to-reupload.json`: the three article images, their positions and suggested alt text (the live site cannot be reached from GYA's build environment).
+
 ## 3.1.5 (2 Nov 2026): forms never hang on "Sending..."
 
 - The form now answers as soon as the email is sent; saving the copy under Enquiries happens straight after the answer, so a slow or sleeping database can no longer hold the visitor up (it still waits when no email is configured, because then the dashboard is the only copy).

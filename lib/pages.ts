@@ -41,7 +41,7 @@ export function renderPost(post: Post, ctx: RenderContext = defaultContext()): s
     '    </article>',
     '    <aside class="side">',
     '      <h3>Talk to our team</h3>',
-    '      <p style="font-size:.95rem;color:var(--muted)">Questions about your own treatment are best answered at a consultation with one of our specialist surgeons.</p>',
+    '      <p style="font-size:.95rem;color:var(--muted)">Questions about your own treatment can be discussed at a consultation with one of our specialist surgeons.</p>',
     '      <a class="btn btn-primary" href="tel:{{phoneTel}}">Call {{phone}}</a>',
     '      <a class="btn btn-outline" href="/contact-us/">Make an enquiry</a>',
     '    </aside>',
