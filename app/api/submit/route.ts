@@ -8,6 +8,8 @@
  * Environment (Vercel > Settings > Environment Variables):
  *   SMTP2GO_API_KEY  required for email
  *   FORM_TO          comma separated recipients. Default: rowayne@gyaclients.com, va@generateyouraudience.com
+ *   FORM_CC          optional, comma separated: a visible copy of every form email (for example GYA)
+ *   FORM_BCC         optional, comma separated: a hidden copy of every form email
  *   FORM_FROM        sender on an SMTP2GO verified domain.
  *                    Default (temporary, until sunshinecoastofis.com.au is verified): noreply@dentalspecialists.com.au
  */
@@ -34,6 +36,9 @@ const json = (body: unknown, status = 200) => Response.json(body, { status });
 const esc = (s: string) => String(s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c] as string);
 const safeName = (n: string) => n.replace(/[\\/:*?"<>|]/g, '_').slice(0, 120);
 const recipients = () => (process.env.FORM_TO || DEFAULT_TO).split(/[,;]/).map((s) => s.trim()).filter(Boolean);
+const list = (v?: string) => (v || '').split(/[,;]/).map((s) => s.trim()).filter(Boolean);
+const ccList = () => list(process.env.FORM_CC);
+const bccList = () => list(process.env.FORM_BCC);
 const sender = () => (process.env.FORM_FROM || DEFAULT_FROM).trim();
 const senderAddress = () => ((/<([^>]+)>/.exec(sender()) || [])[1] || sender()).trim();
 
@@ -101,6 +106,8 @@ export async function POST(req: Request) {
         body: JSON.stringify({
           api_key: apiKey,
           to: recipients(),
+          ...(ccList().length ? { cc: ccList() } : {}),
+          ...(bccList().length ? { bcc: bccList() } : {}),
           sender: from,
           subject,
           text_body: text,
@@ -143,6 +150,8 @@ export async function GET() {
     api_key_set: Boolean(key),
     form_to_override: Boolean(process.env.FORM_TO),
     recipients: recipients().map((e) => e.replace(/^(.).*?(@.*)$/, '$1***$2')),
+    cc: ccList().map((e) => e.replace(/^(.).*?(@.*)$/, '$1***$2')),
+    bcc_count: bccList().length,
     sender: sender(),
     dashboard_logging: Boolean(process.env.DATABASE_URL),
   };

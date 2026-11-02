@@ -1,5 +1,9 @@
 # Changelog
 
+## 3.1.4 (2 Nov 2026): copies of form emails
+
+- New optional Vercel variables `FORM_CC` (visible copy) and `FORM_BCC` (hidden copy), comma separated, applied to every form email. `GET /api/submit` shows the copy addresses masked.
+
 ## 3.1.3 (29 Oct 2026): form check page no longer lists other domains
 
 - `GET /api/submit` (the email setup check) listed every sender domain on the SMTP2GO account, which includes other GYA clients, to anyone who opened it. It now answers yes or no only: `sender_domain_registered` (the current sender) and `practice_domain_registered` (sunshinecoastofis.com.au).
