@@ -15,10 +15,13 @@
  */
 import { FORMS, v, type Fields } from '@/lib/forms/definitions';
 import { buildReferralEmail } from '@/lib/forms/referral-email.js';
+import { after } from 'next/server';
 import { logEnquiry } from '@/lib/enquiries';
 
 export const dynamic = 'force-dynamic';
 export const runtime = 'nodejs';
+// A visitor is never left waiting: email has 15 seconds, the whole request 30.
+export const maxDuration = 30;
 
 const DEFAULT_TO = 'rowayne@gyaclients.com, va@generateyouraudience.com';
 const DEFAULT_FROM = 'Sunshine Coast OFIS Website <noreply@dentalspecialists.com.au>';
@@ -43,6 +46,7 @@ const sender = () => (process.env.FORM_FROM || DEFAULT_FROM).trim();
 const senderAddress = () => ((/<([^>]+)>/.exec(sender()) || [])[1] || sender()).trim();
 
 export async function POST(req: Request) {
+  const t0 = Date.now();
   const len = Number(req.headers.get('content-length') || 0);
   if (len > MAX_BYTES) return json({ ok: false, error: 'Attachments too large (4 MB limit)' }, 413);
 
@@ -103,6 +107,7 @@ export async function POST(req: Request) {
       const r = await fetch('https://api.smtp2go.com/v3/email/send', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
+        signal: AbortSignal.timeout(15000),
         body: JSON.stringify({
           api_key: apiKey,
           to: recipients(),
@@ -128,8 +133,13 @@ export async function POST(req: Request) {
     }
   }
 
-  // ---- dashboard record (never blocks the visitor)
-  await logEnquiry({ form: def.kind, ...summary, source: page, raw, emailStatus, emailError: emailError || undefined });
+  console.log(`[submit] ${def.kind}: email ${emailStatus} after ${Date.now() - t0} ms${emailError ? ` (${emailError})` : ''}`);
+
+  // ---- dashboard record: saved after the visitor has their answer, so a slow or
+  // sleeping database can never hold up the form.
+  const record = { form: def.kind, ...summary, source: page, raw, emailStatus, emailError: emailError || undefined };
+  if (emailStatus === 'skipped') await logEnquiry(record); // no email: the dashboard record is the only copy, so wait for it
+  else after(() => logEnquiry(record));
 
   if (emailStatus === 'failed') {
     console.error('[submit] email failed', def.kind, emailError);

@@ -1,5 +1,11 @@
 # Changelog
 
+## 3.1.5 (2 Nov 2026): forms never hang on "Sending..."
+
+- The form now answers as soon as the email is sent; saving the copy under Enquiries happens straight after the answer, so a slow or sleeping database can no longer hold the visitor up (it still waits when no email is configured, because then the dashboard is the only copy).
+- Time limits: 15 seconds for SMTP2GO, 20 seconds for the dashboard record, 30 seconds for the whole request, and 35 seconds in the browser, after which the visitor sees "please call (07) 5406 0586" instead of an endless "Sending...".
+- Each submission logs `[submit] <form>: email <status> after <n> ms` in the Vercel logs.
+
 ## 3.1.4 (2 Nov 2026): copies of form emails
 
 - New optional Vercel variables `FORM_CC` (visible copy) and `FORM_BCC` (hidden copy), comma separated, applied to every form email. `GET /api/submit` shows the copy addresses masked.

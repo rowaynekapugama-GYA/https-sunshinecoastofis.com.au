@@ -123,9 +123,14 @@ function fakeSubmit(e) {
   var msg = f.querySelector('.senderr');
   if (!msg) { msg = document.createElement('p'); msg.className = 'fine senderr'; msg.style.color = '#B42318'; msg.setAttribute('role', 'alert'); btn.insertAdjacentElement('afterend', msg); }
   msg.textContent = '';
-  fetch(endpoint, { method: 'POST', body: fd })
-    .then(function (r) { return r.json().catch(function () { return {}; }).then(function (j) { if (!r.ok || !j.ok) throw new Error(j.error || ('HTTP ' + r.status)); done(); }); })
+  // Never leave the visitor on "Sending..." (the server gives up at 30 seconds too).
+  var ctrl = window.AbortController ? new AbortController() : null;
+  var timer = ctrl ? setTimeout(function () { ctrl.abort(); }, 35000) : null;
+  fetch(endpoint, { method: 'POST', body: fd, signal: ctrl ? ctrl.signal : undefined })
+    .then(function (r) { clearTimeout(timer); return r.json().catch(function () { return {}; }).then(function (j) { if (!r.ok || !j.ok) throw new Error(j.error || ('HTTP ' + r.status)); done(); }); })
     .catch(function (err) {
+      clearTimeout(timer);
+      if (err && err.name === 'AbortError') err = new Error('it took too long');
       console.error('Form submission failed', err);
       btn.disabled = false; btn.textContent = label;
       msg.textContent = 'Sorry, your message could not be sent (' + err.message + '). Please call (07) 5406 0586.';
