@@ -1,11 +1,12 @@
 #!/usr/bin/env bash
 # Apply a GYA update ZIP to the SCOFIS repo and push it to main (Vercel then deploys).
 #
-#   bash scripts/deploy-update.sh <repo-path> <zip-path> [--prod]
+#   bash scripts/deploy-update.sh <repo-path> <zip-path> [--prod] [--message "commit message"]
 #
 #   <repo-path>  your clone of rowaynekapugama-GYA/https-sunshinecoastofis.com.au
 #   <zip-path>   for example scofis-v3.2.0-seo-compliance.zip
 #   --prod       also run `vercel --prod` after the push (needs the Vercel CLI, linked to the project)
+#   --message    commit message (default: the 3.2 SEO and compliance message below)
 #
 # What it does, stopping at the first problem:
 #   1. checks the repo has no uncommitted changes, switches to main and pulls
@@ -23,8 +24,16 @@ MESSAGE="SEO & compliance fixes: H1 location keywords, Hervey Bay/Gympie pages, 
 die() { echo "ERROR: $*" >&2; exit 1; }
 step() { echo; echo "==> $*"; }
 
-[ $# -ge 2 ] || die "usage: bash $0 <repo-path> <zip-path> [--prod]"
-REPO="$1"; ZIP="$2"; PROD="${3:-}"
+[ $# -ge 2 ] || die "usage: bash $0 <repo-path> <zip-path> [--prod] [--message \"commit message\"]"
+REPO="$1"; ZIP="$2"; shift 2
+PROD=""
+while [ $# -gt 0 ]; do
+  case "$1" in
+    --prod) PROD="--prod"; shift ;;
+    --message) [ $# -ge 2 ] || die "--message needs a value"; MESSAGE="$2"; shift 2 ;;
+    *) die "unknown option: $1" ;;
+  esac
+done
 [ -d "$REPO/.git" ] || die "$REPO is not a git repository"
 [ -f "$ZIP" ] || die "ZIP not found: $ZIP"
 ZIP="$(cd "$(dirname "$ZIP")" && pwd)/$(basename "$ZIP")"

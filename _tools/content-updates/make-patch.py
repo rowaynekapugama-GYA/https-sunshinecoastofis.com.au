@@ -2,7 +2,10 @@
 """
 Builds the dashboard patch for a content update from the before and after copies of content/.
 
-  python3 _tools/content-updates/make-patch.py <content-before-dir> <patch.json>
+  python3 _tools/content-updates/make-patch.py <content-before-dir> <patch.json> [update-script.py]
+
+The update script is only needed when the update edits blog articles: its POST_EDITS list
+(exact wording edits) is used so each edit is applied on its own.
 
 The patch lists each change with the wording it replaces, so the migration that applies it
 (migrations/20261102_000001_seo_compliance_content.ts) changes the dashboard only where the
@@ -77,18 +80,24 @@ for group in ('surgeons', 'staff'):
             if x != y:
                 patch['team'].append({'key': m['key'], 'field': 'story', 'index': i, 'old': x, 'new': y})
 
-spec = importlib.util.spec_from_file_location('upd', os.path.join(ROOT, '_tools', 'content-updates', '2026-11-02-seo-compliance.py'))
-upd = importlib.util.module_from_spec(spec)
-spec.loader.exec_module(upd)
 before_posts = {p['slug']: p for p in load(BEFORE, 'posts.json')}
-for slug, edits in upd.POST_EDITS.items():
+after_posts = {p['slug']: p for p in load(AFTER, 'posts.json')}
+post_edits = {}
+if len(sys.argv) > 3:
+    spec = importlib.util.spec_from_file_location('upd', sys.argv[3])
+    upd = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(upd)
+    post_edits = getattr(upd, 'POST_EDITS', {})
+for slug, edits in post_edits.items():
     body = before_posts[slug]['body']
     for old, new in edits:
         if old in body:
             patch['posts'].append({'slug': slug, 'old': old, 'new': new})
             body = body.replace(old, new)
-    after_body = next(p['body'] for p in load(AFTER, 'posts.json') if p['slug'] == slug)
-    assert body == after_body, f'{slug}: post edits do not reproduce the file'
+    assert body == after_posts[slug]['body'], f'{slug}: post edits do not reproduce the file'
+for slug, p in after_posts.items():
+    if slug not in post_edits:
+        assert before_posts.get(slug) == p, f'{slug}: article changed but no POST_EDITS given'
 
 ra = {r['from']: r['to'] for r in load(AFTER, 'redirects.json')}
 for r in load(BEFORE, 'redirects.json'):
@@ -100,4 +109,4 @@ with open(OUT, 'w', encoding='utf-8') as f:
     f.write(json.dumps(patch, indent=1, ensure_ascii=False) + '\n')
 print(f"{len(patch['pages'])} pages, {len(patch['team'])} team, {len(patch['posts'])} post edits, {len(patch['redirects'])} redirects")
 for s, p in patch['pages'].items():
-    print(' ', s, 'create' if 'create' in p else [o['op'] for o in p['ops']])
+    print(' ', s, 'create' if 'create' in p else [o['op'] for o in p['ops']], flush=True)

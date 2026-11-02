@@ -6,6 +6,8 @@ Version 3.1.0, 27 Oct 2026. Audited on a production build (`npm run build` then 
 
 **Update 3.2.0 (2 Nov 2026):** SEO and compliance fixes (CHANGELOG.md). Re-checked on a production build: 23 sitemap URLs all 200 and self-canonical, one H1 and a unique title and description on every page, valid structured data, 44 old URLs (21 kept, 23 one 301 to a 200), `test:render` 14 of 14 identical apart from the approved 3.2.0 changes, `tsc` clean, build clean. Decisions 3, 4, 5, 8, 9 and 10 below are updated.
 
+**Update 3.2.1 (2 Nov 2026):** Blog added to the main navigation (Patients dropdown on desktop, mobile menu), on all 23 pages. A top-level Blog item was not used because it squeezes the logo between 1140 and 1250 px. `robots.txt`, `www` and trailing-slash redirects re-checked (one 301 each to the canonical HTTPS address).
+
 ## 1. Decisions needed before go-live
 
 | # | Item | Why it needs a decision | Recommendation |

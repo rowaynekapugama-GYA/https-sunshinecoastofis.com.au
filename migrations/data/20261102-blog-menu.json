@@ -1,0 +1,43 @@
+{
+ "pages": {
+  "site-wide": {
+   "ops": [
+    {
+     "op": "field",
+     "section": "header",
+     "key": "f60",
+     "prop": "href",
+     "old": null,
+     "new": "/blog/"
+    },
+    {
+     "op": "field",
+     "section": "header",
+     "key": "f61",
+     "prop": "value",
+     "old": null,
+     "new": "Blog"
+    },
+    {
+     "op": "field",
+     "section": "drawer",
+     "key": "f19",
+     "prop": "href",
+     "old": null,
+     "new": "/blog/"
+    },
+    {
+     "op": "field",
+     "section": "drawer",
+     "key": "f19",
+     "prop": "value",
+     "old": null,
+     "new": "Blog"
+    }
+   ]
+  }
+ },
+ "team": [],
+ "posts": [],
+ "redirects": []
+}

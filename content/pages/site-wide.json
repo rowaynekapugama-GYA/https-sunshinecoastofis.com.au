@@ -215,6 +215,12 @@
         "f59": {
           "value": "Make an enquiry",
           "href": "/contact-us/"
+        },
+        "f60": {
+          "href": "/blog/"
+        },
+        "f61": {
+          "value": "Blog"
         }
       }
     },
@@ -291,6 +297,10 @@
         "f18": {
           "value": "Make an enquiry",
           "href": "/contact-us/"
+        },
+        "f19": {
+          "value": "Blog",
+          "href": "/blog/"
         }
       }
     },

@@ -1,11 +1,12 @@
 <#
 Apply a GYA update ZIP to the SCOFIS repo and push it to main (Vercel then deploys).
 
-  powershell -ExecutionPolicy Bypass -File scripts\deploy-update.ps1 -Repo C:\path\to\repo -Zip C:\path\to\scofis-v3.2.0-seo-compliance.zip [-Prod]
+  powershell -ExecutionPolicy Bypass -File scripts\deploy-update.ps1 -Repo C:\path\to\repo -Zip C:\path\to\scofis-update.zip [-Prod] [-Message "commit message"]
 
   -Repo  your clone of rowaynekapugama-GYA/https-sunshinecoastofis.com.au
   -Zip   the update ZIP
   -Prod  also run `vercel --prod` after the push (needs the Vercel CLI, linked to the project)
+  -Message  commit message (default: the 3.2 SEO and compliance message below)
 
 Steps, stopping at the first problem:
   1. checks the repo has no uncommitted changes, switches to main and pulls
@@ -20,10 +21,11 @@ Steps, stopping at the first problem:
 param(
   [Parameter(Mandatory = $true)][string]$Repo,
   [Parameter(Mandatory = $true)][string]$Zip,
-  [switch]$Prod
+  [switch]$Prod,
+  [string]$Message = ''
 )
 $ErrorActionPreference = 'Stop'
-$Message = 'SEO & compliance fixes: H1 location keywords, Hervey Bay/Gympie pages, blog images, AHPRA wording, privacy/disclaimer'
+if (-not $Message) { $Message = 'SEO & compliance fixes: H1 location keywords, Hervey Bay/Gympie pages, blog images, AHPRA wording, privacy/disclaimer' }
 
 function Die($m) { Write-Host "ERROR: $m" -ForegroundColor Red; exit 1 }
 function Step($m) { Write-Host ""; Write-Host "==> $m" -ForegroundColor Cyan }

@@ -1,5 +1,12 @@
 # Changelog
 
+## 3.2.1 (2 Nov 2026): Blog in the main menu
+
+- **Blog** added to the main navigation (SEO team request): a sixth item in the Patients dropdown on desktop, in the same style as the other five, and a Blog link after Patient information in the mobile menu. A sixth top-level item was tested and not used: between 1140 and 1250 px it squeezes the logo to 63 to 103 px wide (141 px normally).
+- Dashboard: applied by the data migration `20261102_000002_blog_menu` (same rules as 3.2.0: only where the menu has not been changed in the dashboard). The patch logic now lives in `cms/contentPatch.ts`, shared by both updates.
+- `deploy-update.sh` / `.ps1` take an optional commit message (`--message` / `-Message`).
+- Checked again for go-live: `robots.txt` on sunshinecoastofis.com.au allows crawling (the `vercel.app` address deliberately blocks it); `www` and missing trailing slashes are one 301 to `https://sunshinecoastofis.com.au/...`; HTTP to HTTPS is done by Vercel once the domain is attached.
+
 ## 3.2.0 (2 Nov 2026): SEO and compliance fixes before go-live
 
 Content changes are made in `content/` and reach the dashboard through the data migration `20261102_000001_seo_compliance_content`, which runs once in the next Vercel build. It changes a field only where the dashboard still has the wording being replaced, so edits made by the practice are kept; anything skipped is listed in the build log under `[content 3.2.0]`.
