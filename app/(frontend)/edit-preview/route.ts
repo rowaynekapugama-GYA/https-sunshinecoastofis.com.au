@@ -46,6 +46,7 @@ export async function POST(req: Request) {
   page.sections = page.sections.filter((s) => t[s.template]);
   const { defaultContext } = await import('@/lib/render');
   const ctx = defaultContext();
+  ctx.noTracking = true; // staff previews and edits are not website visits
   if (edit) ctx.edit = { sections: new WeakSet(page.sections) };
 
   let out: string;

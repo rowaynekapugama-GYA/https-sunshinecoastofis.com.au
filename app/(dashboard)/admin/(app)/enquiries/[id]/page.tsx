@@ -3,10 +3,9 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { db, requireUser } from '@/dashboard/lib/auth';
 import { EnquiryActions } from '@/dashboard/editors/EnquiryActions';
+import { fieldLabel, fieldValue } from '@/lib/forms/display';
 
 const FORM_LABEL: Record<string, string> = { contact: 'Contact us', referral: 'Online doctor referral', 'patient-form': 'Patient information form', feedback: 'Feedback' };
-/** form field name -> readable label: patient_first_name -> Patient first name */
-const label = (k: string) => (k.charAt(0).toUpperCase() + k.slice(1)).replace(/_/g, ' ');
 const fmt = (iso: string) => new Date(iso).toLocaleString('en-AU', { timeZone: 'Australia/Brisbane', day: 'numeric', month: 'long', year: 'numeric', hour: 'numeric', minute: '2-digit' });
 
 export default async function EnquiryDetail({ params }: { params: Promise<{ id: string }> }) {
@@ -51,8 +50,8 @@ export default async function EnquiryDetail({ params }: { params: Promise<{ id: 
               .filter(([k, v]) => String(v ?? '').trim() !== '')
               .map(([k, v]) => (
                 <React.Fragment key={k}>
-                  <dt>{label(k)}</dt>
-                  <dd>{String(v)}</dd>
+                  <dt>{fieldLabel(e.form, k)}</dt>
+                  <dd>{fieldValue(e.form, k, v)}</dd>
                 </React.Fragment>
               ))}
           </dl>

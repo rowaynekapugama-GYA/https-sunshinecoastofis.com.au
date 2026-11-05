@@ -1,6 +1,6 @@
 {
   "name": "sunshine-coast-ofis",
-  "version": "3.2.1",
+  "version": "3.4.0",
   "private": true,
   "type": "module",
   "scripts": {
@@ -15,6 +15,7 @@
     "generate:importmap": "payload generate:importmap",
     "test:render": "tsx scripts/test-render.ts",
     "test:email": "tsx scripts/test-referral-email.ts",
+    "test:patient-form": "tsx scripts/test-patient-form.ts",
     "qa:banned": "node scripts/check-banned.mjs",
     "typecheck": "tsc --noEmit"
   },

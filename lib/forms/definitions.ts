@@ -4,6 +4,8 @@
  * Referral email is built separately (referral-email.js) to match the practice's
  * existing referral emails exactly.
  */
+import { isMedicareNumber, isMedicareRef, isNA, notInFuture, toAuDate } from './rules';
+
 export type Fields = Record<string, string | string[]>;
 type Row = [label: string, key: string | ((f: Fields) => string)];
 
@@ -23,6 +25,32 @@ export interface FormDef {
   store?: string[];
   /** Who the enquiry is from, for the Enquiries list. */
   summary: (f: Fields) => { name: string; email: string; phone: string; message: string };
+  /** Date fields, turned into dd/mm/yyyy when the form arrives (see rules.ts toAuDate). */
+  dates?: string[];
+  /** Required fields and the message shown when one is missing. Checked on the server as well as in the browser. */
+  required?: Record<string, string>;
+  /** Further checks on fields that were filled in: field -> message. */
+  check?: (f: Fields) => Record<string, string>;
+}
+
+/**
+ * Server side of the form rules: dates become dd/mm/yyyy (in place), then every required
+ * field and extra check is applied. Returns field -> message for anything wrong.
+ */
+export function prepareSubmission(def: FormDef, f: Fields): Record<string, string> {
+  const errors: Record<string, string> = {};
+  for (const k of def.dates || []) {
+    const raw = v(f, k);
+    if (!raw) continue;
+    const au = toAuDate(raw);
+    if (au) f[k] = au;
+    else errors[k] = 'Please enter a real date as dd/mm/yyyy.';
+  }
+  for (const [k, msg] of Object.entries(def.required || {})) {
+    if (!errors[k] && !v(f, k).trim()) errors[k] = msg;
+  }
+  if (def.check) for (const [k, msg] of Object.entries(def.check(f))) if (!errors[k]) errors[k] = msg;
+  return errors;
 }
 
 export const v = (f: Fields, key: string | ((f: Fields) => string)): string => {
@@ -69,14 +97,49 @@ export const FORMS: Record<string, FormDef> = {
   patientForm: {
     kind: 'patient-form',
     label: 'Patient information form',
-    subject: (f) => `Patient information form: ${v(f, 'patient_name')}`,
+    subject: (f) => `Patient information form: ${join(f.first_name, f.surname)}`,
     replyTo: 'email',
-    store: ['patient_name', 'dob', 'phone_mobile', 'phone_landline', 'email', 'fee_policy_agreed', 'consent_agreed', 'ai_agreed'],
+    store: ['first_name', 'surname', 'dob', 'phone_mobile', 'phone_landline', 'email', 'fee_policy_agreed', 'consent_agreed', 'ai_agreed'],
+    dates: ['dob', 'parent_dob', 'fee_policy_date', 'consent_date', 'ai_date'],
+    required: {
+      first_name: 'Please enter your first name.',
+      surname: 'Please enter your surname.',
+      dob: 'Please enter your date of birth.',
+      sex: 'Please choose an option.',
+      medicare_number: "Please enter your Medicare number, or NA if you don't have a Medicare card.",
+      medicare_reference: "Please enter your reference number, or NA if you don't have a Medicare card.",
+      allergies: 'Please list any allergies, or NKA if you have no known allergies.',
+      weight: 'Please enter your current weight.',
+      height: 'Please enter your current height.',
+      smoker: 'Please choose an option.',
+      alcohol: 'Please choose an option.',
+      pregnant: 'Please choose an option.',
+      fee_policy_agreed: 'Please tick to accept the fee policy.',
+      fee_policy_name: 'Please enter your full name.',
+      fee_policy_date: "Please enter today's date.",
+      consent_agreed: 'Please tick to give your consent.',
+      consent_name: 'Please enter your full name.',
+      consent_date: "Please enter today's date.",
+      ai_agreed: 'Please tick to confirm you have read how AI is used.',
+      ai_name: 'Please enter your full name.',
+      ai_date: "Please enter today's date.",
+    },
+    check: (f) => {
+      const e: Record<string, string> = {};
+      const num = v(f, 'medicare_number');
+      const ref = v(f, 'medicare_reference');
+      if (num && !isNA(num) && !isMedicareNumber(num)) e.medicare_number = "Please check your Medicare number (10 digits on your card), or enter NA if you don't have one.";
+      if (ref && !isNA(ref) && !isMedicareRef(ref)) e.medicare_reference = 'Please enter the number beside your name on the card (1 to 9), or NA.';
+      const dob = v(f, 'dob');
+      if (/^\d{2}\/\d{2}\/\d{4}$/.test(dob) && !notInFuture(dob)) e.dob = 'Please check your date of birth.';
+      return e;
+    },
     sections: [
       [
         'Patient Information',
         [
-          ['Patient Name', 'patient_name'],
+          ['First Name', 'first_name'],
+          ['Surname', 'surname'],
           ['Date of Birth', 'dob'],
           ['Sex', 'sex'],
           ['Address', 'address'],
@@ -144,7 +207,7 @@ export const FORMS: Record<string, FormDef> = {
       ['Consent to collect patient information', [['Consent given', 'consent_agreed'], ['Full name', 'consent_name'], ['Date', 'consent_date'], ['Parent or guardian', 'consent_guardian']]],
       ['Use of AI in your care', [['Acknowledged', 'ai_agreed'], ['Full name', 'ai_name'], ['Date', 'ai_date'], ['Parent or guardian', 'ai_guardian']]],
     ],
-    summary: (f) => ({ name: v(f, 'patient_name'), email: v(f, 'email'), phone: v(f, 'phone_mobile') || v(f, 'phone_landline'), message: 'Patient information form. The full form was emailed to the practice (medical details are not stored on the website).' }),
+    summary: (f) => ({ name: join(f.first_name, f.surname), email: v(f, 'email'), phone: v(f, 'phone_mobile') || v(f, 'phone_landline'), message: 'Patient information form. The full form was emailed to the practice (medical details are not stored on the website).' }),
   },
   feedbackForm: {
     kind: 'feedback',

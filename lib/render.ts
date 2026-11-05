@@ -1,7 +1,8 @@
 import { asset } from './assets';
 import { locationCards, postCards, staffCards, surgeonBios } from './blocks';
 import { posts as allPosts, settings as loadSettings, siteWide, team as loadTeam, templates } from './content';
-import { headTags, trackingBody, type HeadInput } from './head';
+import { gtmBody } from './gtm';
+import { headTags, type HeadInput } from './head';
 import type { PageData, Post, SectionData, SiteSettings, TeamData, TemplateDef } from './types';
 
 export interface RenderContext {
@@ -16,6 +17,8 @@ export interface RenderContext {
    * script can make them clickable. Never set for the public site.
    */
   edit?: { sections: WeakSet<SectionData> };
+  /** Dashboard editor and preview: no Google Tag Manager or other analytics, so staff editing never counts as a visit. */
+  noTracking?: boolean;
 }
 
 export function defaultContext(): RenderContext {
@@ -170,7 +173,8 @@ export function renderDocument(input: DocumentInput, ctx: RenderContext): string
     '</head>',
     '',
     '<body>',
-    trackingBody(ctx.settings.tracking),
+    // Google Tag Manager (noscript), immediately after <body>. Not in the dashboard editor or preview.
+    ctx.noTracking ? '' : gtmBody(),
     shell.topbar,
     '',
     lazyImages(shell.header || '', 1),

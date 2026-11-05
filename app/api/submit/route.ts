@@ -13,7 +13,8 @@
  *   FORM_FROM        sender on an SMTP2GO verified domain.
  *                    Default (temporary, until sunshinecoastofis.com.au is verified): noreply@dentalspecialists.com.au
  */
-import { FORMS, v, type Fields } from '@/lib/forms/definitions';
+import { FORMS, prepareSubmission, v, type Fields } from '@/lib/forms/definitions';
+import { renderHtml, renderText, type Upload } from '@/lib/forms/email-body';
 import { buildReferralEmail } from '@/lib/forms/referral-email.js';
 import { after } from 'next/server';
 import { logEnquiry } from '@/lib/enquiries';
@@ -28,15 +29,7 @@ const DEFAULT_FROM = 'Sunshine Coast OFIS Website <noreply@dentalspecialists.com
 const MAX_BYTES = 4 * 1024 * 1024; // Vercel's request body limit is 4.5 MB
 const MIN_FILL_MS = 2500; // faster than a person can fill a form in
 
-interface Upload {
-  field: string;
-  filename: string;
-  type: string;
-  data: Buffer;
-}
-
 const json = (body: unknown, status = 200) => Response.json(body, { status });
-const esc = (s: string) => String(s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c] as string);
 const safeName = (n: string) => n.replace(/[\\/:*?"<>|]/g, '_').slice(0, 120);
 const recipients = () => (process.env.FORM_TO || DEFAULT_TO).split(/[,;]/).map((s) => s.trim()).filter(Boolean);
 const list = (v?: string) => (v || '').split(/[,;]/).map((s) => s.trim()).filter(Boolean);
@@ -75,6 +68,14 @@ export async function POST(req: Request) {
   // Spam: the hidden "website" box is only ever filled in by bots, and nobody completes a form in under 2.5 seconds.
   const started = Number(v(fields, 'started'));
   if (v(fields, 'website') || (started && Date.now() - started < MIN_FILL_MS)) return json({ ok: true });
+
+  // Required fields and field rules, checked here as well as in the browser so a submission
+  // that skips the page is still refused. Dates become dd/mm/yyyy before anything is sent or saved.
+  const invalid = prepareSubmission(def, fields);
+  if (Object.keys(invalid).length) {
+    console.log(`[submit] ${def.kind}: refused, missing or invalid: ${Object.keys(invalid).join(', ')}`);
+    return json({ ok: false, error: 'Please complete the fields marked in red.', fields: invalid }, 400);
+  }
 
   const page = v(fields, 'page');
   const summary = def.summary(fields);
@@ -180,30 +181,4 @@ export async function GET() {
     out.smtp2go_message = `Could not reach SMTP2GO: ${(e as Error).message}`;
   }
   return json(out);
-}
-
-// ---------------------------------------------------------------- email bodies (all forms except the referral)
-function renderText(def: (typeof FORMS)[string], f: Fields, files: Upload[], page: string) {
-  const lines: string[] = [];
-  for (const [title, rows] of def.sections || []) {
-    lines.push(title.toUpperCase(), '-'.repeat(title.length));
-    for (const [label, key] of rows) lines.push(`${label}: ${v(f, key) || '-'}`);
-    lines.push('');
-  }
-  lines.push(`Attachments: ${files.length ? files.map((x) => x.filename).join(', ') : 'none'}`);
-  lines.push(`Submitted: ${new Date().toISOString()}${page ? `\nPage: ${page}` : ''}`);
-  return lines.join('\n');
-}
-
-function renderHtml(def: (typeof FORMS)[string], f: Fields, files: Upload[], page: string) {
-  let h = '<div style="font-family:Arial,sans-serif;font-size:14px;color:#1D2540;max-width:640px">';
-  for (const [title, rows] of def.sections || []) {
-    h += `<h3 style="color:#182650;border-bottom:2px solid #1DB2DE;padding-bottom:4px;margin:18px 0 8px">${esc(title)}</h3><table style="border-collapse:collapse;width:100%">`;
-    for (const [label, key] of rows) {
-      h += `<tr><td style="padding:5px 8px;border:1px solid #E3E9F0;background:#EFF3F7;width:40%;font-weight:bold">${esc(label)}</td><td style="padding:5px 8px;border:1px solid #E3E9F0;white-space:pre-wrap">${esc(v(f, key) || '-')}</td></tr>`;
-    }
-    h += '</table>';
-  }
-  h += `<p style="margin-top:16px;color:#5C6579;font-size:12px">Attachments: ${files.length ? esc(files.map((x) => x.filename).join(', ')) : 'none'}<br>Submitted ${esc(new Date().toISOString())}${page ? `<br>Page: ${esc(page)}` : ''}</p></div>`;
-  return h;
 }

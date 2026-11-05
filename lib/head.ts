@@ -1,3 +1,4 @@
+import { gtmHead, gtmId, LIVE_HOST_TEST, trackingEnabled, validGtm } from './gtm';
 import { SITE_URL } from './content';
 import type { PageSeo, Post, SiteSettings } from './types';
 import type { RenderContext } from './render';
@@ -41,6 +42,8 @@ export function headTags(input: HeadInput, ctx: RenderContext): string {
   const lines = [
     '<meta charset="utf-8">',
     '<meta name="viewport" content="width=device-width, initial-scale=1">',
+    // Google Tag Manager, as high in <head> as possible (lib/gtm.ts). Not in the dashboard editor or preview.
+    ctx.noTracking ? '' : gtmHead(),
     `<title>${esc(title)}</title>`,
     description ? `<meta name="description" content="${esc(description)}">` : '',
     `<meta name="robots" content="${robots}">`,
@@ -70,34 +73,34 @@ export function headTags(input: HeadInput, ctx: RenderContext): string {
       ? `<style>:root{${s.colours.navy ? `--navy:${esc(s.colours.navy)};` : ''}${s.colours.cyan ? `--cyan:${esc(s.colours.cyan)};` : ''}}</style>`
       : '',
     ...schema(input, ctx).map((o) => `<script type="application/ld+json">${JSON.stringify(o).replace(/</g, '\\u003c')}</script>`),
-    tracking(t),
+    ctx.noTracking ? '' : tracking(t),
   ];
   return lines.filter(Boolean).join('\n');
 }
 
 /**
- * Analytics (GA4, Google Tag Manager, Meta Pixel) load only on the live website:
+ * Analytics entered in the dashboard (GA4, Meta Pixel) load only on the live website:
  *   1. only in a Vercel production build (VERCEL_ENV=production), never in previews or local dev;
  *   2. and, in the browser, only when the address is sunshinecoastofis.com.au (or www), so the
  *      vercel.app production address and anyone testing it never reach the reports.
  * TRACKING_TEST=1 forces step 1 on (for local checks only; never set it on Vercel).
  * The Search Console verification meta tag is not analytics and is always included.
+ * Google Tag Manager is installed separately, from one container ID (lib/gtm.ts).
  */
-export const trackingEnabled = () => process.env.VERCEL_ENV === 'production' || process.env.TRACKING_TEST === '1';
-const LIVE_HOST_TEST = "/^(www\\.)?sunshinecoastofis\\.com\\.au$/.test(location.hostname)";
-
-export const validGtm = (id?: string) => Boolean(id && /^GTM-[A-Z0-9]+$/i.test(id.trim()));
 const validGa4 = (id?: string) => Boolean(id && /^(G|GT|AW)-[A-Z0-9]+$/i.test(id.trim()));
 const validPixel = (id?: string) => Boolean(id && /^\d+$/.test(id.trim()));
 
+let gtmFieldWarned = false;
 function tracking(t: SiteSettings['tracking']): string {
   if (!trackingEnabled()) return '';
   const gtm = (t.gtmId || '').trim();
   const ga4 = (t.ga4Id || '').trim();
   const px = (t.metaPixelId || '').trim();
   const parts: string[] = [];
-  if (validGtm(gtm)) {
-    parts.push(`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','${gtm}');`);
+  // The dashboard's old Tag Manager field is not used: one container only, from lib/gtm.ts.
+  if (validGtm(gtm) && gtm.toUpperCase() !== gtmId() && !gtmFieldWarned) {
+    gtmFieldWarned = true;
+    console.warn(`[gtm] Site Settings has Tag Manager ${gtm}; it is ignored. The site uses ${gtmId()} (NEXT_PUBLIC_GTM_ID).`);
   }
   if (validGa4(ga4)) {
     parts.push(`var g=document.createElement('script');g.async=true;g.src='https://www.googletagmanager.com/gtag/js?id=${ga4}';document.head.appendChild(g);window.dataLayer=window.dataLayer||[];window.gtag=function(){dataLayer.push(arguments);};gtag('js',new Date());gtag('config','${ga4}');`);
@@ -109,12 +112,6 @@ function tracking(t: SiteSettings['tracking']): string {
   return `<script>if(${LIVE_HOST_TEST}){${parts.join('\n')}}</script>`;
 }
 
-/** Google Tag Manager's no-JavaScript fallback, placed straight after <body>. */
-export function trackingBody(t: SiteSettings['tracking']): string {
-  const gtm = (t?.gtmId || '').trim();
-  if (!trackingEnabled() || !validGtm(gtm)) return '';
-  return `<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=${gtm}" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>`;
-}
 
 // ------------------------------------------------------------------ structured data
 const PRACTICE_ID = `${SITE_URL}/#practice`;

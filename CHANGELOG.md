@@ -1,5 +1,31 @@
 # Changelog
 
+## 3.4.0 (5 Nov 2026): Google Tag Manager (GTM-TZ7DJSC2) site-wide
+
+- Google's official Tag Manager snippet is on every page: all 23 pages in the sitemap and the 404 page. That includes the home page, service and location pages, the blog, the Contact, Referral and Patient information form pages, and the form thank-you messages, which appear on the same pages. The head snippet sits straight after the charset and viewport tags and the noscript iframe straight after `<body>`, exactly once per page. The client's gtag-style snippet was not used.
+- One container ID, in one place (`lib/gtm.ts`): the Vercel variable `NEXT_PUBLIC_GTM_ID`, falling back to `GTM-TZ7DJSC2` if it is missing or not a GTM-... ID. The dashboard's old "Google Tag Manager container ID" field is no longer used (its help text says so), so there can never be two containers; the build log warns if it holds a different ID.
+- GTM loads only on the live site: Vercel production builds, and in the browser only on sunshinecoastofis.com.au or www. It never loads on previews, the vercel.app address, local builds, or the dashboard's page editor and preview, so staff editing pages is not counted as visits.
+- Conversion event: `dataLayer.push({ event: 'form_submit_success', form_name: 'contact' | 'referral' | 'patient_information' })`, sent only after the server confirms a submission (not on click, not when a form is refused). It holds nothing else: no patient data is sent to Google. The Feedback form sends no event.
+- No Content Security Policy exists in the project, so none needed changing.
+- Existing tracking: nothing hard-coded (no gtag.js, GA4, Google Ads, Meta Pixel, call tracking or older GTM in the code). The only other analytics are the dashboard's Site Settings > Tracking fields (GA4 measurement ID, Meta Pixel ID), which load gtag.js or the Pixel separately if filled in. Check them on the live dashboard: if GA4 is also set up inside GTM, clear the GA4 field to avoid counting visits twice.
+
+Files: `lib/gtm.ts` (new), `lib/head.ts`, `lib/render.ts`, `app/(frontend)/edit-preview/route.ts`, `public/assets/site.js`, `dashboard/editors/SettingsForm.tsx`, `cms/globals/SiteSettings.ts` (help text only), `README-CMS.md`, `package.json`.
+
+## 3.3.0 (5 Nov 2026): Patient information form changes (requested by Taryn)
+
+Only the Patient information form changed. The Contact and Referral forms, page layout, SEO, tracking and email recipients are unchanged.
+
+1. **First Name and Surname** replace Patient Name, both required. They are separate rows in the email and the dashboard. Older records still show their single Patient Name.
+2. **Date of birth as dd/mm/yyyy.** Cause: the browser's date box always sent yyyy-mm-dd, and its day and month order on screen followed the browser's language setting (US-English browsers showed mm/dd/yyyy). All five date boxes are now plain dd/mm/yyyy boxes (slashes added while typing, number pad on phones), and every date is stored as dd/mm/yyyy when the form arrives. The email, dashboard and CSV therefore all match, and older yyyy-mm-dd records display as dd/mm/yyyy.
+3. **Medicare number and reference required**, with the note "If you don't have a Medicare card, please write NA." NA (any case, or N/A) is accepted. Otherwise the number must be a valid Medicare number (10 digits, check digit) and the reference must be 1 to 9. These boxes no longer open the number-only keypad, so NA can be typed on a phone.
+4. **Allergies required**, with the note "If you have no known allergies, please write NKA."
+5. **Current weight and height required** (labels unchanged).
+6. **Smoker, Drink Alcohol and Could you be pregnant? required.** Pregnant already had a "Not applicable" option.
+
+How the checks work: a red asterisk marks every required field. A red message appears beside each missing or invalid field, the page scrolls to the first one, and everything already typed is kept. The server repeats every check and refuses incomplete submissions, so nothing incomplete is emailed or saved.
+
+Files: `content/templates/sections.json` (patient-information-form/2 only), `public/assets/site.js`, `public/assets/site.css`, `lib/forms/definitions.ts`, `lib/forms/rules.ts` (new), `lib/forms/email-body.ts` (new, the email layout moved unchanged from the submit route), `lib/forms/display.ts` (new), `app/api/submit/route.ts`, `app/(dashboard)/admin/(app)/enquiries/[id]/page.tsx`, `cms/endpoints.ts` (CSV export), `scripts/test-patient-form.ts` (new, `npm run test:patient-form`), `package.json`.
+
 ## 3.2.1 (2 Nov 2026): Blog in the main menu
 
 - **Blog** added to the main navigation (SEO team request): a sixth item in the Patients dropdown on desktop, in the same style as the other five, and a Blog link after Patient information in the mobile menu. A sixth top-level item was tested and not used: between 1140 and 1250 px it squeezes the logo to 63 to 103 px wide (141 px normally).

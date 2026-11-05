@@ -48,6 +48,7 @@ Set in Vercel > Project > Settings > Environment Variables (Production, and Prev
 | `ALLOW_FIRST_USER` | One-off | `true` only while creating the first account at `/cms` on an empty database | Delete straight after |
 | `ADMIN_EMAIL`, `ADMIN_PASSWORD` | One-off | Sign-in rescue: typing these on `/admin` creates or resets that account as admin | Delete `ADMIN_PASSWORD` and redeploy once signed in |
 | `EXTRA_LIVE_HOSTS` | Never on Vercel | Local testing only (treat `localhost` as the live site for Lighthouse) | |
+| `NEXT_PUBLIC_GTM_ID` | Optional | Google Tag Manager container for the live site. Without it the site uses GTM-TZ7DJSC2 | Production only; read at build time, so redeploy after changing it |
 
 Tracking IDs (GA4, Google Tag Manager, Meta Pixel, Search Console verification) are **not** environment variables. They are entered by an admin in the dashboard under Site Settings > Tracking and links, and written into every page at the next publish.
 
@@ -58,7 +59,7 @@ Sign in at `/admin` as an **admin** (editors cannot see these fields), open **Si
 | Field | What to paste | Example format | Notes |
 |---|---|---|---|
 | GA4 Measurement ID | The ID only, from GA4 > Admin > Data streams > the web stream | `G-XXXXXXXXXX` | Leave empty if GA4 is set up inside Google Tag Manager instead, or every visit is counted twice |
-| Google Tag Manager container ID | The ID only, from the top of the GTM workspace | `GTM-XXXXXXX` | The site adds both GTM snippets (head script, and the noscript frame straight after `<body>`) |
+| Google Tag Manager container ID | **Not used since 3.4.0.** The container (`GTM-TZ7DJSC2`) is installed in the code (`lib/gtm.ts`) from the Vercel variable `NEXT_PUBLIC_GTM_ID`, falling back to GTM-TZ7DJSC2 | `GTM-XXXXXXX` | To change the container, set `NEXT_PUBLIC_GTM_ID` in Vercel (Production) and redeploy |
 | Search Console verification | Only the `content` value of Google's HTML tag | `abc123...` | **Prefer DNS verification** (below) and leave this empty |
 | Meta Pixel ID | The number only | `123456789012345` | Optional |
 
@@ -117,6 +118,7 @@ The live site keeps running from `main` until the new version has been checked o
 | `npm run typecheck` | TypeScript check |
 | `npm run test:render` | Approved `index.html` vs rendered sections (must be 0 different) |
 | `npm run test:email` | Referral email matches the old WordPress email |
+| `npm run test:patient-form` | Patient information form rules: dd/mm/yyyy dates, Medicare and NA, NKA, every required field refused by the server, email rows |
 | `npm run qa:banned` | Wording check on the served pages (needs `npm start` running) |
 | `npm run seed` / `npm run seed -- --reset` | Load `content/` into the dashboard (add missing / replace) |
 | `python3 _tools/seo_migration.py http://localhost:3000` | Rebuild the `seo-migration/` reports against a running build |

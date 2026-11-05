@@ -1,5 +1,6 @@
 import type { Endpoint, PayloadRequest } from 'payload';
 import { importContent } from './importContent';
+import { fieldLabel, fieldValue } from '../lib/forms/display';
 
 const unauthorised = () => Response.json({ error: 'Please log in.' }, { status: 401 });
 
@@ -89,7 +90,7 @@ const enquiriesCsv: Endpoint = {
         d.followedUp ? 'yes' : 'no',
         d.notes,
         Object.entries(d.raw || {})
-          .map(([k, v]) => `${k}: ${v}`)
+          .map(([k, v]) => (d.form === 'patient-form' ? `${fieldLabel(d.form, k)}: ${fieldValue(d.form, k, v)}` : `${k}: ${v}`))
           .join('\n'),
       ]),
     ];

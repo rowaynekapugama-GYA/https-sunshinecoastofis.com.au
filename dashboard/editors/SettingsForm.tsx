@@ -239,7 +239,7 @@ export function SettingsForm({ initial, isAdmin }: { initial: any; isAdmin: bool
         <div className="d-card" style={{ maxWidth: 860 }}>
           <HelpBox>GYA only. These load on every public page once the website is published.</HelpBox>
           <TextInput label="Google Analytics 4 measurement ID" value={doc.tracking.ga4Id || ''} onChange={(ga4Id) => upIn('tracking', { ga4Id: ga4Id.trim() })} placeholder="G-XXXXXXXXXX" />
-          <TextInput label="Google Tag Manager container ID" value={doc.tracking.gtmId || ''} onChange={(gtmId) => upIn('tracking', { gtmId: gtmId.trim() })} placeholder="GTM-XXXXXXX" help="Leave blank unless a container is set up. Do not add GA4 both here and in Tag Manager." />
+          <TextInput label="Google Tag Manager container ID" value={doc.tracking.gtmId || ''} onChange={(gtmId) => upIn('tracking', { gtmId: gtmId.trim() })} placeholder="GTM-XXXXXXX" help="Not used. The website's Tag Manager container (GTM-TZ7DJSC2) is installed by GYA in the code and Vercel (NEXT_PUBLIC_GTM_ID). Leave this blank. If GA4 is set up inside Tag Manager, leave the GA4 field above blank too." />
           <TextInput label="Meta Pixel ID" value={doc.tracking.metaPixelId || ''} onChange={(metaPixelId) => upIn('tracking', { metaPixelId: metaPixelId.trim() })} />
           <TextInput label="Google Search Console verification code" value={doc.tracking.searchConsoleVerification || ''} onChange={(searchConsoleVerification) => upIn('tracking', { searchConsoleVerification: searchConsoleVerification.trim() })} help='Only the content="..." value of the google-site-verification tag. Not needed if Search Console is verified by DNS.' />
         </div>

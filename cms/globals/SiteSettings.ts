@@ -146,7 +146,7 @@ export const SiteSettings: GlobalConfig = {
               access: { read: isAdminField, update: isAdminField },
               fields: [
                 { name: 'ga4Id', type: 'text', label: 'Google Analytics 4 measurement ID', admin: { placeholder: 'G-XXXXXXXXXX' } },
-                { name: 'gtmId', type: 'text', label: 'Google Tag Manager container ID', admin: { placeholder: 'GTM-XXXXXXX', description: 'Leave blank unless a container is set up.' } },
+                { name: 'gtmId', type: 'text', label: 'Google Tag Manager container ID', admin: { placeholder: 'GTM-XXXXXXX', description: 'Not used: the website\'s Tag Manager container (GTM-TZ7DJSC2) is set in the code and Vercel (NEXT_PUBLIC_GTM_ID). Leave blank.' } },
                 { name: 'metaPixelId', type: 'text', label: 'Meta Pixel ID', admin: { description: 'Numbers only. Leave blank to not load the pixel.' } },
                 { name: 'searchConsoleVerification', type: 'text', label: 'Google Search Console verification code', admin: { description: 'Only the content value of the google-site-verification meta tag.' } },
               ],

@@ -356,7 +356,7 @@ form.f{display:grid;gap:.9rem}
 
 .f fieldset.fs{border:0;padding:0;margin:0;display:grid;gap:.35rem}
 .f fieldset.fs legend{font-size:.85rem;font-weight:700;color:var(--navy);padding:0;margin-bottom:.1rem}
-.f .sub{font-weight:500;color:var(--muted);font-size:.8rem}
+.f .sub{font-weight:500;color:var(--muted);font-size:.8rem}.f .req{color:#B42318}.f .field-err{display:block;color:#B42318;font-size:.8rem;font-weight:600}.f [aria-invalid="true"]{border-color:#B42318}.f .opts.invalid span{border-color:#B42318}#patientForm .row{align-items:start}
 .f .captcha{border:1.5px solid var(--line);border-radius:12px;padding:.8rem .95rem;background:#fff;display:inline-block}
 .f .captcha label.robot{display:flex;align-items:center;gap:.7rem;font-weight:700;color:var(--ink);font-size:.95rem;cursor:pointer}
 .f .captcha input{width:22px;height:22px;accent-color:var(--cyan-deep);margin:0}
