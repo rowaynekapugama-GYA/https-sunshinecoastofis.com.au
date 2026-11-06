@@ -15,8 +15,12 @@
  * In both cases the provider delivers to SmileOX over TLS when SmileOX's mail server offers it;
  * the TLS settings here protect the leg from the website to the provider.
  *
- * Environment: SMTP_HOST, SMTP_PORT (465), SMTP_SECURE (optional true/false override), SMTP_USER,
- * SMTP_PASS, SMTP_FROM, CRM_INTAKE_EMAIL (defaults to the address below; "off" turns the CRM off).
+ * Environment (one set, shared by the site's forms and the Google Ads landing pages in /lp):
+ *   SMTP_HOST, SMTP_PORT (465), SMTP_SECURE (optional true/false override), SMTP_USER, SMTP_PASS
+ *   MAIL_FROM or SMTP_FROM   sender when sending over SMTP
+ *   LEAD_INTAKE or CRM_INTAKE_EMAIL   intake address (defaults to the address below; "off" turns the CRM off)
+ * The SMTP2GO fallback always sends from FORM_FROM (or the default below), the sender the clinic's
+ * form emails already use, so a MAIL_FROM on an unverified domain cannot stop leads going out.
  */
 import nodemailer from 'nodemailer';
 
@@ -29,7 +33,7 @@ const BACKOFF_MS = [500, 1500, 3500];
 export type LeadValue = string | number | boolean;
 export type Lead = Record<string, LeadValue>;
 
-const intakeSetting = () => (process.env.CRM_INTAKE_EMAIL || '').trim();
+const intakeSetting = () => (process.env.LEAD_INTAKE || process.env.CRM_INTAKE_EMAIL || '').trim();
 export const crmEnabled = () => !/^(off|false|0|none|disabled)$/i.test(intakeSetting());
 export const intakeAddress = () => (intakeSetting() && crmEnabled() ? intakeSetting() : DEFAULT_INTAKE_EMAIL);
 
@@ -129,9 +133,29 @@ export function isTransient(err: unknown): boolean {
   return /ETIMEDOUT|ECONNRESET|ECONNREFUSED|EAI_AGAIN|ENETUNREACH|ETIMEOUT|fetch failed|aborted due to timeout/i.test(codes);
 }
 
-const from = () => (process.env.SMTP_FROM || process.env.FORM_FROM || DEFAULT_FROM).trim();
+/** Sender over SMTP: MAIL_FROM (the landing pages' name) or SMTP_FROM, else the form sender. */
+const smtpFrom = () => (process.env.MAIL_FROM || process.env.SMTP_FROM || process.env.FORM_FROM || DEFAULT_FROM).trim();
+/** Sender through SMTP2GO's API: the address the clinic's form emails already send from. */
+const apiFrom = () => (process.env.FORM_FROM || DEFAULT_FROM).trim();
 
-function smtpTransport(): SendOnce | null {
+/** One plain-text email. */
+export interface Mail {
+  to: string;
+  subject: string;
+  text: string;
+  replyTo?: string;
+}
+export interface Mailer {
+  via: 'smtp' | 'smtp2go-api';
+  send: (mail: Mail) => Promise<void>;
+}
+
+/** The provider every CRM and landing page email goes through: SMTP when set, else SMTP2GO's API. */
+export function mailer(): Mailer | null {
+  return smtpMailer() || smtp2goMailer();
+}
+
+function smtpMailer(): Mailer | null {
   const host = process.env.SMTP_HOST?.trim();
   const user = process.env.SMTP_USER?.trim();
   const pass = process.env.SMTP_PASS;
@@ -150,26 +174,39 @@ function smtpTransport(): SendOnce | null {
     greetingTimeout: 8000,
     socketTimeout: 12000,
   });
-  return async (json) => {
-    await transporter.sendMail({ to: intakeAddress(), from: from(), subject: SUBJECT, text: json });
+  return {
+    via: 'smtp',
+    send: async ({ to, subject, text, replyTo }) => {
+      await transporter.sendMail({ to, from: smtpFrom(), subject, text, ...(replyTo ? { replyTo } : {}) });
+    },
   };
 }
 
-function smtp2goTransport(): SendOnce | null {
+function smtp2goMailer(): Mailer | null {
   const key = process.env.SMTP2GO_API_KEY?.trim();
   if (!key) return null;
-  return async (json) => {
-    const r = await fetch('https://api.smtp2go.com/v3/email/send', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      signal: AbortSignal.timeout(12000),
-      body: JSON.stringify({ api_key: key, to: [intakeAddress()], sender: from(), subject: SUBJECT, text_body: json }),
-    });
-    const out = (await r.json().catch(() => ({}))) as { data?: { failed?: number; error?: string; error_code?: string } };
-    const d = out.data || {};
-    if (!r.ok || (d.failed ?? 0) > 0 || d.error) {
-      throw Object.assign(new Error(`SMTP2GO: ${d.error || `HTTP ${r.status}`}${d.error_code ? ` [${d.error_code}]` : ''}`), { status: r.status });
-    }
+  return {
+    via: 'smtp2go-api',
+    send: async ({ to, subject, text, replyTo }) => {
+      const r = await fetch('https://api.smtp2go.com/v3/email/send', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        signal: AbortSignal.timeout(12000),
+        body: JSON.stringify({
+          api_key: key,
+          to: to.split(/[,;]/).map((x) => x.trim()).filter(Boolean),
+          sender: apiFrom(),
+          subject,
+          text_body: text,
+          ...(replyTo && isEmail(replyTo) ? { custom_headers: [{ header: 'Reply-To', value: replyTo }] } : {}),
+        }),
+      });
+      const out = (await r.json().catch(() => ({}))) as { data?: { failed?: number; error?: string; error_code?: string } };
+      const d = out.data || {};
+      if (!r.ok || (d.failed ?? 0) > 0 || d.error) {
+        throw Object.assign(new Error(`SMTP2GO: ${d.error || `HTTP ${r.status}`}${d.error_code ? ` [${d.error_code}]` : ''}`), { status: r.status });
+      }
+    },
   };
 }
 
@@ -189,11 +226,10 @@ export async function sendLeadToCrm(lead: Lead, formName: string, sendOnce?: Sen
   let via: SendResult['via'];
   let send = sendOnce;
   if (!send) {
-    send = smtpTransport() || undefined;
-    via = send ? 'smtp' : undefined;
-    if (!send) {
-      send = smtp2goTransport() || undefined;
-      via = send ? 'smtp2go-api' : undefined;
+    const m = mailer();
+    if (m) {
+      via = m.via;
+      send = (json) => m.send({ to: intakeAddress(), subject: SUBJECT, text: json });
     }
   }
   if (!send) {

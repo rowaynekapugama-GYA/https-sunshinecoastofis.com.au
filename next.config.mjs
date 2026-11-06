@@ -66,6 +66,13 @@ const nextConfig = {
       ...WORDPRESS.map(([source, destination]) => ({ source, destination, statusCode: 301 })),
     ];
   },
+  // Google Ads landing pages: static files in public/lp, served without the .html.
+  async rewrites() {
+    return [
+      { source: '/lp/dental-implants', destination: '/lp/dental-implants.html' },
+      { source: '/lp/wisdom-teeth', destination: '/lp/wisdom-teeth.html' },
+    ];
+  },
   async headers() {
     return [
       {
@@ -78,6 +85,9 @@ const nextConfig = {
       },
       { source: '/images/:path*', headers: [{ key: 'Cache-Control', value: 'public, max-age=2592000' }] },
       { source: '/assets/:path*', headers: [{ key: 'Cache-Control', value: 'public, max-age=31536000, immutable' }] },
+      // Landing page files (Rowayne's cache settings, scoped to /lp)
+      { source: '/lp/assets/:path*', headers: [{ key: 'Cache-Control', value: 'public, max-age=604800, must-revalidate' }] },
+      { source: '/lp/images/:path*', headers: [{ key: 'Cache-Control', value: 'public, max-age=2592000, immutable' }] },
     ];
   },
 };

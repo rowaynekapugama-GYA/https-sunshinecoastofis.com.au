@@ -1,5 +1,17 @@
 # Changelog
 
+## 3.6.0 (6 Nov 2026): Google Ads landing pages at /lp with discreet footer links
+
+- Rowayne's two landing pages are on the site: `/lp/dental-implants` (from `index.html`) and `/lp/wisdom-teeth`, as static files in `public/lp` with rewrites so the addresses work without `.html`. Design, copy, section order and the `noindex, follow` meta are unchanged.
+- Paths inside the pages are root-absolute (`/lp/assets/...`, `/lp/images/...`). The footer cross-links point at `/lp/...`, and Main website, Contact us and Privacy policy are same-tab links to `/`, `/contact-us/` and `/privacy-policy/`. All nine practice photos the pages used from the live site now load from the site's own `/images`.
+- `/lp/...` pages have no trailing slash (middleware), so the ad final URLs answer 200 with no redirect; a trailing slash redirects back with gclid and utm_* kept.
+- Form: new `POST /api/lp-lead` (Rowayne's `api/lead.js` as a Next.js route, so it doesn't clash with the site's `/api/lead`). It sends through the same SmileOX path as the site's forms (SMTP when set, otherwise the existing SMTP2GO account, TLS, retries), and reads both naming styles: `MAIL_FROM`/`SMTP_FROM`, `LEAD_INTAKE`/`CRM_INTAKE_EMAIL`. Fixed: the wisdom teeth form's `anaesthetic` answer was dropped; it's now in the lead and on an "Anaesthetic:" line in the `NOTIFY_TO` copy. The `NOTIFY_TO` copy is sent after the answer, so it can no longer turn a sent lead into an error. Each lead is also recorded in the dashboard's Enquiries.
+- Tracking: the pages' GTM head snippet loaded gtm.js without pushing the `gtm.js` start event, so "All Pages" triggers (including the Conversion Linker) might never fire. Replaced with Google's standard GTM-TZ7DJSC2 snippet; noscript iframe and the `site.js` dataLayer events unchanged.
+- Footer: "Implants" and "Wisdom teeth" links at the end of the bottom row (after Privacy policy | Disclaimer), at the disclaimer's size and colour. Not in the header, menus or sitemap; `/lp/` is not blocked in robots.txt.
+- Cache headers for `/lp/assets` (1 week) and `/lp/images` (30 days), from Rowayne's `vercel.json`. `cleanUrls` was not added: it is for static sites, and the rewrites do the same job in Next.js.
+- `lib/crm/intake.ts`: the SMTP2GO fallback always sends from `FORM_FROM` (the sender the clinic emails already use), so a `MAIL_FROM` on an unverified domain can't stop leads.
+- Files: `public/lp/**` (new), `app/api/lp-lead/route.ts` (new), `lib/crm/intake.ts`, `middleware.ts`, `next.config.mjs`, `content/templates/sections.json`, `public/assets/site.css`, `.env.example`, `README_CRM.md`, `docs/landing-pages.md` (new), `package.json`.
+
 ## 3.5.0 (6 Nov 2026): website forms create leads in the SmileOX CRM
 
 - Contact us, Online doctor referral and the Patient information form now also send each submission to SmileOX as a lead: an email to the practice's intake address, subject "Website form submission", with the lead as plain-text JSON (`firstName`, `lastName`, `email`, `phoneNumber` in E.164, plus `formName`, `pageUrl`, `submittedAt` in Brisbane time, any `utm_*` and the form's own non-medical fields). SmileOX updates an existing lead when the email and phone match.

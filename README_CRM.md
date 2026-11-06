@@ -43,6 +43,7 @@ Health information stays out of the CRM on purpose: the full details still go to
 | `lib/crm/intake.ts` (new) | Phone and name handling, payload clean-up, sending with TLS and retries |
 | `lib/crm/forms.ts` (new) | Which fields of each form are sent |
 | `app/api/lead/route.ts` (new) | `POST /api/lead` for other forms |
+| `app/api/lp-lead/route.ts` (3.6.0) | `POST /api/lp-lead` for the Google Ads landing pages in `public/lp` (see `docs/landing-pages.md`) |
 | `app/api/submit/route.ts` | Sends the lead after the existing email (maximum run time 30 → 60 seconds for retries) |
 | `public/assets/site.js` | Remembers `utm_*` tags for the visit and adds them to form submissions |
 | `scripts/test-crm.ts` (new) | `npm run test:crm` |
@@ -60,10 +61,13 @@ Nodemailer and the SMTP credentials are only used on the server. The build was c
 | `SMTP_SECURE` | Optional | `true` or `false` to force implicit TLS on other ports |
 | `SMTP_USER` | Optional | SMTP username |
 | `SMTP_PASS` | Optional | SMTP password or API key (secret) |
-| `SMTP_FROM` | Optional | Sender, on a domain verified with the provider, e.g. `Sunshine Coast OFIS Website <noreply@sunshinecoastofis.com.au>`. Empty: `FORM_FROM` |
-| `CRM_INTAKE_EMAIL` | Optional | The intake address. Empty: the address above. `off` stops sending leads |
+| `MAIL_FROM` or `SMTP_FROM` | Optional | Sender over SMTP, on a domain verified with the provider, e.g. `no-reply@sunshinecoastofis.com.au`. `MAIL_FROM` wins if both are set. Empty: `FORM_FROM` |
+| `LEAD_INTAKE` or `CRM_INTAKE_EMAIL` | Optional | The intake address. `LEAD_INTAKE` wins if both are set. Empty: the address above. `off` stops sending leads |
+| `NOTIFY_TO` | Optional | Landing pages only: a plain-English copy of each landing page enquiry for reception |
 
-**Without any SMTP settings, leads are sent through the SMTP2GO account the site already uses for the clinic's form emails (`SMTP2GO_API_KEY`).** That works the moment this is deployed. The SMTP settings are only needed to send through a different provider or account.
+The landing pages' handler (`/api/lp-lead`) and the site's own forms read the same variables, so there is one set to manage. `MAIL_FROM`, `LEAD_INTAKE` and `NOTIFY_TO` are the names Rowayne's landing page handler used.
+
+**Without any SMTP settings, leads are sent through the SMTP2GO account the site already uses for the clinic's form emails (`SMTP2GO_API_KEY`).** That works the moment this is deployed. The SMTP settings are only needed to send through a different provider or account. The SMTP2GO fallback always sends from `FORM_FROM` (or the built-in default, `noreply@dentalspecialists.com.au`), the sender the clinic's emails already go out from; `MAIL_FROM`/`SMTP_FROM` are used only over SMTP, so a sender on an unverified domain can't stop leads going out.
 
 ## SMTP requirements
 

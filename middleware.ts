@@ -4,6 +4,7 @@ import { NextResponse, type NextRequest } from 'next/server';
  * 1. Trailing slashes. Public pages live at /about/, /services/dental-implants/ and so on,
  *    exactly as WordPress had them. /about (no slash) gets one 301 to /about/. The
  *    dashboard (/admin, /cms) and the API (/api) are left alone.
+ *    The Google Ads landing pages under /lp/ are the exception: no trailing slash.
  * 2. Search engines only index the real domain. On any other host (the vercel.app
  *    preview and production deployment URLs, staging branches) every response carries
  *    X-Robots-Tag: noindex, and /robots.txt blocks crawling (app/robots.txt/route.ts).
@@ -32,9 +33,13 @@ export function middleware(req: NextRequest) {
   //   www.sunshinecoastofis.com.au -> sunshinecoastofis.com.au (the live WordPress site's preference)
   //   /about -> /about/
   //   /?p=123 and /?page_id=123 (WordPress short links) -> /
+  // Google Ads landing pages (public/lp) live at /lp/dental-implants and /lp/wisdom-teeth with no
+  // trailing slash, so the ads' final URLs answer 200 with no redirect; a slash added by hand is removed.
+  const isLanding = /^\/lp\/[^/]/.test(pathname);
   let path = pathname;
   let query = search;
-  if (!isApp && !isFile && !path.endsWith('/')) path = `${path}/`;
+  if (isLanding) path = pathname.replace(/\/+$/, '') || pathname;
+  else if (!isApp && !isFile && !path.endsWith('/')) path = `${path}/`;
   if (path === '/' && (req.nextUrl.searchParams.has('p') || req.nextUrl.searchParams.has('page_id'))) query = '';
   const www = host === 'www.sunshinecoastofis.com.au';
   let res: NextResponse;

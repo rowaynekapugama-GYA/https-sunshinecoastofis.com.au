@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
-# Sunshine Coast OFIS website: connect the website forms to the SmileOX CRM (v3.5.0) and deploy.
+# Sunshine Coast OFIS website: add Rowayne's Google Ads landing pages under /lp, with discreet
+# footer links (v3.6.0), and deploy. The ZIP is the whole website, so it also carries the SmileOX
+# CRM change (v3.5.0) if that hasn't been deployed yet.
 #
 #   bash update-and-deploy.sh
 #
@@ -7,14 +9,14 @@
 set -euo pipefail
 
 # ============================ EDIT THESE TWO LINES ============================
-ZIP_PATH="$HOME/Downloads/sunshine-coast-dental-crm-intake.zip"     # the update ZIP
+ZIP_PATH="$HOME/Downloads/sunshine-coast-ofis-landing-pages.zip"    # the update ZIP
 REPO_PATH="$HOME/code/https-sunshinecoastofis.com.au"              # your clone of rowaynekapugama-GYA/https-sunshinecoastofis.com.au
 # ==============================================================================
 
-COMMIT_MESSAGE="feat: connect website forms to SmileOX CRM intake"
-BACKUP_BRANCH="backup/pre-crm-intake-$(date +%Y%m%d)"
-INTAKE_DEFAULT="contact-submissions+50d8ee08-b736-4740-a84b-ae94788ca250@intake.smileox.com.au"
+COMMIT_MESSAGE="feat: add Google Ads landing pages under /lp with discreet footer links"
+BACKUP_BRANCH="backup/pre-landing-pages-$(date +%Y%m%d)"
 LIVE_URL="https://sunshinecoastofis.com.au"
+LP_URLS=("$LIVE_URL/lp/dental-implants" "$LIVE_URL/lp/wisdom-teeth")
 
 stop() { echo; echo "STOPPED: $*" >&2; exit 1; }
 step() { echo; echo "==> $*"; }
@@ -29,7 +31,8 @@ command -v rsync >/dev/null 2>&1 || stop "rsync is not installed."
 command -v unzip >/dev/null 2>&1 || stop "unzip is not installed."
 command -v vercel >/dev/null 2>&1 || stop "the Vercel CLI is not installed. Install it with: npm i -g vercel   then run: vercel login"
 [ -f "$ZIP_PATH" ] || stop "ZIP not found at $ZIP_PATH. Check ZIP_PATH at the top of this script."
-[ -d "$REPO_PATH/.git" ] || stop "$REPO_PATH is not a git repository. Check REPO_PATH at the top of this script."
+[ -d "$REPO_PATH/.git" ] || stop "$REPO_PATH is not a git repository. Check REPO_PATH at the top of this script, or clone it first:
+   git clone https://github.com/rowaynekapugama-GYA/https-sunshinecoastofis.com.au.git \"$REPO_PATH\""
 ZIP_PATH="$(cd "$(dirname "$ZIP_PATH")" && pwd)/$(basename "$ZIP_PATH")"
 cd "$REPO_PATH"
 [ -z "$(git status --porcelain)" ] || { git status --short; stop "the repo has uncommitted changes. Commit or stash them first."; }
@@ -73,9 +76,14 @@ git status --short | sed 's/^/   /'
 # without the database and with a throwaway PAYLOAD_SECRET if you don't have a .env.local.
 step "5. npm install and npm run build"
 npm install || stop "npm install failed. Nothing was pushed. Undo with: git checkout -- . && git clean -fd"
-env -u DATABASE_URL PAYLOAD_SECRET="${PAYLOAD_SECRET:-local-build-check-only}" npm run build || stop "the build failed. Nothing was pushed. Undo with: git checkout -- . && git clean -fd"
+if node -e 'process.exit(require("./package.json").scripts?.build ? 0 : 1)'; then
+  env -u DATABASE_URL PAYLOAD_SECRET="${PAYLOAD_SECRET:-local-build-check-only}" npm run build || stop "the build failed. Nothing was pushed. Undo with: git checkout -- . && git clean -fd"
+else
+  echo "   no build script in package.json, build skipped"
+fi
 
-# Step 6. Add the SMTP settings to Vercel BEFORE pushing, so the first deploy already has them.
+# Step 6. Environment variables, BEFORE pushing so the first deploy already has them.
+# One set serves the site's forms and the landing pages. Only variables that aren't set yet are asked for.
 step "6. Vercel environment variables (production and preview)"
 if [ ! -f .vercel/project.json ]; then
   echo "This folder isn't linked to the Vercel project yet. Choose the existing project 'https-sunshinecoastofis-com-au'."
@@ -83,7 +91,10 @@ if [ ! -f .vercel/project.json ]; then
 fi
 PROD_VARS="$(vercel env ls production 2>/dev/null || true)"
 PREVIEW_VARS="$(vercel env ls preview 2>/dev/null || true)"
+echo "Current production variables:"
+printf '%s\n' "$PROD_VARS" | sed 's/^/   /'
 has_var() { printf '%s\n' "$2" | awk '{print $1}' | grep -qx "$1"; }
+is_set() { has_var "$1" "$PROD_VARS"; }
 add_var() { # name value
   local name="$1" value="$2" target list
   for target in production preview; do
@@ -93,25 +104,31 @@ add_var() { # name value
     else echo "   $name ($target): COULD NOT ADD. Add it in Vercel > Settings > Environment Variables."; fi
   done
 }
-echo "Leads are sent through the site's existing SMTP2GO account unless you enter other SMTP settings."
-echo "Press Enter at SMTP_HOST to keep using SMTP2GO and skip the SMTP questions."
-read -r -p "SMTP_HOST (e.g. mail.smtp2go.com): " SMTP_HOST_IN
-if [ -n "$SMTP_HOST_IN" ]; then
-  read -r -p "SMTP_PORT [465]: " SMTP_PORT_IN; SMTP_PORT_IN="${SMTP_PORT_IN:-465}"
-  read -r -p "SMTP_USER: " SMTP_USER_IN
-  read -r -s -p "SMTP_PASS (hidden): " SMTP_PASS_IN; echo
-  read -r -p "SMTP_FROM (e.g. Sunshine Coast OFIS Website <noreply@sunshinecoastofis.com.au>): " SMTP_FROM_IN
-  [ -n "$SMTP_USER_IN" ] && [ -n "$SMTP_PASS_IN" ] || stop "SMTP_USER and SMTP_PASS are both needed when SMTP_HOST is set. Nothing was pushed."
-  add_var SMTP_HOST "$SMTP_HOST_IN"
-  add_var SMTP_PORT "$SMTP_PORT_IN"
-  add_var SMTP_USER "$SMTP_USER_IN"
-  add_var SMTP_PASS "$SMTP_PASS_IN"
-  [ -n "$SMTP_FROM_IN" ] && add_var SMTP_FROM "$SMTP_FROM_IN"
-  unset SMTP_PASS_IN
+echo
+echo "The landing page forms send leads through the site's existing SMTP2GO account unless SMTP settings are set."
+SMTP_ON=""
+if is_set SMTP_HOST; then
+  echo "   SMTP_HOST: already set"; SMTP_ON=1
 else
-  echo "   SMTP settings skipped: leads go through SMTP2GO (SMTP2GO_API_KEY)."
+  echo "Press Enter at SMTP_HOST to keep using SMTP2GO and skip the SMTP questions."
+  read -r -p "SMTP_HOST (e.g. mail.smtp2go.com): " SMTP_HOST_IN
+  if [ -n "$SMTP_HOST_IN" ]; then add_var SMTP_HOST "$SMTP_HOST_IN"; SMTP_ON=1
+  else echo "   SMTP settings skipped: leads go through SMTP2GO (SMTP2GO_API_KEY)."; fi
 fi
-add_var CRM_INTAKE_EMAIL "$INTAKE_DEFAULT"
+if [ -n "$SMTP_ON" ]; then
+  if is_set SMTP_PORT; then echo "   SMTP_PORT: already set"; else read -r -p "SMTP_PORT [465]: " V; add_var SMTP_PORT "${V:-465}"; fi
+  if is_set SMTP_USER; then echo "   SMTP_USER: already set"; else
+    read -r -p "SMTP_USER: " V; [ -n "$V" ] || stop "SMTP_USER is needed when SMTP_HOST is set. Nothing was pushed."; add_var SMTP_USER "$V"; fi
+  if is_set SMTP_PASS; then echo "   SMTP_PASS: already set"; else
+    read -r -s -p "SMTP_PASS (hidden): " V; echo; [ -n "$V" ] || stop "SMTP_PASS is needed when SMTP_HOST is set. Nothing was pushed."; add_var SMTP_PASS "$V"; V=""; fi
+  if is_set MAIL_FROM || is_set SMTP_FROM; then echo "   MAIL_FROM/SMTP_FROM: already set"; else
+    read -r -p "MAIL_FROM [no-reply@sunshinecoastofis.com.au] (must be on a domain verified with the SMTP provider): " V
+    add_var MAIL_FROM "${V:-no-reply@sunshinecoastofis.com.au}"; fi
+fi
+if is_set NOTIFY_TO; then echo "   NOTIFY_TO: already set"; else
+  read -r -p "Optional NOTIFY_TO, an address for a plain-English copy of each landing page enquiry (Enter to skip): " V
+  if [ -n "$V" ]; then add_var NOTIFY_TO "$V"; else echo "   NOTIFY_TO skipped"; fi
+fi
 
 # Step 7. Commit and push to main.
 step "7. Commit and push"
@@ -138,6 +155,9 @@ echo
 echo "Done."
 [ -n "$DEPLOY_URL" ] && echo "Deployment: $DEPLOY_URL"
 echo "Live site:  $LIVE_URL (a few minutes after the deployment shows Ready)"
+echo
+echo "Landing pages (Google Ads final URLs):"
+for u in "${LP_URLS[@]}"; do echo "  $u"; done
 echo
 echo "Rollback (makes a new commit that undoes this update; Vercel redeploys):"
 echo "  cd \"$REPO_PATH\" && git checkout main && git pull && git revert --no-edit $AFTER && git push origin main"
