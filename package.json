@@ -1,6 +1,6 @@
 {
   "name": "sunshine-coast-ofis",
-  "version": "3.4.0",
+  "version": "3.5.0",
   "private": true,
   "type": "module",
   "scripts": {
@@ -16,6 +16,7 @@
     "test:render": "tsx scripts/test-render.ts",
     "test:email": "tsx scripts/test-referral-email.ts",
     "test:patient-form": "tsx scripts/test-patient-form.ts",
+    "test:crm": "tsx scripts/test-crm.ts",
     "qa:banned": "node scripts/check-banned.mjs",
     "typecheck": "tsc --noEmit"
   },
@@ -35,6 +36,7 @@
     "@types/sanitize-html": "^2.16.1",
     "graphql": "^16.11.0",
     "next": "15.4.11",
+    "nodemailer": "^6.10.1",
     "payload": "3.90.2",
     "react": "19.1.1",
     "react-dom": "19.1.1",
@@ -43,6 +45,7 @@
   },
   "devDependencies": {
     "@types/node": "^22.15.0",
+    "@types/nodemailer": "^6.4.24",
     "@types/react": "19.1.9",
     "@types/react-dom": "19.1.7",
     "tsx": "^4.20.0",

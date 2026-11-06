@@ -1,5 +1,15 @@
 # Changelog
 
+## 3.5.0 (6 Nov 2026): website forms create leads in the SmileOX CRM
+
+- Contact us, Online doctor referral and the Patient information form now also send each submission to SmileOX as a lead: an email to the practice's intake address, subject "Website form submission", with the lead as plain-text JSON (`firstName`, `lastName`, `email`, `phoneNumber` in E.164, plus `formName`, `pageUrl`, `submittedAt` in Brisbane time, any `utm_*` and the form's own non-medical fields). SmileOX updates an existing lead when the email and phone match.
+- Health information is never sent to the CRM: no dates of birth, Medicare numbers, medical history, medications, referral reasons, clinical notes or attachments. The Feedback form is not sent. The clinic's notification emails and dashboard records are unchanged.
+- The lead is sent after the visitor sees "thank you", so the CRM can never slow down or break a form; transient errors are retried 3 times with backoff, and the log records the outcome without patient details.
+- Sent with nodemailer over SMTP when `SMTP_HOST`, `SMTP_USER` and `SMTP_PASS` are set (TLS required, TLS 1.2 or later), otherwise through the existing SMTP2GO account (`SMTP2GO_API_KEY`).
+- New `POST /api/lead` for other forms (for example future landing pages): validates name, email and an Australian phone number, honeypot and minimum fill time, sends the lead and the clinic notification.
+- Campaign tags (`utm_*`) on the page a visitor lands on are kept for the visit and sent with the lead.
+- Files: `lib/crm/intake.ts`, `lib/crm/forms.ts`, `app/api/lead/route.ts` (new), `app/api/submit/route.ts`, `public/assets/site.js`, `scripts/test-crm.ts` (`npm run test:crm`), `package.json` (nodemailer), `.env.example`, `README_CRM.md`.
+
 ## 3.4.0 (5 Nov 2026): Google Tag Manager (GTM-TZ7DJSC2) site-wide
 
 - Google's official Tag Manager snippet is on every page: all 23 pages in the sitemap and the 404 page. That includes the home page, service and location pages, the blog, the Contact, Referral and Patient information form pages, and the form thank-you messages, which appear on the same pages. The head snippet sits straight after the charset and viewport tags and the noscript iframe straight after `<body>`, exactly once per page. The client's gtag-style snippet was not used.

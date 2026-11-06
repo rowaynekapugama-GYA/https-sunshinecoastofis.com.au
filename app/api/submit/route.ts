@@ -1,8 +1,10 @@
 /**
  * POST /api/submit: every website form (Contact us, Online doctor referral, Patient
  * information form, Feedback). The submission is
- *   1. emailed through SMTP2GO (attachments included), and
- *   2. saved in the dashboard under Enquiries (when the database is configured).
+ *   1. emailed through SMTP2GO (attachments included),
+ *   2. saved in the dashboard under Enquiries (when the database is configured), and
+ *   3. sent to the SmileOX CRM as a lead (Contact, Referral and Patient forms; contact details
+ *      only, see lib/crm/forms.ts), after the visitor has their answer, with retries.
  * GET /api/submit reports the email setup without sending anything.
  *
  * Environment (Vercel > Settings > Environment Variables):
@@ -18,11 +20,14 @@ import { renderHtml, renderText, type Upload } from '@/lib/forms/email-body';
 import { buildReferralEmail } from '@/lib/forms/referral-email.js';
 import { after } from 'next/server';
 import { logEnquiry } from '@/lib/enquiries';
+import { leadFromForm } from '@/lib/crm/forms';
+import { sendLeadToCrm } from '@/lib/crm/intake';
 
 export const dynamic = 'force-dynamic';
 export const runtime = 'nodejs';
-// A visitor is never left waiting: email has 15 seconds, the whole request 30.
-export const maxDuration = 30;
+// A visitor is never left waiting: email has 15 seconds and the answer comes straight after it.
+// The CRM lead and the dashboard record are sent after the answer; 60 seconds leaves time for CRM retries.
+export const maxDuration = 60;
 
 const DEFAULT_TO = 'rowayne@gyaclients.com, va@generateyouraudience.com';
 const DEFAULT_FROM = 'Sunshine Coast OFIS Website <noreply@dentalspecialists.com.au>';
@@ -78,6 +83,10 @@ export async function POST(req: Request) {
   }
 
   const page = v(fields, 'page');
+
+  // ---- SmileOX CRM: sent after the visitor has their answer, whatever happens to the clinic email.
+  const lead = leadFromForm(def, fields);
+  if (lead) after(() => sendLeadToCrm(lead, def.kind).then(() => undefined));
   const summary = def.summary(fields);
   const raw: Record<string, string> = {};
   for (const k of Object.keys(fields)) if (!['website', 'form', 'page', 'started'].includes(k) && (!def.store || def.store.includes(k))) raw[k] = v(fields, k);
