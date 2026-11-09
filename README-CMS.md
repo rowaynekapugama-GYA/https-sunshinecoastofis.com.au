@@ -41,9 +41,7 @@ Set in Vercel > Project > Settings > Environment Variables (Production, and Prev
 | `PUBLISH_HOOK_URL` | Yes | Vercel deploy hook for the production branch, fired by "Publish website" | Vercel > Settings > Git > Deploy Hooks (branch `main`) |
 | `NEXT_PUBLIC_SERVER_URL` | Yes | Full site address, no trailing slash. Production: `https://sunshinecoastofis.com.au` | Type it in |
 | `SMTP2GO_API_KEY` | Yes, for form emails | Already set on the current Vercel project for the old `api/submit.js`. Keep it | SMTP2GO > Sending > API Keys |
-| `FORM_TO` | Recommended | Form email recipients, comma separated. Empty means GYA's test inboxes | The practice: reception@sunshinecoastofis.com.au is the address on the live site (to confirm) |
-| `FORM_CC` | Optional | A visible copy of every form email, comma separated (for example rowayne@gyaclients.com) | Type it in |
-| `FORM_BCC` | Optional | A hidden copy of every form email, comma separated | Type it in |
+| `FORM_TO`, `FORM_CC`, `FORM_BCC` | No longer read (3.6.1) | Recipients are set in `lib/forms/recipients.ts`: website forms to reception@sunshinecoastofis.com.au only | Remove from Vercel |
 | `FORM_FROM` | Recommended | Sender on an SMTP2GO verified domain | `Sunshine Coast OFIS Website <noreply@sunshinecoastofis.com.au>` once that domain is verified in SMTP2GO |
 | `ALLOW_FIRST_USER` | One-off | `true` only while creating the first account at `/cms` on an empty database | Delete straight after |
 | `ADMIN_EMAIL`, `ADMIN_PASSWORD` | One-off | Sign-in rescue: typing these on `/admin` creates or resets that account as admin | Delete `ADMIN_PASSWORD` and redeploy once signed in |

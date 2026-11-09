@@ -1,17 +1,14 @@
 /**
  * POST /api/submit: every website form (Contact us, Online doctor referral, Patient
  * information form, Feedback). The submission is
- *   1. emailed through SMTP2GO (attachments included),
- *   2. saved in the dashboard under Enquiries (when the database is configured), and
- *   3. sent to the SmileOX CRM as a lead (Contact, Referral and Patient forms; contact details
- *      only, see lib/crm/forms.ts), after the visitor has their answer, with retries.
+ *   1. emailed through SMTP2GO (attachments included), and
+ *   2. saved in the dashboard under Enquiries (when the database is configured).
  * GET /api/submit reports the email setup without sending anything.
  *
  * Environment (Vercel > Settings > Environment Variables):
  *   SMTP2GO_API_KEY  required for email
- *   FORM_TO          comma separated recipients. Default: rowayne@gyaclients.com, va@generateyouraudience.com
- *   FORM_CC          optional, comma separated: a visible copy of every form email (for example GYA)
- *   FORM_BCC         optional, comma separated: a hidden copy of every form email
+ *   Recipients are set in lib/forms/recipients.ts: reception@sunshinecoastofis.com.au only.
+ *   (FORM_TO, FORM_CC and FORM_BCC are no longer read.) These forms are not sent to SmileOX.
  *   FORM_FROM        sender on an SMTP2GO verified domain.
  *                    Default (temporary, until sunshinecoastofis.com.au is verified): noreply@dentalspecialists.com.au
  */
@@ -20,26 +17,20 @@ import { renderHtml, renderText, type Upload } from '@/lib/forms/email-body';
 import { buildReferralEmail } from '@/lib/forms/referral-email.js';
 import { after } from 'next/server';
 import { logEnquiry } from '@/lib/enquiries';
-import { leadFromForm } from '@/lib/crm/forms';
-import { sendLeadToCrm } from '@/lib/crm/intake';
+import { WEBSITE_FORM_RECIPIENTS } from '@/lib/forms/recipients';
 
 export const dynamic = 'force-dynamic';
 export const runtime = 'nodejs';
-// A visitor is never left waiting: email has 15 seconds and the answer comes straight after it.
-// The CRM lead and the dashboard record are sent after the answer; 60 seconds leaves time for CRM retries.
-export const maxDuration = 60;
+// A visitor is never left waiting: email has 15 seconds, the whole request 30.
+export const maxDuration = 30;
 
-const DEFAULT_TO = 'rowayne@gyaclients.com, va@generateyouraudience.com';
 const DEFAULT_FROM = 'Sunshine Coast OFIS Website <noreply@dentalspecialists.com.au>';
 const MAX_BYTES = 4 * 1024 * 1024; // Vercel's request body limit is 4.5 MB
 const MIN_FILL_MS = 2500; // faster than a person can fill a form in
 
 const json = (body: unknown, status = 200) => Response.json(body, { status });
 const safeName = (n: string) => n.replace(/[\\/:*?"<>|]/g, '_').slice(0, 120);
-const recipients = () => (process.env.FORM_TO || DEFAULT_TO).split(/[,;]/).map((s) => s.trim()).filter(Boolean);
-const list = (v?: string) => (v || '').split(/[,;]/).map((s) => s.trim()).filter(Boolean);
-const ccList = () => list(process.env.FORM_CC);
-const bccList = () => list(process.env.FORM_BCC);
+const recipients = () => [...WEBSITE_FORM_RECIPIENTS];
 const sender = () => (process.env.FORM_FROM || DEFAULT_FROM).trim();
 const senderAddress = () => ((/<([^>]+)>/.exec(sender()) || [])[1] || sender()).trim();
 
@@ -83,10 +74,6 @@ export async function POST(req: Request) {
   }
 
   const page = v(fields, 'page');
-
-  // ---- SmileOX CRM: sent after the visitor has their answer, whatever happens to the clinic email.
-  const lead = leadFromForm(def, fields);
-  if (lead) after(() => sendLeadToCrm(lead, def.kind).then(() => undefined));
   const summary = def.summary(fields);
   const raw: Record<string, string> = {};
   for (const k of Object.keys(fields)) if (!['website', 'form', 'page', 'started'].includes(k) && (!def.store || def.store.includes(k))) raw[k] = v(fields, k);
@@ -121,8 +108,6 @@ export async function POST(req: Request) {
         body: JSON.stringify({
           api_key: apiKey,
           to: recipients(),
-          ...(ccList().length ? { cc: ccList() } : {}),
-          ...(bccList().length ? { bcc: bccList() } : {}),
           sender: from,
           subject,
           text_body: text,
@@ -168,10 +153,7 @@ export async function GET() {
   const out: Record<string, unknown> = {
     ok: true,
     api_key_set: Boolean(key),
-    form_to_override: Boolean(process.env.FORM_TO),
     recipients: recipients().map((e) => e.replace(/^(.).*?(@.*)$/, '$1***$2')),
-    cc: ccList().map((e) => e.replace(/^(.).*?(@.*)$/, '$1***$2')),
-    bcc_count: bccList().length,
     sender: sender(),
     dashboard_logging: Boolean(process.env.DATABASE_URL),
   };

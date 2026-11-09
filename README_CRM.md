@@ -1,5 +1,7 @@
 # Website forms → SmileOX CRM
 
+> **3.6.1 (9 Nov 2026): SmileOX now receives ONLY the two Google Ads landing pages** (`/lp/dental-implants`, `/lp/wisdom-teeth`, through `/api/lp-lead`). The website's own forms (Online doctor referral, Patient information form, Contact us, Feedback) are no longer sent, `lib/crm/forms.ts` and `/api/lead` were removed, and `sendLeadToCrm` refuses any form not in `CRM_FORMS` (`lib/crm/intake.ts`). Form email recipients are in `lib/forms/recipients.ts`; `FORM_TO`, `FORM_CC`, `FORM_BCC` and `NOTIFY_TO` are no longer read. Sections below that describe the website forms or `/api/lead` sending to SmileOX are kept as history of 3.5.0.
+
 Version 3.5.0, 6 November 2026. Every enquiry form on sunshinecoastofis.com.au now creates (or updates) a lead in the practice's SmileOX pipeline. The clinic's notification emails and the dashboard's Enquiries records are unchanged.
 
 ## How it works

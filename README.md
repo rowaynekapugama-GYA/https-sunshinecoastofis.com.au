@@ -30,4 +30,4 @@ npm run qa:banned       # in a second terminal
 
 ## Forms
 
-All four forms post to `/api/submit` (SMTP2GO). Open `/api/submit` in a browser to check the email setup without sending anything. Variables: `SMTP2GO_API_KEY`, `FORM_TO`, `FORM_FROM` (see `README-CMS.md`).
+All four forms post to `/api/submit` (SMTP2GO). Open `/api/submit` in a browser to check the email setup without sending anything. Variables: `SMTP2GO_API_KEY`, `FORM_FROM` (see `README-CMS.md`). Recipients: `lib/forms/recipients.ts` (reception only).

@@ -1,5 +1,19 @@
 # Changelog
 
+## 3.6.1 (9 Nov 2026): SmileOX on the landing pages only; form emails to reception
+
+- **SmileOX scoped to the two landing pages.** Online doctor referral, Patient information form (medical history), Contact us (online enquiry) and Feedback no longer send anything to SmileOX.
+  - `app/api/submit/route.ts` and `public/assets/site.js` are back to their 3.4.0 code (before the CRM change), apart from the recipients below.
+  - `lib/crm/forms.ts` and the unused `app/api/lead/route.ts` are removed.
+  - `lib/crm/intake.ts` gains an allow-list (`CRM_FORMS` = `lp-dental-implants`, `lp-wisdom-teeth`): `sendLeadToCrm` refuses every other form name.
+  - `/api/lp-lead` accepts only `pageType` `dental-implants` or `wisdom-teeth`.
+  - The landing pages' SmileOX email (address, subject, JSON payload) is unchanged.
+- **Form email recipients are set in the code** (`lib/forms/recipients.ts`, new) instead of Vercel variables:
+  - Website forms go to `reception@sunshinecoastofis.com.au` only. Previously `FORM_TO`, or by default `rowayne@gyaclients.com, va@generateyouraudience.com`, plus `FORM_CC`/`FORM_BCC`.
+  - Landing pages send a plain-English copy to `reception@sunshinecoastofis.com.au` and `rowayne@gyaclients.com`, plus SmileOX. Previously the copy went only to an optional `NOTIFY_TO`.
+  - `FORM_TO`, `FORM_CC`, `FORM_BCC` and `NOTIFY_TO` are no longer read.
+- **Docs and tooling:** `.env.example`, `README_CRM.md`, `README-CMS.md`, `README.md`, `docs/landing-pages.md`, the `scripts/update-and-deploy.sh` NOTIFY_TO prompt removed, and `scripts/test-crm.ts` now tests the allow-list and recipients.
+
 ## 3.6.0 (6 Nov 2026): Google Ads landing pages at /lp with discreet footer links
 
 - Rowayne's two landing pages are on the site: `/lp/dental-implants` (from `index.html`) and `/lp/wisdom-teeth`, as static files in `public/lp` with rewrites so the addresses work without `.html`. Design, copy, section order and the `noindex, follow` meta are unchanged.

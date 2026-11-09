@@ -31,7 +31,8 @@ SmileOX through `lib/crm/intake.ts`, the same path and environment variables as 
 forms (see `README_CRM.md`). Payload: `firstName`, `lastName`, `email`, `phoneNumber` (+61),
 `enquiryType`, `hasReferral`, `anaesthetic` (wisdom teeth page), `message`, `source`, `pageType`,
 `pageUrl`, `gclid`, `utmSource`, `utmMedium`, `utmCampaign`, `utmTerm`, `utmContent`, `submittedAt`.
-Empty fields are dropped. `NOTIFY_TO`, if set, gets a plain-English copy. Each lead is also recorded
+Empty fields are dropped. A plain-English copy goes to reception@sunshinecoastofis.com.au and
+rowayne@gyaclients.com (`lib/forms/recipients.ts`). These two pages are the only forms that reach SmileOX. Each lead is also recorded
 in the dashboard's Enquiries.
 
 ## Tracking

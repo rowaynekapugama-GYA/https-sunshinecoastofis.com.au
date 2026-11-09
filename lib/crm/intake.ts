@@ -221,7 +221,18 @@ const short = (err: unknown) => {
  * Logs the form name, the outcome and the error only: never the lead's details.
  * `sendOnce` is for tests.
  */
+/**
+ * The ONLY forms that may create a SmileOX lead: the two Google Ads landing pages (/api/lp-lead).
+ * The website's own forms (referral, patient information, contact, feedback) are never sent.
+ * Anything else passed to sendLeadToCrm is refused here, so SmileOX can't leak onto another form.
+ */
+export const CRM_FORMS: ReadonlySet<string> = new Set(['lp-dental-implants', 'lp-wisdom-teeth']);
+
 export async function sendLeadToCrm(lead: Lead, formName: string, sendOnce?: SendOnce): Promise<SendResult> {
+  if (!CRM_FORMS.has(formName)) {
+    console.error(`[crm] ${formName}: not a landing page form, NOT sent to SmileOX`);
+    return { status: 'skipped', attempts: 0, error: 'form not allowed' };
+  }
   if (!crmEnabled()) return { status: 'skipped', attempts: 0, error: 'CRM_INTAKE_EMAIL is off' };
   let via: SendResult['via'];
   let send = sendOnce;

@@ -125,10 +125,6 @@ if [ -n "$SMTP_ON" ]; then
     read -r -p "MAIL_FROM [no-reply@sunshinecoastofis.com.au] (must be on a domain verified with the SMTP provider): " V
     add_var MAIL_FROM "${V:-no-reply@sunshinecoastofis.com.au}"; fi
 fi
-if is_set NOTIFY_TO; then echo "   NOTIFY_TO: already set"; else
-  read -r -p "Optional NOTIFY_TO, an address for a plain-English copy of each landing page enquiry (Enter to skip): " V
-  if [ -n "$V" ]; then add_var NOTIFY_TO "$V"; else echo "   NOTIFY_TO skipped"; fi
-fi
 
 # Step 7. Commit and push to main.
 step "7. Commit and push"

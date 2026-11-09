@@ -132,7 +132,6 @@ function fakeSubmit(e) {
   var endpoint = f.getAttribute('data-endpoint');
   if (!endpoint || location.protocol === 'file:') { done(); return false; }
   fd.append('form', f.id); fd.append('page', location.href); fd.append('started', f.getAttribute('data-started') || '');
-  var utm = savedUtm(); for (var k in utm) if (!fd.has(k)) fd.append(k, utm[k]); // where the visit came from, for the CRM
   var btn = f.querySelector('button[type=submit]'); var label = btn.textContent; btn.disabled = true; btn.textContent = 'Sending...';
   var msg = f.querySelector('.senderr');
   if (!msg) { msg = document.createElement('p'); msg.className = 'fine senderr'; msg.style.color = '#B42318'; msg.setAttribute('role', 'alert'); btn.insertAdjacentElement('afterend', msg); }
@@ -155,17 +154,6 @@ function fakeSubmit(e) {
   return false;
 }
 document.querySelectorAll('form[data-endpoint]').forEach(function (f) { f.setAttribute('data-started', String(Date.now())); });
-
-/* Campaign tags (utm_source, utm_medium, utm_campaign...) from the page the visitor arrived on are
-   kept for this visit, so a form filled in on a later page still says where the visit came from. */
-function savedUtm() { try { return JSON.parse(sessionStorage.getItem('scofis_utm') || '{}'); } catch (x) { return {}; } }
-(function () {
-  try {
-    var found = {}, any = false;
-    new URLSearchParams(location.search).forEach(function (v, k) { if (/^utm_[a-z_]+$/.test(k) && v) { found[k] = v.slice(0, 200); any = true; } });
-    if (any && !sessionStorage.getItem('scofis_utm')) sessionStorage.setItem('scofis_utm', JSON.stringify(found));
-  } catch (x) { /* storage blocked: tags on the form page itself are still read by the server */ }
-})();
 
 /*
  * Inline checks for forms marked data-validate (the Patient information form only).

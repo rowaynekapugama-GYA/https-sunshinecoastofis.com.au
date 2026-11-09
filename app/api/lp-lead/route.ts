@@ -13,13 +13,21 @@
  *   SMTP_HOST, SMTP_PORT, SMTP_USER, SMTP_PASS     optional SMTP server
  *   MAIL_FROM (or SMTP_FROM)                        sender over SMTP
  *   LEAD_INTAKE (or CRM_INTAKE_EMAIL)               optional override of the SmileOX intake address
- *   NOTIFY_TO                                       optional: a plain-English copy for reception
+ * Email copy: a plain-English copy to reception and Rowayne (lib/forms/recipients.ts,
+ * LANDING_PAGE_RECIPIENTS). NOTIFY_TO is no longer read.
+ *
+ * Only these two pages create SmileOX leads: pageType must be dental-implants or wisdom-teeth,
+ * and lib/crm/intake.ts refuses any other form name (CRM_FORMS).
  *
  * Answers { ok: true } or { ok: false, message }: 400 invalid fields, 502 not sent.
  */
 import { after } from 'next/server';
 import { logEnquiry } from '@/lib/enquiries';
 import { isEmail as validEmail, mailer, sendLeadToCrm, toE164AU, type Lead } from '@/lib/crm/intake';
+import { LANDING_PAGE_RECIPIENTS } from '@/lib/forms/recipients';
+
+/** The landing pages, by the data-page value each one sends as pageType. */
+const LANDING_PAGES = new Set(['dental-implants', 'wisdom-teeth']);
 
 export const dynamic = 'force-dynamic';
 export const runtime = 'nodejs';
@@ -68,6 +76,8 @@ export async function POST(req: Request) {
   if (!firstName || !lastName) return json({ ok: false, message: 'Please enter your first and last name.' }, 400);
   if (!validEmail(email)) return json({ ok: false, message: 'Please enter a valid email address.' }, 400);
   if (phoneNumber.replace(/\D/g, '').length < 8) return json({ ok: false, message: 'Please enter a valid contact number.' }, 400);
+  const pageType = clean(body.pageType, 60);
+  if (!LANDING_PAGES.has(pageType)) return json({ ok: false, message: FAILED }, 400);
 
   // The payload SmileOX stores. firstName / lastName / email / phoneNumber are the recognised
   // fields; everything else is kept as lead detail.
@@ -81,7 +91,7 @@ export async function POST(req: Request) {
     anaesthetic: clean(body.anaesthetic, 120), // wisdom teeth form: preferred anaesthetic
     message: clean(body.message, 1500),
     source: 'Google Ads landing page',
-    pageType: clean(body.pageType, 60),
+    pageType,
     pageUrl: clean(body.pageUrl, 400),
     gclid: clean(body.gclid, 200),
     utmSource: clean(body.utm_source, 120),
@@ -94,13 +104,13 @@ export async function POST(req: Request) {
   // Drop empty keys so the CRM record stays tidy.
   for (const k of Object.keys(payload)) if (payload[k] === '') delete payload[k];
 
-  const formName = `lp-${payload.pageType || 'landing'}`;
+  const formName = `lp-${pageType}`; // lp-dental-implants or lp-wisdom-teeth
   const result = await sendLeadToCrm(payload as Lead, formName);
   if (result.status !== 'sent') return json({ ok: false, message: FAILED }, 502);
 
-  // After the answer: the optional copy for reception, and a record in the dashboard's Enquiries.
+  // After the answer: the email copy for reception and Rowayne, and a record in the dashboard's Enquiries.
   after(async () => {
-    await notifyReception(payload).catch((e) => console.error(`[lp-lead] ${formName}: NOTIFY_TO copy failed: ${(e as Error).message}`));
+    await notifyReception(payload).catch((e) => console.error(`[lp-lead] ${formName}: email copy failed: ${(e as Error).message}`));
     await logEnquiry({
       form: 'contact',
       name: `${firstName} ${lastName}`,
@@ -120,11 +130,11 @@ export function GET() {
   return new Response(JSON.stringify({ ok: false, message: 'Method not allowed' }), { status: 405, headers: { Allow: 'POST', 'Content-Type': 'application/json' } });
 }
 
-/** Optional plain-English copy to the practice (NOTIFY_TO) so reception sees it straight away. */
+/** Plain-English copy to reception and Rowayne (LANDING_PAGE_RECIPIENTS) so they see it straight away. */
 async function notifyReception(p: Record<string, string>) {
-  const to = process.env.NOTIFY_TO?.trim();
+  const to = LANDING_PAGE_RECIPIENTS.join(', ');
   const m = mailer();
-  if (!to || !m) return;
+  if (!m) throw new Error('no email provider set (SMTP2GO_API_KEY or SMTP)');
   const lines = [
     `New enquiry from the ${p.pageType || 'landing'} page`,
     '',
