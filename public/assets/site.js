@@ -143,7 +143,8 @@ function fakeSubmit(e) {
     .then(function (r) { clearTimeout(timer); return r.json().catch(function () { return {}; }).then(function (j) {
       // The server checks every field too: show its messages beside the fields, keep what was typed.
       if (j.fields && f.hasAttribute('data-validate')) { btn.disabled = false; btn.textContent = label; showErrors(f, j.fields); return; }
-      if (!r.ok || !j.ok) throw new Error(j.error || ('HTTP ' + r.status)); formSuccessEvent(f); done(); }); })
+      if (!r.ok || !j.ok) throw new Error(j.error || ('HTTP ' + r.status)); formSuccessEvent(f); done();
+      try { f.dispatchEvent(new CustomEvent('formsent', { bubbles: true })); } catch (x) { /* very old browser: page scripts just don't hear about it */ } }); })
     .catch(function (err) {
       clearTimeout(timer);
       if (err && err.name === 'AbortError') err = new Error('it took too long');

@@ -476,3 +476,40 @@ form.f{display:grid;gap:.9rem}
 .post-body .post-meta{color:var(--muted);font-size:.9rem;margin:0}
 .post-body img{max-width:100%;height:auto;border-radius:12px}
 .post-body h2{margin-top:1.4rem}
+
+/* ---- /feedback/ star rating (3.7.0) ---- */
+.fb-wrap{max-width:640px}
+.fb-card{padding:clamp(1.3rem,4vw,2.2rem)}
+.fb-vh{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.fb-rate{border:0;margin:0;padding:0;min-width:0;text-align:center}
+.fb-q{display:block;width:100%;padding:0;font-family:var(--font-d);font-size:clamp(1.25rem,4.5vw,1.55rem);font-weight:700;color:var(--navy);margin:0 0 1rem}
+.fb-stars{display:flex;justify-content:center;gap:clamp(.35rem,2.2vw,.7rem)}
+.fb-star{display:grid;place-items:center;width:clamp(52px,14vw,64px);height:clamp(52px,14vw,64px);border-radius:14px;cursor:pointer;-webkit-tap-highlight-color:transparent;transition:transform .12s ease}
+.fb-star svg{width:86%;height:86%;fill:#fff;stroke:#7A869E;stroke-width:1.4;stroke-linejoin:round;transition:fill .12s ease,stroke .12s ease}
+.fb-star.on svg{fill:#F2A93B;stroke:#C98417}
+.fb-star:hover{transform:scale(1.08)}
+.fb-stars input:focus-visible+.fb-star{outline:3px solid var(--cyan);outline-offset:2px}
+.fb-hint{margin:.8rem 0 0;font-size:.85rem;color:var(--muted)}
+.fb-step{margin-top:1.6rem;padding-top:1.4rem;border-top:1px solid var(--line)}
+.fb-rated{margin:0 0 .5rem;color:var(--navy)}
+.fb-change{background:none;border:0;padding:0;font:inherit;font-size:.9rem;font-weight:700;color:var(--cyan-deep);text-decoration:underline;cursor:pointer}
+.fb-change:focus-visible{outline:3px solid var(--cyan);outline-offset:2px;border-radius:4px}
+.fb-sorry{margin:0 0 1.2rem;color:var(--ink)}
+.fb-alt{margin:1rem 0 0;font-size:.85rem;text-align:center}
+.fb-alt a{color:var(--muted)}
+.fb-top{text-align:center}
+.fb-thanks{font-size:clamp(1.25rem,4.5vw,1.55rem);margin:0 0 1rem}
+.fb .fine{font-size:.85rem;color:var(--muted);margin:.6rem 0 0}
+.fb-call{text-align:center;margin:1.4rem 0 0;color:var(--muted)}
+.fb-call a{color:var(--cyan-deep);font-weight:700}
+.fb-card.is-sent .fb-rate,.fb-card.is-sent .fb-rated,.fb-card.is-sent .fb-sorry,.fb-card.is-sent .fb-alt{display:none}
+.fb-card.is-sent .fb-step{margin-top:0;padding-top:0;border-top:0}
+@media (prefers-reduced-motion:reduce){.fb-star,.fb-star svg{transition:none}.fb-star:hover{transform:none}}
+/* Patients open this from an SMS: on a phone the stars sit on the first screen (this page only). */
+@media (max-width:640px){
+  [data-page="feedback"] .pagehead .wrap{padding:1.5rem 0 1.4rem}
+  [data-page="feedback"] .pagehead h1{font-size:1.8rem}
+  [data-page="feedback"] .pagehead p{font-size:1rem;margin-top:.6rem}
+  [data-page="feedback"] .pagehead .crumb{margin-bottom:.5rem}
+  .fb.block{padding-top:1.25rem}
+}

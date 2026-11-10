@@ -34,6 +34,22 @@ const recipients = () => [...WEBSITE_FORM_RECIPIENTS];
 const sender = () => (process.env.FORM_FROM || DEFAULT_FROM).trim();
 const senderAddress = () => ((/<([^>]+)>/.exec(sender()) || [])[1] || sender()).trim();
 
+// Feedback form only: at most 5 messages per connection every 10 minutes (per server instance), on top of
+// the hidden box and the fill-time check every form has. Stops a script flooding reception's inbox.
+const FEEDBACK_LIMIT = 5;
+const FEEDBACK_WINDOW_MS = 10 * 60 * 1000;
+const feedbackSeen = new Map<string, number[]>();
+function feedbackFlood(req: Request): boolean {
+  const ip = (req.headers.get('x-forwarded-for') || '').split(',')[0].trim() || req.headers.get('x-real-ip') || 'unknown';
+  const now = Date.now();
+  const recent = (feedbackSeen.get(ip) || []).filter((t) => now - t < FEEDBACK_WINDOW_MS);
+  if (recent.length >= FEEDBACK_LIMIT) return true;
+  recent.push(now);
+  feedbackSeen.set(ip, recent);
+  if (feedbackSeen.size > 5000) feedbackSeen.clear();
+  return false;
+}
+
 export async function POST(req: Request) {
   const t0 = Date.now();
   const len = Number(req.headers.get('content-length') || 0);
@@ -64,6 +80,11 @@ export async function POST(req: Request) {
   // Spam: the hidden "website" box is only ever filled in by bots, and nobody completes a form in under 2.5 seconds.
   const started = Number(v(fields, 'started'));
   if (v(fields, 'website') || (started && Date.now() - started < MIN_FILL_MS)) return json({ ok: true });
+
+  if (def.kind === 'feedback' && feedbackFlood(req)) {
+    console.log('[submit] feedback: refused, too many from one connection');
+    return json({ ok: false, error: 'too many messages in a short time' }, 429);
+  }
 
   // Required fields and field rules, checked here as well as in the browser so a submission
   // that skips the page is still refused. Dates become dd/mm/yyyy before anything is sent or saved.

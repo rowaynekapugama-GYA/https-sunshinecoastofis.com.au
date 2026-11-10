@@ -8,7 +8,8 @@
     "metaTitle": "Feedback | Sunshine Coast Oral, Facial & Implant Specialists",
     "metaDescription": "Share feedback about your visit to Sunshine Coast Oral, Facial & Implant Specialists in Buderim. Every message is read by our practice manager.",
     "ogTitle": "Feedback - Sunshine Coast Oral, Facial & Implant Specialists",
-    "ogImage": "/images/reception1.jpg"
+    "ogImage": "/images/reception1.jpg",
+    "noindex": true
   },
   "sections": [
     {
@@ -23,10 +24,10 @@
           "value": "<a href=\"/\">Home</a> / Feedback"
         },
         "f3": {
-          "value": "Tell us about your experience"
+          "value": "Rate Your Experience with Us"
         },
         "f4": {
-          "value": "We read every message. Your feedback goes to our practice manager, who will follow up if you would like us to."
+          "value": "Thank you for choosing our practice. We'd love to hear how your visit went, so please take a moment to rate your experience with our team."
         }
       }
     },
@@ -35,10 +36,10 @@
       "template": "feedback/2",
       "fields": {
         "f1": {
-          "value": "Other ways to share your experience"
+          "value": "How would you rate your experience?"
         },
         "f2": {
-          "value": "You can also leave a review for the practice on Google."
+          "value": "We're sorry to hear your visit didn't meet your expectations. Please tell us a little more about what happened. Every message is read by our admin team, and we'll follow up with you."
         },
         "f3": {
           "value": "Leave a Google review",
@@ -46,6 +47,9 @@
         },
         "f4": {
           "value": "To speak with our practice manager directly, call"
+        },
+        "f5": {
+          "value": "Thank you! We'd love it if you shared your experience on Google"
         }
       }
     }

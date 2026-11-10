@@ -64,6 +64,8 @@ const nextConfig = {
     return [
       ...contentRedirects(),
       ...WORDPRESS.map(([source, destination]) => ({ source, destination, statusCode: 301 })),
+      // Older or likely links to the patient feedback page (3.7.0). /feedback (no slash) is handled by middleware.
+      ...['/review', '/reviews', '/leave-a-review', '/rate-us', '/patient-feedback'].map((source) => ({ source, destination: '/feedback/', statusCode: 301 })),
     ];
   },
   // Google Ads landing pages: static files in public/lp, served without the .html.

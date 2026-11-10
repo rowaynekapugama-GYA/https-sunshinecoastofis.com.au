@@ -53,6 +53,10 @@ export function prepareSubmission(def: FormDef, f: Fields): Record<string, strin
   return errors;
 }
 
+/** Now in Queensland time, e.g. "Tuesday 10 November 2026, 1:25 pm". */
+export const brisbaneNow = (d = new Date()) =>
+  new Intl.DateTimeFormat('en-AU', { timeZone: 'Australia/Brisbane', weekday: 'long', day: 'numeric', month: 'long', year: 'numeric', hour: 'numeric', minute: '2-digit', hour12: true }).format(d);
+
 export const v = (f: Fields, key: string | ((f: Fields) => string)): string => {
   const x = typeof key === 'function' ? key(f) : f[key];
   return Array.isArray(x) ? x.join(', ') : x || '';
@@ -209,12 +213,28 @@ export const FORMS: Record<string, FormDef> = {
     ],
     summary: (f) => ({ name: join(f.first_name, f.surname), email: v(f, 'email'), phone: v(f, 'phone_mobile') || v(f, 'phone_landline'), message: 'Patient information form. The full form was emailed to the practice (medical details are not stored on the website).' }),
   },
+  // /feedback/ star rating (3.7.0): a 1 to 4 star rating opens this form; 5 stars goes to Google instead.
   feedbackForm: {
     kind: 'feedback',
     label: 'Feedback',
-    subject: (f) => `Website feedback: ${v(f, 'name')}`,
+    subject: (f) => `Patient feedback – ${v(f, 'rating')}/5 – ${v(f, 'name')}`,
     replyTo: 'email',
-    sections: [['Feedback', [['Name', 'name'], ['Email', 'email'], ['Phone', 'phone'], ['Feedback', 'message'], ['Would like a reply', 'contact_me']]]],
-    summary: (f) => ({ name: v(f, 'name'), email: v(f, 'email'), phone: v(f, 'phone'), message: v(f, 'message') }),
+    sections: [['Patient feedback', [
+      ['Rating', (f) => `${v(f, 'rating')}/5`],
+      ['Name', 'name'],
+      ['Email', 'email'],
+      ['Phone', 'phone'],
+      ['Would like us to contact them', 'contact_me'],
+      ['Feedback', 'message'],
+      ['Date and time (Brisbane)', () => brisbaneNow()],
+    ]]],
+    required: { rating: 'Please choose a star rating.', name: 'Please enter your name.', email: 'Please enter your email address.', message: 'Please tell us about your experience.' },
+    check: (f) => {
+      const e: Record<string, string> = {};
+      if (v(f, 'rating') && !/^[1-5]$/.test(v(f, 'rating'))) e.rating = 'Please choose a star rating from 1 to 5.';
+      if (v(f, 'email') && !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(v(f, 'email').trim())) e.email = 'Please enter a valid email address.';
+      return e;
+    },
+    summary: (f) => ({ name: v(f, 'name'), email: v(f, 'email'), phone: v(f, 'phone'), message: `Rating ${v(f, 'rating')}/5. ${v(f, 'message')}` }),
   },
 };

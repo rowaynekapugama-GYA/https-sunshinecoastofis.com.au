@@ -126,7 +126,9 @@ export function tokens(html: string, s: SiteSettings): string {
   return html
     .replace(/\{\{phone\}\}/g, s.phone)
     .replace(/\{\{phoneTel\}\}/g, s.phoneTel)
-    .replace(/\{\{year\}\}/g, String(new Date().getFullYear()));
+    .replace(/\{\{year\}\}/g, String(new Date().getFullYear()))
+    // A page script in public/assets with its cache-busting version, e.g. {{asset:/assets/feedback.js}}
+    .replace(/\{\{asset:(\/assets\/[\w.-]+)\}\}/g, (_, rel: string) => asset(rel));
 }
 
 export function renderSections(sections: SectionData[], ctx: RenderContext): string {

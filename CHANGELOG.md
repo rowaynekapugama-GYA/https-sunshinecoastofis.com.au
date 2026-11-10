@@ -1,5 +1,32 @@
 # Changelog
 
+## 3.7.0 (10 Nov 2026): /feedback/ star rating restored
+
+The old site's /feedback/ page (the link the practice sends patients after a procedure) asked for a 1 to 5 star rating: 1 to 4 stars opened a feedback box emailed to reception, 5 stars went to Google. The new site had a plain feedback form there instead. Restored, at the same address:
+
+- **Step 1:** "Rate Your Experience with Us" with five large star buttons (radio inputs labelled 1 star to 5 stars, keyboard operable, visible focus ring, aria-live announcements). On a phone the stars are on the first screen.
+- **1 to 4 stars:** the feedback form appears without a reload. It shows "You rated us 3 out of 5" with a Change rating link, then the apology message, then Name*, Email*, Phone, Your feedback* and "Would you like us to contact you?". It is sent through `/api/submit` and SMTP2GO, the same way as every other form, to reception@sunshinecoastofis.com.au, with the patient's email as reply-to. Subject: `Patient feedback – {rating}/5 – {name}`. The body has the rating, name, email, phone, contact preference, feedback, Brisbane date and time, and the page address. A small "You're also welcome to leave a review on Google" link sits under the form (`SHOW_GOOGLE_LINK_ON_LOW_RATING = true` at the top of `public/assets/feedback.js`).
+- **5 stars:** "Thank you! We'd love it if you shared your experience on Google" and a Leave a Google review button. The same tab goes to https://g.page/r/CU9nbwKDylIaEBM/review after about 2 seconds when the star was tapped (not when a keyboard user arrows past it). Change rating stops it.
+- **Deep links:** `/feedback/?rating=1` to `5` preselects a rating.
+- **GTM events:** `feedback_rating_selected` {rating}, `feedback_submitted` {rating} and `google_review_click`. No personal details.
+- **Spam:** the usual hidden box and fill timer, server-side checks (rating 1 to 5, required fields, email format), and at most 5 feedback messages per connection every 10 minutes.
+- **SEO:** /feedback/ is noindex, follow and out of the sitemap; the canonical stays /feedback/. 301 redirects to /feedback/ from /review, /reviews, /leave-a-review, /rate-us and /patient-feedback (`next.config.mjs`, with the site's other redirects). /feedback without the slash already had a 301.
+- **Content:** the wording (heading, intro, rating question, low-rating message, 5-star thank-you) and the noindex setting reach the dashboard through migration `20261110_000001_feedback_rating`, and stay editable under Pages > Feedback. The Google review link is that section's "Google review button" field: one place.
+- **Files:**
+  - `content/templates/sections.json` (feedback/1 label; feedback/2 new markup and field labels)
+  - `content/pages/feedback.json`
+  - `public/assets/feedback.js` (new)
+  - `public/assets/site.css`: new `.fb-*` rules, plus a smaller page heading on phones for this page only
+  - `public/assets/site.js`: a sent form now fires a `formsent` event that page scripts can listen for
+  - `lib/render.ts`: `{{asset:...}}` token for page scripts
+  - `lib/forms/definitions.ts`: the feedback form's subject, email layout and checks
+  - `app/api/submit/route.ts`: the feedback rate limit
+  - `next.config.mjs`
+  - `migrations/20261110_000001_feedback_rating.ts`, `migrations/data/20261110-feedback-rating.json`, `migrations/index.ts`
+  - `docs/feedback-page.md` (new), `package.json`
+
+  Every other page renders exactly as before.
+
 ## 3.6.1 (9 Nov 2026): SmileOX on the landing pages only; form emails to reception
 
 - **SmileOX scoped to the two landing pages.** Online doctor referral, Patient information form (medical history), Contact us (online enquiry) and Feedback no longer send anything to SmileOX.

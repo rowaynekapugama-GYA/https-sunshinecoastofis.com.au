@@ -1,0 +1,57 @@
+{
+ "pages": {
+  "feedback": {
+   "ops": [
+    {
+     "op": "seo",
+     "key": "noindex",
+     "old": null,
+     "new": true
+    },
+    {
+     "op": "field",
+     "section": "s1",
+     "key": "f3",
+     "prop": "value",
+     "old": "Tell us about your experience",
+     "new": "Rate Your Experience with Us"
+    },
+    {
+     "op": "field",
+     "section": "s1",
+     "key": "f4",
+     "prop": "value",
+     "old": "We read every message. Your feedback goes to our practice manager, who will follow up if you would like us to.",
+     "new": "Thank you for choosing our practice. We'd love to hear how your visit went, so please take a moment to rate your experience with our team."
+    },
+    {
+     "op": "field",
+     "section": "s2",
+     "key": "f1",
+     "prop": "value",
+     "old": "Other ways to share your experience",
+     "new": "How would you rate your experience?"
+    },
+    {
+     "op": "field",
+     "section": "s2",
+     "key": "f2",
+     "prop": "value",
+     "old": "You can also leave a review for the practice on Google.",
+     "new": "We're sorry to hear your visit didn't meet your expectations. Please tell us a little more about what happened. Every message is read by our admin team, and we'll follow up with you."
+    },
+    {
+     "op": "field",
+     "section": "s2",
+     "key": "f5",
+     "prop": "value",
+     "old": null,
+     "new": "Thank you! We'd love it if you shared your experience on Google"
+    }
+   ]
+  }
+ },
+ "team": [],
+ "posts": [],
+ "redirects": []
+}
